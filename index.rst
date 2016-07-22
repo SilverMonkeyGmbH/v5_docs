@@ -1,7 +1,7 @@
 Silver Monkey v5 Documentation
 ==============================
 
-Contents:
+Contents:12
 
 
 Welcome
