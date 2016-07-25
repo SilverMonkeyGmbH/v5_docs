@@ -33,6 +33,7 @@ In addition to the requirements of the operating system, the following condition
 Network configuration
 ----------------------------
 v5 Engine support multiple domain configurations. Please see figure below for detailed information about network communication ports:
+
   .. image:: _static/SIM_Network_Diagram_v1.0.png 
 
 Workplace systems

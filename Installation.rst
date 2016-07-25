@@ -3,10 +3,16 @@ Installation
 
 1. Requirements
 ----------------------------
+See :doc:`/Requirements`
 
 
 2. IIS Features
 ----------------------------
+Execute the following command to enable on the application server IIS features:
+
+  .. literalinclude:: /_static/Install.cmd
+    :emphasize-lines: 15
+
 
 3. SQL Server
 ----------------------------
