@@ -11,7 +11,10 @@ See :doc:`/Requirements`
 Execute the following command to enable on the application server IIS features:
 
   .. literalinclude:: /_static/Install.cmd
+    :language: batch
     :emphasize-lines: 15
+
+See :download:`Download Script <_static/Install.cmd>`.
 
 
 3. SQL Server
