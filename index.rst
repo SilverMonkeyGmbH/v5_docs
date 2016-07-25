@@ -10,6 +10,7 @@ Contents:
    Installation
    Reference
    KnowledgeBase/index
+   Changelog
 
 
 
