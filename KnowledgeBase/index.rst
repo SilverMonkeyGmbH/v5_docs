@@ -1,4 +1,4 @@
-Silver Monkey v5 Knowledge base
+Knowledge Base
 ===============================
 
 Contents:
