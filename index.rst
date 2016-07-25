@@ -11,6 +11,7 @@ Contents:
    Reference
    KnowledgeBase/index
    Changelog
+   SupportedConf
 
 
 

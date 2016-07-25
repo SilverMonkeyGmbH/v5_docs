@@ -1,40 +1,52 @@
 Installation
 =============
 
-1. Requirements
+Requirements
 ----------------------------
-See :doc:`/Requirements`
+For general information about requirements see :doc:`/Requirements`
+
+Report Builder
+----------------------------
+For building reports on the website and for exporting lists in Microsoft Excel format the following libraries have to be installed:
+
+- Report Viewer 2010
+- Report Viewer 2012
+
+  - Which needs SQLSysClrTypes
+
+You can download these libraries in one zip at: http://www.silvermonkey.net/DL/Microsoft_ReportViewers.zip
 
 
-2. IIS Features
+IIS Features
 ----------------------------
-Execute the following command to enable on the application server IIS features:
+Execute the following command to enable IIS features on the application server:
 
   .. literalinclude:: /_static/Install.cmd
     :language: batch
     :emphasize-lines: 15
 
-See :download:`Download Script <_static/Install.cmd>`.
+See :download:`Download Script </_static/Install.cmd>`.
 
 
-3. SQL Server
+Microsoft SQL Server
 ----------------------------
 
-4. Website Files
+
+Website Files
 ----------------------------
 
-5. Database
+Database
 ---------------------------- 
 
 
 Configuration
 =============
 
-1. Licence
+Licence
 ----------------------------
 
-2. Set up data base connection
+Set up data base connection
 --------------------------------
 
-3. Set up ConfigMgr connection
+Set up ConfigMgr connection
 --------------------------------
