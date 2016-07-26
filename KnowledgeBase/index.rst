@@ -7,3 +7,4 @@ Contents:
    :maxdepth: 3
 
    KB00001_Backup-SIM-DB/index
+   KB00002_Set-Fixed-WMI-Ports/index
