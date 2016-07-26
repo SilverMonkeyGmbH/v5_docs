@@ -27,7 +27,7 @@ Supported Microsoft Windows Server Versions
    "Windows Server 2012","NT 6.2","Yes"
    "Windows Server 2012 R2","NT 6.3","Yes"
    "Windows Server 2016","NT 10.0","Yes"
-   
+
 
 Supported .Net Framework Versions
 ---------------------------------------
@@ -43,8 +43,8 @@ Supported Microsoft ConfigMgr Versions
    :widths: 15, 10, 30,15,15
 
    "Systems Management Server (SMS)","1.0","","","No"
-   "Systems Management Server (SMS)","01. Jan","","","No"
-   "Systems Management Server (SMS)","01. Feb","","","No"
+   "Systems Management Server (SMS)","1.1","","","No"
+   "Systems Management Server (SMS)","1.2","","","No"
    "Systems Management Server (SMS)","2.0","","","No"
    "Systems Management Server (SMS)","2003","","","No"
    "Systems Management Server (SMS)","2003 R2","","","No"
@@ -58,7 +58,7 @@ Supported Microsoft ConfigMgr Versions
    "System Center 2012 Configuration Manager (ConfigMgr)","2012","Beta 1","","No"
    "System Center 2012 Configuration Manager (ConfigMgr)","2012","Beta 2","5.00.7561.0000","No"
    "System Center 2012 Configuration Manager (ConfigMgr)","2012","Release Candidate 1","5.00.7678.0000","No"
-   "System Center 2012 Configuration Manager (ConfigMgr)","2012","Release Candidate 2[4]","5.00.7703.0000","No"
+   "System Center 2012 Configuration Manager (ConfigMgr)","2012","Release Candidate 2","5.00.7703.0000","No"
    "System Center 2012 Configuration Manager (ConfigMgr)","2012","RTM","5.00.7711.0000","Yes"
    "System Center 2012 Configuration Manager (ConfigMgr)","2012","Cumulative Update 1","5.00.7703.0200[5]","Yes"
    "System Center 2012 Configuration Manager (ConfigMgr)","2012","SP1 Beta","5.00.7782.1000[6]","No"
