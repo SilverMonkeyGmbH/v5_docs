@@ -67,6 +67,6 @@ Supported Microsoft ConfigMgr Versions
    "Configuration Manager","","","1511","Yes"
    "Configuration Manager","","","1602","Yes"
 
-.. tip:: text
+.. note:: 
     In regard to support for the new Configuration Manager versions (beginning from Build 1511):
     Silver Monkey’s release cycle is based on the release cycles of Microsoft. 4 weeks after publication of a new build version it is supported by Silver Monkey.
