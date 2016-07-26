@@ -1,9 +1,6 @@
 Changelog
 ==============================
 
-Changelog
-==============================
-
 .. csv-table:: 
    :header: "Version","TicketId","Product","Description"
    :widths: 10, 10, 15,70
