@@ -32,6 +32,6 @@ Bitte ein Neustart des Systems durchführen
 Im Script IP/Benutzer/Passwort eintragen
 
 .. tip:: 
-Es kann sein, dass ein DNS Name des Servers nicht funktioniert, weil bestimmte Kerberos Ports (z.B. Port 88) gesperrt sind. In diesem Fall bitte nur die IP Adresse des Zielsystems verwenden.
+    Es kann sein, dass ein DNS Name des Servers nicht funktioniert, weil bestimmte Kerberos Ports (z.B. Port 88) gesperrt sind. In diesem Fall bitte nur die IP Adresse des Zielsystems verwenden.
 
 Zu erwartender Rückgabewert (Es muss die Domain ausgegeben werden):
