@@ -30,7 +30,8 @@ To set up a fixed port for WMI
 Bitte ein Neustart des Systems durchführen
 1.5. Testscript 
 Im Script IP/Benutzer/Passwort eintragen
- 
-Hinweis: Es kann sein, dass ein DNS Name des Servers nicht funktioniert, weil bestimmte Kerberos Ports (z.B. Port 88) gesperrt sind. In diesem Fall bitte nur die IP Adresse des Zielsystems verwenden.
+
+.. tip:: 
+Es kann sein, dass ein DNS Name des Servers nicht funktioniert, weil bestimmte Kerberos Ports (z.B. Port 88) gesperrt sind. In diesem Fall bitte nur die IP Adresse des Zielsystems verwenden.
 
 Zu erwartender Rückgabewert (Es muss die Domain ausgegeben werden):
