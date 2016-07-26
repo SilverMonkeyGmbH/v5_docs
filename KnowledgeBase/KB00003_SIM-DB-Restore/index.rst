@@ -6,7 +6,7 @@ KB00002 - Set fixed WMI ports
 
 1.1. Dynamic Port Allocation festlegen
 http://support.microsoft.com/kb/154596/en-us
-  .. image:: _static/image001.png
+  .. image:: _static/image001.jpg
 
 See :download:`Download Script <_static/RPC Ports.reg>`.
  
