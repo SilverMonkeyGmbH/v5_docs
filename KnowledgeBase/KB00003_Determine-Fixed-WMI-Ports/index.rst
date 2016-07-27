@@ -19,10 +19,11 @@ KB00003 - Determine Fixed WMI Ports
 
 1.1. Determine Dynamic Port Allocation
 +++++++++++++++++++++++++++++++++++++
+`Please click here to get the detailed  tutorial on the determination of dynamic port allocation in Windows. <http://support.microsoft.com/kb/154596/en-us>`_
 
-.. image:: image003.jpg
-.. image:: image004.jpg
-.. image:: image005.jpg
+
+.. image:: _static/image001.jpg
+
 
 .. comment Link einfügen? Meldung der Seite: Support for Windows Server '03 ended. https://support.microsoft.com/en-us/kb/154596
 
@@ -33,7 +34,10 @@ KB00003 - Determine Fixed WMI Ports
 
 Launch DCOMCNFG.EXE
 
-.. image:: image002.jpg
+.. image:: _static/image003.jpg
+.. image:: _static/image004.jpg
+.. image:: _static/image005.jpg
+
 
 1.3. Change WMI Mode
 ++++++++++++++++++++++++++++++++++++++
