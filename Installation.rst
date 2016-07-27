@@ -23,7 +23,6 @@ Execute the following command to enable IIS features on the application server:
 
   .. literalinclude:: /_static/Install.cmd
     :language: batch
-    :emphasize-lines: 15
 
 See :download:`Download Script </_static/Install.cmd>`.
 

@@ -1,8 +1,16 @@
-KB00002 - Set fixed WMI ports
+KB00003 - Set fixed WMI ports
 =========================================
 
 1. SCCM System für feste WMI Ports vorbereiten
 
+.. contents:: Content
+  :depth: 1
+  Prepare SCCM system for fixed WMI ports
+  Set Dynamic Port Allocation
+  Set port for Endpoint
+  Change WMI mode
+  Restart
+  Test script
 
 1.1. Dynamic Port Allocation festlegen
 http://support.microsoft.com/kb/154596/en-us
