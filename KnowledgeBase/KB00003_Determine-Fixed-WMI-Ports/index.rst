@@ -1,18 +1,50 @@
-KB00003 - SIM data base restore
+KB00003 - Determine Fixed WMI Ports
 =========================================
 
-1. SCCM System für feste WMI Ports vorbereiten
+
 
 .. contents:: Content
+  :local:
   :depth: 1
-  Prepare SCCM system for fixed WMI ports
-  Set Dynamic Port Allocation
-  Set port for Endpoint
-  Change WMI mode
-  Restart
-  Test script
+.. comment  Prepare SCCM system for fixed WMI ports
+            Set Dynamic Port Allocation
+            Set port for Endpoint
+            Change WMI mode
+            Restart
+            Test script
 
-1.1. Dynamic Port Allocation festlegen
+******************************************
+1. Prepare SCCM System for Fixed WMI Ports
+******************************************
+
+1.1. Determine Dynamic Port Allocation
++++++++++++++++++++++++++++++++++++++
+
+.. image:: image003.jpg
+.. image:: image004.jpg
+.. image:: image005.jpg
+
+.. comment Link einfügen? Meldung der Seite: Support for Windows Server '03 ended. https://support.microsoft.com/en-us/kb/154596
+
+
+
+1.2. Determine Port for Endpoint
+++++++++++++++++++++++++++++++++++++++
+
+Launch DCOMCNFG.EXE
+
+.. image:: image002.jpg
+
+1.3. Change WMI Mode
+++++++++++++++++++++++++++++++++++++++
+
+1.4. Restart 
+++++++++++++++++++++++++++++++++++++++
+
+1.5. Test Script
+++++++++++++++++++++++++++++++++++++++
+
+
 http://support.microsoft.com/kb/154596/en-us
   .. image:: _static/image001.jpg
 

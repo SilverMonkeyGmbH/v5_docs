@@ -1,4 +1,4 @@
-KB00004 - Web Service Test Tool
+KB00002 - Web Service Test Tool
 =========================================
 
 For testing the Silver Monkey Web Service there is a command line tool which enabled administrators to perform an easy test without knowledge about working with HTTP web service technology.
