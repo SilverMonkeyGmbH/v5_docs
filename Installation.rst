@@ -58,5 +58,5 @@ Set up data base connection
 Set up ConfigMgr connection
 ---------------------------- 
 
-:ref:`KB00004_WebService-Test-Tool`
-:doc:`/KnowledgeBase/KB00004_WebService-Test-Tool`
+:ref:`KB00002_WebService-Test-Tool`
+:doc:`/KnowledgeBase/KB00002_WebService-Test-Tool`
