@@ -1,4 +1,4 @@
-KB00003 - Set fixed WMI ports
+KB00003 - SIM data base restore
 =========================================
 
 1. SCCM System für feste WMI Ports vorbereiten
