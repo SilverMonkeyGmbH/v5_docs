@@ -29,7 +29,15 @@ See :download:`Download Script </_static/Install.cmd>`.
 
 Microsoft SQL Server
 ----------------------------
+For information about supported SQL Server versions see :doc`/Supported configurations`
 
+Connect to your SQL Server via the SQL Management Console. Check if the Database server is supporting SQL server and Windows-Authentication:
+
+  .. image:: _static/SQL_Server_Security_Settings.png
+
+Create an new database with the desired name (for example "SIM_R001").
+
+Install the Silver Monkey Database Backup. The Backup is part of the installtion Package. 
 
 Website Files
 ----------------------------
