@@ -11,11 +11,11 @@ http://www.silvermonkey.net/DL/WebServiceTestCmdLine.zip
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Extracting the content of the ZIP:
 
-.. image:: /_static/Folder1.png
+.. image:: _static/Folder1.png
 
 The sample XML file will create a simple computer with one variable:
 
-  .. literalinclude:: /_static/sample.xml
+  .. literalinclude:: _static/sample.xml
 
 
 3. Edit Start.cmd file 
@@ -29,7 +29,7 @@ An example command line would be:
 
 Running the command results in a log file written beside the EXE:
 
-  .. literalinclude:: /_static/Log.txt
+  .. literalinclude:: _static/Log.txt
 
 
 
