@@ -36,11 +36,55 @@ Microsoft SQL Server
 ----------------------------
 For information about supported SQL Server versions see :doc:`/SupportedConf`
 
-Connect to your SQL Server via the SQL Management Console. Check if the Database server is supporting SQL server and Windows-Authentication:
+The installation of the SQL Server will be described in the following steps.
 
-  .. image:: _static/SQL_Server_Security_Settings.png
+Installation Setup
+^^^^^^^^^^^^^^^^^^^^
+Start the SQL Server installation setup.
+Choose the "New SQL Server stand-alone installation..."-Option in the follwing Window:
 
-Create an new database with the desired name (for example "SIM_R001").
+  .. image:: _static/SQLServerInstallation_00.png
+
+Follow the Install, choose the same Features as in the seen below:
+
+  .. image:: _static/SQLServerInstallation_01.png
+
+Name the instance SIM or choose another name:
+
+  .. image:: _static/SQLServerInstallation_02.png
+
+Configure the server as seen below:
+
+  .. image:: _static/SQLServerInstallation_03.png
+
+Choose the Database Engine 'SQL_Latin_General_CP1_CI_AS': 
+
+  .. image:: _static/SQLServerInstallation_04.png
+
+Select the 'mixed mode'-Authentication and add your SQL service account as SQL Server administrator:
+
+  .. image:: _static/SQLServerInstallation_05.png
+
+You have completed the setup!
+
+SQL Server TCP/IP configuration
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Open the Sql Server Configuration Manager, choose the 'SQL Server Network Configuration' and then 'Protocols for [Database Name]'. Change the  TCP/IP Status to Enabled:
+
+  .. image:: _static/SQLServerInstallation_06.png
+
+Right-click the TCP/IP row and choose 'Properties':
+
+  .. image:: _static/SQLServerInstallation_07.png
+
+Choose the IP Adresses Tab and change the 'TCP Port'-entry to 1433:
+
+  .. image:: _static/SQLServerInstallation_08.png
+
+After that navigate to the SQL Server Services and restart the 'SQL Server ([Database Name]):
+
+  .. image:: _static/SQLServerInstallation_09.png
 
 Website Files
 ----------------------------
@@ -49,9 +93,6 @@ Copy the basic configuration of the website to the specified path on the web app
 *C:\inetpub\wwwroot\[HERE]*
 Example:
 *C:\inetpub\wwwroot\SIM_R001*
-
-Note: Make sure that the role “Everyone” has the permission to “Modify, Read& execute, List folder contents, Read, Write” to the App_Data folder 
-
 
 This configuration will be customized later based on the customer requirements.
 
@@ -63,6 +104,8 @@ This configuration will be customized later based on the customer requirements.
 Database
 ---------------------------- 
 Install the Silver Monkey Database Backup. The Backup is part of the installation Package.
+
+See: :doc:`/KnowledgeBase/KB00004_SIM-DB-Restore/index` for more Information.
 
 Basic Configuration
 ---------------------------- 
@@ -76,6 +119,4 @@ Set up data base connection
 Set up ConfigMgr connection
 ---------------------------- 
 
-:ref:`KB00002_WebService-Test-Tool`
-:doc:`/KnowledgeBase/KB00002_WebService-Test-Tool/index.rst`
 :doc:`/KnowledgeBase/KB00002_WebService-Test-Tool/index`
