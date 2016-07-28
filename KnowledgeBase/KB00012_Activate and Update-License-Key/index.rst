@@ -27,9 +27,7 @@ In the settings, fill in the 'Activation code'-field with the license key that i
 
 After that click the 'Save'-button.
 
-.. warning:: The new license key not be activated until you: 
-  * Restart the IIS Service 
-  * Restart the Silver Monkey Web Application Server  
+.. warning:: The new license key not be activated until you restart the IIS Service and Restart the Silver Monkey Web Application Server  
 
 Activate or update the activation key in the configuration.xml
 ---------------------------------------------------------------
@@ -45,6 +43,4 @@ Fill in the field "<activationCode>" with the license key:
 
    .. image:: _static/Activation_Key_Screenshot3.png
 
-.. warning:: The new license key not be activated until you: 
-  * Restart the IIS Service 
-  * Restart the Silver Monkey Web Application Server  
+.. warning:: The new license key not be activated until you restart the IIS Service and Restart the Silver Monkey Web Application Server  
