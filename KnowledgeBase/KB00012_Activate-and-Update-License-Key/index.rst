@@ -1,4 +1,4 @@
-KB00012_Activate and Update-License-Key
+KB00012 - Activate and Update License Key
 =========================================
 
 
