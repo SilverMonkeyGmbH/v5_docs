@@ -32,10 +32,10 @@ import datetime
 # ones.
 sys.path.append(os.path.abspath('ext'))
 
-extensions = [
-    'sphinx.ext.intersphinx',
-    'sphinxcontrib.dotnetdomain',
-    'versionwarning']
+#extensions = [
+#    'sphinx.ext.intersphinx',
+#    'sphinxcontrib.dotnetdomain',
+#    'versionwarning']
 
 # Add any paths that contain templates here, relative to this directory.
 #templates_path = ['_templates', '../common/_templates']
