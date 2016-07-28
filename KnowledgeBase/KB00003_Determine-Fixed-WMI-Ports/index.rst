@@ -6,12 +6,7 @@ KB00003 - Determine Fixed WMI Ports
 .. contents:: Content
   :local:
   :depth: 1
-.. comment  Prepare SCCM system for fixed WMI ports
-            Set Dynamic Port Allocation
-            Set port for Endpoint
-            Change WMI mode
-            Restart
-            Test script
+.. comment  wie entferne ich den Punkt vor der jeweiligen Überschrift in der Content Table?
 
 ******************************************
 1. Prepare SCCM System for Fixed WMI Ports
