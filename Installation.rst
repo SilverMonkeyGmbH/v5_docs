@@ -134,12 +134,13 @@ Next, choose the ‘Add Application’ option in the right-click dialogue of the
 For some features, it is necessary that a second AppPool is created using these settings: 
 
   .. image:: _static/IIS_Configuration7.png
-  
+
 Basic Configuration
 ---------------------------- 
 
 Licence
 ---------------------------- 
+:doc:`/KnowledgeBase/KB00012_Activate-and-Update-License-Key/index`
 
 Set up data base connection
 ---------------------------- 
