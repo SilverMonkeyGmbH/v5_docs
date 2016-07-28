@@ -29,7 +29,7 @@ See :download:`Download Script </_static/Install.cmd>`.
 
 Microsoft SQL Server
 ----------------------------
-For information about supported SQL Server versions see :doc`/SupportedConf`
+For information about supported SQL Server versions see :doc:`/SupportedConf`
 
 Connect to your SQL Server via the SQL Management Console. Check if the Database server is supporting SQL server and Windows-Authentication:
 
@@ -59,4 +59,5 @@ Set up ConfigMgr connection
 ---------------------------- 
 
 :ref:`KB00002_WebService-Test-Tool`
-:doc:`/KnowledgeBase/KB00002_WebService-Test-Tool`
+:doc:`/KnowledgeBase/KB00002_WebService-Test-Tool/index.rst`
+:doc:`/KnowledgeBase/KB00002_WebService-Test-Tool/index`

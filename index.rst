@@ -20,6 +20,7 @@ Contents:
    KnowledgeBase/index
    Changelog
    SupportedConf
+   Support
 
 
 
