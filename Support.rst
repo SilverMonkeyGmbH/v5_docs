@@ -9,4 +9,4 @@ If you have further questions regarding out products or the documentation contac
 
 If you need general Information about our Products visit:
 
-https://www.SilverMonkey.net
+http://www.SilverMonkey.net
