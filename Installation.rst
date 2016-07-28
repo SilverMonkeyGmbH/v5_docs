@@ -1,6 +1,11 @@
 Installation
 =============
 
+.. contents:: `In this article:`
+    :depth: 2
+    :local:
+    
+
 Requirements
 ----------------------------
 For general information about requirements see :doc:`/Requirements`

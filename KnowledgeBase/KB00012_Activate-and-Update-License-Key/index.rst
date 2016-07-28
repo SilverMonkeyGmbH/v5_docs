@@ -6,10 +6,6 @@ KB00012 - Activate and Update License Key
     :depth: 2
     :local:
 
-.. contents:: Content
-  :depth: 1
-  Activate or update the activation key via the user interface
-  Activate or update the activation key in the configuration.xml
 
 Activate or update the activation key via the user interface
 --------------------------------------------------------------
