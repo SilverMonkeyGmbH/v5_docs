@@ -129,6 +129,12 @@ Next, choose the ‘Add Application’ option in the right-click dialogue of the
 
   After this navigate to the ‘Authentication’ settings of the new application. Set the authentication as seen below:
 
+  .. image:: _static/IIS_Configuration6.png
+
+For some features, it is necessary that a second AppPool is created using these settings: 
+
+  .. image:: _static/IIS_Configuration7.png
+  
 Basic Configuration
 ---------------------------- 
 
@@ -137,6 +143,8 @@ Licence
 
 Set up data base connection
 ---------------------------- 
+
+
 
 Set up ConfigMgr connection
 ---------------------------- 
