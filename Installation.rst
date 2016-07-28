@@ -107,6 +107,28 @@ Install the Silver Monkey Database Backup. The Backup is part of the installatio
 
 See: :doc:`/KnowledgeBase/KB00004_SIM-DB-Restore/index` for more Information.
 
+IIS Configuration
+---------------------------- 
+
+Open the IIS (Internet Information Services) Manager.
+An app pool has to be created for the SIM Packaging website with the .NET CLR Version ‘v2.0.50727’ and the ‘Integrated’ Managed pipeline mode.
+
+  .. image:: _static/IIS_Configuration1.png
+
+Navigate to the advanced settings of the created application pool (Figure 3) and set the ‘Idle Time-out(minutes)’ parameter to ‘600’. Set the ‘Idle Time-out Action’ parameter to ‘Suspend’. 
+
+  .. image:: _static/IIS_Configuration2.png
+
+  .. image:: _static/IIS_Configuration3.png
+
+Next, choose the ‘Add Application’ option in the right-click dialogue of the Default Web Site, choose the name of the application, the application pool that has just been created and the website folder that you copied in the C:\inetpub\\wwwroot… directory. 
+
+  .. image:: _static/IIS_Configuration4.png
+
+  .. image:: _static/IIS_Configuration5.png
+
+  After this navigate to the ‘Authentication’ settings of the new application. Set the authentication as seen below:
+
 Basic Configuration
 ---------------------------- 
 
