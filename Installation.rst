@@ -42,14 +42,27 @@ Connect to your SQL Server via the SQL Management Console. Check if the Database
 
 Create an new database with the desired name (for example "SIM_R001").
 
-Install the Silver Monkey Database Backup. The Backup is part of the installation Package. 
-
 Website Files
 ----------------------------
+Copy the basic configuration of the website to the specified path on the web application server:
+
+*C:\inetpub\wwwroot\[HERE]*
+Example:
+*C:\inetpub\wwwroot\SIM_R001*
+
+Note: Make sure that the role “Everyone” has the permission to “Modify, Read& execute, List folder contents, Read, Write” to the App_Data folder 
+
+
+This configuration will be customized later based on the customer requirements.
+
+.. tip::
+     Make sure that the role “Everyone” has the permission to “Modify, Read& execute, List folder contents, Read, Write” to the App_Data folder (as seen below)
+
+  .. image:: _static/SQL_server_Security_App_Data.png
 
 Database
 ---------------------------- 
-
+Install the Silver Monkey Database Backup. The Backup is part of the installation Package.
 
 Basic Configuration
 ---------------------------- 
