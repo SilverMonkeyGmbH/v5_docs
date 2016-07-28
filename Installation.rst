@@ -140,6 +140,7 @@ Basic Configuration
 
 Licence
 ---------------------------- 
+Your Licence is part of the license certificate. Your can find an Information on this topic here:
 :doc:`/KnowledgeBase/KB00012_Activate-and-Update-License-Key/index`
 
 Set up data base connection
