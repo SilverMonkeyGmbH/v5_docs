@@ -6,3 +6,7 @@ If you have further questions regarding out products or the documentation contac
 * Tel. : 040 - 226 383 160
 * E-Mail : Support@SilverMonkey.net
 * Visit out support website: https://SilverSupport.azurewebsites.net
+
+If you need general Information about our Products visit:
+
+https://www.SilverMonkey.net
