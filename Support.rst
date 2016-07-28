@@ -1,5 +1,5 @@
 Support
------------
+=========
 
 If you have further questions regarding out products or the documentation contact us:
 
@@ -10,3 +10,4 @@ If you have further questions regarding out products or the documentation contac
 If you need general Information about our Products visit:
 
 http://www.SilverMonkey.net
+

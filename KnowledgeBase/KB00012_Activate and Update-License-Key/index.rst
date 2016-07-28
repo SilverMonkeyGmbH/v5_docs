@@ -1,45 +1,50 @@
-KB00004 - SIM data base restore
+KB00012_Activate and Update-License-Key
 =========================================
 
-1. SCCM System für feste WMI Ports vorbereiten
+
+.. contents:: `In this article:`
+    :depth: 2
+    :local:
 
 .. contents:: Content
   :depth: 1
-  Prepare SCCM system for fixed WMI ports
-  Set Dynamic Port Allocation
-  Set port for Endpoint
-  Change WMI mode
-  Restart
-  Test script
+  Activate or update the activation key via the user interface
+  Activate or update the activation key in the configuration.xml
 
-1.1. Dynamic Port Allocation festlegen
-http://support.microsoft.com/kb/154596/en-us
-  .. image:: _static/image001.jpg
+Activate or update the activation key via the user interface
+--------------------------------------------------------------
 
-See :download:`Download Script <_static/RPC Ports.reg>`.
- 
-1.2. Port für Endpoint festlegen
-Starten DCOMCNFG.EXE
 
-  
+Silver Monkey Administrator rights are required to activate or update the license key via the user interface. If the "Settings"-Tab is visible, you got the required rights:
 
- 
 
-1.3. WMI Modus umstellen
-http://msdn.microsoft.com/en-us/library/bb219447(v=VS.85).aspx
 
-To set up a fixed port for WMI
-1.	At the command prompt, type winmgmt -standalonehost
-2.	Stop the WMI service by typing the command net stop "Windows Management Instrumentation"
-3.	Restart the WMI service again in a new service host by typing net start "Windows Management Instrumentation"
-4.	4. Establish a new port number for the WMI service by typing netsh firewall add portopening TCP 24158 WMIFixedPort
+  .. image:: _static/Activation_Key_Screenshot1.png
 
-1.4. Neustart
-Bitte ein Neustart des Systems durchführen
-1.5. Testscript 
-Im Script IP/Benutzer/Passwort eintragen
+In the settings, fill in the 'Activation code'-field with the license key that is part of the License Certificate.
 
-.. tip:: 
-    Es kann sein, dass ein DNS Name des Servers nicht funktioniert, weil bestimmte Kerberos Ports (z.B. Port 88) gesperrt sind. In diesem Fall bitte nur die IP Adresse des Zielsystems verwenden.
+   .. image:: _static/Activation_Key_Screenshot2.png
 
-Zu erwartender Rückgabewert (Es muss die Domain ausgegeben werden):
+After that click the 'Save'-button.
+
+.. warning:: The new license key not be activated until you: 
+  * Restart the IIS Service 
+  * Restart the Silver Monkey Web Application Server  
+
+Activate or update the activation key in the configuration.xml
+---------------------------------------------------------------
+
+If you have no direct access to the settings in the user interface, set the activation key in the configuration.xml:
+
+.. warning:: Before changing the Configuration.xml please create a safety-copy!
+
+The configuration.xml is located in the web application server in the following directory:
+C:\inetpub\wwwroot\SIM_R***\App_Data
+
+Fill in the field "<activationCode>" with the license key:
+
+   .. image:: _static/Activation_Key_Screenshot3.png
+
+.. warning:: The new license key not be activated until you: 
+  * Restart the IIS Service 
+  * Restart the Silver Monkey Web Application Server  
