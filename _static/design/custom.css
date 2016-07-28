@@ -54,15 +54,15 @@ h1, h2, h3, h4, h5, h6, legend {
 }
 
 h2 {
-  color: #222222;
+  color: #304a57;
 }
 
 a {
-  color: #2b59a9;
+  color: #417590;
 }
 
 p {
-  color: #505050;
+  color: #728d9b;
 }
 
 .hr {
@@ -117,7 +117,7 @@ a, a:link, a:visited { color: #2b59a9; }
 {
     text-indent: -9999px;
     width: 100%;
-    background: url('silver-monkey-logo-quer_grau_158x30.png') 1em no-repeat;
+    background: url('silver-monkey-logo-quer_weiss_158x30.png') 1em no-repeat;
     padding: 7px 23px 7px 10px;
 }
 
