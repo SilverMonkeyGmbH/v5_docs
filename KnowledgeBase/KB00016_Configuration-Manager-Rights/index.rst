@@ -13,7 +13,10 @@ ConfigMgr WMI API
 
 Import a role via the following xml File.
 
-See :download:`Dowload XML  </_static/_static/ConfigurationMgr_Rights_screenshot01.png>`.
+See :download:`Dowload XML  </_static/ConfigurationMgr_Rights_screenshot01.png>`.
+
+See :download:`Download Script </_static/Install.cmd>`.
+
 
   .. image:: _static/ConfigurationMgr_Rights_screenshot01.png
 
