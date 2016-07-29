@@ -86,6 +86,8 @@ After that navigate to the SQL Server Services and restart the 'SQL Server ([Dat
 
   .. image:: _static/SQLServerInstallation_09.png
 
+  See: :doc:`/KnowledgeBase/KB00020_SIM-SQL_DB-Rights/index` to see how to create the Silver Monkey service account necessary for the DB connection. 
+
 Website Files
 ----------------------------
 Copy the basic configuration of the website to the specified path on the web application server:
