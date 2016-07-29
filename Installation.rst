@@ -67,6 +67,7 @@ Select the 'mixed mode'-Authentication and add your SQL service account as SQL S
 
 You have completed the setup!
 
+
 SQL Server TCP/IP configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -86,12 +87,14 @@ After that navigate to the SQL Server Services and restart the 'SQL Server ([Dat
 
   .. image:: _static/SQLServerInstallation_09.png
 
+
 SIM SQL DB Service Account
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-  Visit: :doc:`/KnowledgeBase/KB00020_SIM-SQL_DB-Rights/index` to see how to create the Silver Monkey service account necessary for the DB connection. 
+Visit: :doc:`/KnowledgeBase/KB00020_SIM-SQL_DB-Rights/index` to see how to create the Silver Monkey service account necessary for the DB connection. 
 
-  You finished the basic SQL Server installation for Silver Monkey.
+You finished the basic SQL Server installation for Silver Monkey.
+
 
 Website Files
 ----------------------------
@@ -165,6 +168,14 @@ Click the 'Save'-button, click the 'Check database (save before)'-button.
 The following Pop-Up shows the test result. If the test was not successfull, please check if the specified account has the correct user rights.
 
 Set up ConfigMgr connection
----------------------------- 
+----------------------------
+Silver Monkey Administrator rights are required to activate or update the license key via the user interface. If the "Settings"-Tab is visible, you got the required rights:
 
-:doc:`/KnowledgeBase/KB00002_WebService-Test-Tool/index`
+  .. image:: _static/Activation_Key_Screenshot1.png
+
+Expand the 'Sites' entry on the left side and choose 'New site':
+
+  .. image:: _static/Set_ConfigMgr_Connection_Screenshot01.png
+
+
+
