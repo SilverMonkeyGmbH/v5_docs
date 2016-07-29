@@ -75,7 +75,7 @@ version = '1.0.0'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
-exclude_patterns = ['_build','sample/*','samples/*']
+#exclude_patterns = ['_build','sample/*','samples/*']
 
 # The reST default role (used for this markup: `text`) to use for all
 # documents.
@@ -124,10 +124,10 @@ html_context = {
     'on_rtd' : on_rtd
 }
 
-if not on_rtd:
-    import sphinx_rtd_theme
-    html_theme = 'sphinx_rtd_theme'
-    html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+#if not on_rtd:
+#    import sphinx_rtd_theme
+#    html_theme = 'sphinx_rtd_theme'
+#    html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 #else:
 #    extensions.append('yasfb')
 #    feed_num_items = 15
@@ -226,8 +226,8 @@ htmlhelp_basename = 'simv5doc'
 
 # -- Options for LaTeX output ---------------------------------------------
 
-latex_elements = {
-# The paper size ('letterpaper' or 'a4paper').
+#latex_elements = {
+## The paper size ('letterpaper' or 'a4paper').
 #'papersize': 'letterpaper',
 
 # The font size ('10pt', '11pt' or '12pt').
@@ -235,7 +235,7 @@ latex_elements = {
 
 # Additional stuff for the LaTeX preamble.
 #'preamble': '',
-}
+#}
 
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title,
@@ -305,10 +305,10 @@ latex_elements = {
 # -- Options for Epub output ----------------------------------------------
 
 # Bibliographic Dublin Core info.
-epub_title = project
-epub_author = author
-epub_publisher = author
-epub_copyright = copyright
+#epub_title = project
+#epub_author = author
+#epub_publisher = author
+#epub_copyright = copyright
 
 # The basename for the epub file. It defaults to the project name.
 #epub_basename = project
@@ -348,7 +348,7 @@ epub_copyright = copyright
 #epub_post_files = []
 
 # A list of files that should not be packed into the epub file.
-epub_exclude_files = ['search.html']
+#epub_exclude_files = ['search.html']
 
 # The depth of the table of contents in toc.ncx.
 #epub_tocdepth = 3
