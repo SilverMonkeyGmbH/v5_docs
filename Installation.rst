@@ -149,12 +149,12 @@ Basic Configuration
 ---------------------------- 
 
 Licence
----------------------------- 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Your Licence is part of the license certificate. Your can find an Information on this topic here:
 :doc:`/KnowledgeBase/KB00012_Activate-and-Update-License-Key/index`
 
 Set up data base connection
----------------------------- 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Silver Monkey Administrator rights are required to set or update the SQL Server Connection via the user interface. If the "Settings"-Tab is visible, you got the required rights:
 
   .. image:: _static/Activation_Key_Screenshot1.png
@@ -168,7 +168,7 @@ Click the 'Save'-button, click the 'Check database (save before)'-button.
 The following Pop-Up shows the test result. If the test was not successfull, please check if the specified account has the correct user rights.
 
 Set up ConfigMgr connection
-----------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Silver Monkey Administrator rights are required to set or update the Configuration Manager Connection. If the "Settings"-Tab is visible, you got the required rights:
 
   .. image:: _static/Activation_Key_Screenshot1.png
