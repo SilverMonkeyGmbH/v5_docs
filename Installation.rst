@@ -155,7 +155,7 @@ Your Licence is part of the license certificate. Your can find an Information on
 
 Set up data base connection
 ---------------------------- 
-Silver Monkey Administrator rights are required to activate or update the license key via the user interface. If the "Settings"-Tab is visible, you got the required rights:
+Silver Monkey Administrator rights are required to set or update the SQL Server Connection via the user interface. If the "Settings"-Tab is visible, you got the required rights:
 
   .. image:: _static/Activation_Key_Screenshot1.png
 
@@ -169,7 +169,7 @@ The following Pop-Up shows the test result. If the test was not successfull, ple
 
 Set up ConfigMgr connection
 ----------------------------
-Silver Monkey Administrator rights are required to activate or update the license key via the user interface. If the "Settings"-Tab is visible, you got the required rights:
+Silver Monkey Administrator rights are required to set or update the Configuration Manager Connection. If the "Settings"-Tab is visible, you got the required rights:
 
   .. image:: _static/Activation_Key_Screenshot1.png
 
@@ -177,5 +177,9 @@ Expand the 'Sites' entry on the left side and choose 'New site':
 
   .. image:: _static/Set_ConfigMgr_Connection_Screenshot01.png
 
+Fill in the red-lined fields as seen below.
 
+  .. image:: _static/Set_ConfigMgr_Connection_Screenshot02.png
 
+  
+Visit: :doc:`/KnowledgeBase/KB00016_Configuration-Manager-Rights/index` to see which rights are required for the SCCM Service account and the SCCM SQL Service account. 
