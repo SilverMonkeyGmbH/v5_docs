@@ -181,5 +181,9 @@ Fill in the red-lined fields as seen below.
 
   .. image:: _static/Set_ConfigMgr_Connection_Screenshot02.png
 
-  
-Visit: :doc:`/KnowledgeBase/KB00016_Configuration-Manager-Rights/index` to see which rights are required for the SCCM Service account and the SCCM SQL Service account. 
+
+Visit: :doc:`/KnowledgeBase/KB00016_Configuration-Manager-Rights/index` to see which rights are required for the SCCM Service account and the SCCM SQL Service account.
+
+Click the 'Create'-button.
+
+.. note:: The rest of the fields will be filled in in the configuration step of the implementation.
