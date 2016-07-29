@@ -13,7 +13,9 @@ ConfigMgr WMI API
 
 Import a role via the following xml File:
 
-See :download:`SCCM-Sec-Role_SilverMonkey.xml  <\_static\SCCM-Sec-Role_SilverMonkey.xml>`.
+See :download:`SCCM-Sec-Role_SilverMonkey.xml  </_static/SCCM-Sec-Role_SilverMonkey.xml>`.
+
+See :download:`Download XML </_static/SCCM-Sec-Role_SilverMonkey.xml>`.
 
   .. image:: _static/ConfigurationMgr_Rights_screenshot01.png
 
