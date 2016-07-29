@@ -336,4 +336,13 @@ a.common-btn, a.btn-install { color: #fff;}
 .helpful-text {text-align:right;margin:10px 0;}
 /* helpfulness.css overrides - end */
 
-.wy-alert-title, 
+.wy-menu-vertical li.on a, .wy-menu-vertical li.current>a {
+
+    padding: 0.4045em 1.27em !Important;
+
+}
+
+.wy-menu-vertical li.toctree-l2.current>a {
+
+    padding: 0.4045em 2.05em!Important;
+}
