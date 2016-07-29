@@ -155,6 +155,7 @@ Fill in the fields in the Database Settings:
 
 Click the 'Save'-button, click the 'Check database (save before)'-button.
 
+The following Pop-Up shows the test result. If the test was not successfull, please check if the specified account has the correct user rights.
 
 Set up ConfigMgr connection
 ---------------------------- 
