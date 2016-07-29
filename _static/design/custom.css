@@ -99,7 +99,7 @@ a, a:link, a:visited { color: #304a57; }
   width: 100%;
   border-radius: 0;
   padding: 6px 12px;
-  /*border-color: #231f20;*/
+  border-color: nothing;
   font-family: HelveticaNeueLT-Roman, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
   color: #ffffff;
