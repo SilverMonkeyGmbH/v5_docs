@@ -69,7 +69,7 @@ p {
   border-top: 1px solid #dddddd;
 }
 
-a, a:link, a:visited { color: #2b59a9; }
+a, a:link, a:visited { color: #304a57; }
 
 .wy-nav-top {
   background: #5c625a;
@@ -86,12 +86,12 @@ a, a:link, a:visited { color: #2b59a9; }
 }
 
 .wy-nav-side {
-    background: #5c625a;
+    background: #697c83;
     overflow-y: auto;
 }
 
 .wy-side-nav-search {
-    background: #231f20;
+    background: #ffffff;
     padding: 1em;
 }
 
@@ -117,7 +117,7 @@ a, a:link, a:visited { color: #2b59a9; }
 {
     text-indent: -9999px;
     width: 100%;
-    background: url('silver-monkey-logo-quer_weiss_158x30.png') 1em no-repeat;
+    background: url('silver-monkey-logo-quer_grau_158x30.png') 1em no-repeat;
     padding: 7px 23px 7px 10px;
 }
 
