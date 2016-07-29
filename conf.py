@@ -138,6 +138,8 @@ html_context = {
 
 def setup(app):
     app.add_stylesheet('custom.css?v=6')
+    app.add_stylesheet('//fonts.googleapis.com/css?family=Roboto:300,400,700')
+    
     #app.add_javascript('helpfulness.js?v=6')
     #app.add_javascript('disqus.js?v=6')
     #if on_rtd:

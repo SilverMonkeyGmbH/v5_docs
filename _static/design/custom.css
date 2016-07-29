@@ -41,7 +41,9 @@ b,
 }*/
 
 body {
-    font-family: HelveticaNeueLT-Roman, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /*font-family: HelveticaNeueLT-Roman, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    font: 16px/1.5625 Roboto, sans-serif;
+
     color: #505050;
     font-size: 16px;
     line-height: 1.4em;
@@ -49,8 +51,11 @@ body {
 
 h1, h2, h3, h4, h5, h6, legend {
     margin-top: 0;
-    font-family: HelveticaNeueLT-UltraLight_Big, HelveticaNeueLT-Thin, HelveticaNeueLT-Roman, "HelveticaNeue-Thin", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif;
+    /*font-family: HelveticaNeueLT-UltraLight_Big, HelveticaNeueLT-Thin, HelveticaNeueLT-Roman, "HelveticaNeue-Thin", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif;*/
+    font-family: Roboto, sans-serif;
 	line-height: 1.4em;
+    font-weight: 100;
+
 }
 
 h2 {
@@ -69,7 +74,7 @@ p {
   border-top: 1px solid #505050;
 }
 
-a, a:link, a:visited { color: #df930a; }
+a, a:link, a:visited { color: #417590; }
 
 .wy-nav-top {
   background: #b8bdb5;
@@ -78,7 +83,7 @@ a, a:link, a:visited { color: #df930a; }
 .wy-nav-top > a,
 .wy-nav-top > a:link,
 .wy-nav-top > a.visited {
-  color: #ffffff;
+  color: #3e433c;
 }
 
 .wy-nav-content-wrap, .wy-nav-content {
@@ -86,7 +91,7 @@ a, a:link, a:visited { color: #df930a; }
 }
 
 .wy-nav-side {
-    background: #b8bdb5;
+    background: #f1f1ef;
     overflow-y: auto;
 }
 
@@ -100,7 +105,8 @@ a, a:link, a:visited { color: #df930a; }
   border-radius: 0;
   padding: 6px 12px;
   border-color: #c7c9c0;
-  font-family: HelveticaNeueLT-Roman, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /*font-family: HelveticaNeueLT-Roman, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+  font-family: Roboto, sans-serif;
   font-size: 12px;
   color: #979e93;
   background-color: #ffffff;
@@ -127,6 +133,11 @@ a, a:link, a:visited { color: #df930a; }
 
 .wy-side-nav-search > a:before {
     content: "";
+}
+
+.wy-menu-vertical * {
+
+    border:0px!Important;
 }
 
 .wy-menu-vertical a {
@@ -185,12 +196,14 @@ a, a:link, a:visited { color: #df930a; }
 }
 
 .rst-content {
-    font-family: HelveticaNeueLT-Roman, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif
+    /*font-family: HelveticaNeueLT-Roman, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    font: 16px/1.5625 Roboto, sans-serif;
 }
 
 .rst-content.admonition-title {
     font-weight: normal;
-    font-family: HelveticaNeueLT-Medium, HelveticaNeueLT-Roman, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /*font-family: HelveticaNeueLT-Medium, HelveticaNeueLT-Roman, "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    font-family: Roboto, sans-serif;
     color: #ffffff;
 }
 
@@ -208,14 +221,15 @@ a, a:link, a:visited { color: #df930a; }
 }
 
 .rst-content .note .last {
-    font-family: HelveticaNeueLT-Roman, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /*font-family: HelveticaNeueLT-Roman, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    font-family: Roboto, sans-serif;
 }
 
 .rst-content .toctree-wrapper ul li a,
 .rst-content .toctree-wrapper ul li a:hover,
 .rst-content .toctree-wrapper ul li a:visited
 {
-    color: #b8bdb5;
+    color: #417590;
 }
 
 .rst-content .toctree-wrapper ul li a:hover,
@@ -236,12 +250,12 @@ a, a:link, a:visited { color: #df930a; }
     border-radius: 0;
     border: none;
     box-shadow: none;
-    font-family: HelveticaNeueLT-Roman, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /*font-family: HelveticaNeueLT-Roman, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
 }
 
 .btn-neutral {
   color: #ffffff !important;
-  font-family: HelveticaNeueLT-Medium, HelveticaNeueLT-Roman, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /*font-family: HelveticaNeueLT-Medium, HelveticaNeueLT-Roman, "Helvetica Neue", Helvetica, Arial, sans-serif;*/
 }
 
 .btn-neutral,
@@ -311,3 +325,4 @@ a.common-btn, a.btn-install { color: #fff;}
 .helpful-text {text-align:right;margin:10px 0;}
 /* helpfulness.css overrides - end */
 
+.wy-alert-title, 
