@@ -1,7 +1,7 @@
 
 
 
-    @font-face {font-family: 'HelveticaNeueLT-Medium';src: url('Fonts/2D63AC_0_0.eot');src: url('Fonts/2D63AC_0_0.eot?#iefix') format('embedded-opentype'),url('Fonts/2D63AC_0_0.woff2') format('woff2'),url('Fonts/2D63AC_0_0.woff') format('woff'),url('Fonts/2D63AC_0_0.ttf') format('truetype');}
+ /*   @font-face {font-family: 'HelveticaNeueLT-Medium';src: url('Fonts/2D63AC_0_0.eot');src: url('Fonts/2D63AC_0_0.eot?#iefix') format('embedded-opentype'),url('Fonts/2D63AC_0_0.woff2') format('woff2'),url('Fonts/2D63AC_0_0.woff') format('woff'),url('Fonts/2D63AC_0_0.ttf') format('truetype');}
 
     @font-face {font-family: 'HelveticaNeueLT-Light';src: url('Fonts/2D63AC_1_0.eot');src: url('Fonts/2D63AC_1_0.eot?#iefix') format('embedded-opentype'),url('Fonts/2D63AC_1_0.woff2') format('woff2'),url('Fonts/2D63AC_1_0.woff') format('woff'),url('Fonts/2D63AC_1_0.ttf') format('truetype');}
 
@@ -19,7 +19,7 @@
 
     @font-face {font-family: 'HelveticaNeueLT-Light_Big';src: url('FontsNoHinting/2D63AB_1_0.eot');src: url('FontsNoHinting/2D63AB_1_0.eot?#iefix') format('embedded-opentype'),url('FontsNoHinting/2D63AB_1_0.woff2') format('woff2'),url('FontsNoHinting/2D63AB_1_0.woff') format('woff'),url('FontsNoHinting/2D63AB_1_0.ttf') format('truetype');}
 
-    @font-face {font-family: 'HelveticaNeueLT-Roman_Big';src: url('FontsNoHinting/2D63AB_4_0.eot');src: url('FontsNoHinting/2D63AB_4_0.eot?#iefix') format('embedded-opentype'),url('FontsNoHinting/2D63AB_4_0.woff2') format('woff2'),url('FontsNoHinting/2D63AB_4_0.woff') format('woff'),url('FontsNoHinting/2D63AB_4_0.ttf') format('truetype');}
+    @font-face {font-family: 'HelveticaNeueLT-Roman_Big';src: url('FontsNoHinting/2D63AB_4_0.eot');src: url('FontsNoHinting/2D63AB_4_0.eot?#iefix') format('embedded-opentype'),url('FontsNoHinting/2D63AB_4_0.woff2') format('woff2'),url('FontsNoHinting/2D63AB_4_0.woff') format('woff'),url('FontsNoHinting/2D63AB_4_0.ttf') format('truetype');}*/
 
 
 /*.light {
@@ -123,8 +123,9 @@ a, a:link, a:visited { color: #417590; }
 {
     text-indent: -9999px;
     width: 100%;
-    background: url('silver-monkey-logo-quer_grau_158x30.png') 1em no-repeat;
+    background: url('http://silvermonkey.net/Logo.svg') no-repeat;
     padding: 7px 23px 7px 10px;
+    background-size: 165px;
 }
 
 .wy-side-nav-search > a:hover {
@@ -158,6 +159,16 @@ a, a:link, a:visited { color: #417590; }
   background: #b8bdb5 !important;
 }
 
+.wy-menu-vertical li, .wy-menu-vertical a {
+
+      background: #f1f1ef !important;
+}
+
+.wy-menu-vertical a:hover {
+background: #cacaca!Important;
+ /*   text-decoration: underline;*/
+}
+
 .wy-menu-vertical li.current a,
 .wy-menu-vertical li.toctree-l2.current>a,
 .wy-menu-vertical li.toctree-l2.current li.toctree-l3>a,
@@ -173,7 +184,7 @@ a, a:link, a:visited { color: #417590; }
 .wy-menu-vertical li.toctree-l4.current>a.current
  {
   color: #3e433c !important;
-  background: #b8bdb5 !important;
+  background: #b8bdb5;
 }
 
 .wy-menu-vertical li span.toctree-expand {
