@@ -41,7 +41,9 @@ b,
 }*/
 
 body {
-    font-family: HelveticaNeueLT-Roman, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /*font-family: HelveticaNeueLT-Roman, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    font: 16px/1.5625 Roboto, sans-serif;
+
     color: #505050;
     font-size: 16px;
     line-height: 1.4em;
