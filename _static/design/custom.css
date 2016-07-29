@@ -160,7 +160,12 @@ a, a:link, a:visited { color: #417590; }
 
 .wy-menu-vertical li, .wy-menu-vertical a {
 
-      background: #b8bdb5 !important;
+      background: #f1f1ef !important;
+}
+
+.wy-menu-vertical a:hover {
+
+    text-decoration: underline;
 }
 
 .wy-menu-vertical li.current a,
