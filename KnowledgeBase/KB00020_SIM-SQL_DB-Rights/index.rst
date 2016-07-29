@@ -1,4 +1,4 @@
-KB00016 - Configuration Manager Rights
+KB00020 SIM SQL Database Rights
 =========================================
 
 
@@ -7,23 +7,18 @@ KB00016 - Configuration Manager Rights
     :local:
 
 
-ConfigMgr WMI API
+Creating the SIM Service Account
 --------------------------------------------------------------
 
+Open the SQL Management Studio and connect to your Silver Monkey SQL DB Server. 
+Expand 'Security' and right click 'Login' to create a new login.   
 
-Import a role via the following xml File (zipped).
+  .. image:: _static/Set_SQL_Service_Account_Screenshot01.png
 
-See :download:`Dowload XML  <_static/SCCM-Sec-Role_SilverMonkey.zip>`.
+   Choose a name (for example sql-sim)and a password. Set the Authentication to 'SQL Server authentication' also uncheck the 'Enforce password policy'-checkbox.
 
-  .. image:: _static/ConfigurationMgr_Rights_screenshot01.png
+  .. image:: _static/Set_SQL_Service_Account_Screenshot02.png
 
-After this entitle a corresponding user with this role.
+  Navigate to 'User Mapping' choose the SIM SQL DB and activate the db_owner role. After that click 'OK'.
 
-SQL Rights
----------------------------------------------------------------
-
-The following SQL rights have to be set for the Silver Monkey SCCM SQL DB Service Account:
-
- .. image:: _static/ConfigurationMgr_SQL_Rights_screenshot02.png
-
- .. image:: _static/ConfigurationMgr_SQL_Rights_screenshot03.png
+    .. image:: _static/Set_SQL_Service_Account_Screenshot03.png
