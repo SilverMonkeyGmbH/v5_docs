@@ -69,7 +69,7 @@ p {
   border-top: 1px solid #505050;
 }
 
-a, a:link, a:visited { color: #df930a; }
+a, a:link, a:visited { color: #417590; }
 
 .wy-nav-top {
   background: #b8bdb5;
@@ -78,7 +78,7 @@ a, a:link, a:visited { color: #df930a; }
 .wy-nav-top > a,
 .wy-nav-top > a:link,
 .wy-nav-top > a.visited {
-  color: #ffffff;
+  color: #3e433c;
 }
 
 .wy-nav-content-wrap, .wy-nav-content {
@@ -86,7 +86,7 @@ a, a:link, a:visited { color: #df930a; }
 }
 
 .wy-nav-side {
-    background: #b8bdb5;
+    background: #f1f1ef;
     overflow-y: auto;
 }
 
