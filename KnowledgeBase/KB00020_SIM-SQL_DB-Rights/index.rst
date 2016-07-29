@@ -1,4 +1,4 @@
-KB00020 SIM SQL Database Rights
+KB00020 - SIM SQL Database Rights
 =========================================
 
 
@@ -22,3 +22,5 @@ Expand 'Security' and right click 'Login' to create a new login.
   Navigate to 'User Mapping' choose the SIM SQL DB and activate the db_owner role. After that click 'OK'.
 
     .. image:: _static/Set_SQL_Service_Account_Screenshot03.png
+
+    You successfully create the SIM Service Account!
