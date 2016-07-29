@@ -54,7 +54,7 @@ h1, h2, h3, h4, h5, h6, legend {
     /*font-family: HelveticaNeueLT-UltraLight_Big, HelveticaNeueLT-Thin, HelveticaNeueLT-Roman, "HelveticaNeue-Thin", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif;*/
     font-family: Roboto, sans-serif;
 	line-height: 1.4em;
-    font-weight: 100;
+    font-weight: 100!Important;
 
 }
 
@@ -156,7 +156,7 @@ a, a:link, a:visited { color: #417590; }
 .wy-menu-vertical li.toctree-l3.current>a:hover,
 .wy-menu-vertical li.toctree-l4>a:hover,
 .wy-menu-vertical li.toctree-l4.current>a:hover {
-  background: #b8bdb5 !important;
+  background: #cacaca !important;
 }
 
 .wy-menu-vertical li, .wy-menu-vertical a {
