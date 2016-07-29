@@ -156,7 +156,6 @@ Fill in the fields in the Database Settings:
 Click the 'Save'-button, click the 'Check database (save before)'-button.
 
 
-
 Set up ConfigMgr connection
 ---------------------------- 
 
