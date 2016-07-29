@@ -49,27 +49,27 @@ body {
 
 h1, h2, h3, h4, h5, h6, legend {
     margin-top: 0;
-    font-family: HelveticaNeueLT-Light, HelveticaNeueLT-Thin, HelveticaNeueLT-Roman, "HelveticaNeue-Thin", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif;
+    font-family: HelveticaNeueLT-UltraLight_Big, HelveticaNeueLT-Thin, HelveticaNeueLT-Roman, "HelveticaNeue-Thin", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif;
 	line-height: 1.4em;
 }
 
 h2 {
-  color: #b8bdb5;
+  color: #505050;
 }
 
 a {
-  color: #417590;
+  color: #505050;
 }
 
 p {
-  color: #728d9b;
+  color: #505050;
 }
 
 .hr {
-  border-top: 1px solid #dddddd;
+  border-top: 1px solid #505050;
 }
 
-a, a:link, a:visited { color: #b8bdb5; }
+a, a:link, a:visited { color: #df930a; }
 
 .wy-nav-top {
   background: #b8bdb5;
