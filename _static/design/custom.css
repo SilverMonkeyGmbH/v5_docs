@@ -123,8 +123,9 @@ a, a:link, a:visited { color: #417590; }
 {
     text-indent: -9999px;
     width: 100%;
-    background: url('silver-monkey-logo-quer_grau_158x30.png') 1em no-repeat;
+    background: url('http://silvermonkey.net/Logo.svg') no-repeat;
     padding: 7px 23px 7px 10px;
+    background-size: 165px;
 }
 
 .wy-side-nav-search > a:hover {
@@ -164,8 +165,8 @@ a, a:link, a:visited { color: #417590; }
 }
 
 .wy-menu-vertical a:hover {
-
-    text-decoration: underline;
+background: #cacaca!Important;
+ /*   text-decoration: underline;*/
 }
 
 .wy-menu-vertical li.current a,
