@@ -89,7 +89,7 @@ After that navigate to the SQL Server Services and restart the 'SQL Server ([Dat
 SIM SQL DB Service Account
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-  See: :doc:`/KnowledgeBase/KB00020_SIM-SQL_DB-Rights/index` to see how to create the Silver Monkey service account necessary for the DB connection. 
+  Visit: :doc:`/KnowledgeBase/KB00020_SIM-SQL_DB-Rights/index` to see how to create the Silver Monkey service account necessary for the DB connection. 
 
   You finished the basic SQL Server installation for Silver Monkey.
 
