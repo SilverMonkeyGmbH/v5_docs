@@ -1,0 +1,19 @@
+<SMS_Roles>
+  <SMS_Role CopiedFromID="SMS0001R" RoleName="_ISNET_Treon" RoleDescription="Produktiver und Entwicklungsbereich für Treon Module.">
+    <Operations>
+      <Operation GrantedOperations="150109831" ObjectTypeID="1" />
+      <Operation GrantedOperations="805446679" ObjectTypeID="2" />
+      <Operation GrantedOperations="805307397" ObjectTypeID="4" />
+      <Operation GrantedOperations="524289" ObjectTypeID="6" />
+      <Operation GrantedOperations="140295" ObjectTypeID="7" />
+      <Operation GrantedOperations="806495239" ObjectTypeID="20" />
+      <Operation GrantedOperations="268435457" ObjectTypeID="28" />
+      <Operation GrantedOperations="805448727" ObjectTypeID="31" />
+      <Operation GrantedOperations="1031" ObjectTypeID="32" />
+      <Operation GrantedOperations="805307399" ObjectTypeID="33" />
+      <Operation GrantedOperations="9" ObjectTypeID="42" />
+      <Operation GrantedOperations="1048585" ObjectTypeID="43" />
+      <Operation GrantedOperations="805307399" ObjectTypeID="44" />
+    </Operations>
+  </SMS_Role>
+</SMS_Roles>
