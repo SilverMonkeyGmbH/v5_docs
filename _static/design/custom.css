@@ -187,7 +187,8 @@ a, a:link, a:visited { color: #417590; }
 }
 
 .rst-content {
-    font-family: HelveticaNeueLT-Roman, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif
+    /*font-family: HelveticaNeueLT-Roman, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    font: 16px/1.5625 Roboto, sans-serif;
 }
 
 .rst-content.admonition-title {
@@ -217,7 +218,7 @@ a, a:link, a:visited { color: #417590; }
 .rst-content .toctree-wrapper ul li a:hover,
 .rst-content .toctree-wrapper ul li a:visited
 {
-    color: #b8bdb5;
+    color: #417590;
 }
 
 .rst-content .toctree-wrapper ul li a:hover,
