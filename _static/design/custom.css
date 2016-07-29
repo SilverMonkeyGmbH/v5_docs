@@ -54,6 +54,8 @@ h1, h2, h3, h4, h5, h6, legend {
     /*font-family: HelveticaNeueLT-UltraLight_Big, HelveticaNeueLT-Thin, HelveticaNeueLT-Roman, "HelveticaNeue-Thin", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif;*/
     font-family: Roboto, sans-serif;
 	line-height: 1.4em;
+    font-weight: 100;
+
 }
 
 h2 {
@@ -133,6 +135,11 @@ a, a:link, a:visited { color: #417590; }
     content: "";
 }
 
+.wy-menu-vertical * {
+
+    border:0px!Important;
+}
+
 .wy-menu-vertical a {
   /*background: #5c625a;*/
   color: #3e433c;
@@ -196,6 +203,7 @@ a, a:link, a:visited { color: #417590; }
 .rst-content.admonition-title {
     font-weight: normal;
     /*font-family: HelveticaNeueLT-Medium, HelveticaNeueLT-Roman, "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    font-family: Roboto, sans-serif;
     color: #ffffff;
 }
 
@@ -317,3 +325,4 @@ a.common-btn, a.btn-install { color: #fff;}
 .helpful-text {text-align:right;margin:10px 0;}
 /* helpfulness.css overrides - end */
 
+.wy-alert-title, 
