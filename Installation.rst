@@ -145,6 +145,15 @@ Your Licence is part of the license certificate. Your can find an Information on
 
 Set up data base connection
 ---------------------------- 
+Silver Monkey Administrator rights are required to activate or update the license key via the user interface. If the "Settings"-Tab is visible, you got the required rights:
+
+  .. image:: _static/Activation_Key_Screenshot1.png
+
+Fill in the fields in the Database Settings: 
+
+  .. image:: _static/SQLServerConnection_01.png
+
+Click the 'Save'-button, click the 'Check database (save before)'-button.
 
 
 
