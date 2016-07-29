@@ -72,7 +72,7 @@ p {
 a, a:link, a:visited { color: #b8bdb5; }
 
 .wy-nav-top {
-  background: #969c92;
+  background: #b8bdb5;
 }
 
 .wy-nav-top > a,
@@ -86,7 +86,7 @@ a, a:link, a:visited { color: #b8bdb5; }
 }
 
 .wy-nav-side {
-    background: #969c92;
+    background: #b8bdb5;
     overflow-y: auto;
 }
 
@@ -161,7 +161,7 @@ a, a:link, a:visited { color: #b8bdb5; }
 .wy-menu-vertical li.toctree-l3.current>a.current,
 .wy-menu-vertical li.toctree-l4.current>a.current
  {
-  color: #ffffff !important;
+  color: #3e433c !important;
   background: #b8bdb5 !important;
 }
 
