@@ -1,4 +1,4 @@
-KB00005 - Reset SIM Packaging Jobs
+KB00006 - Establishing SCCM FolderID
 =========================================
 
 .. contents:: *In this article:*
@@ -6,25 +6,22 @@ KB00005 - Reset SIM Packaging Jobs
   :depth: 1
 
 *************************************
-Reset Silver Monkey Packaging Jobs
+Establishing the SCCM FolderID
 *************************************
 
-1. Erase Table of Packaging jobs 
+1. Configurating Script
 +++++++++++++++++++++++++++++++
+:download:`Get SCCM FolderID - Script <_static/GetSCCMFolderID.zip>`.
 
-
-.. image:: _static/image001.png
-
-.. image:: _static/image002.png
+A filled in form should be displayed similar to the image below:
 
 .. image:: _static/image003.png
 
 
-2. Reset Identity
+2. Starting script
 ++++++++++++++++++++++
-The following command has to be executed in order to make the database start the new packaging jobs with the ID number 1.
-"DBCC CHECKIDENT('PackagingJob', RESEED, 0)"
-
-.. image:: _static/image004.png
+Open cmd.exe and read out the ID as shown in the red box below.
 
 .. image:: _static/image005.png
+
+.. image:: _static/image007.png

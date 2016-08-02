@@ -1,4 +1,4 @@
-KB00005 - Reset SIM Packaging Jobs
+KB00005 - Resetting SIM Packaging Jobs
 =========================================
 
 .. contents:: *In this article:*
@@ -6,11 +6,11 @@ KB00005 - Reset SIM Packaging Jobs
   :depth: 1
 
 *************************************
-Reset Silver Monkey Packaging Jobs
+Resetting Silver Monkey Packaging Jobs
 *************************************
 
 1. Erase Table of Packaging jobs 
-+++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++
 
 
 .. image:: _static/image001.png
