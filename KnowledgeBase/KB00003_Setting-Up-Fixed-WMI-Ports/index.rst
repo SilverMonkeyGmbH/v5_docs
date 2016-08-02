@@ -18,7 +18,7 @@ Prepare SCCM System for Fixed WMI Ports
 
 .. image:: _static/image001.jpg
 
-See :download: `Download script to set up port allocation <_static/RPC_Ports.reg>`.
+See :download:`Download script to set up port allocation <_static/RPC_Ports.reg>`.
 
 2. Determine Port for Endpoint
 ++++++++++++++++++++++++++++++++++++++
@@ -43,14 +43,10 @@ Please restart the system.
 ++++++++++++++++++++++++++++++++++++++
 Type in your IP/user/password in the script below.
 
-:download: `Download test script <_static/WMIRemoteTest.vbs>`.
+:download:`Download test script <_static/WMIRemoteTest.vbs>`.
 
 
-
-http://support.microsoft.com/kb/154596/en-us
-  .. image:: _static/image001.jpg
-
-.. note:: Due to eventually blocked Kerberos ports, some DNS name might not wirk. In this case, please use the IP adress of the target system only.
+.. note:: Due to eventually blocked Kerberos ports, some DNS name might not work. In this case, please use the IP adress of the target system only.
 
 Expected return value (the domain name has to be desplayed):
    
