@@ -3,7 +3,7 @@ KB00003 - Setting Up Fixed WMI Ports
 
 
 
-.. contents:: Content
+.. contents:: *In this article:
   :local:
   :depth: 1
 .. comment  wie entferne ich den Punkt vor der jeweiligen Überschrift in der Content Table?
