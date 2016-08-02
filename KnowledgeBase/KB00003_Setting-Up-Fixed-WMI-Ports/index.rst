@@ -16,7 +16,7 @@ Prepare SCCM System for Fixed WMI Ports
 +++++++++++++++++++++++++++++++++++++
 `Please click here in order to access the tutorial on the determination of dynamic port allocation in Windows. <http://support.microsoft.com/kb/154596/en-us>`_
 
-.. image:: _static/image001.jpg
+.. image:: _static/image001.png
 
 :download:`Download this script to set up port allocation <_static/RPC_Ports.reg>`.
 
@@ -24,9 +24,9 @@ Prepare SCCM System for Fixed WMI Ports
 ++++++++++++++++++++++++++++++++++++++
 Launch DCOMCNFG.EXE.
 
+.. image:: _static/image002.png
 .. image:: _static/image003.jpg
-.. image:: _static/image004.jpg
-.. image:: _static/image005.png
+.. image:: _static/image004.png
 
 
 3. Change WMI Mode
@@ -49,4 +49,4 @@ Type in your IP/user/password in the script below.
 
 Expected return value (the domain name has to be desplayed):
    
-  .. image:: _static/image007.jpg
+  .. image:: _static/image005.jpg
