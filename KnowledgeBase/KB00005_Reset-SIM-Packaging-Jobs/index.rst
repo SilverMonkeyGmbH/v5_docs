@@ -6,31 +6,25 @@ KB00005 - Reset SIM Packaging Jobs
   :depth: 1
 
 *************************************
-Restore Silver Monkey Database
+Reset Silver Monkey Packaging Jobs
 *************************************
 
-Create a new Database
-++++++++++++++++++++++++
-Connect to your SQL Server via SQL Management Studio, create a new Database:
+1. Erase Table of Packaging jobs 
++++++++++++++++++++++++++++++++
+
 
 .. image:: _static/image001.png
 
-In the following dialogue choose a database name that fits your naming convention. Click the 'OK'-button.
-
 .. image:: _static/image002.png
 
-Then give authorization following the installation guide.
+.. image:: _static/image003.png
 
-Run Script
-++++++++++++++++++++++++
 
-Choose 'new Query': 
-  .. image:: _static/image003.png
+2. Reset Identity
+++++++++++++++++++++++
+The following command has to be executed in order to make the database start the new packaging jobs with the ID number 1.
+.. image:: _static/image004.png
 
-Copy the content of the SQL backup file that is part of the installation package and paste it into the new query window. Replace the database name in the 'USE {DATABASE NAME}' part of the query with the Name of the Database you just created.
+.. Type:: DBCC CHECKIDENT('PackagingJob', RESEED, 0)
 
-  .. image:: _static/image004.png
-
-  After (!) this click the 'Execute' button.
-
-  You have successfully restored the SIM Database!
+.. image:: _static/image005.png

@@ -9,7 +9,7 @@ KB00004 - SIM Database Restore
 Restore Silver Monkey Database
 *************************************
 
-Create a new Database
+1. Create a new Database
 ++++++++++++++++++++++++
 Connect to your SQL Server via SQL Management Studio, create a new Database:
 
@@ -21,16 +21,16 @@ In the following dialogue choose a database name that fits your naming conventio
 
 Then give authorization following the installation guide.
 
-Run Script
+2. Run Script
 ++++++++++++++++++++++++
 
 Choose 'new Query': 
-  .. image:: _static/image003.png
+  .. image:: _static/image003.jpg
 
 Copy the content of the SQL backup file that is part of the installation package and paste it into the new query window. Replace the database name in the 'USE {DATABASE NAME}' part of the query with the Name of the Database you just created.
 
   .. image:: _static/image004.png
 
-  After (!) this click the 'Execute' button.
+After (!) this click the 'Execute' button.
 
-  You have successfully restored the SIM Database!
+You have successfully restored the SIM Database!
