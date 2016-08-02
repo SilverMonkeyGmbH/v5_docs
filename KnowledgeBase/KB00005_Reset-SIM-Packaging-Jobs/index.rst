@@ -23,8 +23,8 @@ Reset Silver Monkey Packaging Jobs
 2. Reset Identity
 ++++++++++++++++++++++
 The following command has to be executed in order to make the database start the new packaging jobs with the ID number 1.
-.. image:: _static/image004.png
+"DBCC CHECKIDENT('PackagingJob', RESEED, 0)"
 
-.. Type:: DBCC CHECKIDENT('PackagingJob', RESEED, 0)
+.. image:: _static/image004.png
 
 .. image:: _static/image005.png
