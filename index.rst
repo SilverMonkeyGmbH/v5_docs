@@ -1,7 +1,7 @@
 Silver Monkey v5 Documentation
 ==============================
 
-.. note:: Documentation is still in development process. Please dont hesitate to use support@silvermonkey.net for further questions.
+.. note:: Documentation is still in development process. Please do not hesitate to contact us on support@silvermonkey.net for further information.
 
 Welcome
 ------------

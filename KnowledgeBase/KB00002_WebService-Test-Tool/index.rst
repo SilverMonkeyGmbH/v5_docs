@@ -1,7 +1,15 @@
 KB00002 - Web Service Test Tool
 =========================================
 
-For testing the Silver Monkey Web Service there is a command line tool which enabled administrators to perform an easy test without knowledge about working with HTTP web service technology.
+.. contents:: *In this article:*
+  :local:
+  :depth: 1
+
+******************************************
+Testing the SIM  Web Service Test Tool
+******************************************
+
+For testing the Silver Monkey Web Service there is a command line tool which enables administrators to perform an easy test without knowledge about working with HTTP web service technology.
 
 1. Download Web Service Test Tool
 ++++++++++++++++++++++++++++++++++++
