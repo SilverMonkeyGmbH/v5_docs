@@ -4,11 +4,11 @@ KB00002 - Web Service Test Tool
 For testing the Silver Monkey Web Service there is a command line tool which enabled administrators to perform an easy test without knowledge about working with HTTP web service technology.
 
 1. Download Web Service Test Tool
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+++++++++++++++++++++++++++++++++++++
 http://www.silvermonkey.net/DL/WebServiceTestCmdLine.zip
 
 2. Extract content
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+++++++++++++++++++++++++++++++++++++
 Extracting the content of the ZIP:
 
 .. image:: _static/Folder1.png
@@ -19,7 +19,7 @@ The sample XML file will create a simple computer with one variable:
 
 
 3. Edit Start.cmd file 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+++++++++++++++++++++++++++++++++++++
 The start.cmd file is meant to be an example how to start the web service test tool.
 
 An example command line would be: 

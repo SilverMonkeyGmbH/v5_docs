@@ -1,4 +1,4 @@
-KB00004 - SIM Database Restore
+KB00005 - Reset SIM Packaging Jobs
 =========================================
 
 .. contents:: *In this article:*

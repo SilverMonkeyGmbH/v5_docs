@@ -18,11 +18,10 @@ Prepare SCCM System for Fixed WMI Ports
 
 .. image:: _static/image001.jpg
 
-:download:`Download script to set up port allocation <_static/RPC_Ports.reg>`.
+:download:`Download this script to set up port allocation <_static/RPC_Ports.reg>`.
 
 2. Determine Port for Endpoint
 ++++++++++++++++++++++++++++++++++++++
-
 Launch DCOMCNFG.EXE.
 
 .. image:: _static/image003.jpg
