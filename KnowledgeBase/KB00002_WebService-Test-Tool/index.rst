@@ -32,4 +32,4 @@ Running the command results in a log file written beside the EXE:
 
 .. literalinclude:: _static/Log.txt
 
-.. tip:: The Parameters /Var1 to /Var5 are optional and are used to replace corresponding {Var1} to {Var5} template variables in the XMLFile
+.. tip:: The Parameters /Var1 to /Var5 are optional and are used to replace corresponding {Var1} to {Var5} template variables in the XMLFile.
