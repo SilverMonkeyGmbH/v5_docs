@@ -1,45 +1,30 @@
 KB00004 - SIM data base restore
 =========================================
 
-1. SCCM System für feste WMI Ports vorbereiten
 
-.. contents:: Content
-  :depth: 1
-  Prepare SCCM system for fixed WMI ports
-  Set Dynamic Port Allocation
-  Set port for Endpoint
-  Change WMI mode
-  Restart
-  Test script
+Silver Monkey database restore
+---------------------------------
 
-1.1. Dynamic Port Allocation festlegen
-http://support.microsoft.com/kb/154596/en-us
-  .. image:: _static/image001.jpg
+Create new Database
+^^^^^^^^^^^^^^^^^^^^^^
+Connect to your SQL Server via SQL Management Studio, create a new Database:
 
-See :download:`Download Script <_static/RPC Ports.reg>`.
- 
-1.2. Port für Endpoint festlegen
-Starten DCOMCNFG.EXE
+  .. image:: _static/Create_new_database_Screenshot01.png
 
-  
+In the following dialogue choose a database name that fits your naming convention. Click the 'OK'-Button.
 
- 
+  .. image:: _static/Create_new_database_Screenshot02.png
 
-1.3. WMI Modus umstellen
-http://msdn.microsoft.com/en-us/library/bb219447(v=VS.85).aspx
+Run Script
+^^^^^^^^^^^^^
 
-To set up a fixed port for WMI
-1.	At the command prompt, type winmgmt -standalonehost
-2.	Stop the WMI service by typing the command net stop "Windows Management Instrumentation"
-3.	Restart the WMI service again in a new service host by typing net start "Windows Management Instrumentation"
-4.	4. Establish a new port number for the WMI service by typing netsh firewall add portopening TCP 24158 WMIFixedPort
+Choose 'new Query': 
+  .. image:: _static/Create_new_database_Screenshot03.png
 
-1.4. Neustart
-Bitte ein Neustart des Systems durchführen
-1.5. Testscript 
-Im Script IP/Benutzer/Passwort eintragen
+Copy the content of the SQL backup file that is part of the installation package and paste it into the new query window. Replace the database name in the 'USE {DATABASE NAME}' part of the query with the Name of the Database you just created.
 
-.. tip:: 
-    Es kann sein, dass ein DNS Name des Servers nicht funktioniert, weil bestimmte Kerberos Ports (z.B. Port 88) gesperrt sind. In diesem Fall bitte nur die IP Adresse des Zielsystems verwenden.
+  .. image:: _static/Create_new_database_Screenshot04.png
 
-Zu erwartender Rückgabewert (Es muss die Domain ausgegeben werden):
+  After (!) this click the 'Execute' button.
+
+  You have successfully created the SIM Database!
