@@ -12,6 +12,7 @@ AdminHowTo: How to Refresh your Computer
 1. Prepare Settings
 +++++++++++++++++++++++++++++++
 The prefix for packages and applications can be determined in the SCCM settings.
+
 .. image:: _static/image001.png
 
 .. Note:: Packages support up to 999 variables. This is the reason for wich "###" is displayed.
