@@ -1,6 +1,7 @@
 KB00013 - Activating and Updaing License Key
 ============================================
 
+.. Note:: This article is under construction!
 
 .. contents:: *In this article:*
     :depth: 2
@@ -26,7 +27,7 @@ In the settings, fill in the 'Activation code'-field with the license key that i
 
 After that click the 'Save'-button.
 
-.. warning:: The new license key not be activated until you restart the IIS Service and Restart the Silver Monkey Web Application Server  
+.. Warning:: The new license key not be activated until you restart the IIS Service and Restart the Silver Monkey Web Application Server  
 
 Activate or Update the Activation Key in the *configuration.xml*
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
