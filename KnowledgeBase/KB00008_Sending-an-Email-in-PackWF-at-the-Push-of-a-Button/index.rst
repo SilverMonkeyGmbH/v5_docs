@@ -16,14 +16,8 @@ XML Format
 
 .. der Code Block funktioniert so nicht... was muss da getan werden?
 
-.. raw:: html
-   <head>
-   <style>
-   p. solid {border: 3px solid black;}
-   </style>
-   </head>
-   <body>
-   <p class="solid"> &lsaquo; sendMail
+.. Tip:: Type:
+   < sendMail
   from="noreply@phatconsulting.de"
   to="{$MAIL>PackageResponsible}"
   subject="Software Packaging: {RequestManufacturerName} {RequestProductName} ({RequestID})"
@@ -36,8 +30,6 @@ XML Format
 			&lt;br /&gt;
 			Mit Freundlichen Gr&#252;&#223;en
 			&lt;br /&gt;
-			Software Packaging Team" /&rsaquo; 
-    </p>
-   </body>
+			Software Packaging Team" />
 
-+ Probe
+# Probe
