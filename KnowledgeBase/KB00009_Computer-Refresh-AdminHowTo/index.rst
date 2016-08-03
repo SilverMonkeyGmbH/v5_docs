@@ -1,6 +1,8 @@
 KB00009 - Computer Refresh - AdminHowTo
 =============================================================
 
+
+
 .. contents:: *In this article:*
   :local:
   :depth: 1
@@ -15,7 +17,8 @@ The prefix for packages and applications can be determined in the SCCM settings.
 
 .. image:: _static/image001.png
 
-.. Note:: Packages support up to 999 variables. This is the reason why "###" is displayed. Applications usually support up to 99 variables. This is why "##" is displayed in the coresponding field.
+.. Note:: Packages support up to 999 variables. This is the reason why "###" is displayed. 
+		| Applications usually support up to 99 variables. This is why "##" is displayed in the coresponding field.
 
 2. Computer Refresh - Examples
 +++++++++++++++++++++++++++++++

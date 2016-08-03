@@ -12,11 +12,11 @@ Adjustment of the IDLE Timeout in IIS Explained
 Adjusting the IDLE Timeout
 +++++++++++++++++++++++++++++++
 
-First, please start the IIS Cnsole, choose the Silver Monkey Application and open the Session State Configuration.
+First, please start the IIS Console, choose the Silver Monkey Application and open the Session State Configuration.
 
 .. image:: _static/image001.png
 
-We recommend setting a value of 960 minutes (16 hours) for the timeout:
+We recommend setting a timeout value of 960 minutes (i.e. 16 hours):
 
 .. image:: _static/image003.png
 
