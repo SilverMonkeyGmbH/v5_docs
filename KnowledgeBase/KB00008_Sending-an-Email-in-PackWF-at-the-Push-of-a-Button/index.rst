@@ -16,7 +16,7 @@ XML Format
 
 .. der Code Block funktioniert so nicht... was muss da getan werden?
 
-.. Tip:: Type:
+.. Note:: Type:
    < sendMail
   from="noreply@phatconsulting.de"
   to="{$MAIL>PackageResponsible}"
