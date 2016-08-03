@@ -32,7 +32,7 @@ or
 
 .. image:: _static/image005.png
 
-SCCM applications which are displayed unter "applications" are displayed the same way as SCCM packages.
+SCCM applications which are displayed under "applications" are displayed in the same way as SCCM packages.
 
 .. image:: _static/image007.png
 
