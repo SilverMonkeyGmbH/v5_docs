@@ -14,8 +14,6 @@ XML Format
 
 .. image:: _static/image001.png
 
-.. der Code Block funktioniert so nicht... was muss da getan werden?
-
 .. literalinclude:: _static/sendMail.xml
   
 
