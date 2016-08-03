@@ -1,14 +1,17 @@
-KB00012 - Activate and Update License Key
-=========================================
+KB00013 - Activating and Updaing License Key
+============================================
 
 
-.. contents:: `In this article:`
+.. contents:: *In this article:*
     :depth: 2
     :local:
 
+***************************************************
+Two Ways to Activate and Update the License Key
+***************************************************
 
-Activate or update the activation key via the user interface
---------------------------------------------------------------
+Activate or Update the Activation Key via the User Interface
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
 Silver Monkey Administrator rights are required to activate or update the license key via the user interface. If the "Settings"-Tab is visible, you got the required rights:
@@ -25,8 +28,8 @@ After that click the 'Save'-button.
 
 .. warning:: The new license key not be activated until you restart the IIS Service and Restart the Silver Monkey Web Application Server  
 
-Activate or update the activation key in the configuration.xml
----------------------------------------------------------------
+Activate or Update the Activation Key in the *configuration.xml*
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 If you have no direct access to the settings in the user interface, set the activation key in the configuration.xml:
 
