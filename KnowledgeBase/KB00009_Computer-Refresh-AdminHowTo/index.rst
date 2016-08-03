@@ -6,7 +6,7 @@ KB00009 - Computer Refresh - AdminHowTo
   :depth: 1
 
 *****************************************
-AdminHowTo: How to Refresh your Computer
+AdminHowTo: Refresh your Computer
 *****************************************
 
 1. Prepare Settings
@@ -15,8 +15,7 @@ The prefix for packages and applications can be determined in the SCCM settings.
 
 .. image:: _static/image001.png
 
-.. Note:: Packages support up to 999 variables. This is the reason for wich "###" is displayed.
-Applications usually support up to 99 variables. This is why "##" is displayed in the coresponding field.
+.. Note:: Packages support up to 999 variables. This is the reason why "###" is displayed. Applications usually support up to 99 variables. This is why "##" is displayed in the coresponding field.
 
 2. Computer Refresh - Examples
 +++++++++++++++++++++++++++++++
@@ -24,8 +23,11 @@ Applications usually support up to 99 variables. This is why "##" is displayed i
 .. image:: _static/image003.png
 
 Under "packages" you will find all SCCM packages which have either 
+
 + been announced on the computer (status is directly read out of SCCM)
+
 or
+
 + have been resolved by the existing variable (packaging IDs are compared to live data in SCCM).
 
 .. image:: _static/image005.png
