@@ -16,12 +16,12 @@ XML Format
 
 .. der Code Block funktioniert so nicht... was muss da getan werden?
 
-.. Note:: Type:
+.. Note:: Code e.g.:
    < sendMail
-  from="noreply@phatconsulting.de"
-  to="{$MAIL>PackageResponsible}"
-  subject="Software Packaging: {RequestManufacturerName} {RequestProductName} ({RequestID})"
-  body="Hallo, &lt;br /&gt;bitte Paket 
+    from="noreply@phatconsulting.de"
+    to="{$MAIL>PackageResponsible}"
+    subject="Software Packaging: {RequestManufacturerName} {RequestProductName} ({RequestID})"
+    body="Hallo, &lt;br /&gt;bitte Paket 
 			und Installationsanleitung hier ablegen: &lt;br /&gt;&quot;{RequestTransferPath}&quot;
 			&lt;br /&gt;
 			&lt;br /&gt;
@@ -32,4 +32,8 @@ XML Format
 			&lt;br /&gt;
 			Software Packaging Team" />
 
-# Probe
+If you would like to use HTML in the main body as shown in the above example, this has to be encoded.
+`This website <http://www.opinionatedgeek.com/DotNet/Tools/HTMLEncode/encode.aspx>`_ will facilitate your work.
+
+For example:
+.. image:: _static/image003.png
