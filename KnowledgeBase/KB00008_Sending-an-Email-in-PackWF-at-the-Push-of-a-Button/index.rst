@@ -16,9 +16,6 @@ XML Format
 
 .. der Code Block funktioniert so nicht... was muss da getan werden?
 
-Mittwoch, 3. August 2016
-11:15
-
 +----------------------------------------------------------------------------------------------+
 |<sendMail                                                                                     |
 |  from="noreply@phatconsulting.de"                                                            |
