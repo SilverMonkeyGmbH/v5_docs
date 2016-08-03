@@ -16,7 +16,8 @@ XML Format
 
 .. der Code Block funktioniert so nicht... was muss da getan werden?
 
-.. Note:: Example code:
+.. Note:: 
+   Code example:
    < sendMail
     from="noreply@phatconsulting.de"
     to="{$MAIL>PackageResponsible}"
