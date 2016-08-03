@@ -16,21 +16,10 @@ XML Format
 
 .. der Code Block funktioniert so nicht... was muss da getan werden?
 
-.. Note:: 
-   Code example:
-   < sendMail
-    from="noreply@phatconsulting.de"
-    to="{$MAIL>PackageResponsible}"
-    subject="Software Packaging: {RequestManufacturerName} {RequestProductName} ({RequestID})"
-    body="Hallo, &lt;br /&gt;bitte Paket und Installationsanleitung hier ablegen: &lt;br /&gt;&quot;{RequestTransferPath}&quot;
-			&lt;br /&gt;
-			&lt;br /&gt;
-			&lt;a href=&quot;http://phatsrv046/treon_r0005/Support/TypeView.aspx?PopUp=true&amp;TypeViewId=46&amp;Id={Id}&quot;&gt;Auftrag einsehen&lt;/a&gt;
-			&lt;br /&gt;
-			&lt;br /&gt;
-			Mit Freundlichen Gr&#252;&#223;en
-			&lt;br /&gt;
-			Software Packaging Team" />
+.. literalinclude:: senaMail.xml
+  :linenos:
+  :language: xml
+
 
 If you would like to use HTML in the main body as shown in the above example, this has to be encoded.
 `This website <http://www.opinionatedgeek.com/DotNet/Tools/HTMLEncode/encode.aspx>`_ will facilitate your work.
