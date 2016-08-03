@@ -14,30 +14,26 @@ XML Format
 
 .. image:: _static/image001.png
 
-.. code-block:: html
-   :linenos:
+.. der Code Block funktioniert so nicht... was muss da getan werden?
 
-   <style>
-   p {border: 3px solid black;}
-   </style>
-   
-   <p> 
-   
-  &lsaquo; sendMail
-  from="noreply@phatconsulting.de"
-  to="{$MAIL>PackageResponsible}"
-  subject="Software Packaging: {RequestManufacturerName} {RequestProductName} ({RequestID})"
-  body="Hallo, &lt;br /&gt;bitte Paket 
-			und Installationsanleitung hier ablegen: &lt;br /&gt;&quot;{RequestTransferPath}&quot;
-			&lt;br /&gt;
-			&lt;br /&gt;
-			&lt;a href=&quot;http://phatsrv046/treon_r0005/Support/TypeView.aspx?PopUp=true&amp;TypeViewId=46&amp;Id={Id}&quot;&gt;Auftrag einsehen&lt;/a&gt;
-			&lt;br /&gt;
-			&lt;br /&gt;
-			Mit Freundlichen Gr&#252;&#223;en
-			&lt;br /&gt;
-			Software Packaging Team" /&rsaquo; 
+Mittwoch, 3. August 2016
+11:15
 
-    </p>
-
-
++----------------------------------------------------------------------------------------------+
+|<sendMail                                                                                     |
+|  from="noreply@phatconsulting.de"                                                            |
+|  to="{$MAIL>PackageResponsible}"                                                             |
+|  subject="Software Packaging: {RequestManufacturerName} {RequestProductName} ({RequestID})"  |
+|  body="Hallo, &lt;br /&gt;bitte Paket                                                        |
+|			und Installationsanleitung hier ablegen: &lt;br                                    |
+|/&gt;&quot;{RequestTransferPath}&quot;                                                        |
+|			&lt;br /&gt;                                                                       |
+|			&lt;br /&gt;                                                                       |
+|			&lt;a href=&quot;http://phatsrv046/treon_r0005/Support/TypeView.aspx?              |
+|PopUp=true&amp;TypeViewId=46&amp;Id={Id}&quot;&gt;Auftrag einsehen&lt;/a&gt;                  |
+|			&lt;br /&gt;                                                                       |
+|			&lt;br /&gt;                                                                       |
+|			Mit Freundlichen Gr&#252;&#223;en                                                  |
+|			&lt;br /&gt;                                                                       |
+|			Software Packaging Team" />                                                        |
++----------------------------------------------------------------------------------------------+
