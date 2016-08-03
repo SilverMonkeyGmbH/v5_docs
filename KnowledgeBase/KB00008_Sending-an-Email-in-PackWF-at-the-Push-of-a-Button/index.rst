@@ -16,14 +16,14 @@ XML Format
 
 .. code-block:: html
    :linenos:
-   <!DOCTYPE html>
-   <head>
-   <style>
 
-   p. solid {border: black 3px solid;}
+   <style>
+   p {border: 3px solid black;}
    </style>
-   <body>
-   <p class="solid"> <sendMail
+   
+   <p> 
+   
+  &lsaquo; sendMail
   from="noreply@phatconsulting.de"
   to="{$MAIL>PackageResponsible}"
   subject="Software Packaging: {RequestManufacturerName} {RequestProductName} ({RequestID})"
@@ -36,7 +36,8 @@ XML Format
 			&lt;br /&gt;
 			Mit Freundlichen Gr&#252;&#223;en
 			&lt;br /&gt;
-			Software Packaging Team" />
-      </p>
-      </body>
-      
+			Software Packaging Team" /&rsaquo; 
+
+    </p>
+
+
