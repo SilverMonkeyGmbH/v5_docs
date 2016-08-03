@@ -16,9 +16,8 @@ XML Format
 
 .. der Code Block funktioniert so nicht... was muss da getan werden?
 
-.. literalinclude:: senaMail.xml
-  :linenos:
-  :language: xml
+.. literalinclude:: _static/sendMail.xml
+  
 
 
 If you would like to use HTML in the main body as shown in the above example, this has to be encoded.
