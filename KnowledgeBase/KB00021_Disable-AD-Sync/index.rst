@@ -5,7 +5,7 @@ To disable the AD Sync (which is performed every 12 hours by the first website v
 
 1. Find configuration.xml
 Go to configuration.xml file.
-Further info here: :doc:`/KnowledgeBase/KB00014_Finding-Log-Files-and-Configuration-XML/index`
+Further info here: :doc:`/../KB00014_Finding-Log-Files-and-Configuration-XML/index`
 
 
 2. Change date to future date:
