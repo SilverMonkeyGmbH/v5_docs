@@ -6,7 +6,7 @@ KB00014 - Finding Log Files and Configuration.xml
   :depth: 1
 
 ************************************************************************************
-Finding Log Files and Configuration.xml and Taking a Screenshot of an Error Message
+Finding Log Files and Configuration.xml and taking a Screenshot of an Error Message
 ************************************************************************************
 
 1. Finging Log Files
@@ -14,11 +14,10 @@ Finding Log Files and Configuration.xml and Taking a Screenshot of an Error Mess
 The log files will be found in the system providing the IIS service in one of the following directories:
 
   .. code-block:: console
+
     C:\inetpub\wwwroot\treon_r****\App_Data\Logs
     C:\inetpub\wwwroot\sim_r****\App_Data\Logs
 
-
-Please make copies of all log files, combine them in a .zip file and send them to support@treon.de .
 
 .. image:: _static/image001.png
 
@@ -27,5 +26,6 @@ Please make copies of all log files, combine them in a .zip file and send them t
 The Configuration.xml file will be found in the system providing the IIS service in one of the following directories:
 
   .. code-block:: console
+
     C:\inetpub\wwwroot\treon_r****\App_Data
     C:\inetpub\wwwroot\sim_r****\App_Data
