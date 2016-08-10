@@ -21,3 +21,4 @@ Contents:
    KB00013_Activating-and-Updating-License-Key/index
    KB00016_Configuration-Manager-Rights/index
    KB00020_SIM-SQL_DB-Rights/index
+   KB00021_Disable-AD-Sync/index
