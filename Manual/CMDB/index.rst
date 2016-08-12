@@ -93,8 +93,8 @@ Attributes
 
 **Differnt types of attributes**
 
-.. csv-table:: 
-   :header: "Control Type","Description", "Additional Options"
+.. csv-table:: Attributes
+   :header: "Attribute Name","Description", "Additional Options"
    :widths: 40,40,40
 
 
@@ -122,9 +122,12 @@ Attributes
    :header: "Function","Description"
    :widths: 40,80
 
-
+   "Name - de / Name - en", "The Displayname of the attribute"
+   "Field name", "This is the actual column name in the SIM SQL DB"
+   "Database Type", "Database Type describes what kind of attribute is created."
+   "LDAP path", "LADP path for the AD Users/Groups"
    "Auto Postback", "Feature not used"
-   "Suggestion", "If suggestions are enabled, earlier entered entrys are displayed"
+   "Suggestion", "Autocomplete. If suggestions are enabled, earlier entered entrys are displayed"
    "Logical Key", "Feature not used"
    "Default value","Default Value defines a default value that will be set automatically."
    "Logical Key", "Feature not used"
@@ -141,3 +144,48 @@ Attributes
 ************************************************************************************
 Lists
 ************************************************************************************
+
+**Properties**
+
+.. csv-table:: 
+   :header: "Property","Description"
+   :widths: 40,80
+
+   "Design", "Choose between List and Formular initially"
+   "Name - de / Name - en", "The Displayname of the list"
+   "Sort order", "Choose where in the Drop Down the choosen list is displayed"
+   "Roles", "Choose wich roles can see the list"
+   "Definition", "The Definition of the list"
+
+
+===================
+Definition
+===================
+
+ .. code-block:: xml 
+
+   <view splitterWidth="550" 
+            detailView="Paketdetails PackWF" 
+            newLink="" 
+            viewPane="false" 
+            refresh="true" 
+            excelExport="true" 
+            importExport="false"
+            popUp="1100,800"> 
+
+   <columns>
+        <column field="ClientCode"  width="70" />
+        <column field="RequestID"  width="70" />
+        <column field="RequestReference"  width="70" />
+        <column field="SysStatus"  width="180" />
+        <column field="RequestManufacturerName"  width="200" />
+        <column field="RequestProductName"  width="200" />
+        <column field="RequestProductVersion"  width="100" />
+        <column field="PackagingPackageName"  width="-1" />
+        <column field="PackageSWGroups"  width="200" />
+   </columns>
+
+   <data>
+        <condition> ({search}='' OR PackageProductName like {search} OR ClientCode like {search} OR RequestReference like {search} OR RequestID like {search}) </condition>
+   </data>
+   </view>
