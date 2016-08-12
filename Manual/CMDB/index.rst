@@ -95,7 +95,7 @@ Attributes
 
 .. csv-table:: 
    :header: "Control Type","Description", "Additional Options"
-   :widths: 40,60,60
+   :widths: 40,40,40
 
 
    "String", "Field that holds a text", "Default Value, Input mask"
