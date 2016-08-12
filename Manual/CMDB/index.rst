@@ -162,6 +162,8 @@ Lists
 Definition
 ===================
 
+Example List:
+
  .. code-block:: xml 
 
    <view splitterWidth="550" 
@@ -189,3 +191,19 @@ Definition
         <condition> ({search}='' OR PackageProductName like {search} OR ClientCode like {search} OR RequestReference like {search} OR RequestID like {search}) </condition>
    </data>
    </view>
+   
+------------------------------------------------------
+   <view></view> Parameters
+------------------------------------------------------
+.. csv-table:: 
+   :header: "View Options","Description"
+   :widths: 40,80
+
+   "splitterWidth", "Width of the splitter shown in list form. (in pixels)"
+   "detailView- de / Name - en", "Specifying the form name that is to be used for the detailed representation of a list form."
+   "newLink", "Construction of new objects in a list. The "Detailed view" is used as detail form"
+   "viewPane", "If this value is set to "false", the selection is displayed as a drop-down list."
+   "refresh", "Display update function in list view"
+   "excelExport", "Display excel export function in list view"
+   "importExport", "Display import/export function in list view"
+   "popUp", "By specifying a popup window size in the format "width, height", a list view opens choosen entries in a new window e.g .: "800,600""
