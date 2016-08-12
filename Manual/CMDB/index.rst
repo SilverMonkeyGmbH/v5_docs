@@ -128,7 +128,6 @@ Attributes
    "LDAP path", "LADP path for the AD Users/Groups"
    "Auto Postback", "Feature not used"
    "Suggestion", "Autocomplete. If suggestions are enabled, earlier entered entrys are displayed"
-   "Logical Key", "Feature not used"
    "Default value","Default Value defines a default value that will be set automatically."
    "Logical Key", "Feature not used"
    "Input mask","Input mask specifies the required format of the entry. Example: **-**-**-**-**-** (for MAC-Adresses) '*' is a placeholder. A valid entry would be 11-11-11-11-11-11."
@@ -191,19 +190,21 @@ Example List:
         <condition> ({search}='' OR PackageProductName like {search} OR ClientCode like {search} OR RequestReference like {search} OR RequestID like {search}) </condition>
    </data>
    </view>
-   
+
 ------------------------------------------------------
-   <view></view> Parameters
+   <view> Parameters
 ------------------------------------------------------
-.. csv-table:: 
+
+.. csv-table:: Parameters
    :header: "View Options","Description"
    :widths: 40,80
 
    "splitterWidth", "Width of the splitter shown in list form. (in pixels)"
    "detailView- de / Name - en", "Specifying the form name that is to be used for the detailed representation of a list form."
-   "newLink", "Construction of new objects in a list. The "Detailed view" is used as detail form"
-   "viewPane", "If this value is set to "false", the selection is displayed as a drop-down list."
+   "newLink", "Construction of new objects in a list. The “Detailed view“ is used as detail form"
+   "viewPane", "If this value is set to “false“, the selection is displayed as a drop-down list."
    "refresh", "Display update function in list view"
    "excelExport", "Display excel export function in list view"
    "importExport", "Display import/export function in list view"
-   "popUp", "By specifying a popup window size in the format "width, height", a list view opens choosen entries in a new window e.g .: "800,600""
+   "popUp", "By specifying a popup window size in the format “width, height“, a list view opens choosen entries in a new window e.g .: “800,600“"
+
