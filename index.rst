@@ -16,7 +16,7 @@ Contents:
 
    Requirements
    Installation
-   Reference
+   Manual/index
    KnowledgeBase/index
    Changelog
    SupportedConf
