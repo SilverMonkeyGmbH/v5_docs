@@ -146,6 +146,8 @@ You can create different types of attributes to customize the formular to your n
 Lists
 ************************************************************************************
 
+You can create custom lists and customize them to fit your needs. The following subchapters describe the options you have when you are creating or customizing a list. 
+
 **Properties**
 
 .. csv-table:: 
@@ -197,7 +199,7 @@ Example List:
    <view> Parameters
 ------------------------------------------------------
 
-.. csv-table:: Parameters
+.. csv-table::
    :header: "View Options","Description"
    :widths: 40,80
 
@@ -213,5 +215,18 @@ Example List:
 
 ------------------------------------------------------
    <columns>
+------------------------------------------------------
+
+Columns represent Attributes and are used to display their values in a list. You can see the syntax in the code-block at the start of this section.
+
+.. csv-table::
+   :header: "Column Options","Description"
+   :widths: 40,80
+
+   "Column field", "The fieldname of the attribute to be displayed "
+   "width", "the width of the "
+
+------------------------------------------------------
+   <data> 
 ------------------------------------------------------
 
