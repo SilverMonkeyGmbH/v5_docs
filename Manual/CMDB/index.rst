@@ -93,7 +93,7 @@ Attributes
 
 **Differnt types of attributes**
 
-.. csv-table:: Attributes
+.. csv-table::
    :header: "Attribute Name","Description", "Additional Options"
    :widths: 40,40,40
 
