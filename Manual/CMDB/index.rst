@@ -93,8 +93,10 @@ Attributes
 
 **Differnt types of attributes**
 
+You can create different types of attributes to customize the formular to your needs. These attributes have different settings and functions, these are described in the two tables below.
+
 .. csv-table::
-   :header: "Attribute Name","Description", "Additional Options"
+   :header: "Attribute Type","Description", "Additional Options"
    :widths: 40,40,40
 
 
@@ -105,13 +107,13 @@ Attributes
    "Float", "Field that holds a float", "Default Value, Number Format"
    "Multilanguage Text", "-- Deprecated -- ", "-- Deprecated -- "
    "Checkbox", "Field that displays a checkbox, can have the Status 'checked' or 'unchecked'", "Default value, Input mask"
-   "Data list", "Field that holds a fixed list of entrys that can be defined in the GUI", "Items, Default Value, Fill stage"
+   "Data list", "Field that holds a fixed list of entrys that can be defined in the GUI, the entrys are seperated with a semicolon ('firstentry;secondentry')", "Items, Default Value, Fill stage"
    "Config. list", "-- Deprecated --", "-- Deprecated --"
    "SQL list", "-- Deprecated --", "-- Deprecated --"
    "File", "Can contain files that are stored in the SQL Database", "Default value, Input mask"
    "Object reference", "Field that references to another table and displays the defined entrys", "Object reference, Filter, Default value"
-   "Active Directory User", "Field that holds Users out of the Active Directory Cashe (the cashe is in the SIM DB)", "LDAP path, Default value"
-   "Active Directory Group", "Field that holds Groups out of the Active Directory Cashe (the cashe is in the SIM DB)", "LDAP path, Default"
+   "Active Directory User", "Field that holds Users out of the Active Directory Cashe (the cashe is located in the SIM DB)", "LDAP path, Default value"
+   "Active Directory Group", "Field that holds Groups out of the Active Directory Cashe (the cashe is located in the SIM DB)", "LDAP path, Default"
    "Packaging package name", "-- Deprecated --", "-- Deprecated --"
    "Packaging operation system", "-- Deprecated --", "-- Deprecated --"
    "Packaging site", "-- Deprecated --", "-- Deprecated --"
@@ -124,16 +126,16 @@ Attributes
 
    "Name - de / Name - en", "The Displayname of the attribute"
    "Field name", "This is the actual column name in the SIM SQL DB"
-   "Database Type", "Database Type describes what kind of attribute is created."
+   "Database Type", "Describes the attributes type."
    "LDAP path", "LADP path for the AD Users/Groups"
-   "Auto Postback", "Feature not used"
-   "Suggestion", "Autocomplete. If suggestions are enabled, earlier entered entrys are displayed"
-   "Default value","Default Value defines a default value that will be set automatically."
-   "Logical Key", "Feature not used"
-   "Input mask","Input mask specifies the required format of the entry. Example: **-**-**-**-**-** (for MAC-Adresses) '*' is a placeholder. A valid entry would be 11-11-11-11-11-11."
-   "Number format", "Number format defines the required format of every entry. Example: „#,##0.0“ „dd.MM.yyyy“"
+   "Auto Postback", "-- Feature not used --"
+   "Suggestion", "Autocomplete. If suggestions are enabled, earlier entered will be suggested"
+   "Default value","Defines a default value that will be set automatically."
+   "Logical Key", "-- Feature not used --"
+   "Input mask","Specifies the required format of the entry. Example: **-**-**-**-**-** (for MAC-Adresses) '*' is a placeholder. A valid entry would be 11-11-11-11-11-11."
+   "Number format", "Defines the required format of every entry. Example: „#,##0.0“ „dd.MM.yyyy“"
    "Items", "Items of a Datalist seperated by semicolon. Example: Yes;No;(choose)"
-   "Fill stage", "Feature not used"
+   "Fill stage", "-- Feature not used --"
    "Object reference", "Used for Object reference Attributes, choose the table you want to reference"
    "Filter", "Used for Object reference Attributes, filter the entrys in the table you are referencing"
    "LDAP path", "LADP path for the AD Users/Groups"
