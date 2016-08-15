@@ -208,3 +208,8 @@ Example List:
    "importExport", "Display import/export function in list view"
    "popUp", "By specifying a popup window size in the format “width, height“, a list view opens choosen entries in a new window e.g .: “800,600“"
 
+
+------------------------------------------------------
+   <columns>
+------------------------------------------------------
+
