@@ -6,7 +6,7 @@ KB00004 - SIM Database Restore
   :depth: 1
 
 *************************************
-Restore Silver Monkey Database
+Restoring Silver Monkey Database
 *************************************
 
 1. Create a new Database
