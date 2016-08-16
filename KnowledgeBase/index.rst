@@ -23,3 +23,4 @@ Contents:
    KB00015_Creating-System-Report/index
    KB00016_Configuration-Manager-Rights/index
    KB00020_SIM-SQL_DB-Rights/index
+   KB00021_Disable-AD-Sync/index
