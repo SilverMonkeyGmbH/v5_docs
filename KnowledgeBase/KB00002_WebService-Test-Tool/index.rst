@@ -5,7 +5,8 @@ KB00002 - Testing the SIM Web Service Test Tool
   :local:
   :depth: 1
 
--------
+----------
+
 
 There is a command line tool which enables administrators to perform an easy test without any knowledge about HTTP web service technology.
 
