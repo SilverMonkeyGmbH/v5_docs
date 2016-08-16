@@ -23,5 +23,8 @@ Contents:
    KB00015_Creating-System-Report/index
    KB00016_Reinitializing-AD-Sync/index
    KB00017_Configuration-Manager-Rights/index
+   KB00018_SCCM-OS-Notation/index
+   KB00019_Installing-and-Configurating-SQL/index
    KB00020_SIM-SQL_DB-Rights/index
    KB00021_Disable-AD-Sync/index
+   KB00022_Known-Issues/index

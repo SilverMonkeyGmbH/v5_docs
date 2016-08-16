@@ -13,7 +13,7 @@ Finding Log Files and Configuration.xml and taking a Screenshot of an Error Mess
 >>>>>>> f45a43daf3f919788b2491783e50c934542ca647
 ************************************************************************************
 
-1. Finding Log Files
+Finding Log Files
 +++++++++++++++++++++++++++++++
 The log files will be found in the system providing the IIS service in one of the following directories:
 
@@ -24,7 +24,7 @@ The log files will be found in the system providing the IIS service in one of th
 
 .. image:: _static/image001.png
 
-2. Finding the Configuration.xml File
+Finding the Configuration.xml File
 +++++++++++++++++++++++++++++++++++++++
 Search for the Configuration.xml file in the same system in one of the following directories:
 
@@ -37,7 +37,7 @@ Search for the Configuration.xml file in the same system in one of the following
 
 Please equally send a copy of Configuration.xml to support@treon.de .
 
-3. Taking Screenshots of Error Messages
+Taking Screenshots of Error Messages
 +++++++++++++++++++++++++++++++++++++++++
 | We would also like to ask you to send us screenshots of error messages, problems or eventually displayed requirements. 
 | Feel free to combine log files, Configuration.xml and screenshots in a single email. 

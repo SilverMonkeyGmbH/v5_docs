@@ -20,7 +20,7 @@ Then, start recycling:
 ******************************************
 Finding Configuration.xml
 ******************************************
-Search for the Configuration.xml file in the system delivering the IIS service in one of the following directories:
+Search for the Configuration.xml file in the system that delivers the IIS service in one of the following directories:
 
   .. code-block:: console
 
