@@ -21,6 +21,7 @@ Contents:
    KB00013_Activating-and-Updating-License-Key/index
    KB00014_Finding-Log-Files-and-Configuration-XML/index
    KB00015_Creating-System-Report/index
-   KB00016_Configuration-Manager-Rights/index
+   KB00016_Reinitializing-AD-Sync/index
+   KB00017_Configuration-Manager-Rights/index
    KB00020_SIM-SQL_DB-Rights/index
    KB00021_Disable-AD-Sync/index

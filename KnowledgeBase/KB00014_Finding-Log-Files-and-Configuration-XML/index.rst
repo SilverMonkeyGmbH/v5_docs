@@ -13,7 +13,7 @@ Finding Log Files and Configuration.xml and taking a Screenshot of an Error Mess
 >>>>>>> f45a43daf3f919788b2491783e50c934542ca647
 ************************************************************************************
 
-1. Finging Log Files
+1. Finding Log Files
 +++++++++++++++++++++++++++++++
 The log files will be found in the system providing the IIS service in one of the following directories:
 
@@ -22,13 +22,16 @@ The log files will be found in the system providing the IIS service in one of th
     C:\inetpub\wwwroot\treon_r****\App_Data\Logs
     C:\inetpub\wwwroot\sim_r****\App_Data\Logs
 
-
 .. image:: _static/image001.png
 
 2. Finding the Configuration.xml File
 +++++++++++++++++++++++++++++++++++++++
-Search for the Configuration.xml file in the same system in the following directory:
-"C:\inetpub\wwwroot\treon_r****\App_Data"
+Search for the Configuration.xml file in the same system in one of the following directories:
+
+  .. code-block:: console
+
+    C:\inetpub\wwwroot\treon_r****\App_Data
+    C:\inetpub\wwwroot\sim_r****\App_Data
 
 .. image:: _static/image003.png
 
