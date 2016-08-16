@@ -17,7 +17,7 @@ Contents:
    Requirements
    Installation
    Manual/index
-   KnowledgeBase/index.rst
+   KnowledgeBase/index
    Changelog
    SupportedConf
    Support
