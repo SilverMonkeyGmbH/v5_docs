@@ -240,3 +240,22 @@ The options specified in the following code block ensure the only entries are di
 AND 
 (IssueEditor like '%John Doe%' OR Requestor like '%John Doe%' OR qualityinspector like '%John Doe%')
 </condition>
+
+
+ .. code-block:: xml 
+   :emphasize-lines: 4
+<condition>
+({search}='' OR IssueID like {search} OR Title like {search})
+AND 
+(IssueEditor like '%John Doe%' OR Requestor like '%John Doe%' OR qualityinspector like '%John Doe%')
+</condition>
+
+
+ .. code-block:: xml 
+   :emphasize-lines: 1,2
+
+<condition>
+({search}='' OR IssueID like {search} OR Title like {search})
+AND 
+(IssueEditor like '%John Doe%' OR Requestor like '%John Doe%' OR qualityinspector like '%John Doe%')
+</condition>
