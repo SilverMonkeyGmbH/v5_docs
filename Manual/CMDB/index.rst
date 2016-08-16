@@ -194,8 +194,10 @@ Example List:
    </view>
 
 ======================================
-   <view> Parameters
+   <view>
 ======================================
+
+**Parameters**
 
 .. csv-table::
    :header: "View Options","Description"
