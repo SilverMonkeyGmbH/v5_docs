@@ -1,21 +1,17 @@
 KB00007 - Creating IIS Website for Silver Monkey
 =================================================
 
-.. note:: This article is not yet veryfied! Please contact support@silvermonkey.net 
+.. note:: This article is not verified yet! Please contact support@silvermonkey.net 
           to ask for the information you need. Thank you!
 
 .. contents:: *In this article:*
   :local:
   :depth: 1
 
-*************************************
-Creating an IIS Website
-*************************************
-
-1. Copy Files to Inetpub
+Copying Files to Inetpub
 +++++++++++++++++++++++++++++++
-Create a new folder in C:\inetpub\wwwroot\. Please be sure to name your file with rising numbers following the name convention
-"treon_R****" if a Silver Monkey website already exists (see image below).
+Create a new folder in *"C:\inetpub\wwwroot\"*. Please be sure to name your file with rising numbers following the name convention
+**"treon_R\**\**"** if a Silver Monkey website already exists (see image below).
 
 .. image:: _static/image001.png
 
@@ -24,7 +20,7 @@ Now move the content of the Silver Monkey installation file to the folder you ju
 .. image:: _static/image003.png
 
 
-2. Creating an Application
+Creating an Application
 +++++++++++++++++++++++++++
 Please start MMC for IIS ("Internet Information Services"). Right click on the folder and select "Add application".
 
@@ -34,7 +30,7 @@ Fill in the fields displayed. The field named "Alias" should be filled with "Tre
 
 .. image:: _static/image007.png
 
-.. note:: Please choose the application pool named *"Treon"* or *"SIM*" if it exists.
+.. note:: Please choose the application pool named *"Treon"* or *"SIM"* if it exists.
 
 In the next step, please authentificate the application by activating its authentification for Windows.
 
@@ -42,26 +38,27 @@ In the next step, please authentificate the application by activating its authen
 .. image:: _static/image011.png
 
 
-3. Writing Permission for App_data
+Writing Permission for App_data
 +++++++++++++++++++++++++++++++++++
-Writing permission can be set in C:\inetpub\wwwroot\treonR0001\App_Data
+Writing permission can be set under *C:\inetpub\wwwroot\treonR0001\App_Data*.
 
-.. image:: _static/image013
+.. image:: _static/image013.png
 
 
-4. Insert Configuration.xml
+Inserting Configuration.xml
 +++++++++++++++++++++++++++++
 Please copy the file "configuration.xml" from the former website to the new one.
 
-.. image:: _static/image015
+.. image:: _static/image015.png
 
-5. Testing your Website
+Testing your Website
 ++++++++++++++++++++++++
 .. note:: In case of a disabled Single Sign On, please restart Internet Explorer before restarting the whole server.
 
-Open Internet explorer, then go to http://SERVERNAME/Treon_R0001 .
+Open Internet explorer, then go to "http://SERVERNAME/Treon_R0001" .
 
 Check your website version as follows:
 
 .. image:: _static/image017.png
+
 .. image:: _static/image019.png

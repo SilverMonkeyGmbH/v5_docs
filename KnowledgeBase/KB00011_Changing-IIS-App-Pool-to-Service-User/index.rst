@@ -5,13 +5,9 @@ KB00011 - Changing IIS App Pool to Service User
   :local:
   :depth: 1
 
-*****************************************
-xxx
-*****************************************
-
-1. Create App Pool
+Creating App Pool
 +++++++++++++++++++++++++++++++
-Please start IIS Console and choose the node called "Application Pools". Then perform a right-click and choose "Add Application Pool...":
+Please start IIS (i.e. Internet Information Services) Console and choose the node called "Application Pools". Then perform a right-click and choose *"Add Application Pool..."*:
 
 .. image:: _static/image001.png
 
@@ -29,9 +25,9 @@ Please start IIS Console and choose the node called "Application Pools". Then pe
 
 .. image:: _static/image015.png
 
-2. Connect App Pool with the Application
+Connecting App Pool with the Application
 ++++++++++++++++++++++++++++++++++++++++++++++++
-Right-click on the Application you would like to connect with:
+Right-click on the Application you would like to connect with...
 
 .. image:: _static/image017.png
 

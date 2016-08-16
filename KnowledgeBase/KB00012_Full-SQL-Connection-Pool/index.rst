@@ -5,11 +5,8 @@ KB00012 - Full SQL Connection Pool
   :local:
   :depth: 1
 
-*****************************************
+
 Adjusting Web.Config
-*****************************************
-
-
 +++++++++++++++++++++++++++++++
 You will find the Web.Config file in "C:\inetpub\wwwroot\[TreonWesite]".
 Please open the file in a Text Editor and search for this section: "<appSettings>".
@@ -27,12 +24,10 @@ Especially, pay attention to the last part of the Connection String:
 
 .. image:: _static/image003.png
 
-You will have to add the following code or rather adjust its value to "500" if it doesn't already exist 
-in the Connection String (the value is set to "100" by default):
+You will have to add the following code or rather adjust its value to "500" if it doesn't already exist in the Connection String (the value is set to "100" by default):
 
 .. literalinclude:: _static/KB00012.xml
 
 Both Connection Strings, *SQL as well as *Windows have to be changed.
 
-For further Information about Connection String, please visit
- http://msdn.microsoft.com/de-de/library/system.data.sqlclient.sqlconnection.connectionstring(v=vs.110).aspx .
+For further Information about Connection String, please visit http://msdn.microsoft.com/de-de/library/system.data.sqlclient.sqlconnection.connectionstring(v=vs.110).aspx .

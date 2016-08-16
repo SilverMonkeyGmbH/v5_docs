@@ -5,11 +5,7 @@ KB00005 - Resetting SIM Packaging Jobs
   :local:
   :depth: 1
 
-*************************************
-Resetting Silver Monkey Packaging Jobs
-*************************************
-
-1. Erase Table of Packaging jobs 
+Erasing Table of Packaging jobs 
 ++++++++++++++++++++++++++++++++++
 
 
@@ -20,9 +16,10 @@ Resetting Silver Monkey Packaging Jobs
 .. image:: _static/image003.png
 
 
-2. Reset Identity
+Resetting Identity
 ++++++++++++++++++++++
-The following command has to be executed in order to make the database start the new packaging jobs with the ID number 1.
+Excecute the following command in order to make the database start the new packaging jobs with the ID number 1.
+
 "DBCC CHECKIDENT('PackagingJob', RESEED, 0)"
 
 .. image:: _static/image004.png

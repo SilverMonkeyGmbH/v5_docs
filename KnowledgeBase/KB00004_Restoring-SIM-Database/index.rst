@@ -1,4 +1,4 @@
-KB00004 - Restoring SIM Database
+KB00004 - SIM Database Restore
 =========================================
 
 .. contents:: *In this article:*
@@ -7,11 +7,11 @@ KB00004 - Restoring SIM Database
 
 Creating a new Database
 ++++++++++++++++++++++++
-Connect to your SQL Server via SQL Management Studio, create a new Database:
+Connect to your SQL Server via SQL Management Studio and create a new Database:
 
 .. image:: _static/image001.png
 
-In the following dialogue choose a database name that fits your naming convention. Click the 'OK'-button.
+In the following dialogue, choose a database name that fits your naming convention. Click the 'OK'-button.
 
 .. image:: _static/image002.png
 
@@ -21,9 +21,10 @@ Running Script
 ++++++++++++++++++++++++
 
 Choose 'new Query': 
+
   .. image:: _static/image003.jpg
 
-Copy the content of the SQL backup file that is part of the installation package and paste it into the new query window. Replace the database name in the 'USE {DATABASE NAME}' part of the query with the Name of the Database you just created.
+Copy the content of the SQL backup file that is part of the installation package and paste it into the new query window. Replace the name of the database in the 'USE {DATABASE NAME}' part of the query with the name of the database you just created.
 
   .. image:: _static/image004.png
 

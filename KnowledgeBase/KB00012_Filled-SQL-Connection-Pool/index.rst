@@ -1,15 +1,11 @@
-KB00012 - Filled SQL Connection Pool
+KB00012 - Full SQL Connection Pool
 =============================================================
 
 .. contents:: *In this article:*
   :local:
   :depth: 1
 
-*****************************************
 Adjusting Web.Config
-*****************************************
-
-
 +++++++++++++++++++++++++++++++
 You will find the Web.Config file in "C:\inetpub\wwwroot\[TreonWesite]".
 Please open the file in a Text Editor and search for this section: "<appSettings>".
