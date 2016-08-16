@@ -148,7 +148,9 @@ Lists
 
 You can create custom lists and customize them to fit your needs. The following subchapters describe the options you have when you are creating or customizing a list. 
 
-**Properties**
+===================
+Properties
+===================
 
 .. csv-table:: 
    :header: "Property","Description"
@@ -160,10 +162,6 @@ You can create custom lists and customize them to fit your needs. The following 
    "Roles", "Choose wich roles can see the list"
    "Definition", "The Definition of the list"
 
-
-===================
-Definition
-===================
 
 Example List:
 
@@ -195,9 +193,9 @@ Example List:
    </data>
    </view>
 
-------------------------------------------------------
+======================================
    <view> Parameters
-------------------------------------------------------
+======================================
 
 .. csv-table::
    :header: "View Options","Description"
@@ -213,9 +211,9 @@ Example List:
    "popUp", "By specifying a popup window size in the format “width, height“, a list view opens choosen entries in a new window e.g .: “800,600“"
 
 
-------------------------------------------------------
+======================================
    <columns>
-------------------------------------------------------
+======================================
 
 Columns represent Attributes and are used to display their values in a list. You can see the syntax in the code-block at the start of this section.
 
@@ -226,20 +224,19 @@ Columns represent Attributes and are used to display their values in a list. You
    "Column field", "The fieldname of the attribute to be displayed "
    "width", "the width of the column "
 
-------------------------------------------------------
+======================================
    <data> 
-------------------------------------------------------
+======================================
 
 In the <data> section you can define the initial search condition for the displayed list objects. You can also define in which attributes to search.
 
 The options specified in the following code block ensure the only entries are displayed that posses a value like 'john doe' in the attributes Issue Editor, Requestor or Quality Inspector.
 
- .. code-block:: xml 
-     :emphasize-lines: 4
+.. code-block:: python
+   :emphasize-lines: 4
 
 <condition>
 ({search}='' OR IssueID like {search} OR Title like {search})
 AND 
 (IssueEditor like '%John Doe%' OR Requestor like '%John Doe%' OR qualityinspector like '%John Doe%')
 </condition>
-
