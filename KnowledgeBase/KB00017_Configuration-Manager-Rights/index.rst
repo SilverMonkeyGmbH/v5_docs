@@ -1,4 +1,4 @@
-KB00016 - Configuration Manager Rights
+KB00017 - Configuration Manager Rights
 =========================================
 
 

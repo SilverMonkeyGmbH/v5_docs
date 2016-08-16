@@ -8,8 +8,8 @@ KB00015 - Creating System Report
 ************************************************************************************
 Downloading Report Builder
 ************************************************************************************
-|Please visit `https://www.microsoft.com/de-de/download/confirmation.aspx?id=6116`_, download and install Report Builder.
-|Then, follow the instrucions shown on the images below.
+| Please visit `https://www.microsoft.com/de-de/download/confirmation.aspx?id=6116`_, download and install Report Builder.
+| Then, follow the instrucions shown on the images below.
 |
 
 .. image:: _static/image001.png
