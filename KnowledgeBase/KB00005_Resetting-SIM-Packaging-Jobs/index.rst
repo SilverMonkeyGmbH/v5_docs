@@ -5,6 +5,8 @@ KB00005 - Resetting SIM Packaging Jobs
   :local:
   :depth: 1
 
+-------
+
 Erasing Table of Packaging jobs 
 ++++++++++++++++++++++++++++++++++
 

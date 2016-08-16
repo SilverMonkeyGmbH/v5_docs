@@ -5,6 +5,8 @@ KB00014 - Finding Log Files and Configuration.xml
   :local:
   :depth: 1
 
+-------
+
 ************************************************************************************
 <<<<<<< HEAD
 Finding Log Files, Configuration.xml and Taking a Screenshot of an Error Message

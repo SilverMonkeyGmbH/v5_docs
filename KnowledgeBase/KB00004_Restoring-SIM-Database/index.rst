@@ -5,6 +5,7 @@ KB00004 - SIM Database Restore
   :local:
   :depth: 1
 
+-------
 
 Creating a new Database
 ++++++++++++++++++++++++

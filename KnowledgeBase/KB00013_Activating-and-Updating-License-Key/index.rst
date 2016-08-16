@@ -7,6 +7,7 @@ KB00013 - Activating and Updaing License Key
     :depth: 2
     :local:
 
+-------
 
 Activating or Updating the Activation Key via the User Interface
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
