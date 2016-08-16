@@ -7,7 +7,7 @@ KB00022 - Known Issues
 
 Instructions: 
 
-.. image:: _static/iamge003.png
+.. image:: _static/image003.png
 
-.. image:: _static/imgae005.png
+.. image:: _static/image005.png
 
