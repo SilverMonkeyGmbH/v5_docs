@@ -194,8 +194,10 @@ Example List:
    </view>
 
 ======================================
-   <view> Parameters
+   <view>
 ======================================
+
+**Parameters**
 
 .. csv-table::
    :header: "View Options","Description"
@@ -230,13 +232,26 @@ Columns represent Attributes and are used to display their values in a list. You
 
 In the <data> section you can define the initial search condition for the displayed list objects. You can also define in which attributes to search.
 
-The options specified in the following code block ensure the only entries are displayed that posses a value like 'john doe' in the attributes Issue Editor, Requestor or Quality Inspector.
+The highlighted part in the following code block causes the website to display just the entries that posses a value like 'john doe' in the attributes IssueEditor, Requestor or qualityinspector.
 
  .. code-block:: xml 
-   :emphasize-lines: 1,2
+   :emphasize-lines: 4
 
    <condition>
       ({search}='' OR IssueID like {search} OR Title like {search})
    AND 
       (IssueEditor like '%John Doe%' OR Requestor like '%John Doe%' OR qualityinspector like '%John Doe%')
    </condition>
+
+The next highlighted part in the code block defines that the list search associated with that list, will search in the attributes IssueID or Title.
+
+ .. code-block:: xml 
+   :emphasize-lines: 2
+
+   <condition>
+      ({search}='' OR IssueID like {search} OR Title like {search})
+   AND 
+      (IssueEditor like '%John Doe%' OR Requestor like '%John Doe%' OR qualityinspector like '%John Doe%')
+   </condition>
+
+You can define very specific filters and conditions with TSQL in lists. 
