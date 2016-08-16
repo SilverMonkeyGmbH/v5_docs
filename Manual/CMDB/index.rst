@@ -224,9 +224,22 @@ Columns represent Attributes and are used to display their values in a list. You
    :widths: 40,80
 
    "Column field", "The fieldname of the attribute to be displayed "
-   "width", "the width of the "
+   "width", "the width of the column "
 
 ------------------------------------------------------
    <data> 
 ------------------------------------------------------
+
+In the <data> section you can define the initial search condition for the displayed list objects. You can also define in which attributes to search.
+
+The options specified in the following code block ensure the only entries are displayed that posses a value like 'john doe' in the attributes Issue Editor, Requestor or Quality Inspector.
+
+ .. code-block:: xml 
+     :emphasize-lines: 4
+
+<condition>
+({search}='' OR IssueID like {search} OR Title like {search})
+AND 
+(IssueEditor like '%John Doe%' OR Requestor like '%John Doe%' OR qualityinspector like '%John Doe%')
+</condition>
 
