@@ -8,6 +8,7 @@ KB00007 - Creating IIS Website for Silver Monkey
   :local:
   :depth: 1
 
+
 Copying Files to Inetpub
 +++++++++++++++++++++++++++++++
 Create a new folder in *"C:\inetpub\wwwroot\"*. Please be sure to name your file with rising numbers following the name convention
@@ -50,6 +51,7 @@ Inserting Configuration.xml
 Please copy the file "configuration.xml" from the former website to the new one.
 
 .. image:: _static/image015.png
+
 
 Testing your Website
 ++++++++++++++++++++++++

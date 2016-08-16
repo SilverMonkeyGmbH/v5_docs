@@ -5,6 +5,7 @@ KB00011 - Changing IIS App Pool to Service User
   :local:
   :depth: 1
 
+
 Creating App Pool
 +++++++++++++++++++++++++++++++
 Please start IIS (i.e. Internet Information Services) Console and choose the node called "Application Pools". Then perform a right-click and choose *"Add Application Pool..."*:
@@ -24,6 +25,7 @@ Please start IIS (i.e. Internet Information Services) Console and choose the nod
 .. image:: _static/image013.png
 
 .. image:: _static/image015.png
+
 
 Connecting App Pool with the Application
 ++++++++++++++++++++++++++++++++++++++++++++++++

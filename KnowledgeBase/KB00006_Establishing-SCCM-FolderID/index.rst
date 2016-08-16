@@ -5,6 +5,7 @@ KB00006 - Establishing SCCM FolderID
   :local:
   :depth: 1
 
+
 Configurating Script
 +++++++++++++++++++++++++++++++
 :download:`Get SCCM FolderID - Script <_static/GetSCCMFolderID.zip>`.

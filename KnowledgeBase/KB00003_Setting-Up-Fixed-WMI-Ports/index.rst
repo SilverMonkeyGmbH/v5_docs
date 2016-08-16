@@ -5,6 +5,7 @@ KB00003 - Setting Up Fixed WMI Ports
   :local:
   :depth: 1
 
+
 Setting Up Dynamic Port Allocation
 +++++++++++++++++++++++++++++++++++++
 `Please click here in order to access the tutorial on the determination of dynamic port allocation in Windows. <http://support.microsoft.com/kb/154596/en-us>`_
@@ -12,6 +13,7 @@ Setting Up Dynamic Port Allocation
 .. image:: _static/image001.png
 
 :download:`Download this script to set up port allocation <_static/RP_Ports.reg>`.
+
 
 Determining Port for Endpoint
 ++++++++++++++++++++++++++++++++++++++
@@ -28,9 +30,11 @@ Changing WMI Mode
 ++++++++++++++++++++++++++++++++++++++
 Please click `here <http://msdn.microsoft.com/en-us/library/bb219447(v=VS.85).aspx>`_ in order to get access to the detailed tutorial and follow the instructions on the website. 
 
+
 Restart 
 ++++++++++++++++++++++++++++++++++++++
 Please restart the system.
+
 
 Test Script
 ++++++++++++++++++++++++++++++++++++++

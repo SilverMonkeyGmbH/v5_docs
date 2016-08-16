@@ -21,4 +21,4 @@ Please follow the instructions below to install and configurate your SQL.
 
 .. image:: _static/image017.png
 
-.. image:: _static/image019.png
+.. image:: _static/image018.png

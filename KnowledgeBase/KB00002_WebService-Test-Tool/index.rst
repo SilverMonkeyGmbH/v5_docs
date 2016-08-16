@@ -8,12 +8,13 @@ KB00002 - Testing the SIM Web Service Test Tool
 
 There is a command line tool which enables administrators to perform an easy test without any knowledge about HTTP web service technology.
 
-1. Downloading Web Service Test Tool
+
+Downloading Web Service Test Tool
 ++++++++++++++++++++++++++++++++++++
 Please click `here <http://www.silvermonkey.net/DL/WebServiceTestCmdLine.zip>`_ to start the download.
 
 
-2. Extracting Content
+Extracting Content
 ++++++++++++++++++++++++++++++++++++
 Extracting the content of the ZIP:
 
@@ -24,7 +25,7 @@ The sample XML file will create a simple computer with one variable:
 .. literalinclude:: _static/sample.xml
 
 
-3. Editing start.cmd file 
+Editing start.cmd file 
 ++++++++++++++++++++++++++++++++++++
 The start.cmd file is meant to be an example of how to start the web service test tool.
 

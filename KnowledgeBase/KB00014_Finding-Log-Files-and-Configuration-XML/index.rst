@@ -24,6 +24,7 @@ The log files will be found in the system providing the IIS service in one of th
 
 .. image:: _static/image001.png
 
+
 Finding the Configuration.xml File
 +++++++++++++++++++++++++++++++++++++++
 Search for the Configuration.xml file in the same system in one of the following directories:
@@ -36,6 +37,7 @@ Search for the Configuration.xml file in the same system in one of the following
 .. image:: _static/image003.png
 
 Please equally send a copy of Configuration.xml to support@treon.de .
+
 
 Taking Screenshots of Error Messages
 +++++++++++++++++++++++++++++++++++++++++

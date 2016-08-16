@@ -5,6 +5,7 @@ KB00004 - SIM Database Restore
   :local:
   :depth: 1
 
+
 Creating a new Database
 ++++++++++++++++++++++++
 Connect to your SQL Server via SQL Management Studio and create a new Database:
@@ -17,9 +18,9 @@ In the following dialogue, choose a database name that fits your naming conventi
 
 Then give authorization following the installation guide.
 
+
 Running Script
 ++++++++++++++++++++++++
-
 Choose 'new Query': 
 
   .. image:: _static/image003.jpg

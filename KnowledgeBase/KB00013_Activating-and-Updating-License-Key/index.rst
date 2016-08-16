@@ -7,6 +7,7 @@ KB00013 - Activating and Updaing License Key
     :depth: 2
     :local:
 
+
 Activating or Updating the Activation Key via the User Interface
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Silver Monkey Administrator rights are required to activate or update the license key via the user interface. If the "Settings"-Tab is visible, you have the required rights.
