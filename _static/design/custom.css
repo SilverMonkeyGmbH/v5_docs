@@ -91,7 +91,7 @@ a, a:link, a:visited { color: #417590; }
 }
 
 .wy-nav-side {
-    background: #c1c1cf;
+    background: #e1e1ef;
     overflow-y: auto;
 }
 
@@ -161,7 +161,7 @@ a, a:link, a:visited { color: #417590; }
 
 .wy-menu-vertical li, .wy-menu-vertical a {
 
-      background: #c1c1cf !important;
+      background: #e1e1ef !important;
 }
 
 .wy-menu-vertical a:hover {
