@@ -20,5 +20,6 @@ Please follow the instructions below to install and configurate your SQL.
 .. image:: _static/image015.png
 
 .. image:: _static/image017.png
+        :align: center
 
 .. image:: _static/image018.png
