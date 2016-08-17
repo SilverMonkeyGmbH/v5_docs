@@ -13,6 +13,7 @@ Setting Up Dynamic Port Allocation
 Please click `here <http://support.microsoft.com/kb/154596/en-us>`_ in order to access the tutorial on the determination of dynamic port allocation in Windows. 
 
 .. image:: _static/image001.png
+    :align: center
 
 :download: `Download script for port allocation setup <_static/RP_Ports.reg>`
 
@@ -23,6 +24,7 @@ Launch DCOMCNFG.EXE and follow the instructions below.
 .. image:: _static/image002.png
 
 .. image:: _static/image003.png
+    :align: center
 
 .. image:: _static/image004.png
 

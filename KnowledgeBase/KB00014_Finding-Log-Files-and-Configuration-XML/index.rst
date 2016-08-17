@@ -1,4 +1,4 @@
-KB00014 - Finding Log Files and Configuration.xml
+KB00014 - Finding Log Files and 'Configuration.xml'
 =============================================================
 
 .. contents:: *In this article:*
