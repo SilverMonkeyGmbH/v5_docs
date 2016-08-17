@@ -91,7 +91,8 @@ a, a:link, a:visited { color: #417590; }
 }
 
 .wy-nav-side {
-    background: #f1f1ef;
+    /*background: #f1f1ef;*/
+    background: red;
     overflow-y: auto;
 }
 
