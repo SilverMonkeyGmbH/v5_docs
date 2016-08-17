@@ -31,4 +31,4 @@ You will have to add the following code or rather adjust its value to "500" if i
 
 Both Connection Strings, \*SQL as well as \*Windows have to be changed.
 
-For further Information about Connection String, please visit http://msdn.microsoft.com/de-de/library/system.data.sqlclient.sqlconnection.connectionstring(v=vs.110).aspx .
+For further Information about Connection String, please visit `this website <http://msdn.microsoft.com/de-de/library/system.data.sqlclient.sqlconnection.connectionstring(v=vs.110).aspx>`_ .

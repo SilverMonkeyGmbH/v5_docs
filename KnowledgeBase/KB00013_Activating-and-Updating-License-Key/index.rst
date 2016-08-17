@@ -1,4 +1,4 @@
-KB00013 - Activating and Updaing License Key
+KB00013 - Activating and Updating License Key
 ============================================
 
 .. contents:: *In this article:*
