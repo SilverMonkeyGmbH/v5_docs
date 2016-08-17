@@ -10,16 +10,15 @@ KB00003 - Setting Up Fixed WMI Ports
 
 Setting Up Dynamic Port Allocation
 +++++++++++++++++++++++++++++++++++++
-`Please click here in order to access the tutorial on the determination of dynamic port allocation in Windows. <http://support.microsoft.com/kb/154596/en-us>`_
+Please click `here <http://support.microsoft.com/kb/154596/en-us>`_ in order to access the tutorial on the determination of dynamic port allocation in Windows. 
 
 .. image:: _static/image001.png
 
-:download:`Download this script to set up port allocation <_static/RP_Ports.reg>`.
-
+:download: `Download this script to set up port allocation <_static/RP_Ports.reg>`.
 
 Determining Port for Endpoint
 ++++++++++++++++++++++++++++++++++++++
-Launch DCOMCNFG.EXE.
+Launch DCOMCNFG.EXE and follow the instructions below.
 
 .. image:: _static/image002.png
 
@@ -42,11 +41,11 @@ Test Script
 ++++++++++++++++++++++++++++++++++++++
 Type in your IP/user/password in the script below.
 
-:download:`Download test script <_static/WMIRemoteTest.vbs>`.
+:download: `Download test script <_static/WMIRemoteTest.vbs>`.
 
 
 .. note:: Due to eventually blocked Kerberos ports, some DNS names might not work. In this case, please use the IP adress of the target system only.
 
 Expected return value (the domain name has to be desplayed):
    
-  .. image:: _static/image005.jpg
+  .. image:: _static/image005.png

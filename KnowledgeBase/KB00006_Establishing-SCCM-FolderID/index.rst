@@ -7,7 +7,7 @@ KB00006 - Establishing SCCM FolderID
 
 -------
 
-Configurating Script
+Script Configuration
 +++++++++++++++++++++++++++++++
 :download:`Get SCCM FolderID - Script <_static/GetSCCMFolderID.zip>`.
 
@@ -16,7 +16,7 @@ A filled in form should be displayed similar to the image below:
 .. image:: _static/image003.png
 
 
-Starting script
+Starting the Script
 ++++++++++++++++++++++
 Open cmd.exe and read out the ID as shown in the red box below.
 

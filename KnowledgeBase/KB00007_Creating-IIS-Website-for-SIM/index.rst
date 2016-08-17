@@ -1,9 +1,6 @@
 KB00007 - Creating IIS Website for Silver Monkey
 =================================================
 
-.. note:: This article is not verified yet! Please contact support@silvermonkey.net 
-          to ask for the information you need. Thank you!
-
 .. contents:: *In this article:*
   :local:
   :depth: 1
@@ -12,19 +9,19 @@ KB00007 - Creating IIS Website for Silver Monkey
 
 Copying Files to Inetpub
 +++++++++++++++++++++++++++++++
-Create a new folder in *"C:\inetpub\wwwroot\"*. Please be sure to name your file with rising numbers following the name convention
+Create a new folder in *C:\\inetpub\\wwwroot\\*. Please be sure to name your file with rising numbers following the name convention
 **"treon_R\**\**"** if a Silver Monkey website already exists (see image below).
 
 .. image:: _static/image001.png
 
-Now move the content of the Silver Monkey installation file to the folder you just created.
+Now, move the content of the Silver Monkey installation file to the folder you just created.
 
 .. image:: _static/image003.png
 
 
 Creating an Application
 +++++++++++++++++++++++++++
-Please start MMC for IIS ("Internet Information Services"). Right click on the folder and select "Add application".
+Please start MMC for IIS (Microsoft Internet Information Services). Right click on the folder and select "Add Application".
 
 .. image:: _static/image005.png
 
@@ -40,9 +37,9 @@ In the next step, please authentificate the application by activating its authen
 .. image:: _static/image011.png
 
 
-Writing Permission for App_data
+Setting up Writing Permission for App_data
 +++++++++++++++++++++++++++++++++++
-Writing permission can be set under *C:\inetpub\wwwroot\treonR0001\App_Data*.
+Writing permission can be set under *C:\\inetpub\\wwwroot\\\treonR0001\App_Data*.
 
 .. image:: _static/image013.png
 
@@ -56,7 +53,7 @@ Please copy the file "configuration.xml" from the former website to the new one.
 
 Testing your Website
 ++++++++++++++++++++++++
-.. note:: In case of a disabled Single Sign On, please restart Internet Explorer before restarting the whole server.
+.. note:: In case of a disabled Single Sign On, please restart Internet Explorer **before** restarting the whole server.
 
 Open Internet explorer, then go to "http://SERVERNAME/Treon_R0001" .
 

@@ -22,7 +22,7 @@ Then give authorization following the installation guide.
 
 Running Script
 ++++++++++++++++++++++++
-Choose 'new Query': 
+Choose 'New Query': 
 
   .. image:: _static/image003.jpg
 

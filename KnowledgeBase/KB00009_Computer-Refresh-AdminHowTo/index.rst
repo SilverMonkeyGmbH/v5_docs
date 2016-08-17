@@ -24,9 +24,9 @@ Refreshing your Computer - Examples
 
 .. image:: _static/image003.png
 
-Under *"packages"* you will find all SCCM packages which have either 
+Under *"packages"* you will find all SCCM packages which either 
 
-+ been announced on the computer (status is directly read out of SCCM)
++ have been announced on the computer (status is directly read out of SCCM)
 
 or
 
@@ -34,7 +34,7 @@ or
 
 .. image:: _static/image005.png
 
-SCCM applications which are displayed under *"applications"* are displayed in the same way as SCCM packages.
+SCCM applications which are displayed under *"Applications"* are displayed in the same way as SCCM packages.
 
 .. image:: _static/image007.png
 

@@ -7,7 +7,7 @@ KB00005 - Resetting SIM Packaging Jobs
 
 -------
 
-Erasing Table of Packaging jobs 
+Erasing the Table of Packaging Jobs 
 ++++++++++++++++++++++++++++++++++
 
 .. image:: _static/image001.png
@@ -21,7 +21,7 @@ Resetting Identity
 ++++++++++++++++++++++
 Excecute the following command in order to make the database start the new packaging jobs with the ID number 1.
 
-"DBCC CHECKIDENT('PackagingJob', RESEED, 0)"
+"DBCC CHECKIDENT('PackagingJob', RESEED, 0)"    (**without** quotation marks).
 
 .. image:: _static/image004.png
 

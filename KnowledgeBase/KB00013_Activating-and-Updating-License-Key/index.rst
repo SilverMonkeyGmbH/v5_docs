@@ -1,8 +1,6 @@
 KB00013 - Activating and Updaing License Key
 ============================================
 
-.. Note:: This article is under construction!
-
 .. contents:: *In this article:*
     :depth: 2
     :local:
@@ -11,9 +9,9 @@ KB00013 - Activating and Updaing License Key
 
 Activating or Updating the Activation Key via the User Interface
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Silver Monkey Administrator rights are required to activate or update the license key via the user interface. If the "Settings"-Tab is visible, you have the required rights.
+.. Note:: Silver Monkey Administrator rights are required to activate or update the license key via the user interface. If the "Settings"-Tab is visible, you have the required rights.
 
-  .. image:: _static/Activation_Key_Screenshot1.png
+          .. image:: _static/Activation_Key_Screenshot1.png
 
 In the settings, fill in the field named 'Activation code' with the license key that is part of the License Certificate.
 
