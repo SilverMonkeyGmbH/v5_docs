@@ -12,6 +12,7 @@ Creating a new Database
 Connect to your SQL Server via SQL Management Studio and create a new Database:
 
 .. image:: _static/image001.png
+    :align: center
 
 In the following dialogue, choose a database name that fits your naming convention. Click the 'OK'-button.
 

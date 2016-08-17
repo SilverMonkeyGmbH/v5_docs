@@ -29,27 +29,31 @@ Creating an Application
 +++++++++++++++++++++++++++
 Please start MMC for IIS (Microsoft Internet Information Services). Right click on the folder and select "Add Application".
 
-.. image:: _static/image005.png
+  .. image:: _static/image005.png
     :align: center
 
 Fill in the fields displayed. The field named "Alias" should be filled with "Treon_R0001".
 
-.. image:: _static/image007.png
+  .. image:: _static/image007.png
     :align: center
 
 .. note:: Please choose the application pool named *"Treon"* or *"SIM"* if it exists.
 
 In the next step, please authentificate the application by activating its authentification for Windows.
 
-.. image:: _static/image009.png
-.. image:: _static/image011.png
+  .. image:: _static/image009.png
+  .. image:: _static/image011.png
 
 
 Setting up Writing Permission for App_data
 +++++++++++++++++++++++++++++++++++
-Writing permission can be set under *C:\\inetpub\\wwwroot\\\treonR0001\App_Data*.
+Writing permission can be set under 
 
-.. image:: _static/image013.png
+  .. code-block:: console
+
+    C:\inetpub\wwwroot\treonR0001\App_Data.
+
+  .. image:: _static/image013.png
     :align: center
 
 
@@ -57,7 +61,7 @@ Inserting Configuration.xml
 +++++++++++++++++++++++++++++
 Please copy the file "configuration.xml" from the former website to the new one.
 
-.. image:: _static/image015.png
+  .. image:: _static/image015.png
 
 
 Testing your Website
@@ -68,7 +72,7 @@ Open Internet explorer, then go to "http://SERVERNAME/Treon_R0001" .
 
 Check your website version as follows:
 
-.. image:: _static/image017.png
+  .. image:: _static/image017.png
 
-.. image:: _static/image019.png
+  .. image:: _static/image019.png
     :align: center

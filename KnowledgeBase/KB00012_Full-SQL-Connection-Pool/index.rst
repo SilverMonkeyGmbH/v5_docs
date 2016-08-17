@@ -13,7 +13,7 @@ You will find the Web.Config file in
 
 .. code-block:: console
 
-C:\inetpub\wwwroot\[TreonWesite].
+    C:\inetpub\wwwroot\[TreonWesite].
 
 Please open the file in a Text Editor and search for the section "<appSettings>".
 
