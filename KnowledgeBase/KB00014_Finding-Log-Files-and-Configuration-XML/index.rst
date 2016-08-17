@@ -43,6 +43,6 @@ Please equally send a copy of Configuration.xml to support@treon.de .
 
 Taking Screenshots of Error Messages
 +++++++++++++++++++++++++++++++++++++++++
-| We would also like to ask you to send us screenshots of error messages, problems or eventually displayed requirements. 
-| Feel free to combine log files, Configuration.xml and screenshots in a single email. 
-|
+We would also like to ask you to send us screenshots of error messages, problems or eventually displayed requirements. 
+
+.. tip:: Feel free to combine log files, Configuration.xml and screenshots in a single email. 

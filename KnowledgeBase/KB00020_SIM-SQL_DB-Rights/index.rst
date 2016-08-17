@@ -9,6 +9,7 @@ Open SQL Management Studio and connect to your Silver Monkey SQL DB Server.
 Expand 'Security' and right click 'Login' to create a new login.   
 
     .. image:: _static/image001.png
+        :align: center
 
 Choose a name (e.g. 'sql-sim') and a password. Set the authentication to 'SQL Server authentication' and uncheck the 'Enforce password policy'-checkbox.
 
@@ -18,4 +19,4 @@ Navigate to 'User Mapping' choose the SIM SQL DB and activate the db_owner role.
 
     .. image:: _static/image005.png
 
-You now successfully created your SIM Service Account!
+You now have successfully created your SIM Service Account!
