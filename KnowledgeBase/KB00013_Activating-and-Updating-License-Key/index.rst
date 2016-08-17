@@ -12,6 +12,7 @@ Activating or Updating the Activation Key via the User Interface
 .. Note:: Silver Monkey Administrator rights are required to activate or update the license key via the user interface. If the "Settings"-Tab is visible, you have the required rights.
 
           .. image:: _static/Activation_Key_Screenshot1.png
+                :align: center
 
 In the settings, fill in the field named 'Activation code' with the license key that is part of the License Certificate.
 
@@ -32,7 +33,7 @@ The configuration.xml is located in the web application server in the following 
   
   .. code-block:: console
 
-    C:\inetpub\wwwroot\SIM_R****\App_Data .
+    C:\inetpub\wwwroot\SIM_R****\App_Data
 
 Fill in the field "<activationCode>" with the license key:
 
