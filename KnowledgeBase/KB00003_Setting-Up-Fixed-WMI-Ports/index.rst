@@ -15,7 +15,7 @@ Please click `here <http://support.microsoft.com/kb/154596/en-us>`_ in order to 
 .. image:: _static/image001.png
     :align: center
 
-:download:`Download script for port allocation setup <_static/RP_Ports.zip>`
+:download:`Download script for port allocation setup <_static/RPPorts.zip>`
 
 Determining Port for Endpoint
 ++++++++++++++++++++++++++++++++++++++
