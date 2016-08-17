@@ -11,7 +11,7 @@ Adjusting Web.Config
 +++++++++++++++++++++++++++++++
 You will find the Web.Config file in 
 
-.. code-block:: console
+  .. code-block:: console
 
     C:\inetpub\wwwroot\[TreonWesite].
 

@@ -15,7 +15,7 @@ Please click `here <http://support.microsoft.com/kb/154596/en-us>`_ in order to 
 .. image:: _static/image001.png
     :align: center
 
-:download: `Download script for port allocation setup <_static/RP_Ports.reg>`
+:download:`Download script for port allocation setup <_static/RP_Ports.reg>`
 
 Determining Port for Endpoint
 ++++++++++++++++++++++++++++++++++++++
@@ -43,7 +43,7 @@ Test Script
 ++++++++++++++++++++++++++++++++++++++
 Type in your IP/user/password in the script below.
 
-:download: `Download test script <_static/WMIRemoteTest.vbs>`
+:download:`Download test script <_static/WMIRemoteTest.vbs>`
 
 
 .. note:: Due to eventually blocked Kerberos ports, some DNS names might not work. In this case, please use the IP adress of the target system only.

@@ -30,7 +30,7 @@ If you do not have direct access to the settings in the user interface, set the 
 .. Warning:: Before changing Configuration.xml please create a safety-copy!
 
 The configuration.xml is located in the web application server in the following directory:
-  
+
   .. code-block:: console
 
     C:\inetpub\wwwroot\SIM_R****\App_Data
