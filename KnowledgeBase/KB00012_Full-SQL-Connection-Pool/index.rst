@@ -9,7 +9,12 @@ KB00012 - Full SQL Connection Pool
 
 Adjusting Web.Config
 +++++++++++++++++++++++++++++++
-You will find the Web.Config file in *C:\\inetpub\\wwwroot\\[TreonWesite]*.
+You will find the Web.Config file in 
+
+.. code-block:: console
+
+C:\inetpub\wwwroot\[TreonWesite].
+
 Please open the file in a Text Editor and search for the section "<appSettings>".
 
 .. image:: _static/image001.png

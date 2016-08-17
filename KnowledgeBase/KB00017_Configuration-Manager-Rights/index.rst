@@ -15,6 +15,7 @@ Import a role via the following xml File (zipped).
 See :download:`Dowload XML  <_static/SCCM-Sec-Role_SilverMonkey.zip>`.
 
   .. image:: _static/ConfigurationMgr_Rights_screenshot01.png
+      :align: center
 
 After this entitle a corresponding user with this role.
 
