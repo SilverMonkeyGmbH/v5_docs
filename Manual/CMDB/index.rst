@@ -88,12 +88,17 @@ link
 Action Buttons
 ===============
 
-Every action button has to be definded in 
+Action buttons are buttons in detail forms. When a user has write rights for the specific step the user can click on that button. Action button are on the right side of every detail form as the following figure shows: 
 
- .. code-block:: xml
-  :linenos:
+  .. image:: _static/ActionButtonsOverview.png
 
-  <views><view><controls>
+Every action button has to be definded within a view in the XML block ``<views><view><controls>``. Please see the following example:
+
+.. literalinclude:: _static/ViewExample.xml
+    :language: xml
+    :linenos:
+    :emphasize-lines: 6
+
 
 ------------------
 Execute
@@ -134,21 +139,41 @@ However, you can use in the script impersonation for using specific accounts.
 1. Executing a batch file
 
  .. code-block:: xml 
+  :linenos:
 
-   <execute title="My PS1 Script" command="C:\Windows\system32\cmd.exe" arguments="/C C:\SilverMonkey\Scripts\MyFirstscript.cmd {ID}" wait="false" />
+   <execute   
+      title="My CMD Script" 
+      command="C:\windows\system32\cmd.exe"
+      arguments="/C C:\SilverMonkey\Scripts\MyFirstscript.cmd {ID}"
+      wait="false" 
+   />
 
 .. note:: You can also execute scripts from a network path. Make sure, that the IIS Application Pool is configured to use a specific service account (Default is LOCALSYSTEM).
 
- .. code-block:: xml 
 
-   <execute title="My PS1 Script" command="C:\Windows\system32\cmd.exe" arguments="/C \\networkpath\share\scripts\myscript.cmd {ID}" wait="false" />
+.. code-block:: xml 
+  :linenos:
+
+   <execute   
+      title="My CMD Script" 
+      command="C:\windows\system32\cmd.exe"
+      arguments="/C \\networkpath\share\scripts\myscript.cmd {ID}"
+      wait="false" 
+   />
 
 
 2. Executing a powershell PS1 script
 
  .. code-block:: xml 
+  :linenos:
 
-   <execute title="My PS1 Script" command="C:\Windows\system32\WindowsPowerShell\v1.0\powershell.exe" arguments="C:\SilverMonkey\Scripts\MyFirstscript.ps1 -PackagingJobId {ID} -OtherParam &quot;{Var1}&quot;" wait="false" />
+   <execute   
+      title="My PS1 Script" 
+      command="C:\Windows\system32\WindowsPowerShell\v1.0\powershell.exe"
+      arguments="C:\SilverMonkey\Scripts\MyFirstscript.ps1 -PackagingJobId {ID} -OtherParam &quot;{Var1}&quot;"
+      wait="false" 
+   />
+
 
 .. note:: Using quations within XML attributes: &quot;{Var1}&quot; 
 
