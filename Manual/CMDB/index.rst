@@ -80,7 +80,7 @@ You can add an attribute in this way
     >
 
 .. csv-table:: 
-   :header: "Attribute","Description"
+   :header: "Property","Description"
    :widths: 40,60
 
    "field", "The name of the attribute according to the object definition. Optional fields can also be used. The should have a constant name."
@@ -91,10 +91,50 @@ You can add an attribute in this way
         validation=""*""
         validation=""required: true, regexp: /^[A-Za-z\d]+$/i""
         validation=""required: true, regexp: /^[A-Za-z\d]{2,20}$/i"""
-    "readonly", "Distinguish between writing display and reading display. Type in ""true"" or ""false""."
+    "readonly", "Distinguish between writing view and reading view. Type in ""true"" or ""false""."
+    "width", "Width of the widget given in pixels."
+    "height", "Height of the widget given in pixels."
+    "label", "Overwrite the attribute name with located text."
+    "setDefaultOnLoad", "Define the default value for an empty attribute while loading."
+    "forceDefault", "Forced implementation of the default values."
+    "Comment", "Add a comment to the attribute. It will be displayed when the curser is moved to the ""*"" at the end of the attribute."
+
 ------------------
 connections
 ------------------
+
+Add connections using the following xml-statements
+
+    .. code-block:: xml 
+      :linenos:
+
+      <views>
+      <view>
+      <controls>
+      <connections
+        width="[385]"
+        height="[200]"
+        id="[connection1]"
+        title="[connection2]"
+        filter="[Software]"
+        link="[true|false]"
+        create="[view1; view2]"
+        readOnly="[true|false]"
+      >
+
+.. csv-table:: 
+   :header: "Property","Description"
+   :widths: 40,60
+
+   "width", "Width of the depiciton given in pixels."
+   "height", "Height of the depiction given in pixels."
+   "id", "Unique label if multiple connection lists are displayed."
+   "title", "Individual title for the connection list."
+   "filter", "Restrict the connection list to one single object type."
+   "link", "Enable opening referenced objects."
+   "create", "List of object views which is supposed to be displayed when new objects are set up and assigned."
+   "readOnly", "Prevents setting up new connecitons if set to ""true""."
+
 
 ------------------
 link
