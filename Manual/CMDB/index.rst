@@ -84,7 +84,13 @@ You can add an attribute in this way
    :widths: 40,60
 
    "field", "The name of the attribute according to the object definition. Optional fields can also be used. The should have a constant name."
-   "validation", "Set up a validation rule (e.g. ""*"" is used to ask for obligatory input. Example: "
+   "validation", "Set up a validation rule (e.g. ""*"" is used to ask for obligatory input). Example:
+      .. code-block:: console
+        :linenos:
+        
+        validation=""*""
+        validation=""required: true, regexp: /^[A-Za-z\d]+$/i""
+        validation=""required: true, regexp: /^[A-Za-z\d]{2,20}$/i"""
 
 
 ------------------
