@@ -182,11 +182,19 @@ CMDB2SCCM
 ------------------
 
 Creates or edits in Microsoft ConfigMgr one or more computer objects and performs additional actions regarding this systems:
-- Add variables
-- Creates direct memberships for ConfigMgr Collections
+
+  - Add variables
+  - Creates direct memberships for ConfigMgr Collections
+
+
+.. note:: 
+The underlying code can be used in two methods:
+
+ a) Via mass import button in lists
+ b) Via action button in forms
 
 This action button war orignally used for mass import of systems. By defining the CMDB mass import configuration to accept single systems by parameter also single systems can be imported.
-See :ref:`_tut-massImport` for more information.
+See :ref:`tut-massImport` for more information.
 
 
  .. code-block:: xml 
@@ -194,11 +202,7 @@ See :ref:`_tut-massImport` for more information.
 
    <CMDB2SCCM   
       title="Title of the button" 
-      command="C:\windows\system32\cmd.exe"
-      arguments="{Var1} {Var2} {Var3}"
-      exit_1="Execution was sucessfully processed."
-      exit_2="Error while execution. See log for details."
-      wait="true" 
+      param="[String]"
    />
 
 **Available attributes**
@@ -208,12 +212,23 @@ See :ref:`_tut-massImport` for more information.
    :widths: 40,60
 
    "title=""Resource""", "Title of the button"
-   "command=""PathToExe""", "Full path to the executable. Environment variables are not supported."
-   "arguments=""{Var1} {Var2} {Var3}""", "Arguments passed to the executed process."
-   "exit_nn=""Ressource""", "After execution the exit code will be passed to the website. If a corresponding exit_nn parameter is set, a pop up is displayed to the user."
-   "wait=""true/false""", "If set to true, the website waits for the execution to end."
+   "param=""[String]""", "String to pass to the SQL scripts executed on runtime of the mass import."
 
-.. warning:: If "wait" is set to "true" be aware that the internet browser and the IIS session itself has an idle timeout. Use wait=true only if the script is executed within seconds.  
+
+**Available varibles for SQL statements**
+
+.. csv-table:: 
+   :header: "Variable","Description"
+   :widths: 40,60
+
+   "{0}", "Selected (computer) item database IDs in the popup."
+   "{roles}", "Roles the user is currently in."
+   "{user}", "Username of the currently logged on user (DOMAIN\Username)"
+   "{id}", "Id of the CMDB item. Note: Only available when opened via action button."
+   "{param}", "Additional parameters defined in the view. Note: Only available when opened via action button."
+   
+
+
 
 **Examples:**
 
