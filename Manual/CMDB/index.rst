@@ -83,21 +83,9 @@ You can add an attribute in this way
    :header: "Function","Description"
    :widths: 40,80
 
-   "Name - de / Name - en", "The Displayname of the attribute"
-   "Field name", "This is the actual column name in the SIM SQL DB"
-   "Database Type", "Describes the attributes type."
-   "LDAP path", "LADP path for the AD Users/Groups"
-   "Auto Postback", "-- Feature not used --"
-   "Suggestion", "Autocomplete. If suggestions are enabled, earlier entered will be suggested"
-   "Default value","Defines a default value that will be set automatically."
-   "Logical Key", "-- Feature not used --"
-   "Input mask","Specifies the required format of the entry. Example: **-**-**-**-**-** (for MAC-Adresses) '*' is a placeholder. A valid entry would be 11-11-11-11-11-11."
-   "Number format", "Defines the required format of every entry. Example: „#,##0.0“ „dd.MM.yyyy“"
-   "Items", "Items of a Datalist seperated by semicolon. Example: Yes;No;(choose)"
-   "Fill stage", "-- Feature not used --"
-   "Object reference", "Used for Object reference Attributes, choose the table you want to reference"
-   "Filter", "Used for Object reference Attributes, filter the entrys in the table you are referencing"
-   "LDAP path", "LADP path for the AD Users/Groups"
+   "field", "The name of the attribute according to the object definition. Optional fields called 'Id' or 'SysDisplayName' can also be used. The attribute 'label' should have a constant name."
+   "validation", "Set validation rule (e.g.: "*" is used for obligatory input): validation="*" validation="required: true, regexp:/^[A-Za-z\d]+$/i" validation="required: true, regexp:/^[A-Za-z\d]{2,20}$/i" "
+   
 
 ------------------
 connections
