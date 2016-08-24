@@ -106,7 +106,7 @@ You can add an attribute in this way
 ------------------
 connections
 ------------------
-Add connections using the following xml-statements
+Add connections using the following xml statement
 
     .. code-block:: xml 
       :linenos:
@@ -142,14 +142,33 @@ Add connections using the following xml-statements
 ------------------
 link
 ------------------
+Include an HTML-link by using the following xml statement
 
+    .. code-block:: xml
+      :linenos:
 
+      <views>
+      <view>
+      <controls>
+      <link
+        url="[reference]"
+        label="[text]"
+        icon="[name]"
+      >
 
+.. csv-table:: 
+   :header: "Property","Description"
+   :widths: 40,60
+
+   "url", "Link or reference."
+   "label", "Title of the reference (usually, the title should automatically be located)."
+   "icon", "Name of the icon."
+  
 ===============
 Action Buttons
 ===============
 
-Action buttons are buttons in detail forms. When a user has write rights for the specific step the user can click on that button. Action button are on the right side of every detail form as the following figure shows: 
+Action buttons are buttons in detail forms. When a user has write rights for the specific step he / she can click on that button. Action buttons are on the right side of every detail form as the following figure shows: 
 
   .. image:: _static/ActionButtonsOverview.png
 
