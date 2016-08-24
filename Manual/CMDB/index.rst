@@ -28,8 +28,8 @@ Every form element has to be definded in
 
 
 .. note:: In the following sections, expressions in square brackets are placeholders.
-          Please be sure to remove the brackets and replace the placeholder with the specific text you need to use.
-          (e.g. if you want to display a widget 300 pixels wide, change *width="[250]"* to *width="300"*.
+          Please be sure to remove the brackets and replace the placeholder with the specific text you need to use
+          (e.g. if you want to display a widget 300 pixels wide, change *width="[250]"* to *width="300"*).
 
 ------------------
 headline
