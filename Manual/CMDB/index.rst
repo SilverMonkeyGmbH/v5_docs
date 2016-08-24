@@ -68,11 +68,24 @@ You can add an attribute in this way
     <view>
     <controls>
     <attribute 
-        field="attribute name"
-        validation="*"
-        readonly="true|false"
-        width=">
+        field="[attribute name]"
+        validation="[*]"
+        readonly="[true|false]"
+        width="[250]"
+        height="[0]"
+        label="[designation]"
+        setDefaultOnLoad="[rule]"
+        forceDefault="[true|false]"
+        Comment="[comment]"
+    >
 
+.. csv-table:: 
+   :header: "Function","Description"
+   :widths: 40,80
+
+   "field", "The name of the attribute according to the object definition. Optional fields called 'Id' or 'SysDisplayName' can also be used. The attribute 'label' should have a constant name."
+   "validation", "Set validation rule (e.g.: "*" is used for obligatory input): validation="*" validation="required: true, regexp:/^[A-Za-z\d]+$/i" validation="required: true, regexp:/^[A-Za-z\d]{2,20}$/i" "
+   
 
 ------------------
 connections
