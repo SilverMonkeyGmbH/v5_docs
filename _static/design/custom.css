@@ -55,8 +55,14 @@ h1, h2, h3, h4, h5, h6, legend {
     font-family: Roboto, sans-serif;
 	line-height: 1.4em;
     font-weight: 100!Important;
-    background-color:#dd4949;
+    
 
+}
+
+h2, h3, h4, h5, h6 {
+
+background-color:#d0a767;
+padding:5px;
 }
 
 h2 {
