@@ -85,6 +85,7 @@ You can add an attribute in this way
 
    "field", "The name of the attribute according to the object definition. Optional fields can also be used. The should have a constant name."
    "validation", "Set up a validation rule (e.g. ""*"" is used to ask for obligatory input). Example:
+      
       .. code-block:: console
         :linenos:
         
