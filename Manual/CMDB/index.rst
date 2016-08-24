@@ -48,6 +48,7 @@ Action Buttons
 Every action button has to be definded in 
 
  .. code-block:: xml
+  :linenos:
 
   <views><view><controls>
 
