@@ -80,13 +80,18 @@ You can add an attribute in this way
     >
 
 .. csv-table:: 
-   :header: "Function","Description"
-   :widths: 40,80
+   :header: "Attribute","Description"
+   :widths: 40,60
 
-   "field", "The name of the attribute according to the object definition. Optional fields called 'Id' or 'SysDisplayName' can also be used. The attribute 'label' should have a constant name."
-   "validation", "Set validation rule (e.g.: "*" is used for obligatory input): validation="*" validation="required: true, regexp:/^[A-Za-z\d]+$/i" validation="required: true, regexp:/^[A-Za-z\d]{2,20}$/i" "
-   
-
+   "field", "The name of the attribute according to the object definition. Optional fields can also be used. The should have a constant name."
+   "validation", "Set up a validation rule (e.g. ""*"" is used to ask for obligatory input). Example:
+      
+      .. code-block:: console
+        
+        validation=""*""
+        validation=""required: true, regexp: /^[A-Za-z\d]+$/i""
+        validation=""required: true, regexp: /^[A-Za-z\d]{2,20}$/i"""
+    "readonly", "Distinguish between writing display and reading display. Type in ""true"" or ""false""."
 ------------------
 connections
 ------------------
