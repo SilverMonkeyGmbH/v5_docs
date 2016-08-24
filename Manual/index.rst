@@ -7,3 +7,4 @@ Contents:
    :maxdepth: 1
 
    CMDB/index
+   CMDB/tutorials

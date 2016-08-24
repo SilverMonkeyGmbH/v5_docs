@@ -182,7 +182,7 @@ However, you can use in the script impersonation for using specific accounts.
 
 2. Executing a powershell PS1 script
 
- .. code-block:: xml 
+.. code-block:: xml 
   :linenos:
 
    <execute   
@@ -214,8 +214,7 @@ The underlying code can be used in two methods:
 This action button war orignally used for mass import of systems. By defining the CMDB mass import configuration to accept single systems by parameter also single systems can be imported.
 See :ref:`tut-massImport` for more information.
 
-
- .. code-block:: xml 
+.. code-block:: xml 
   :linenos:
 
    <CMDB2SCCM   
