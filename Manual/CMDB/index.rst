@@ -60,14 +60,17 @@ Execution of a commandline or a script. The process will be executed in the cont
 However, you can use in the script impersonation for using specific accounts.
 
 
- .. code-block:: console 
+ .. code-block:: xml 
+  :linenos:
 
-   <execute   title="Title of the button" 
-                       command="C:\windows\system32\cmd.exe"
-                       arguments="{Var1} {Var2} {Var3}"
-                       exit_1="Execution was sucessfully processed."
-                       exit_2="Error while execution. See log for details."
-                       wait="true" />
+   <execute   
+      title="Title of the button" 
+      command="C:\windows\system32\cmd.exe"
+      arguments="{Var1} {Var2} {Var3}"
+      exit_1="Execution was sucessfully processed."
+      exit_2="Error while execution. See log for details."
+      wait="true" 
+   />
 
 **Available attributes**
 
