@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<views>
+  <view actions="true" status="1">
+    <controls>
+	  <!-- Action Buttons -->
+      <createCollection ...></createCollection>
+	  <!-- Attributes -->
+	  <myAttribute />
+    </controls>
+  </view>
+  <view actions="true" status="2">
+    <controls>
+      ...
+    </controls>
+  </view>
+</views>

@@ -45,12 +45,17 @@ link
 Action Buttons
 ===============
 
-Every action button has to be definded in 
+Action buttons are buttons in detail forms. When a user has write rights for the specific step the user can click on that button. Action button are on the right side of every detail form as the following figure shows: 
 
- .. code-block:: xml
-  :linenos:
+  .. image:: _static/ActionButtonsOverview.png
 
-  <views><view><controls>
+Every action button has to be definded within a view in the XML block ``<views><view><controls>``. Please see the following example:
+
+.. literalinclude:: _static/ViewExample.xml
+    :language: xml
+    :linenos:
+    :emphasize-lines: 6
+
 
 ------------------
 Execute
