@@ -11,3 +11,4 @@ This document is a quickstart for administrators who are not familiar with SQL M
   .. image:: _static/image005.png
 
   .. image:: _static/image007.png
+    :align: center

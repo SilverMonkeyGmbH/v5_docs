@@ -1,21 +1,22 @@
-KB00002 - Web Service Test Tool
-=========================================
+KB00002 - Testing the SIM Web Service Test Tool
+================================================
 
 .. contents:: *In this article:*
   :local:
   :depth: 1
 
-******************************************
-Testing the SIM  Web Service Test Tool
-******************************************
+----------
 
-For testing the Silver Monkey Web Service there is a command line tool which enables administrators to perform an easy test without knowledge about working with HTTP web service technology.
 
-1. Download Web Service Test Tool
+There is a command line tool which enables administrators to perform an easy test without any knowledge about HTTP web service technology.
+
+
+Downloading Web Service Test Tool
 ++++++++++++++++++++++++++++++++++++
-http://www.silvermonkey.net/DL/WebServiceTestCmdLine.zip
+Please click `here <http://www.silvermonkey.net/DL/WebServiceTestCmdLine.zip>`_ to start the download.
 
-2. Extract content
+
+Extracting Content
 ++++++++++++++++++++++++++++++++++++
 Extracting the content of the ZIP:
 
@@ -26,11 +27,11 @@ The sample XML file will create a simple computer with one variable:
 .. literalinclude:: _static/sample.xml
 
 
-3. Edit Start.cmd file 
+Editing start.cmd file 
 ++++++++++++++++++++++++++++++++++++
-The start.cmd file is meant to be an example how to start the web service test tool.
+The start.cmd file is meant to be an example of how to start the web service test tool.
 
-An example command line would be: 
+An example for the command line could be: 
 
   .. code-block:: console
     

@@ -8,18 +8,18 @@ Installation
 
 Requirements
 ----------------------------
-For general information about requirements see :doc:`/Requirements`
+For general information on system requirements see :doc:`/Requirements`.
 
 Report Builder
 ----------------------------
-For building reports on the website and for exporting lists in Microsoft Excel format the following libraries have to be installed:
+In order to build reports on the website and to export lists in Microsoft Excel format the following libraries have to be installed:
 
 - Report Viewer 2010
 - Report Viewer 2012
 
   - Which needs SQLSysClrTypes
 
-You can download these libraries in one zip at: http://www.silvermonkey.net/DL/Microsoft_ReportViewers.zip
+You can download these libraries zipped `here <http://www.silvermonkey.net/DL/Microsoft_ReportViewers.zip>`_.
 
 
 IIS Features
@@ -38,6 +38,7 @@ For information about supported SQL Server versions see :doc:`/SupportedConf`
 
 The installation of the SQL Server will be described in the following steps.
 
+
 Installation Setup
 ^^^^^^^^^^^^^^^^^^^^
 Start the SQL Server installation setup.
@@ -45,7 +46,7 @@ Choose the "New SQL Server stand-alone installation..."-Option in the follwing W
 
   .. image:: _static/SQLServerInstallation_00.png
 
-Follow the Install, choose the same Features as in the seen below:
+Throughout the installation, please choose the same features as shown below:
 
   .. image:: _static/SQLServerInstallation_01.png
 
@@ -53,37 +54,37 @@ Name the instance SIM or choose another name:
 
   .. image:: _static/SQLServerInstallation_02.png
 
-Configure the server as seen below:
+Configurate the server as follows:
 
   .. image:: _static/SQLServerInstallation_03.png
 
-Choose the Database Engine 'SQL_Latin_General_CP1_CI_AS': 
+Choose the Database Engine called 'SQL_Latin_General_CP1_CI_AS': 
 
   .. image:: _static/SQLServerInstallation_04.png
 
-Select the 'mixed mode'-Authentication and add your SQL service account as SQL Server administrator:
+Select the 'mixed mode'-authentification and add your SQL service account as SQL Server administrator:
 
   .. image:: _static/SQLServerInstallation_05.png
 
 You have completed the setup!
 
 
-SQL Server TCP/IP configuration
+SQL Server TCP/IP Configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Open the Sql Server Configuration Manager, choose the 'SQL Server Network Configuration' and then 'Protocols for [Database Name]'. Change the  TCP/IP Status to Enabled:
+Open the SQL Server Configuration Manager, choose 'SQL Server Network Configuration' and then 'Protocols for [Database Name]'. Change the  TCP/IP Status to *Enabled*:
 
   .. image:: _static/SQLServerInstallation_06.png
 
-Right-click the TCP/IP row and choose 'Properties':
+Right-click the TCP/IP line and choose 'Properties':
 
   .. image:: _static/SQLServerInstallation_07.png
 
-Choose the IP Adresses Tab and change the 'TCP Port'-entry to 1433:
+Choose the tab "IP Adresses" and change the 'TCP Port'-entry to 1433:
 
   .. image:: _static/SQLServerInstallation_08.png
 
-After that navigate to the SQL Server Services and restart the 'SQL Server ([Database Name]):
+Afterwards, navigate to the SQL Server Services and restart the 'SQL Server ([Database Name]):
 
   .. image:: _static/SQLServerInstallation_09.png
 

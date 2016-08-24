@@ -1,14 +1,14 @@
 Requirements
 ============
 
-Server application (IIS)
+Server Application (IIS)
 ----------------------------
 -	Microsoft Windows Server 2008 R2 or higher
 -	Internet Information Server
 -	Microsoft .NET Framework 3.5
 -	Microsoft Report Viewer 2012 (free download from Microsoft)
 
-Server database (SQL)
+Server Database (SQL)
 ----------------------------
 -	Microsoft SQL Server 2008 R2 or higher 
 -	Or Microsoft SQL Server Express with Advanced Services
@@ -17,26 +17,26 @@ Server database (SQL)
   -	2012: http://www.microsoft.com/en-us/download/details.aspx?id=29062 (ENU\x86\SQLEXPRADV_x86_ENU.exe)
   -	2014: https://www.microsoft.com/en-US/download/details.aspx?id=42299  
 
-Server hardware requirements (IIS+SQL)
+Server Hardware Requirements (IIS+SQL)
 --------------------------------------------------------
-The system requirements for processors RAM and hard disk space depends on the size of the correspondig ConfigMgr environment and the number of parallel working users. Anyway, there is always the option easily move the application to a more powerful machine or be distributed across several servers with load balancing.
+The system requirements for processors, RAM and hard disk space depend on the size of the correspondig ConfigMgr environment and the number of users working at the same time. Anyway, there is always the option to easily move the application to a more powerful machine or to distribute it across several servers with load balancing.
 
 In addition to the requirements of the operating system, the following conditions arise:
 ----------------------------------------------------------------------------------------------------------------
-- CPU	1
+- CPU	1GHz
 - RAM	2GB
 - Database size	500MB
 - Website/Application files	50MB
 
 (Valid for up to 10,000 systems and 20 concurrent users on the Web Application)
 
-Network configuration
+Network Configuration
 ----------------------------
-SIM v5 Engine support multiple domain configurations. Please see figure below for detailed information about network communication ports:
+SIM v5 Engine supports multiple domain configurations. Please see figure below for detailed information about network communication ports:
 
   .. image:: _static/SIM_Network_Diagram_v1.0.png
 
-Workplace systems
+Workplace Systems
 ----------------------------
 -	Microsoft Internet Explorer 8 or higher
 -	Mozilla FireFox 5 or higher (Windows SSO is not supported by browser)
