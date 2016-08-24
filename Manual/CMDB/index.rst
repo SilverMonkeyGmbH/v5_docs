@@ -87,13 +87,11 @@ You can add an attribute in this way
    "validation", "Set up a validation rule (e.g. ""*"" is used to ask for obligatory input). Example:
       
       .. code-block:: console
-        :linenos:
         
         validation=""*""
         validation=""required: true, regexp: /^[A-Za-z\d]+$/i""
         validation=""required: true, regexp: /^[A-Za-z\d]{2,20}$/i"""
-
-
+    "readonly", "Distinguish between writing display and reading display. Type in ""true"" or ""false""."
 ------------------
 connections
 ------------------
