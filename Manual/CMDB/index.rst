@@ -91,21 +91,40 @@ However, you can use in the script impersonation for using specific accounts.
 1. Executing a batch file
 
  .. code-block:: xml 
+  :linenos:
 
-   <execute title="My PS1 Script" command="C:\Windows\system32\cmd.exe" arguments="/C C:\SilverMonkey\Scripts\MyFirstscript.cmd {ID}" wait="false" />
+   <execute   
+      title="My CMD Script" 
+      command="C:\windows\system32\cmd.exe"
+      arguments="/C C:\SilverMonkey\Scripts\MyFirstscript.cmd {ID}"
+      wait="false" 
+   />
 
 .. note:: You can also execute scripts from a network path. Make sure, that the IIS Application Pool is configured to use a specific service account (Default is LOCALSYSTEM).
 
  .. code-block:: xml 
+  :linenos:
 
-   <execute title="My PS1 Script" command="C:\Windows\system32\cmd.exe" arguments="/C \\networkpath\share\scripts\myscript.cmd {ID}" wait="false" />
+   <execute   
+      title="My CMD Script" 
+      command="C:\windows\system32\cmd.exe"
+      arguments="/C \\networkpath\share\scripts\myscript.cmd {ID}"
+      wait="false" 
+   />
 
 
 2. Executing a powershell PS1 script
 
  .. code-block:: xml 
+  :linenos:
 
-   <execute title="My PS1 Script" command="C:\Windows\system32\WindowsPowerShell\v1.0\powershell.exe" arguments="C:\SilverMonkey\Scripts\MyFirstscript.ps1 -PackagingJobId {ID} -OtherParam &quot;{Var1}&quot;" wait="false" />
+   <execute   
+      title="My PS1 Script" 
+      command="C:\Windows\system32\WindowsPowerShell\v1.0\powershell.exe"
+      arguments="C:\SilverMonkey\Scripts\MyFirstscript.ps1 -PackagingJobId {ID} -OtherParam &quot;{Var1}&quot;"
+      wait="false" 
+   />
+
 
 .. note:: Using quations within XML attributes: &quot;{Var1}&quot; 
 
