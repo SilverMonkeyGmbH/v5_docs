@@ -14,21 +14,64 @@ Views
 Form Elements
 ===============
 
+Every form element has to be definded in 
+
+ .. code-block:: xml
+  :linenos:
+
+  <views><view><controls>
+
 ------------------
 headline
 ------------------
+
+Enter the following code to display a headline:
+
+  .. code-block:: xml
+    :linenos:
+
+    <views><view><controls><headline text="Text">
+
 
 ------------------
 section
 ------------------
 
+Define a section as follows
+
+  .. code-block:: xml
+    :linenos:
+
+    <views><view><controls><section text="Text">
+
 ------------------
 paragraph
 ------------------
 
+Define a paragraph as follows
+
+  .. code-block:: xml
+    :linenos:
+
+    <views><view><controls><paragraph text="Text">
+
 ------------------
 attribute
 ------------------
+
+You can add an attribute in this way
+
+  .. code-block:: xml
+    :linenos:
+
+    <views>
+    <view>
+    <controls>
+    <attribute 
+        field="attribute name"
+        validation="*"
+        readonly="true|false"
+        width=">
 
 
 ------------------
