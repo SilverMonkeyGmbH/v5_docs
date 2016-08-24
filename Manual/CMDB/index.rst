@@ -21,6 +21,10 @@ Every form element has to be definded in
 
   <views><view><controls>
 
+.. note:: In the following sections, expressions in square brackets are placeholders.
+          Please be sure to remove the brackets and replace the placeholder with the specific text you need to use.
+          (e.g. if you want to display a widget 300 pixels wide, change *width="[250]"* to *width="300"*.
+
 ------------------
 headline
 ------------------
@@ -30,7 +34,7 @@ Enter the following code to display a headline:
   .. code-block:: xml
     :linenos:
 
-    <views><view><controls><headline text="Text">
+    <views><view><controls><headline text="[Text]">
 
 
 ------------------
@@ -42,7 +46,7 @@ Define a section as follows
   .. code-block:: xml
     :linenos:
 
-    <views><view><controls><section text="Text">
+    <views><view><controls><section text="[Text]">
 
 ------------------
 paragraph
@@ -53,12 +57,11 @@ Define a paragraph as follows
   .. code-block:: xml
     :linenos:
 
-    <views><view><controls><paragraph text="Text">
+    <views><view><controls><paragraph text="[Text]">
 
 ------------------
 attribute
 ------------------
-
 You can add an attribute in this way
 
   .. code-block:: xml
@@ -99,10 +102,10 @@ You can add an attribute in this way
     "forceDefault", "Forced implementation of the default values."
     "Comment", "Add a comment to the attribute. It will be displayed when the curser is moved to the ""*"" at the end of the attribute."
 
+
 ------------------
 connections
 ------------------
-
 Add connections using the following xml-statements
 
     .. code-block:: xml 
