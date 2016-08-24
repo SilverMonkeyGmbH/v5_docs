@@ -228,7 +228,7 @@ See :ref:`tut-massImport` for more information.
    "param=""[String]""", "String to pass to the SQL scripts executed on runtime of the mass import."
 
 
-**Available varibles for SQL statements**
+**Available variables for SQL statements**
 
 .. csv-table:: 
    :header: "Variable","Description"
@@ -239,51 +239,19 @@ See :ref:`tut-massImport` for more information.
    "{user}", "Username of the currently logged on user (DOMAIN\Username)"
    "{id}", "Id of the CMDB item. Note: Only available when opened via action button."
    "{param}", "Additional parameters defined in the view. Note: Only available when opened via action button."
-   
-
 
 
 **Examples:**
 
 1. Executing a batch file
 
- .. code-block:: xml 
-  :linenos:
-
-   <execute   
-      title="My CMD Script" 
-      command="C:\windows\system32\cmd.exe"
-      arguments="/C C:\SilverMonkey\Scripts\MyFirstscript.cmd {ID}"
-      wait="false" 
-   />
-
-.. note:: You can also execute scripts from a network path. Make sure, that the IIS Application Pool is configured to use a specific service account (Default is LOCALSYSTEM).
-
-
 .. code-block:: xml 
   :linenos:
 
-   <execute   
-      title="My CMD Script" 
-      command="C:\windows\system32\cmd.exe"
-      arguments="/C \\networkpath\share\scripts\myscript.cmd {ID}"
-      wait="false" 
-   />
-
-
-2. Executing a powershell PS1 script
-
- .. code-block:: xml 
-  :linenos:
-
-   <execute   
-      title="My PS1 Script" 
-      command="C:\Windows\system32\WindowsPowerShell\v1.0\powershell.exe"
-      arguments="C:\SilverMonkey\Scripts\MyFirstscript.ps1 -PackagingJobId {ID} -OtherParam &quot;{Var1}&quot;"
-      wait="false" 
-   />
-
-
+  <execute   
+    title="Transfer Computer to SCCM" 
+    param="SingleTransfer"
+  />
 
 
 ------------------
