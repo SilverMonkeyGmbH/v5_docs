@@ -5,6 +5,8 @@ Manual for module "CMDB"
   :local:
   :depth: 3
 
+  .. warning:: This article is under construction! Please DO NOT use any of the instructions below, yet! You may cause damage to your system. This article will be finished soon.
+
 
 ************************************************************************************
 Views
@@ -14,12 +16,16 @@ Views
 Form Elements
 ===============
 
+Form elements are displayed in detail forms. 
+
 Every form element has to be definded in 
 
  .. code-block:: xml
   :linenos:
 
   <views><view><controls>
+
+
 
 .. note:: In the following sections, expressions in square brackets are placeholders.
           Please be sure to remove the brackets and replace the placeholder with the specific text you need to use.
@@ -34,7 +40,7 @@ Enter the following code to display a headline:
   .. code-block:: xml
     :linenos:
 
-    <views><view><controls><headline text="[Text]">
+    <views><view><controls><headline text="[Text]" />
 
 
 ------------------
@@ -46,7 +52,7 @@ Define a section as follows
   .. code-block:: xml
     :linenos:
 
-    <views><view><controls><section text="[Text]">
+    <views><view><controls><section text="[Text]" />
 
 ------------------
 paragraph
@@ -57,12 +63,13 @@ Define a paragraph as follows
   .. code-block:: xml
     :linenos:
 
-    <views><view><controls><paragraph text="[Text]">
+    <views><view><controls><paragraph text="[Text]" />
 
 ------------------
 attribute
 ------------------
-You can add an attribute in this way
+
+You can add an attribute this way
 
   .. code-block:: xml
     :linenos:
@@ -80,7 +87,9 @@ You can add an attribute in this way
         setDefaultOnLoad="[rule]"
         forceDefault="[true|false]"
         Comment="[comment]"
-    >
+    />
+
+
 
 .. csv-table:: 
    :header: "Property","Description"
@@ -102,10 +111,13 @@ You can add an attribute in this way
     "forceDefault", "Forced implementation of the default values."
     "Comment", "Add a comment to the attribute. It will be displayed when the curser is moved to the ""*"" at the end of the attribute."
 
+**Examples:**
 
+1. Imagine you needed a new attribute called 
 ------------------
 connections
 ------------------
+Connections are connections to objects. It is possible to set up new connections or new objects.
 Add connections using the following xml statement
 
     .. code-block:: xml 
@@ -123,7 +135,7 @@ Add connections using the following xml statement
         link="[true|false]"
         create="[view1; view2]"
         readOnly="[true|false]"
-      >
+      />
 
 .. csv-table:: 
    :header: "Property","Description"
@@ -154,7 +166,7 @@ Include an HTML-link by using the following xml statement
         url="[reference]"
         label="[text]"
         icon="[name]"
-      >
+      />
 
 .. csv-table:: 
    :header: "Property","Description"
