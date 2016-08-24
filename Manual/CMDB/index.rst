@@ -202,6 +202,86 @@ However, you can use in the script impersonation for using specific accounts.
 
 .. note:: Using quations within XML attributes: &quot;{Var1}&quot; 
 
+------------------
+CMDB2SCCM
+------------------
+
+Creates or edits in Microsoft ConfigMgr one or more computer objects and performs additional actions regarding this systems:
+- Add variables
+- Creates direct memberships for ConfigMgr Collections
+
+This action button war orignally used for mass import of systems. By defining the CMDB mass import configuration to accept single systems by parameter also single systems can be imported.
+See :ref:`_tut-massImport` for more information.
+
+
+ .. code-block:: xml 
+  :linenos:
+
+   <CMDB2SCCM   
+      title="Title of the button" 
+      command="C:\windows\system32\cmd.exe"
+      arguments="{Var1} {Var2} {Var3}"
+      exit_1="Execution was sucessfully processed."
+      exit_2="Error while execution. See log for details."
+      wait="true" 
+   />
+
+**Available attributes**
+
+.. csv-table:: 
+   :header: "Attribute","Description"
+   :widths: 40,60
+
+   "title=""Resource""", "Title of the button"
+   "command=""PathToExe""", "Full path to the executable. Environment variables are not supported."
+   "arguments=""{Var1} {Var2} {Var3}""", "Arguments passed to the executed process."
+   "exit_nn=""Ressource""", "After execution the exit code will be passed to the website. If a corresponding exit_nn parameter is set, a pop up is displayed to the user."
+   "wait=""true/false""", "If set to true, the website waits for the execution to end."
+
+.. warning:: If "wait" is set to "true" be aware that the internet browser and the IIS session itself has an idle timeout. Use wait=true only if the script is executed within seconds.  
+
+**Examples:**
+
+1. Executing a batch file
+
+ .. code-block:: xml 
+  :linenos:
+
+   <execute   
+      title="My CMD Script" 
+      command="C:\windows\system32\cmd.exe"
+      arguments="/C C:\SilverMonkey\Scripts\MyFirstscript.cmd {ID}"
+      wait="false" 
+   />
+
+.. note:: You can also execute scripts from a network path. Make sure, that the IIS Application Pool is configured to use a specific service account (Default is LOCALSYSTEM).
+
+
+.. code-block:: xml 
+  :linenos:
+
+   <execute   
+      title="My CMD Script" 
+      command="C:\windows\system32\cmd.exe"
+      arguments="/C \\networkpath\share\scripts\myscript.cmd {ID}"
+      wait="false" 
+   />
+
+
+2. Executing a powershell PS1 script
+
+ .. code-block:: xml 
+  :linenos:
+
+   <execute   
+      title="My PS1 Script" 
+      command="C:\Windows\system32\WindowsPowerShell\v1.0\powershell.exe"
+      arguments="C:\SilverMonkey\Scripts\MyFirstscript.ps1 -PackagingJobId {ID} -OtherParam &quot;{Var1}&quot;"
+      wait="false" 
+   />
+
+
+
 
 ------------------
 CopyFiles
