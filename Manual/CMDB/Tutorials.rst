@@ -80,6 +80,13 @@ A set a attributes and form elements are suggested automatically. You can delete
 
 .. image:: _static/Tutorial_FirstCMDBClass_10.png
 
+Add an action called "CMDB2SCCM" to the form. The final result of the form looks like this:
+
+.. literalinclude:: _static/ViewFormExample1.xml
+    :language: xml
+    :linenos:
+    :emphasize-lines: 5-9
+
 When you go to CMDB you can have a look at the result of our list and form:
 
 .. image:: _static/Tutorial_FirstCMDBClass_11.png
