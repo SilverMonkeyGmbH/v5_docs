@@ -302,6 +302,7 @@ This action button was orignally used for mass import of systems. By defining th
    <CMDB2SCCM   
       title="Title of the button" 
       param="[String]"
+      restart="true|false"
    />
 
 **Available attributes**
@@ -312,20 +313,7 @@ This action button was orignally used for mass import of systems. By defining th
 
    "title=""Resource""", "Title of the button"
    "param=""[String]""", "String to pass to the SQL scripts executed on runtime of the mass import."
-
-
-**Available variables for SQL statements**
-
-.. csv-table:: 
-   :header: "Variable","Description"
-   :widths: 40,60
-
-   "{0}", "Selected (computer) item database IDs in the popup."
-   "{roles}", "Roles the user is currently in."
-   "{user}", "Username of the currently logged on user (DOMAIN\Username)"
-   "{id}", "Id of the CMDB item. Note: Only available when opened via action button."
-   "{param}", "Additional parameters defined in the view. Note: Only available when opened via action button."
-
+   "restart=""true|false""", "If set to false, the button will be invisible when executed once."
 
 **Examples:**
 
@@ -337,6 +325,7 @@ This action button was orignally used for mass import of systems. By defining th
   <CMDB2SCCM   
     title="Transfer Computer to SCCM" 
     param="SingleTransfer"
+    restart="true"
   />
 
 
@@ -501,7 +490,7 @@ You can define very specific filters and conditions with TSQL in lists.
 Attributes
 ************************************************************************************
 
-**Differnt types of attributes**
+**Different types of attributes**
 
 You can create different types of attributes to customize the formular to your needs. These attributes have different settings and functions, these are described in the two tables below.
 
@@ -571,21 +560,55 @@ The configuration for SCCM Transfer is in "Settings->CMDB".
    "Description (de/en)", "Info text displayed in the popup"
    "List query", "Query which builds up the dropdown list in the popup."
    "Computer query", "Selects mandatory data for computer import. 
-   It is important to stick to the correct order of the selected attributes.
-   1 = Unique ID of computer element in SIM database
-   2 = Target computer name
-   3 = MAC Address
-   4 = SMBIOS GUID (if available the computer will be created with SMBIOSGUID rather that MAC Address
+   It is important to stick to the correct order of the selected attributes:
+
+    1. = Unique ID of computer element in SIM database
+    2. = Target computer name
+    3. = MAC Address
+    4. = SMBIOS GUID (if available the computer will be created with SMBIOSGUID rather that MAC Address
+
+   Available variables:
+
+    - ""{0}"" = Selected (computer) item database IDs in the popup.
+    - ""{roles}"" = Roles the user is currently in.
+    - ""{user}"" = Username of the currently logged on user (DOMAIN\Username)
+    - ""{id}"" = Id of the CMDB item. Note: Only available when opened via action button.
+    - ""{param}"" = Additional parameters defined in the view. Note: Only available when opened via action button.
+
    "
-   "Variable query", "Variables added to the created SCCM computer object."
+   "Variable query", "Variables added to the created SCCM computer object.
+   It is important to stick to the correct order of the selected attributes:
+
+    1. = Name of the computervariable
+    2. = Value of the computervariable
+    3. = Locale of the computervariable (if unknown please use '1031')
+
+   Available variables:
+
+    - ""{0}"" = SIM DB ID of the transfered computer object.
+    - ""{param}"" = Parameter string given by the corresponding action button parameter.
+
+   Special variable prefixes:
+
+    - ""ConfigMgrColl"" = If variable has that prefix, a direct membership will be created for the collection **name**
+    - ""ConfigMgrPrimaryUser"" = If variable has that prefix, a primary user relationship will be created (``DOMAIN\Username`` notation)
+   
+   "
    "Software query", "Variable SCCM **package** list created at runtime and added as variables to the computer object."
-   "Application query", "Variable SCCM **application ** list created at runtime and added as variables to the computer object."
+   "Application query", "Variable SCCM **application** list created at runtime and added as variables to the computer object."
    "Computer update", "SQL script which is executed for every transfered computer with import result.
    Available variables:
-   {0} = SIM DB ID of the transfered computer object.
-   {1} = Message of the result. If successful the message is empty."
+
+    - ""{0}"" = SIM DB ID of the transfered computer object.
+    - ""{1}"" = Message of the result. If successful the message is empty.
+
+   "
    "Site", "Target SCCM site object (Settings->Sites)."
-   "Configuration", "Computer configuration which is used as basis for creating computer object."
+   "Configuration", "Computer configuration (variables, collections) which is used as basis for creating computer object."
+
+
+  
+
 
 
 .. _CMDB-Single-computer-transfer:
@@ -593,6 +616,11 @@ The configuration for SCCM Transfer is in "Settings->CMDB".
 Single computer transfer example
 ======================================
 
+Exchange the following XML with the corresponding elements in your configuration.xml:
+
+.. literalinclude:: _static/ExampleSingleComputerTransfer.xml
+    :language: xml
+    :linenos:
 
 
 .. _CMDB-Multiple-computer-transfer:

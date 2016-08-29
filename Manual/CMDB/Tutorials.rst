@@ -37,7 +37,19 @@ For full reference see .. :ref:`CMDB-actions-CMDB2SCCM`.
 
 .. image:: _static/Tutorial_FirstCMDBClass_6.png 
 
-6. Create a list view
+The Language class is set up as the following:
+
+.. image:: _static/Tutorial_FirstCMDBClass_6_languageclass.png
+
+
+
+6. Set up naming rule
+
+The setting ``name rule`` defines how the internal database column ``SysDisplayName`` is set. It is important single column popups like the object reference chooser.  
+
+.. image:: _static/Tutorial_FirstCMDBClass_6_namerule.png 
+
+7. Create a list view
 
 .. note:: There are two different types of views: Lists and Forms. Lists display multiple elements of a CMDB Class. When clicking on an item, the configured form will be opened to view or edit the item.
 
@@ -50,8 +62,7 @@ Configure the list like the following
 Two important things: 
 
  - The setting ``detailView="Computers Details"`` says that there is a form view with the name "Computers Details" expected
- - The setting ``cmdb2sccm="true"`` displays a transfer button in the list context menu
- .. image:: _static/Tutorial_FirstCMDBClass_8_preview.png  
+ - The setting ``cmdb2sccm="true"`` displays a transfer button in the list context menu .. image:: _static/Tutorial_FirstCMDBClass_8_preview.png  
  - For full reference see :ref:`CMDB-Lists-View`
 
 .. literalinclude:: _static/ViewExample2.xml
@@ -59,7 +70,7 @@ Two important things:
     :linenos:
     :emphasize-lines: 5,11
 
-7. Create a form view
+8. Create a form view
 
 Create a new form view like the following (you have to stick to the configured name from the list view ``detailView="Computers Details"``):
 
@@ -85,3 +96,12 @@ For full reference see :ref:`CMDB-actions-CMDB2SCCM`.
 
 .. note:: This tutorial is built up on the database schema of the tutorial :ref:`tut-firstCMDBclass`.
 
+You have to get the following information to built up a import for SCCM:
+
+- SCCM collection **names** the computer has to be member of
+- Needed computer variable names and accepted values
+- Knowledge of the SIM database schema
+
+1. Follow :ref:`tut-firstCMDBclass`
+2. Follow :ref:`CMDB-Single-computer-transfer`
+3. 
