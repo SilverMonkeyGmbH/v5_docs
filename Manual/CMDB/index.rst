@@ -620,7 +620,6 @@ Exchange the following XML with the corresponding elements in your configuration
 
 .. literalinclude:: _static/ExampleSingleComputerTransfer.xml
     :language: xml
-    :linenos: 
     :emphasize-lines: 1
 
 
