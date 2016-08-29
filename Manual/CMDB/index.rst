@@ -10,7 +10,7 @@ Manual for module "CMDB"
 
 
 ************************************************************************************
-Views
+Form Views
 ************************************************************************************
 
 ===============
@@ -33,7 +33,7 @@ Every form element has to be definded in
           (e.g. if you want to display a widget 300 pixels wide, change *width="[250]"* to *width="300"*).
 
 ------------------
-headline
+Headline
 ------------------
 
 Enter the following code to display a headline:
@@ -45,7 +45,7 @@ Enter the following code to display a headline:
 
 
 ------------------
-section
+Section
 ------------------
 
 Define a section as follows
@@ -56,7 +56,7 @@ Define a section as follows
     <views><view><controls><section text="[Text]" />
 
 ------------------
-paragraph
+Paragraph
 ------------------
 
 Define a paragraph as follows
@@ -67,7 +67,7 @@ Define a paragraph as follows
     <views><view><controls><paragraph text="[Text]" />
 
 ------------------
-attribute
+Attribute
 ------------------
 
 For full reference see :ref:`CMDB-Attributes`:
@@ -118,7 +118,7 @@ You can add an attribute this way
 
 1. Imagine you needed a new attribute called 
 ------------------
-connections
+Connections
 ------------------
 Connections are connections to objects. It is possible to set up new connections or new objects.
 Add connections using the following xml statement
@@ -155,7 +155,7 @@ Add connections using the following xml statement
 
 
 ------------------
-link
+Link
 ------------------
 Include an HTML-link by using the following xml statement
 
@@ -291,8 +291,10 @@ The underlying code can be used in two methods:
  a) Via mass import button in lists
  b) Via action button in forms
 
-This action button war orignally used for mass import of systems. By defining the CMDB mass import configuration to accept single systems by parameter also single systems can be imported.
-See :ref:`tut-massImport` for more information.
+This action button was orignally used for mass import of systems. By defining the CMDB mass import configuration to accept single systems by parameter also single systems can be imported.
+
+- See :ref:`tut-massImport` for tutorial.
+- See :ref:`CMDB-SCCM-transfer` for more information.
 
 .. code-block:: xml 
   :linenos:
@@ -332,7 +334,7 @@ See :ref:`tut-massImport` for more information.
 .. code-block:: xml 
   :linenos:
 
-  <execute   
+  <CMDB2SCCM   
     title="Transfer Computer to SCCM" 
     param="SingleTransfer"
   />
@@ -356,26 +358,141 @@ CreateApplication
 ------------------
 
 ------------------
-comment
+Comment
 ------------------
 
 ------------------
-save
+Save
 ------------------
 
 ------------------
-sendMail
+SendMail
 ------------------
 
 ------------------
-importXML
+ImportXML
 ------------------
 
 ----------------------
-createActiveDirectory
+CreateActiveDirectory
 ----------------------
 
 
+************************************************************************************
+List Views
+************************************************************************************
+
+You can create custom lists and customize them to fit your needs. The following subchapters describe the options you have when you are creating or customizing a list. 
+
+===================
+Properties
+===================
+
+.. csv-table:: 
+   :header: "Property","Description"
+   :widths: 40,80
+
+   "Design", "Choose between List and Formular initially"
+   "Name - de / Name - en", "The Displayname of the list"
+   "Sort order", "Choose where in the Drop Down the choosen list is displayed"
+   "Roles", "Choose wich roles can see the list"
+   "Definition", "The Definition of the list"
+
+
+Example List:
+
+ .. code-block:: xml 
+
+   <view splitterWidth="550" 
+            detailView="Paketdetails PackWF" 
+            newLink="" 
+            viewPane="false" 
+            refresh="true" 
+            excelExport="true" 
+            importExport="false"
+            popUp="1100,800"> 
+
+   <columns>
+        <column field="ClientCode"  width="70" />
+        <column field="RequestID"  width="70" />
+        <column field="RequestReference"  width="70" />
+        <column field="SysStatus"  width="180" />
+        <column field="RequestManufacturerName"  width="200" />
+        <column field="RequestProductName"  width="200" />
+        <column field="RequestProductVersion"  width="100" />
+        <column field="PackagingPackageName"  width="-1" />
+        <column field="PackageSWGroups"  width="200" />
+   </columns>
+
+   <data>
+        <condition> ({search}='' OR PackageProductName like {search} OR ClientCode like {search} OR RequestReference like {search} OR RequestID like {search}) </condition>
+   </data>
+   </view>
+
+.. _CMDB-Lists-View:
+
+======================================
+   <view> Definition
+======================================
+
+**Parameters**
+
+.. csv-table::
+   :header: "View Options","Description"
+   :widths: 40,80
+
+   "splitterWidth", "Width of the splitter shown in list form. (in pixels)"
+   "detailView- de / Name - en", "Specifying the form name that is to be used for the detailed representation of a list form."
+   "newLink", "Construction of new objects in a list. The “Detailed view“ is used as detail form"
+   "viewPane", "If this value is set to “false“, the selection is displayed as a drop-down list."
+   "refresh", "Display update function in list view"
+   "excelExport", "Display excel export function in list view"
+   "importExport", "Display import/export function in list view"
+   "popUp", "By specifying a popup window size in the format “width, height“, a list view opens choosen entries in a new window e.g .: “800,600“"
+
+
+======================================
+   <columns> Definition
+======================================
+
+Columns represent Attributes and are used to display their values in a list. You can see the syntax in the code-block at the start of this section.
+
+.. csv-table::
+   :header: "Column Options","Description"
+   :widths: 40,80
+
+   "Column field", "The fieldname of the attribute to be displayed "
+   "width", "the width of the column "
+
+======================================
+   <data> Definition
+======================================
+
+In the <data> section you can define the initial search condition for the displayed list objects. You can also define in which attributes to search.
+
+The highlighted part in the following code block causes the website to display just the entries that posses a value like 'john doe' in the attributes IssueEditor, Requestor or qualityinspector.
+
+ .. code-block:: xml 
+   :emphasize-lines: 4
+
+   <condition>
+      ({search}='' OR IssueID like {search} OR Title like {search})
+   AND 
+      (IssueEditor like '%John Doe%' OR Requestor like '%John Doe%' OR qualityinspector like '%John Doe%')
+   </condition>
+
+The next highlighted part in the code block defines that the list search associated with that list, will search in the attributes IssueID or Title.
+
+ .. code-block:: xml 
+   :emphasize-lines: 2
+
+   <condition>
+      ({search}='' OR IssueID like {search} OR Title like {search})
+   AND 
+      (IssueEditor like '%John Doe%' OR Requestor like '%John Doe%' OR qualityinspector like '%John Doe%')
+   </condition>
+
+You can define very specific filters and conditions with TSQL in lists. 
 
 
 .. _CMDB-Attributes:
@@ -434,119 +551,51 @@ You can create different types of attributes to customize the formular to your n
    "LDAP path", "LADP path for the AD Users/Groups"
 
 
-
+.. _CMDB-SCCM-transfer:
 ************************************************************************************
-Lists
+SCCM Transfer
 ************************************************************************************
 
-You can create custom lists and customize them to fit your needs. The following subchapters describe the options you have when you are creating or customizing a list. 
+The SCCM transfer module is basically a collection of SQL queries which are executed and delivered to SCCM. This way customers can fully change the behaviour to their needs.
+In general there are two different modes the SCCM transfer can be configured:
 
-===================
-Properties
-===================
+a) Single computer transfer (used by form action button)
+b) Multiple computer transfer (used by list action button)
+
+The configuration for SCCM Transfer is in "Settings->CMDB".
 
 .. csv-table:: 
-   :header: "Property","Description"
+   :header: "Function","Description"
    :widths: 40,80
 
-   "Design", "Choose between List and Formular initially"
-   "Name - de / Name - en", "The Displayname of the list"
-   "Sort order", "Choose where in the Drop Down the choosen list is displayed"
-   "Roles", "Choose wich roles can see the list"
-   "Definition", "The Definition of the list"
+   "Description (de/en)", "Info text displayed in the popup"
+   "List query", "Query which builds up the dropdown list in the popup."
+   "Computer query", "Selects mandatory data for computer import. 
+   It is important to stick to the correct order of the selected attributes.
+   1 = Unique ID of computer element in SIM database
+   2 = Target computer name
+   3 = MAC Address
+   4 = SMBIOS GUID (if available the computer will be created with SMBIOSGUID rather that MAC Address
+   "
+   "Variable query", "Variables added to the created SCCM computer object."
+   "Software query", "Variable SCCM **package** list created at runtime and added as variables to the computer object."
+   "Application query", "Variable SCCM **application ** list created at runtime and added as variables to the computer object."
+   "Computer update", "SQL script which is executed for every transfered computer with import result.
+   Available variables:
+   {0} = SIM DB ID of the transfered computer object.
+   {1} = Message of the result. If successful the message is empty."
+   "Site", "Target SCCM site object (Settings->Sites)."
+   "Configuration", "Computer configuration which is used as basis for creating computer object."
 
 
-Example List:
-
- .. code-block:: xml 
-
-   <view splitterWidth="550" 
-            detailView="Paketdetails PackWF" 
-            newLink="" 
-            viewPane="false" 
-            refresh="true" 
-            excelExport="true" 
-            importExport="false"
-            popUp="1100,800"> 
-
-   <columns>
-        <column field="ClientCode"  width="70" />
-        <column field="RequestID"  width="70" />
-        <column field="RequestReference"  width="70" />
-        <column field="SysStatus"  width="180" />
-        <column field="RequestManufacturerName"  width="200" />
-        <column field="RequestProductName"  width="200" />
-        <column field="RequestProductVersion"  width="100" />
-        <column field="PackagingPackageName"  width="-1" />
-        <column field="PackageSWGroups"  width="200" />
-   </columns>
-
-   <data>
-        <condition> ({search}='' OR PackageProductName like {search} OR ClientCode like {search} OR RequestReference like {search} OR RequestID like {search}) </condition>
-   </data>
-   </view>
-
-.. _CMDB-Lists-View:
-
+.. _CMDB-Single-computer-transfer:
 ======================================
-   <view>
+Single computer transfer example
 ======================================
 
-**Parameters**
-
-.. csv-table::
-   :header: "View Options","Description"
-   :widths: 40,80
-
-   "splitterWidth", "Width of the splitter shown in list form. (in pixels)"
-   "detailView- de / Name - en", "Specifying the form name that is to be used for the detailed representation of a list form."
-   "newLink", "Construction of new objects in a list. The “Detailed view“ is used as detail form"
-   "viewPane", "If this value is set to “false“, the selection is displayed as a drop-down list."
-   "refresh", "Display update function in list view"
-   "excelExport", "Display excel export function in list view"
-   "importExport", "Display import/export function in list view"
-   "popUp", "By specifying a popup window size in the format “width, height“, a list view opens choosen entries in a new window e.g .: “800,600“"
 
 
+.. _CMDB-Multiple-computer-transfer:
 ======================================
-   <columns>
+Multiple computer transfer example
 ======================================
-
-Columns represent Attributes and are used to display their values in a list. You can see the syntax in the code-block at the start of this section.
-
-.. csv-table::
-   :header: "Column Options","Description"
-   :widths: 40,80
-
-   "Column field", "The fieldname of the attribute to be displayed "
-   "width", "the width of the column "
-
-======================================
-   <data> 
-======================================
-
-In the <data> section you can define the initial search condition for the displayed list objects. You can also define in which attributes to search.
-
-The highlighted part in the following code block causes the website to display just the entries that posses a value like 'john doe' in the attributes IssueEditor, Requestor or qualityinspector.
-
- .. code-block:: xml 
-   :emphasize-lines: 4
-
-   <condition>
-      ({search}='' OR IssueID like {search} OR Title like {search})
-   AND 
-      (IssueEditor like '%John Doe%' OR Requestor like '%John Doe%' OR qualityinspector like '%John Doe%')
-   </condition>
-
-The next highlighted part in the code block defines that the list search associated with that list, will search in the attributes IssueID or Title.
-
- .. code-block:: xml 
-   :emphasize-lines: 2
-
-   <condition>
-      ({search}='' OR IssueID like {search} OR Title like {search})
-   AND 
-      (IssueEditor like '%John Doe%' OR Requestor like '%John Doe%' OR qualityinspector like '%John Doe%')
-   </condition>
-
-You can define very specific filters and conditions with TSQL in lists. 
