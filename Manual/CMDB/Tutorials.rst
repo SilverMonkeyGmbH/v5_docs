@@ -81,4 +81,7 @@ You can add more attributes to the class and use those attributes in lists and f
 Setting up mass import for ConfigMgr
 ************************************************************************************
 
-For full reference see .. :ref:`CMDB-actions-CMDB2SCCM`.
+For full reference see :ref:`CMDB-actions-CMDB2SCCM`.
+
+.. note:: This tutorial is built up on the database schema of the tutorial :ref:`tut-firstCMDBclass`.
+
