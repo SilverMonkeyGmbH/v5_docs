@@ -620,7 +620,8 @@ Exchange the following XML with the corresponding elements in your configuration
 
 .. literalinclude:: _static/ExampleSingleComputerTransfer.xml
     :language: xml
-    :linenos: 1
+    :linenos: 
+    :emphasize-lines: 1
 
 
 .. warning:: After import make sure you have "Site" and "Configuration" configured correctly in Settings->CMDB
