@@ -110,7 +110,7 @@ You have to get the following information to built up a import for SCCM:
 - Knowledge of the SIM database schema
 
 1. Follow :ref:`tut-firstCMDBclass`
-2. Follow :ref:`CMDB-Single-computer-transfer`
+2. Follow :ref:`CMDB-SCCM-transfer`
 3. Create a dummy computer and click on "Transfer computer to SCCM"
 
 .. image:: _static/Tutorial_MassImport_01.png
@@ -126,15 +126,18 @@ You have to get the following information to built up a import for SCCM:
 - Application Query
 - Variable Query
 
-.. image:: _static/Tutorial_MassImport_02.png
+.. image:: _static/Tutorial_MassImport_02_interalquery.png
 
 6. The result in SCCM looks like the following:
 
 Variables:
+
 .. image:: _static/Tutorial_MassImport_03.png
 
 Primary Users: 
+
 .. image:: _static/Tutorial_MassImport_04.png
 
 Collection membership: 
+
 .. image:: _static/Tutorial_MassImport_05.png 
