@@ -2,15 +2,13 @@
 <views>
   <view actions="true" status="1">
     <controls>
-	  <!-- Action Buttons -->
-      <createCollection ...></createCollection>
-	  <!-- Attributes -->
-	  <myAttribute />
+      <!-- Action Buttons -->
+      <createCollection/>
+      <!-- Attributes -->
+      <myAttribute/>
     </controls>
   </view>
   <view actions="true" status="2">
-    <controls>
-      ...
-    </controls>
+    <controls>...</controls>
   </view>
 </views>
