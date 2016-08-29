@@ -111,4 +111,30 @@ You have to get the following information to built up a import for SCCM:
 
 1. Follow :ref:`tut-firstCMDBclass`
 2. Follow :ref:`CMDB-Single-computer-transfer`
-3. 
+3. Create a dummy computer and click on "Transfer computer to SCCM"
+
+.. image:: _static/Tutorial_MassImport_01.png
+
+4. Select first "Rollout unit" (Rollout units makes more sense with multiple computer imports...) and click on execute
+
+.. image:: _static/Tutorial_MassImport_02.png
+
+5. When the action is performed in SQL level the following results will be translated by the mass import feature:
+
+- Computer Query
+- Package Query
+- Application Query
+- Variable Query
+
+.. image:: _static/Tutorial_MassImport_02.png
+
+6. The result in SCCM looks like the following:
+
+Variables:
+.. image:: _static/Tutorial_MassImport_03.png
+
+Primary Users: 
+.. image:: _static/Tutorial_MassImport_04.png
+
+Collection membership: 
+.. image:: _static/Tutorial_MassImport_05.png 
