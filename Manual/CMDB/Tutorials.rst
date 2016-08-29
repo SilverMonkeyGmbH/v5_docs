@@ -12,6 +12,8 @@ Tutorials for module "CMDB"
 Creating first CMDB class
 ************************************************************************************
 
+For full reference see .. :ref:`CMDB-actions-CMDB2SCCM`.
+
 .. note:: You have to be in a role that has the right "Edit settings".
 
 1. Go to "Settings" tab
@@ -49,14 +51,29 @@ Two important things:
 
  - The setting ``detailView="Computers Details"`` says that there is a form view with the name "Computers Details" expected
  - The setting ``cmdb2sccm="true"`` displays a transfer button in the list context menu
+ .. image:: _static/Tutorial_FirstCMDBClass_8_preview.png  
+ - For full reference see :ref:`CMDB-Lists-View`
 
 .. literalinclude:: _static/ViewExample2.xml
     :language: xml
     :linenos:
     :emphasize-lines: 5,11
 
-
 7. Create a form view
+
+Create a new form view like the following (you have to stick to the configured name from the list view ``detailView="Computers Details"``):
+
+.. image:: _static/Tutorial_FirstCMDBClass_9.png
+
+A set a attributes and form elements are suggested automatically. You can delete the ``<connections link="true" />`` line as no connections are configured in this example.
+
+.. image:: _static/Tutorial_FirstCMDBClass_10.png
+
+When you go to CMDB you can have a look at the result of our list and form:
+
+.. image:: _static/Tutorial_FirstCMDBClass_11.png
+
+You can add more attributes to the class and use those attributes in lists and forms as you need.
 
 .. _tut-massImport:
 
@@ -64,3 +81,4 @@ Two important things:
 Setting up mass import for ConfigMgr
 ************************************************************************************
 
+For full reference see .. :ref:`CMDB-actions-CMDB2SCCM`.

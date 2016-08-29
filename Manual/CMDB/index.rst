@@ -70,6 +70,8 @@ Define a paragraph as follows
 attribute
 ------------------
 
+For full reference see :ref:`CMDB-Attributes`:
+
 You can add an attribute this way
 
   .. code-block:: xml
@@ -270,6 +272,9 @@ However, you can use in the script impersonation for using specific accounts.
 
 .. note:: Using quations within XML attributes: &quot;{Var1}&quot; 
 
+
+.. _CMDB-actions-CMDB2SCCM:
+
 ------------------
 CMDB2SCCM
 ------------------
@@ -373,7 +378,7 @@ createActiveDirectory
 
 
 
-
+.. _CMDB-Attributes:
 
 ************************************************************************************
 Attributes
@@ -480,6 +485,8 @@ Example List:
         <condition> ({search}='' OR PackageProductName like {search} OR ClientCode like {search} OR RequestReference like {search} OR RequestID like {search}) </condition>
    </data>
    </view>
+
+.. _CMDB-Lists-View:
 
 ======================================
    <view>
