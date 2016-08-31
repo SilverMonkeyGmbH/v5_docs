@@ -9,7 +9,7 @@ Manual for module "CMDB"
 
 
 ************************************************************************************
-Views
+Form Views
 ************************************************************************************
 
 ===============
@@ -32,7 +32,7 @@ Every form element has to be definded in
           (e.g. if you want to display a widget 300 pixels wide, change *width="[250]"* to *width="300"*).
 
 ------------------
-headline
+Headline
 ------------------
 
 Enter the following code to display a headline:
@@ -44,7 +44,7 @@ Enter the following code to display a headline:
 
 
 ------------------
-section
+Section
 ------------------
 
 Define a section as follows
@@ -55,7 +55,7 @@ Define a section as follows
     <views><view><controls><section text="[Text]" />
 
 ------------------
-paragraph
+Paragraph
 ------------------
 
 Define a paragraph as follows
@@ -66,8 +66,10 @@ Define a paragraph as follows
     <views><view><controls><paragraph text="[Text]" />
 
 ------------------
-attribute
+Attribute
 ------------------
+
+For full reference see :ref:`CMDB-Attributes`:
 
 You can add an attribute this way
 
@@ -118,7 +120,7 @@ You can add an attribute this way
 .. Erklärung zur Erstellung von Attributen und SQL-Zusammenhang fehlt noch
    
 ------------------
-connections
+Connections
 ------------------
 Connections are connections to objects. It is possible to set up new connections or new objects.
 Add connections using the following xml statement
@@ -155,7 +157,7 @@ Add connections using the following xml statement
 
 
 ------------------
-link
+Link
 ------------------
 Include an HTML-link by using the following xml statement
 
@@ -272,6 +274,9 @@ However, you can use in the script impersonation for using specific accounts.
 
 .. note:: Using quations within XML attributes: &quot;{Var1}&quot; 
 
+
+.. _CMDB-actions-CMDB2SCCM:
+
 ------------------
 CMDB2SCCM
 ------------------
@@ -288,8 +293,10 @@ The underlying code can be used in two methods:
  a) Via mass import button in lists
  b) Via action button in forms
 
-This action button war orignally used for mass import of systems. By defining the CMDB mass import configuration to accept single systems by parameter also single systems can be imported.
-See :ref:`tut-massImport` for more information.
+This action button was orignally used for mass import of systems. By defining the CMDB mass import configuration to accept single systems by parameter also single systems can be imported.
+
+- See :ref:`tut-massImport` for tutorial.
+- See :ref:`CMDB-SCCM-transfer` for more information.
 
 .. code-block:: xml 
   :linenos:
@@ -297,6 +304,7 @@ See :ref:`tut-massImport` for more information.
    <CMDB2SCCM   
       title="Title of the button" 
       param="[String]"
+      restart="true|false"
    />
 
 **Available attributes**
@@ -307,20 +315,7 @@ See :ref:`tut-massImport` for more information.
 
    "title=""Resource""", "Title of the button"
    "param=""[String]""", "String to pass to the SQL scripts executed on runtime of the mass import."
-
-
-**Available variables for SQL statements**
-
-.. csv-table:: 
-   :header: "Variable","Description"
-   :widths: 40,60
-
-   "{0}", "Selected (computer) item database IDs in the popup."
-   "{roles}", "Roles the user is currently in."
-   "{user}", "Username of the currently logged on user (DOMAIN\Username)"
-   "{id}", "Id of the CMDB item. Note: Only available when opened via action button."
-   "{param}", "Additional parameters defined in the view. Note: Only available when opened via action button."
-
+   "restart=""true|false""", "If set to false, the button will be invisible when executed once."
 
 **Examples:**
 
@@ -329,9 +324,10 @@ See :ref:`tut-massImport` for more information.
 .. code-block:: xml 
   :linenos:
 
-  <execute   
+  <CMDB2SCCM   
     title="Transfer Computer to SCCM" 
     param="SingleTransfer"
+    restart="true"
   />
 
 
@@ -353,87 +349,28 @@ CreateApplication
 ------------------
 
 ------------------
-comment
+Comment
 ------------------
 
 ------------------
-save
+Save
 ------------------
 
 ------------------
-sendMail
+SendMail
 ------------------
 
 ------------------
-importXML
+ImportXML
 ------------------
 
 ----------------------
-createActiveDirectory
+CreateActiveDirectory
 ----------------------
 
 
-
-
-
-
 ************************************************************************************
-Attributes
-************************************************************************************
-
-**Differnt types of attributes**
-
-You can create different types of attributes to customize the formular to your needs. These attributes have different settings and functions, these are described in the two tables below.
-
-.. csv-table::
-   :header: "Attribute Type","Description", "Additional Options"
-   :widths: 40,40,40
-
-
-   "String", "Field that holds a text", "Default Value, Input mask"
-   "Date", "Field that holds a date", "Default Value, Number Format"
-   "Integer", "Field that holds an integer", "Default Value, Number Format"
-   "Big integer", "Field that holds a big integer", "Default Value, Number Format"
-   "Float", "Field that holds a float", "Default Value, Number Format"
-   "Multilanguage Text", "-- Deprecated -- ", "-- Deprecated -- "
-   "Checkbox", "Field that displays a checkbox, can have the Status 'checked' or 'unchecked'", "Default value, Input mask"
-   "Data list", "Field that holds a fixed list of entrys that can be defined in the GUI, the entrys are seperated with a semicolon ('firstentry;secondentry')", "Items, Default Value, Fill stage"
-   "Config. list", "-- Deprecated --", "-- Deprecated --"
-   "SQL list", "-- Deprecated --", "-- Deprecated --"
-   "File", "Can contain files that are stored in the SQL Database", "Default value, Input mask"
-   "Object reference", "Field that references to another table and displays the defined entrys", "Object reference, Filter, Default value"
-   "Active Directory User", "Field that holds Users out of the Active Directory Cashe (the cashe is located in the SIM DB)", "LDAP path, Default value"
-   "Active Directory Group", "Field that holds Groups out of the Active Directory Cashe (the cashe is located in the SIM DB)", "LDAP path, Default"
-   "Packaging package name", "-- Deprecated --", "-- Deprecated --"
-   "Packaging operation system", "-- Deprecated --", "-- Deprecated --"
-   "Packaging site", "-- Deprecated --", "-- Deprecated --"
-
-**Extended Attribute Functions/Options**
-
-.. csv-table:: 
-   :header: "Function","Description"
-   :widths: 40,80
-
-   "Name - de / Name - en", "The Displayname of the attribute"
-   "Field name", "This is the actual column name in the SIM SQL DB"
-   "Database Type", "Describes the attributes type."
-   "LDAP path", "LADP path for the AD Users/Groups"
-   "Auto Postback", "-- Feature not used --"
-   "Suggestion", "Autocomplete. If suggestions are enabled, earlier entered will be suggested"
-   "Default value","Defines a default value that will be set automatically."
-   "Logical Key", "-- Feature not used --"
-   "Input mask","Specifies the required format of the entry. Example: **-**-**-**-**-** (for MAC-Adresses) '*' is a placeholder. A valid entry would be 11-11-11-11-11-11."
-   "Number format", "Defines the required format of every entry. Example: „#,##0.0“ „dd.MM.yyyy“"
-   "Items", "Items of a Datalist seperated by semicolon. Example: Yes;No;(choose)"
-   "Fill stage", "-- Feature not used --"
-   "Object reference", "Used for Object reference Attributes, choose the table you want to reference"
-   "Filter", "Used for Object reference Attributes, filter the entrys in the table you are referencing"
-   "LDAP path", "LADP path for the AD Users/Groups"
-
-
-
-************************************************************************************
-Lists
+List Views
 ************************************************************************************
 
 You can create custom lists and customize them to fit your needs. The following subchapters describe the options you have when you are creating or customizing a list. 
@@ -483,8 +420,10 @@ Example List:
    </data>
    </view>
 
+.. _CMDB-Lists-View:
+
 ======================================
-   <view>
+   <view> Definition
 ======================================
 
 **Parameters**
@@ -504,7 +443,7 @@ Example List:
 
 
 ======================================
-   <columns>
+   <columns> Definition
 ======================================
 
 Columns represent Attributes and are used to display their values in a list. You can see the syntax in the code-block at the start of this section.
@@ -517,7 +456,7 @@ Columns represent Attributes and are used to display their values in a list. You
    "width", "the width of the column "
 
 ======================================
-   <data> 
+   <data> Definition
 ======================================
 
 In the <data> section you can define the initial search condition for the displayed list objects. You can also define in which attributes to search.
@@ -545,3 +484,153 @@ The next highlighted part in the code block defines that the list search associa
    </condition>
 
 You can define very specific filters and conditions with TSQL in lists. 
+
+
+.. _CMDB-Attributes:
+
+************************************************************************************
+Attributes
+************************************************************************************
+
+**Different types of attributes**
+
+You can create different types of attributes to customize the formular to your needs. These attributes have different settings and functions, these are described in the two tables below.
+
+.. csv-table::
+   :header: "Attribute Type","Description", "Additional Options"
+   :widths: 40,40,40
+
+
+   "String", "Field that holds a text", "Default Value, Input mask"
+   "Date", "Field that holds a date", "Default Value, Number Format"
+   "Integer", "Field that holds an integer", "Default Value, Number Format"
+   "Big integer", "Field that holds a big integer", "Default Value, Number Format"
+   "Float", "Field that holds a float", "Default Value, Number Format"
+   "Multilanguage Text", "-- Deprecated -- ", "-- Deprecated -- "
+   "Checkbox", "Field that displays a checkbox, can have the Status 'checked' or 'unchecked'", "Default value, Input mask"
+   "Data list", "Field that holds a fixed list of entrys that can be defined in the GUI, the entrys are seperated with a semicolon ('firstentry;secondentry')", "Items, Default Value, Fill stage"
+   "Config. list", "-- Deprecated --", "-- Deprecated --"
+   "SQL list", "-- Deprecated --", "-- Deprecated --"
+   "File", "Can contain files that are stored in the SQL Database", "Default value, Input mask"
+   "Object reference", "Field that references to another table and displays the defined entrys", "Object reference, Filter, Default value"
+   "Active Directory User", "Field that holds Users out of the Active Directory Cashe (the cashe is located in the SIM DB)", "LDAP path, Default value"
+   "Active Directory Group", "Field that holds Groups out of the Active Directory Cashe (the cashe is located in the SIM DB)", "LDAP path, Default"
+   "Packaging package name", "-- Deprecated --", "-- Deprecated --"
+   "Packaging operation system", "-- Deprecated --", "-- Deprecated --"
+   "Packaging site", "-- Deprecated --", "-- Deprecated --"
+
+**Extended Attribute Functions/Options**
+
+.. csv-table:: 
+   :header: "Function","Description"
+   :widths: 40,80
+
+   "Name - de / Name - en", "The Displayname of the attribute"
+   "Field name", "This is the actual column name in the SIM SQL DB"
+   "Database Type", "Describes the attributes type."
+   "LDAP path", "LADP path for the AD Users/Groups"
+   "Auto Postback", "-- Feature not used --"
+   "Suggestion", "Autocomplete. If suggestions are enabled, earlier entered will be suggested"
+   "Default value","Defines a default value that will be set automatically."
+   "Logical Key", "-- Feature not used --"
+   "Input mask","Specifies the required format of the entry. Example: **-**-**-**-**-** (for MAC-Adresses) '*' is a placeholder. A valid entry would be 11-11-11-11-11-11."
+   "Number format", "Defines the required format of every entry. Example: „#,##0.0“ „dd.MM.yyyy“"
+   "Items", "Items of a Datalist seperated by semicolon. Example: Yes;No;(choose)"
+   "Fill stage", "-- Feature not used --"
+   "Object reference", "Used for Object reference Attributes, choose the table you want to reference"
+   "Filter", "Used for Object reference Attributes, filter the entrys in the table you are referencing"
+   "LDAP path", "LADP path for the AD Users/Groups"
+
+
+.. _CMDB-SCCM-transfer:
+************************************************************************************
+SCCM Transfer
+************************************************************************************
+
+The SCCM transfer module is basically a collection of SQL queries which are executed and delivered to SCCM. This way customers can fully change the behaviour to their needs.
+In general there are two different modes the SCCM transfer can be configured:
+
+a) Single computer transfer (used by form action button)
+b) Multiple computer transfer (used by list action button)
+
+The configuration for SCCM Transfer is in "Settings->CMDB".
+
+.. csv-table:: 
+   :header: "Function","Description"
+   :widths: 40,80
+
+   "Description (de/en)", "Info text displayed in the popup"
+   "List query", "Query which builds up the dropdown list in the popup."
+   "Computer query", "Selects mandatory data for computer import. 
+   It is important to stick to the correct order of the selected attributes:
+
+    1. = Unique ID of computer element in SIM database
+    2. = Target computer name
+    3. = MAC Address
+    4. = SMBIOS GUID (if available the computer will be created with SMBIOSGUID rather that MAC Address
+
+   Available variables:
+
+    - ""{0}"" = Selected (computer) item database IDs in the popup.
+    - ""{roles}"" = Roles the user is currently in.
+    - ""{user}"" = Username of the currently logged on user (DOMAIN\Username)
+    - ""{id}"" = Id of the CMDB item. Note: Only available when opened via action button.
+    - ""{param}"" = Additional parameters defined in the view. Note: Only available when opened via action button.
+
+   "
+   "Variable query", "Variables added to the created SCCM computer object.
+   It is important to stick to the correct order of the selected attributes:
+
+    1. = Name of the computervariable
+    2. = Value of the computervariable
+    3. = Locale of the computervariable (if unknown please use '1031')
+
+   Available variables:
+
+    - ""{0}"" = SIM DB ID of the transfered computer object.
+    - ""{param}"" = Parameter string given by the corresponding action button parameter.
+
+   Special variable prefixes:
+
+    - ""ConfigMgrColl"" = If variable has that prefix, a direct membership will be created for the collection **name**
+    - ""ConfigMgrPrimaryUser"" = If variable has that prefix, a primary user relationship will be created (``DOMAIN\Username`` notation)
+   
+   "
+   "Software query", "Variable SCCM **package** list created at runtime and added as variables to the computer object."
+   "Application query", "Variable SCCM **application** list created at runtime and added as variables to the computer object."
+   "Computer update", "SQL script which is executed for every transfered computer with import result.
+   Available variables:
+
+    - ""{0}"" = SIM DB ID of the transfered computer object.
+    - ""{1}"" = Message of the result. If successful the message is empty.
+
+   "
+   "Site", "Target SCCM site object (Settings->Sites)."
+   "Configuration", "Computer configuration (variables, collections) which is used as basis for creating computer object."
+
+
+  
+
+
+
+.. _CMDB-Single-computer-transfer:
+======================================
+Single computer transfer example
+======================================
+
+Exchange the following XML with the corresponding elements in your configuration.xml:
+
+.. literalinclude:: _static/ExampleSingleComputerTransfer.xml
+    :language: xml
+    :emphasize-lines: 1
+
+
+.. warning:: After import make sure you have "Site" and "Configuration" configured correctly in Settings->CMDB
+
+
+.. _CMDB-Multiple-computer-transfer:
+======================================
+Multiple computer transfer example
+======================================
+
+Content will be handed in later.

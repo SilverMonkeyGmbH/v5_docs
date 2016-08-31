@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<views>
+  <view 
+  splitterWidth="550" 
+  detailView="Computers Details" 
+  newLink="" 
+  viewPane="true" 
+  refresh="false" 
+  excelExport="true" 
+  importExport="false" 
+  cmdb2sccm="true">
+    <columns>
+      <column field="Name" width="200"/>
+      <column field="MACAddress" width="-1"/>
+    </columns>
+    <data>
+      <condition>{search}='' OR Name like {search}</condition>
+    </data>
+  </view>
+</views>
