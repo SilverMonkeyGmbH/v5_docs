@@ -42,7 +42,7 @@ Enter the following code to display a headline:
 
     <views><view><controls><headline text="[Text]" />
 
-
+    .. image:: _static/Headline.PNG
 ------------------
 Section
 ------------------
@@ -54,6 +54,8 @@ Define a section as follows
 
     <views><view><controls><section text="[Text]" />
 
+    .. image:: _static/Example_Section.PNG
+
 ------------------
 Paragraph
 ------------------
@@ -64,6 +66,8 @@ Define a paragraph as follows
     :linenos:
 
     <views><view><controls><paragraph text="[Text]" />
+
+    .. image:: _static/Paragraph.PNG
 
 ------------------
 Attribute
@@ -85,13 +89,12 @@ You can add an attribute this way
         readonly="[true|false]"
         width="[250]"
         height="[0]"
-        label="[designation]"
         setDefaultOnLoad="[rule]"
         forceDefault="[true|false]"
         Comment="[comment]"
     />
 
-
+    .. image:: _static/Attribute.PNG
 
 .. csv-table:: 
    :header: "Property","Description"
@@ -108,17 +111,24 @@ You can add an attribute this way
     "readonly", "Distinguish between writing view and reading view. Type in ""true"" or ""false""."
     "width", "Width of the widget given in pixels."
     "height", "Height of the widget given in pixels."
-    "label", "Overwrite the attribute name with located text."
     "setDefaultOnLoad", "Define the default value for an empty attribute while loading."
     "forceDefault", "Forced implementation of the default values."
     "Comment", "Add a comment to the attribute. It will be displayed when the curser is moved to the ""*"" at the end of the attribute."
 
 **Examples:**
 
-1. Imagine you needed a new attribute to make the user type in his or her requests in his or her own words.
-   First, create a new attribute in the settings and name it e.g. "Needed". 
-.. Erklärung zur Erstellung von Attributen und SQL-Zusammenhang fehlt noch
-   
+------------------
+Comment
+------------------
+
+You can add comments to an object in the xml file that will not be displayed when the file is executed.
+
+    .. code-block:: xml
+      :linenos:
+
+      <views><view><controls><comment text="[Example Text]" />
+
+
 ------------------
 Connections
 ------------------
@@ -141,6 +151,8 @@ Add connections using the following xml statement
         create="[view1; view2]"
         readOnly="[true|false]"
       />
+
+      .. image:: _static/Connection.PNG
 
 .. csv-table:: 
    :header: "Property","Description"
