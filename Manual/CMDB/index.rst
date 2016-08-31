@@ -1,12 +1,11 @@
 Manual for module "CMDB"
 =============================================================
 
+.. warning:: This article is under construction! Please DO NOT use any of the instructions below, yet! You may cause damage to your system. This article will be finished soon.
+
 .. contents:: *In this article:*
   :local:
   :depth: 3
-
-
-.. warning:: This article is under construction! Please DO NOT use any of the instructions below, yet! You may cause damage to your system. This article will be finished soon.
 
 
 ************************************************************************************
@@ -114,7 +113,10 @@ You can add an attribute this way
 
 **Examples:**
 
-1. Imagine you needed a new attribute called 
+1. Imagine you needed a new attribute to make the user type in his or her requests in his or her own words.
+   First, create a new attribute in the settings and name it e.g. "Needed". 
+.. Erklärung zur Erstellung von Attributen und SQL-Zusammenhang fehlt noch
+   
 ------------------
 connections
 ------------------
