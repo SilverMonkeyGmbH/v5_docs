@@ -39,6 +39,7 @@ Enter the following code to display a headline:
 
   .. code-block:: xml
     :linenos:
+    
     <views><view><controls><headline text="[Text]" />
 
   .. image:: _static/Headline.PNG
