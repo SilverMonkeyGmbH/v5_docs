@@ -39,10 +39,10 @@ Enter the following code to display a headline:
 
   .. code-block:: xml
     :linenos:
-
     <views><view><controls><headline text="[Text]" />
 
-    .. image:: _static/Headline.PNG
+  .. image:: _static/Headline.PNG
+
 ------------------
 Section
 ------------------
@@ -54,7 +54,7 @@ Define a section as follows
 
     <views><view><controls><section text="[Text]" />
 
-    .. image:: _static/Example_Section.PNG
+  .. image:: _static/Example_Section.PNG
 
 ------------------
 Paragraph
@@ -67,7 +67,7 @@ Define a paragraph as follows
 
     <views><view><controls><paragraph text="[Text]" />
 
-    .. image:: _static/Paragraph.PNG
+  .. image:: _static/Paragraph.PNG
 
 ------------------
 Attribute
@@ -94,7 +94,7 @@ You can add an attribute this way
         Comment="[comment]"
     />
 
-    .. image:: _static/Attribute.PNG
+  .. image:: _static/Attribute.PNG
 
 .. csv-table:: 
    :header: "Property","Description"
@@ -152,7 +152,7 @@ Add connections using the following xml statement
         readOnly="[true|false]"
       />
 
-      .. image:: _static/Connection.PNG
+    .. image:: _static/Connection.PNG
 
 .. csv-table:: 
    :header: "Property","Description"
