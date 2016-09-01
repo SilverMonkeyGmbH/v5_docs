@@ -377,9 +377,3 @@ a.common-btn, a.btn-install { color: #fff;}
 }
 
 
-{
- "styles" : [
-        [ "with-border", {"parent":null, "borderWidth": 2.0, "borderColor":
-#efefef} ]
- ]
-}
