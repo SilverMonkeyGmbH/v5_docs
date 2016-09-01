@@ -375,3 +375,11 @@ a.common-btn, a.btn-install { color: #fff;}
 .wy-table-responsive table td, .wy-table-responsive table th {
     white-space: normal!important;
 }
+
+
+{
+ "styles" : [
+        [ "with-border", {"parent":null, "borderWidth": 2.0, "borderColor":
+#efefef} ]
+ ]
+}

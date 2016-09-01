@@ -43,7 +43,7 @@ Enter the following code to display a headline:
     <views><view><controls><headline text="[Text]" />
 
   .. image:: _static/Headline.PNG
-
+    :class: with-border
 ------------------
 Section
 ------------------
