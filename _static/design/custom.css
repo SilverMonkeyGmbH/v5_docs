@@ -80,7 +80,6 @@ padding:5px;
 color:white !Important;
 }*/
 
-#969d92
 
 h2 {
   color: #505050;
@@ -88,12 +87,12 @@ h2 {
 }
 
 h3 {
-  color: #969d96;
-  font-weight: bold;
+  color: #969d96 !Important;
+  font-weight: bold !Important;
 }
 
 h4 {
-  font-style: italic;
+  font-style: italic !Important;
 }
 
 a {
