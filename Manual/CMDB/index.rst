@@ -44,6 +44,7 @@ Enter the following code to display a headline:
 
 
   .. figure:: _static/Headline.PNG
+     
       This is how a headline is displayed in the CMBD form.
   
 ------------------
@@ -59,6 +60,7 @@ Define a section as follows
 
 
   .. figure:: _static/Example_Section.PNG
+     
       This is how a section is displayed in the CMBD form.
 
 ------------------
@@ -72,7 +74,9 @@ Define a paragraph as follows
 
     <views><view><controls><paragraph text="[Text]" />
 
+
   .. figure:: _static/Paragraph.PNG
+      
       This is how a paragraph is displayed in the CMBD form.
 
 ------------------
@@ -102,6 +106,7 @@ You can add an attribute this way
 
 
   .. figure:: _static/Attribute.PNG
+       
         This is how an attribute is displayed in the CMBD form.
 
 .. csv-table:: 
@@ -162,6 +167,7 @@ Add connections using the following xml statement
 
 
   .. figure:: _static/Connection.PNG
+    
       This is how a connection is displayed in the CMBD form.
 
 .. csv-table:: 
