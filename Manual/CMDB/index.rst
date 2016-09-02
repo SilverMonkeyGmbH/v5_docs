@@ -40,7 +40,10 @@ Enter the following code to display a headline:
   .. code-block:: xml
     :linenos:
     
-    <views><view><controls><headline text="[Text]" />
+    <views>
+    <view>
+    <controls>
+    <headline text="[Text]" />
 
 
   .. figure:: _static/Headline.PNG
@@ -56,7 +59,10 @@ Define a section as follows
   .. code-block:: xml
     :linenos:
 
-    <views><view><controls><section text="[Text]" />
+    <views>
+    <view>
+    <controls>
+    <section text="[Text]" />
 
 
   .. figure:: _static/Example_Section.PNG
@@ -72,7 +78,10 @@ Define a paragraph as follows
   .. code-block:: xml
     :linenos:
 
-    <views><view><controls><paragraph text="[Text]" />
+    <views>
+    <view>
+    <controls>
+    <paragraph text="[Text]" />
 
 
   .. figure:: _static/Paragraph.PNG
@@ -113,20 +122,20 @@ You can add an attribute this way
    :header: "Property","Description"
    :widths: 40,60
 
-   "field", "The name of the attribute according to the object definition. Optional fields can also be used. The should have a constant name."
-   "validation", "Set up a validation rule (e.g. ""*"" is used to ask for obligatory input). Example:
+   "field=""[attribute name]""", "The name of the attribute according to the object definition. Optional fields can also be used. The should have a constant name."
+   "validation=""[*]""", "Set up a validation rule (e.g. ""*"" is used to ask for obligatory input). Example:
       
       .. code-block:: console
         
         validation=""*""
         validation=""required: true, regexp: /^[A-Za-z\d]+$/i""
         validation=""required: true, regexp: /^[A-Za-z\d]{2,20}$/i"""
-    "readonly", "Distinguish between writing view and reading view. Type in ""true"" or ""false""."
-    "width", "Width of the widget given in pixels."
-    "height", "Height of the widget given in pixels."
-    "setDefaultOnLoad", "Define the default value for an empty attribute while loading."
-    "forceDefault", "Forced implementation of the default values."
-    "Comment", "Add a comment to the attribute. It will be displayed when the curser is moved to the ""*"" at the end of the attribute."
+    "readonly=""[true|false]""", "Distinguish between writing view and reading view. Type in ""true"" or ""false""."
+    "width=""[width in px]""", "Width of the widget given in pixels."
+    "height=""[height in px]""", "Height of the widget given in pixels."
+    "setDefaultOnLoad=""[true|false]""", "Define the default value for an empty attribute while loading."
+    "forceDefault=""[true|false]""", "Forced implementation of the default values."
+    "Comment=""[comment]""", "Add a comment to the attribute. It will be displayed when the curser is moved to the ""*"" at the end of the attribute."
 
 
 ------------------
@@ -138,7 +147,10 @@ You can add comments to an object in the xml file that will not be displayed whe
     .. code-block:: xml
       :linenos:
 
-      <views><view><controls><comment text="[Example Text]" />
+      <views>
+      <view>
+      <controls>
+      <comment text="[Example Text]" />
 
 
 ------------------
@@ -173,14 +185,14 @@ Add connections using the following xml statement
    :header: "Property","Description"
    :widths: 40,60
 
-   "width", "Width of the depiciton given in pixels."
-   "height", "Height of the depiction given in pixels."
-   "id", "Unique label if multiple connection lists are displayed."
-   "title", "Individual title for the connection list."
-   "filter", "Restrict the connection list to one single object type."
-   "link", "Enable opening referenced objects."
-   "create", "List of object views which is supposed to be displayed when new objects are set up and assigned."
-   "readOnly", "Prevents setting up new connecitons if set to ""true""."
+   "width=""[width in px]""", "Width of the depiciton given in pixels."
+   "height=""[height in px]""", "Height of the depiction given in pixels."
+   "id=""[string/integer]""", "Unique label if multiple connection lists are displayed."
+   "title=""[string]""", "Individual title for the connection list."
+   "filter=""[type]""", "Restrict the connection list to one single object type."
+   "link=""[true|false]""", "Enable opening referenced objects."
+   "create=""[string]""", "List of object views which is supposed to be displayed when new objects are set up and assigned."
+   "readOnly=""[true|false]""", "Prevents setting up new connecitons if set to ""true""."
 
 
 ------------------
