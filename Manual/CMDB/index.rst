@@ -383,11 +383,11 @@ Opens a dialogue in which new directory structures can be set for the packaging 
   />
 
 
-.. csv-table:: 
+.. .. csv-table:: 
    :header: "Attribute","Description"
    :widths: 40,60
 
-   "restart=""[true/false]""", "Enables repetition of the proces after the package has been created (e.g. in order to recreate the package after manual deletion."
+..   "restart=""[true/false]""", "Enables repetition of the proces after the package has been created (e.g. in order to recreate the package after manual deletion."
    "site=""[Packaging site Name]""", "String to pass to the SQL scripts executed on runtime of the mass import."
    "indexFilter=""[true|false]""", "If set to false, the button will be invisible when executed once."
    "indexFilterPreselected=""[true/false]""", "Title of the button"
@@ -397,19 +397,76 @@ Opens a dialogue in which new directory structures can be set for the packaging 
 ------------------
 CreatePackage
 ------------------
-Opens a dialogue in which you can compile the SCCM package for packaging workflow.
+Opens a dialogue in which you can compile the SCCM package for packaging workflow. 
+
+.. code-block:: xml
+  :linenos:
+
+  <views>
+  <view>
+  <controls>
+  <createPackage
+    restart="true|false"
+    site="Packaging site name"
+    sendToDP="true|false"
+  />
+
+
 ------------------
 CreateCollection
 ------------------
+Opens a dialogue in which you can create a new collection for the packaging workflow.
+
+.. code-block:: xml
+  :linenos:
+
+  <views>
+  <view>
+  <controls>
+  <createCollection
+    title="Ressource"
+    folder="OrderId"
+    parentCollection="CollectionId"
+    name="Namensregel"
+    collectionType="Typ"
+    limitToCollectionId="CollectionId"
+    query="Regelabfrage"
+  />
 
 
 ------------------
 CreateApplication
 ------------------
+Opens a dialogue in which you can set up the SCCM Application for the packaging workflow.
+
+.. code-block:: xml 
+  :linenos:
+
+  <views>
+  <view>
+  <controls>
+  <createApplication
+    restart="true|false"
+    title="Ressource"
+    titleRestart="Ressource"
+    site="Packaging site name"
+    configuration="Name"
+  />
+
 
 ------------------
 Comment
 ------------------
+Shows the possibility to enter a comment. All comments will be historicized.
+
+.. code-block:: xml
+  :linenos:
+
+  <views>
+  <view>
+  <controls>
+  <comment [strings] />
+
 
 ------------------
 Save
@@ -422,6 +479,16 @@ SendMail
 ------------------
 ImportXML
 ------------------
+.. code-block:: xml
+  :linenos:
+
+  <views>
+  <view>
+  <controls>
+  <importXML
+    title="Ressource"
+    titleRestart="Ressource"
+  />
 
 ----------------------
 CreateActiveDirectory
