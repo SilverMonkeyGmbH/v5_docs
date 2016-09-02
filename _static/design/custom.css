@@ -80,19 +80,20 @@ padding:5px;
 color:white !Important;
 }*/
 
-
+#969d92
 
 h2 {
   color: #505050;
   text-decoration: underline !Important;
+}
 
 h3 {
-    color: #969d92;
-    font-weight: bold;
+  color: #969d96;
+  font-weight: bold;
 }
 
 h4 {
-    font-style: italic;
+  font-style: italic;
 }
 
 a {
