@@ -85,11 +85,14 @@ color:white !Important;
 h2 {
   color: #505050;
   text-decoration: underline !Important;
-}
 
 h3 {
     color: #969d92 !Important;
     font-weight: bold !Important;
+}
+
+h4 {
+    font-style: italic;
 }
 
 a {
