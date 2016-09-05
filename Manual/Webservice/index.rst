@@ -88,8 +88,7 @@ The web service executes each ``cmd`` element and adds a ``result`` node to it.
 deployment
 ===============
 
-You can change the behaviour of the new computer "plus" button.
-Add the following XML tag to ``//sites/site``:
+Creating a 
 
 .. code-block:: xml
  :linenos:
@@ -146,3 +145,44 @@ Add the following XML tag to ``//sites/site``:
       <type>Mandatory</type>
     </cmd>
   </cmds>  
+
+
+===============
+deleteClient
+===============
+
+===============
+createClient
+===============
+
+===============
+executeScript
+===============
+
+===============
+exchangeClient
+===============
+
+===============
+refreshClient
+===============
+
+===============
+assignment
+===============
+
+==============================
+createFileStructure
+==============================
+
+===============
+createPackage
+===============
+
+==============================
+createApplication
+==============================
+
+==============================
+createCollection
+==============================
