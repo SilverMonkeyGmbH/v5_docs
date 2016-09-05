@@ -28,16 +28,16 @@ Available commands
 
 All commands have to be send to the webservice enclosed by the following XML block:
 
-.. code-block:: xml
-:emphasize-lines: 1,2,6
-:linenos:
+ .. code-block:: xml
+  :emphasize-lines: 1,2,6
+  :linenos:
 
-<?xml version="1.0" encoding="utf-8"?>
-<cmds>
-  <cmd></cmd>
-  <cmd></cmd>
-  ...
-</cmds>
+  <?xml version="1.0" encoding="utf-8"?>
+  <cmds>
+    <cmd></cmd>
+    <cmd></cmd>
+    ...
+  </cmds>
 
 ===============
 deployment
@@ -47,16 +47,16 @@ You can change the behaviour of the new computer "plus" button.
 Add the following XML tag to ``//sites/site``:
 
 .. code-block:: xml
-:linenos:
+ :linenos:
 
-<cmd name="deployment" siteCode="000">
-  <computerName>Name of the computer (alternative)</computerName>
-  <resourceID>Resourcen ID of the computer (alternative)</resourceID>
-  <packageName>Name of the package (alternative)</packageName>
-  <packageID>Id of the package (alternative)</packageID>
-  <program>name of the package program</program>
-  <type>Optional/Mandatory</type>
-</cmd> 
+  <cmd name="deployment" siteCode="000">
+    <computerName>Name of the computer (alternative)</computerName>
+    <resourceID>Resourcen ID of the computer (alternative)</resourceID>
+    <packageName>Name of the package (alternative)</packageName>
+    <packageID>Id of the package (alternative)</packageID>
+    <program>name of the package program</program>
+    <type>Optional/Mandatory</type>
+  </cmd> 
 
 
 **Examples**
@@ -64,14 +64,14 @@ Add the following XML tag to ``//sites/site``:
 Creating a deployment of a SCCM package by IDs
 
  .. code-block:: xml
-  :emphasize-lines: 1,2,6
+  :emphasize-lines: 3,5-7
   :linenos:
 
-  <AlternateCreatePopup><![CDATA[javascript: sW('v_84_','../Support/TypeView.aspx?PopUp=true&TypeViewId=84',650,500,true);]]></AlternateCreatePopup>
-
-
- .. code-block:: xml
-  :linenos:
-  :emphasize-lines: 1,2,6
-
-  <AlternateCreatePopup><![CDATA[javascript: sW('v_84_','../Support/TypeView.aspx?PopUp=true&TypeViewId=84',650,500,true);]]></AlternateCreatePopup>
+  <cmd name="deployment" siteCode="P01">
+    <computerName></computerName>
+    <resourceID>12341134</resourceID>
+    <packageName></packageName>
+    <packageID>P0100001</packageID>
+    <program>install</program>
+    <type>Mandatory</type>
+  </cmd> 
