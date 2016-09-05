@@ -63,6 +63,25 @@ All commands have to be send to the webservice enclosed by the following XML blo
     ...
   </cmds>
 
+The web service executes each ``cmd`` element and adds a ``result`` node to it.
+
+.. code-block:: xml
+ :emphasize-lines: 7
+ :linenos:
+
+  <?xml version="1.0" encoding="utf-8"?>
+  <cmds>
+    <cmd>
+      <param1></param1>
+      <param2></param2>
+      <param3></param3>
+      <result error="true/false">Message</result>
+    </cmd>
+    <cmd></cmd>
+    ...
+  </cmds>
+
+
 ===============
 deployment
 ===============
@@ -74,18 +93,23 @@ Add the following XML tag to ``//sites/site``:
  :linenos:
 
   <cmd name="deployment" siteCode="000">
-    <computerName>Name of the computer (alternative)</computerName>
-    <resourceID>Resourcen ID of the computer (alternative)</resourceID>
-    <packageName>Name of the package (alternative)</packageName>
-    <packageID>Id of the package (alternative)</packageID>
+    
+    <computerName>Name of the computer</computerName><!-- Supply NAME -->
+    <resourceID>Resource ID of the computer</resourceID><!-- or resourceID -->
+    
+    <packageName>Supplied value of the field "Name" in ConfigMgr console</packageName><!-- Supply NAME -->
+    <packageID>Id of the package</packageID><!-- or packageID -->
+    
     <program>name of the package program</program>
     <type>Optional/Mandatory</type>
+
   </cmd> 
 
+.. note:: Depeding on the settings of ``Settings->Sites->[SITE]->Computer software deplyoment`` corresponding collections and deployments will be created in ConfigMgr. The same settings are used by the Operations module.
 
 **Examples**
 
-Creating a deployment of a SCCM package by IDs
+1. Creating a deployment of a SCCM package by IDs
 
 .. code-block:: xml
  :emphasize-lines: 5,7-9
@@ -102,3 +126,21 @@ Creating a deployment of a SCCM package by IDs
       <type>Mandatory</type>
     </cmd>
   </cmds>
+
+2. Creating a deployment of a SCCM package by names
+
+.. code-block:: xml
+ :emphasize-lines: 4,5,8-9
+ :linenos:
+
+  <?xml version="1.0" encoding="utf-8"?>
+  <cmds>
+    <cmd name="deployment" siteCode="P01">
+      <computerName>MyPc1</computerName>
+      <resourceID></resourceID>
+      <packageName>TestPackage</packageName>
+      <packageID></packageID>
+      <program>install</program>
+      <type>Mandatory</type>
+    </cmd>
+  </cmds>  
