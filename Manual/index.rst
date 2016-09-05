@@ -8,3 +8,4 @@ Contents:
 
    CMDB/index
    CMDB/Tutorials
+   Operations/index
