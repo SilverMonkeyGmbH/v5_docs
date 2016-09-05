@@ -386,7 +386,7 @@ ExecutePS
 .. code-block:: xml 
   :linenos:
 
-   <executePS   
+   <executePSs   
       title="[My PS1 Script]" 
       command="[C:\Windows\system32\WindowsPowerShell\v1.0\powershell.exe]"
       arguments="[C:\SilverMonkey\Scripts\MyFirstscript.ps1 -PackagingJobId {ID} -OtherParam &quot;{Var1}&quot;]"
