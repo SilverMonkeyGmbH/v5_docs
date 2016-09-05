@@ -55,7 +55,6 @@ h1, h2, h3, h4, h5, h6, legend {
     font-family: Roboto, sans-serif;
 	line-height: 1.4em;
     font-weight: 100!Important;
-    
 
 }
 
@@ -82,9 +81,18 @@ color:white !Important;
 }*/
 
 
-
 h2 {
   color: #505050;
+  text-decoration: underline !Important;
+}
+
+h3 {
+  color: #969d96 !Important;
+  font-weight: bold !Important;
+}
+
+h4 {
+  font-style: italic !Important;
 }
 
 a {
@@ -101,6 +109,7 @@ p {
 
 a, a:link, a:visited { color: #417590; }
 
+.rst-content img {max-width: 100%; height: auto !important; border: 3px solid; border-color: #dcdcdc; }
 .wy-nav-top {
   background: #b8bdb5;
 }
@@ -375,3 +384,5 @@ a.common-btn, a.btn-install { color: #fff;}
 .wy-table-responsive table td, .wy-table-responsive table th {
     white-space: normal!important;
 }
+
+

@@ -1,12 +1,11 @@
 Manual for module "CMDB"
 =============================================================
 
+.. warning:: This article is under construction! Please DO NOT use any of the instructions below, yet! You may cause damage to your system. This article will be finished soon.
+
 .. contents:: *In this article:*
   :local:
   :depth: 3
-
-
-.. warning:: This article is under construction! Please DO NOT use any of the instructions below, yet! You may cause damage to your system. This article will be finished soon.
 
 
 ************************************************************************************
@@ -40,10 +39,17 @@ Enter the following code to display a headline:
 
   .. code-block:: xml
     :linenos:
+    
+    <views>
+    <view>
+    <controls>
+    <headline text="[Text]" />
 
-    <views><view><controls><headline text="[Text]" />
 
-
+  .. figure:: _static/Headline.PNG
+     
+      This is how a headline is displayed in the CMBD form.
+  
 ------------------
 Section
 ------------------
@@ -53,7 +59,15 @@ Define a section as follows
   .. code-block:: xml
     :linenos:
 
-    <views><view><controls><section text="[Text]" />
+    <views>
+    <view>
+    <controls>
+    <section text="[Text]" />
+
+
+  .. figure:: _static/Example_Section.PNG
+     
+      This is how a section is displayed in the CMBD form.
 
 ------------------
 Paragraph
@@ -64,7 +78,15 @@ Define a paragraph as follows
   .. code-block:: xml
     :linenos:
 
-    <views><view><controls><paragraph text="[Text]" />
+    <views>
+    <view>
+    <controls>
+    <paragraph text="[Text]" />
+
+
+  .. figure:: _static/Paragraph.PNG
+      
+      This is how a paragraph is displayed in the CMBD form.
 
 ------------------
 Attribute
@@ -86,37 +108,51 @@ You can add an attribute this way
         readonly="[true|false]"
         width="[250]"
         height="[0]"
-        label="[designation]"
         setDefaultOnLoad="[rule]"
         forceDefault="[true|false]"
         Comment="[comment]"
     />
 
 
+  .. figure:: _static/Attribute.PNG
+       
+        This is how an attribute is displayed in the CMBD form.
 
 .. csv-table:: 
    :header: "Property","Description"
    :widths: 40,60
 
-   "field", "The name of the attribute according to the object definition. Optional fields can also be used. The should have a constant name."
-   "validation", "Set up a validation rule (e.g. ""*"" is used to ask for obligatory input). Example:
+   "field=""[attribute name]""", "The name of the attribute according to the object definition. Optional fields can also be used. The should have a constant name."
+   "validation=""[*]""", "Set up a validation rule (e.g. ""*"" is used to ask for obligatory input). Example:
       
       .. code-block:: console
         
         validation=""*""
         validation=""required: true, regexp: /^[A-Za-z\d]+$/i""
         validation=""required: true, regexp: /^[A-Za-z\d]{2,20}$/i"""
-    "readonly", "Distinguish between writing view and reading view. Type in ""true"" or ""false""."
-    "width", "Width of the widget given in pixels."
-    "height", "Height of the widget given in pixels."
-    "label", "Overwrite the attribute name with located text."
-    "setDefaultOnLoad", "Define the default value for an empty attribute while loading."
-    "forceDefault", "Forced implementation of the default values."
-    "Comment", "Add a comment to the attribute. It will be displayed when the curser is moved to the ""*"" at the end of the attribute."
+    "readonly=""[true|false]""", "Distinguish between writing view and reading view. Type in ""true"" or ""false""."
+    "width=""[width in px]""", "Width of the widget given in pixels."
+    "height=""[height in px]""", "Height of the widget given in pixels."
+    "setDefaultOnLoad=""[true|false]""", "Define the default value for an empty attribute while loading."
+    "forceDefault=""[true|false]""", "Forced implementation of the default values."
+    "Comment=""[comment]""", "Add a comment to the attribute. It will be displayed when the curser is moved to the ""*"" at the end of the attribute."
 
-**Examples:**
 
-1. Imagine you needed a new attribute called 
+------------------
+Comment
+------------------
+
+You can add comments to an object in the xml file that will not be displayed when the file is executed.
+
+    .. code-block:: xml
+      :linenos:
+
+      <views>
+      <view>
+      <controls>
+      <comment text="[Example Text]" />
+
+
 ------------------
 Connections
 ------------------
@@ -140,18 +176,23 @@ Add connections using the following xml statement
         readOnly="[true|false]"
       />
 
+
+  .. figure:: _static/Connection.PNG
+    
+      This is how a connection is displayed in the CMBD form.
+
 .. csv-table:: 
    :header: "Property","Description"
    :widths: 40,60
 
-   "width", "Width of the depiciton given in pixels."
-   "height", "Height of the depiction given in pixels."
-   "id", "Unique label if multiple connection lists are displayed."
-   "title", "Individual title for the connection list."
-   "filter", "Restrict the connection list to one single object type."
-   "link", "Enable opening referenced objects."
-   "create", "List of object views which is supposed to be displayed when new objects are set up and assigned."
-   "readOnly", "Prevents setting up new connecitons if set to ""true""."
+   "width=""[width in px]""", "Width of the depiciton given in pixels."
+   "height=""[height in px]""", "Height of the depiction given in pixels."
+   "id=""[string/integer]""", "Unique label if multiple connection lists are displayed."
+   "title=""[string]""", "Individual title for the connection list."
+   "filter=""[type]""", "Restrict the connection list to one single object type."
+   "link=""[true|false]""", "Enable opening referenced objects."
+   "create=""[string]""", "List of object views which is supposed to be displayed when new objects are set up and assigned."
+   "readOnly=""[true|false]""", "Prevents setting up new connecitons if set to ""true""."
 
 
 ------------------
@@ -179,6 +220,9 @@ Include an HTML-link by using the following xml statement
    "label", "Title of the reference (usually, the title should automatically be located)."
    "icon", "Name of the icon."
   
+
+**Examples:**
+
 ===============
 Action Buttons
 ===============
@@ -207,12 +251,12 @@ However, you can use in the script impersonation for using specific accounts.
   :linenos:
 
    <execute   
-      title="Title of the button" 
-      command="C:\windows\system32\cmd.exe"
-      arguments="{Var1} {Var2} {Var3}"
-      exit_1="Execution was sucessfully processed."
-      exit_2="Error while execution. See log for details."
-      wait="true" 
+      title="[Title of the button]" 
+      command="[C:\windows\system32\cmd.exe]"
+      arguments="[{Var1} {Var2} {Var3}]"
+      exit_1="[Execution was sucessfully processed.]"
+      exit_2="[Error while execution. See log for details.]"
+      wait="[true]" 
    />
 
 **Available attributes**
@@ -221,13 +265,13 @@ However, you can use in the script impersonation for using specific accounts.
    :header: "Attribute","Description"
    :widths: 40,60
 
-   "title=""Resource""", "Title of the button"
-   "command=""PathToExe""", "Full path to the executable. Environment variables are not supported."
-   "arguments=""{Var1} {Var2} {Var3}""", "Arguments passed to the executed process."
-   "exit_nn=""Ressource""", "After execution the exit code will be passed to the website. If a corresponding exit_nn parameter is set, a pop up is displayed to the user."
-   "wait=""true/false""", "If set to true, the website waits for the execution to end."
+   "title=""[Resource]""", "Title of the button"
+   "command=""[PathToExe]""", "Full path to the executable. Environment variables are not supported."
+   "arguments=""[{Var1} {Var2} {Var3}]""", "Arguments passed to the executed process."
+   "exit_nn=""[Ressource]""", "After execution the exit code will be passed to the website. If a corresponding exit_nn parameter is set, a pop up is displayed to the user."
+   "wait=""[true/false]""", "If set to true, the website waits for the execution to end."
 
-.. warning:: If "wait" is set to "true" be aware that the internet browser and the IIS session itself has an idle timeout. Use wait=true only if the script is executed within seconds.  
+.. warning:: If "wait" is set to "true" be aware that the internet browser and the IIS session itself both have an IDLE timeout. Use wait=""true""only if the script is executed within seconds.  
 
 **Examples:**
 
@@ -237,23 +281,23 @@ However, you can use in the script impersonation for using specific accounts.
   :linenos:
 
    <execute   
-      title="My CMD Script" 
-      command="C:\windows\system32\cmd.exe"
-      arguments="/C C:\SilverMonkey\Scripts\MyFirstscript.cmd {ID}"
-      wait="false" 
+      title="[My CMD Script]" 
+      command="[C:\windows\system32\cmd.exe]"
+      arguments="[/C C:\SilverMonkey\Scripts\MyFirstscript.cmd {ID}]"
+      wait="[false]" 
    />
 
-.. note:: You can also execute scripts from a network path. Make sure, that the IIS Application Pool is configured to use a specific service account (Default is LOCALSYSTEM).
+.. note:: You can also execute scripts from a network path. Make sure that the IIS Application Pool is configured to use a specific service account (Default is LOCALSYSTEM).
 
 
 .. code-block:: xml 
   :linenos:
 
    <execute   
-      title="My CMD Script" 
-      command="C:\windows\system32\cmd.exe"
-      arguments="/C \\networkpath\share\scripts\myscript.cmd {ID}"
-      wait="false" 
+      title="[My CMD Script]" 
+      command="[C:\windows\system32\cmd.exe]"
+      arguments="[/C \\networkpath\share\scripts\myscript.cmd {ID}]"
+      wait="[false]" 
    />
 
 
@@ -263,10 +307,10 @@ However, you can use in the script impersonation for using specific accounts.
   :linenos:
 
    <execute   
-      title="My PS1 Script" 
-      command="C:\Windows\system32\WindowsPowerShell\v1.0\powershell.exe"
-      arguments="C:\SilverMonkey\Scripts\MyFirstscript.ps1 -PackagingJobId {ID} -OtherParam &quot;{Var1}&quot;"
-      wait="false" 
+      title="[My PS1 Script]" 
+      command="[C:\Windows\system32\WindowsPowerShell\v1.0\powershell.exe]"
+      arguments="[C:\SilverMonkey\Scripts\MyFirstscript.ps1 -PackagingJobId {ID} -OtherParam &quot;{Var1}&quot;]"
+      wait="[false]" 
    />
 
 
@@ -300,9 +344,9 @@ This action button was orignally used for mass import of systems. By defining th
   :linenos:
 
    <CMDB2SCCM   
-      title="Title of the button" 
+      title="[Title of the button]" 
       param="[String]"
-      restart="true|false"
+      restart="[true|false]"
    />
 
 **Available attributes**
@@ -311,9 +355,9 @@ This action button was orignally used for mass import of systems. By defining th
    :header: "Attribute","Description"
    :widths: 40,60
 
-   "title=""Resource""", "Title of the button"
+   "title=""[Resource]""", "Title of the button"
    "param=""[String]""", "String to pass to the SQL scripts executed on runtime of the mass import."
-   "restart=""true|false""", "If set to false, the button will be invisible when executed once."
+   "restart=""[true|false]""", "If set to false, the button will be invisible when executed once."
 
 **Examples:**
 
@@ -323,32 +367,118 @@ This action button was orignally used for mass import of systems. By defining th
   :linenos:
 
   <CMDB2SCCM   
-    title="Transfer Computer to SCCM" 
-    param="SingleTransfer"
-    restart="true"
+    title="[Transfer Computer to SCCM]" 
+    param="[SingleTransfer]"
+    restart="[true]"
   />
 
 
 ------------------
 CopyFiles
 ------------------
+Opens a dialogue in which new directory structures can be set for the packaging workflow. 
+(Copy is carried out in context of the background SCCM account.)
+
+.. code-block:: xml
+  :linenos:
+
+  <views>
+  <view>
+  <controls>
+  <copyFiles
+    restart="[true|false]"
+    site="[Packaging site name]" 
+    indexFilter="[1]"
+    indexFilterPreselected="[1]"
+    title=“[Title]“
+    Validation=“[*]“
+  />
+
+
+.. .. csv-table:: 
+   :header: "Attribute","Description"
+   :widths: 40,60
+
+..   "restart=""[true/false]""", "Enables repetition of the proces after the package has been created (e.g. in order to recreate the package after manual deletion."
+   "site=""[Packaging site Name]""", "String to pass to the SQL scripts executed on runtime of the mass import."
+   "indexFilter=""[true|false]""", "If set to false, the button will be invisible when executed once."
+   "indexFilterPreselected=""[true/false]""", "Title of the button"
+   "title=""[String]""", "String to pass to the SQL scripts executed on runtime of the mass import."
+   "validation=""[true|false]""", "If set to false, the button will be invisible when executed once."
 
 ------------------
 CreatePackage
 ------------------
+Opens a dialogue in which you can compile the SCCM package for packaging workflow. 
+
+.. code-block:: xml
+  :linenos:
+
+  <views>
+  <view>
+  <controls>
+  <createPackage
+    restart="true|false"
+    site="Packaging site name"
+    sendToDP="true|false"
+  />
+
 
 ------------------
 CreateCollection
 ------------------
+Opens a dialogue in which you can create a new collection for the packaging workflow.
+
+.. code-block:: xml
+  :linenos:
+
+  <views>
+  <view>
+  <controls>
+  <createCollection
+    title="Ressource"
+    folder="OrderId"
+    parentCollection="CollectionId"
+    name="Namensregel"
+    collectionType="Typ"
+    limitToCollectionId="CollectionId"
+    query="Regelabfrage"
+  />
 
 
 ------------------
 CreateApplication
 ------------------
+Opens a dialogue in which you can set up the SCCM Application for the packaging workflow.
+
+.. code-block:: xml 
+  :linenos:
+
+  <views>
+  <view>
+  <controls>
+  <createApplication
+    restart="true|false"
+    title="Ressource"
+    titleRestart="Ressource"
+    site="Packaging site name"
+    configuration="Name"
+  />
+
 
 ------------------
 Comment
 ------------------
+Shows the possibility to enter a comment. All comments will be historicized.
+
+.. code-block:: xml
+  :linenos:
+
+  <views>
+  <view>
+  <controls>
+  <comment [strings] />
+
 
 ------------------
 Save
@@ -361,6 +491,16 @@ SendMail
 ------------------
 ImportXML
 ------------------
+.. code-block:: xml
+  :linenos:
+
+  <views>
+  <view>
+  <controls>
+  <importXML
+    title="Ressource"
+    titleRestart="Ressource"
+  />
 
 ----------------------
 CreateActiveDirectory
