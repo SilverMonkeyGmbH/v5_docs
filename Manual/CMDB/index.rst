@@ -269,12 +269,11 @@ Display entrys of another class (e.g. table).
         cmd="javascript: try {window.parent.gridTable.clearSelection();} catch (e){} try {window.opener.gridTable.clearSelection();} catch (e){} document.location.href='TypeView.aspx?PopUp=true&amp;TypeViewId={view}&amp;Id='+id" />
 
 
-.. csv-table:: 
+.. .. csv-table:: 
    :header: "Property","Description"
    :widths: 40,60
 
-
-   "url", "Link or reference."
+..  "url", "Link or reference."
    "label", "Title of the reference (usually, the title should automatically be located)."
    "icon", "Name of the icon."
 
@@ -309,12 +308,12 @@ However, you can use in the script impersonation for using specific accounts.
   :linenos:
 
    <execute   
-      title="[Title of the button]" 
-      command="[C:\windows\system32\cmd.exe]"
-      arguments="[{Var1} {Var2} {Var3}]"
-      exit_1="[Execution was sucessfully processed.]"
-      exit_2="[Error while execution. See log for details.]"
-      wait="[true]" 
+      title="Title of the button" 
+      command="C:\windows\system32\cmd.exe"
+      arguments="{Var1} {Var2} {Var3}"
+      exit_1="Execution was sucessfully processed."
+      exit_2="Error while execution. See log for details."
+      wait="true" 
    />
 
 **Available attributes**
@@ -326,8 +325,8 @@ However, you can use in the script impersonation for using specific accounts.
    "title=""[Resource]""", "Title of the button"
    "command=""[PathToExe]""", "Full path to the executable. Environment variables are not supported."
    "arguments=""[{Var1} {Var2} {Var3}]""", "Arguments passed to the executed process."
-   "exit_nn=""[Ressource]""", "After execution the exit code will be passed to the website. If a corresponding exit_nn parameter is set, a pop up is displayed to the user."
-   "wait=""[true/false]""", "If set to true, the website waits for the execution to end."
+   "exit_nn=""[Resource]""", "After execution the exit code will be passed to the website. If a corresponding exit_nn parameter is set, a pop up is displayed to the user."
+   "wait=""[true|false]""", "If set to true, the website waits for the execution to end."
 
 .. warning:: If "wait" is set to "true" be aware that the internet browser and the IIS session itself both have an IDLE timeout. Use wait=""true""only if the script is executed within seconds.  
 
