@@ -12,7 +12,7 @@ administration and installation of Silver Monkey v5 Modules.
 Contents:
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
 
    Requirements
    Installation

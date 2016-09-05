@@ -4,7 +4,9 @@ Manual
 Contents:
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    CMDB/index
    CMDB/Tutorials
+   Operations/index
+   Webservice/index
