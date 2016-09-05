@@ -82,10 +82,10 @@ Example: View Add Remove Programs
    "Class", "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall"
    "Query", "DisplayName, DisplayVersion, Publisher, InstallDate"
 
- **ClickOnce**
- Executes local executables such as MSTSC for extended functionality regarding client systems.
+**ClickOnce**
+Executes local executables such as MSTSC for extended functionality regarding client systems.
 
- Example: Start MSTSC with parameter
+Example: Start MSTSC with parameter
 
 .. csv-table::
    :header: "Setting","Value"
