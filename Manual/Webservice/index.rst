@@ -83,12 +83,13 @@ The web service executes each ``cmd`` element and adds a ``result`` node to it.
     ...
   </cmds>
 
-
+.. _websrv-deployment:
 ===============
 deployment
 ===============
 
-Creating a 
+Creating a deployment for a ConfigMgr **package**. 
+Go to :ref:`websrv-assignment` for deploying a ConfigMgr **application**. 
 
 .. code-block:: xml
  :linenos:
@@ -167,9 +168,13 @@ exchangeClient
 refreshClient
 ===============
 
+.. _websrv-assignment:
 ===============
 assignment
 ===============
+
+Creating a deployment for a ConfigMgr **application**. 
+Go to :ref:`websrv-deployment` for deploying a ConfigMgr **package**. 
 
 ==============================
 createFileStructure
