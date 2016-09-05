@@ -269,12 +269,11 @@ Display entrys of another class (e.g. table).
         cmd="javascript: try {window.parent.gridTable.clearSelection();} catch (e){} try {window.opener.gridTable.clearSelection();} catch (e){} document.location.href='TypeView.aspx?PopUp=true&amp;TypeViewId={view}&amp;Id='+id" />
 
 
-.. csv-table:: 
+.. .. csv-table:: 
    :header: "Property","Description"
    :widths: 40,60
 
-
-   "url", "Link or reference."
+..  "url", "Link or reference."
    "label", "Title of the reference (usually, the title should automatically be located)."
    "icon", "Name of the icon."
 
@@ -309,12 +308,12 @@ However, you can use in the script impersonation for using specific accounts.
   :linenos:
 
    <execute   
-      title="[Title of the button]" 
-      command="[C:\windows\system32\cmd.exe]"
-      arguments="[{Var1} {Var2} {Var3}]"
-      exit_1="[Execution was sucessfully processed.]"
-      exit_2="[Error while execution. See log for details.]"
-      wait="[true]" 
+      title="Title of the button" 
+      command="C:\windows\system32\cmd.exe"
+      arguments="{Var1} {Var2} {Var3}"
+      exit_1="Execution was sucessfully processed."
+      exit_2="Error while execution. See log for details."
+      wait="true" 
    />
 
 **Available attributes**
@@ -326,8 +325,8 @@ However, you can use in the script impersonation for using specific accounts.
    "title=""[Resource]""", "Title of the button"
    "command=""[PathToExe]""", "Full path to the executable. Environment variables are not supported."
    "arguments=""[{Var1} {Var2} {Var3}]""", "Arguments passed to the executed process."
-   "exit_nn=""[Ressource]""", "After execution the exit code will be passed to the website. If a corresponding exit_nn parameter is set, a pop up is displayed to the user."
-   "wait=""[true/false]""", "If set to true, the website waits for the execution to end."
+   "exit_nn=""[Resource]""", "After execution the exit code will be passed to the website. If a corresponding exit_nn parameter is set, a pop up is displayed to the user."
+   "wait=""[true|false]""", "If set to true, the website waits for the execution to end."
 
 .. warning:: If "wait" is set to "true" be aware that the internet browser and the IIS session itself both have an IDLE timeout. Use wait=""true""only if the script is executed within seconds.  
 
@@ -339,10 +338,10 @@ However, you can use in the script impersonation for using specific accounts.
   :linenos:
 
    <execute   
-      title="[My CMD Script]" 
-      command="[C:\windows\system32\cmd.exe]"
-      arguments="[/C C:\SilverMonkey\Scripts\MyFirstscript.cmd {ID}]"
-      wait="[false]" 
+      title="My CMD Script" 
+      command="C:\windows\system32\cmd.exe"
+      arguments="/C C:\SilverMonkey\Scripts\MyFirstscript.cmd {ID}"
+      wait="false" 
    />
 
 .. note:: You can also execute scripts from a network path. Make sure that the IIS Application Pool is configured to use a specific service account (Default is LOCALSYSTEM).
@@ -352,10 +351,10 @@ However, you can use in the script impersonation for using specific accounts.
   :linenos:
 
    <execute   
-      title="[My CMD Script]" 
-      command="[C:\windows\system32\cmd.exe]"
-      arguments="[/C \\networkpath\share\scripts\myscript.cmd {ID}]"
-      wait="[false]" 
+      title="My CMD Script" 
+      command="C:\windows\system32\cmd.exe"
+      arguments="/C \\networkpath\share\scripts\myscript.cmd {ID}"
+      wait="false" 
    />
 
 
@@ -365,14 +364,14 @@ However, you can use in the script impersonation for using specific accounts.
   :linenos:
 
    <execute   
-      title="[My PS1 Script]" 
-      command="[C:\Windows\system32\WindowsPowerShell\v1.0\powershell.exe]"
-      arguments="[C:\SilverMonkey\Scripts\MyFirstscript.ps1 -PackagingJobId {ID} -OtherParam &quot;{Var1}&quot;]"
-      wait="[false]" 
+      title="My PS1 Script" 
+      command="C:\Windows\system32\WindowsPowerShell\v1.0\powershell.exe"
+      arguments="C:\SilverMonkey\Scripts\MyFirstscript.ps1 -PackagingJobId {ID} -OtherParam &quot;{Var1}&quot;"
+      wait="false" 
    />
 
 
-.. note:: Using quations within XML attributes: &quot;{Var1}&quot; 
+.. note:: Using quations within XML attributes: &quot;{Var1}&quot; (HTML notation)
 
 
 .. _CMDB-actions-CMDB2SCCM:
@@ -387,10 +386,10 @@ ExecutePS
   :linenos:
 
    <executePSs   
-      title="[My PS1 Script]" 
-      command="[C:\Windows\system32\WindowsPowerShell\v1.0\powershell.exe]"
-      arguments="[C:\SilverMonkey\Scripts\MyFirstscript.ps1 -PackagingJobId {ID} -OtherParam &quot;{Var1}&quot;]"
-      wait="[false]" 
+      title="My PS1 Script" 
+      command="C:\Windows\system32\WindowsPowerShell\v1.0\powershell.exe"
+      arguments="C:\SilverMonkey\Scripts\MyFirstscript.ps1 -PackagingJobId {ID} -OtherParam &quot;{Var1}&quot;"
+      wait="false" 
    />
 
 
@@ -415,13 +414,13 @@ This action button was orignally used for mass import of systems. By defining th
 - See :ref:`tut-massImport` for tutorial.
 - See :ref:`CMDB-SCCM-transfer` for more information.
 
-.. code-block:: xml 
+.. .. code-block:: xml 
   :linenos:
 
-   <CMDB2SCCM   
-      title="[Title of the button]" 
-      param="[String]"
-      restart="[true|false]"
+.. <CMDB2SCCM   
+      title="Title of button" 
+      param="String"
+      restart="true"
    />
 
 **Available attributes**
@@ -442,9 +441,9 @@ This action button was orignally used for mass import of systems. By defining th
   :linenos:
 
   <CMDB2SCCM   
-    title="[Transfer Computer to SCCM]" 
-    param="[SingleTransfer]"
-    restart="[true]"
+    title="Transfer Computer to SCCM" 
+    param="SingleTransfer"
+    restart="true"
   />
 
 
@@ -461,25 +460,27 @@ Opens a dialogue in which new directory structures can be set for the packaging 
   <view>
   <controls>
   <copyFiles
-    restart="[true|false]"
-    site="[Packaging site name]" 
-    indexFilter="[1]"
-    indexFilterPreselected="[1]"
-    title=“[Title]“
-    Validation=“[*]“
+    restart="true"
+    site="Packaging site name" 
+    indexFilter="true"
+    indexFilterPreselected="false"
+    title=“Title“
+    Validation=“*“
   />
 
 
-.. .. csv-table:: 
+.. csv-table:: 
    :header: "Attribute","Description"
    :widths: 40,60
 
+.. BITTE HIER NOCH DIE DEFINITION DER VALIDATION RULE NACHTRAGEN!!  
+
 ..   "restart=""[true/false]""", "Enables repetition of the proces after the package has been created (e.g. in order to recreate the package after manual deletion."
-   "site=""[Packaging site Name]""", "String to pass to the SQL scripts executed on runtime of the mass import."
-   "indexFilter=""[true|false]""", "If set to false, the button will be invisible when executed once."
-   "indexFilterPreselected=""[true/false]""", "Title of the button"
-   "title=""[String]""", "String to pass to the SQL scripts executed on runtime of the mass import."
-   "validation=""[true|false]""", "If set to false, the button will be invisible when executed once."
+   "site=""[Packaging site Name]""", "Defines on which packaging site the operation is to be carried out. If this attribute is not set, a parameter type ""Packetierungssite" has to contain the information needed."
+   "indexFilter=""[true|false]""", "Enables the imposal of a copying restriction if multiple processes are defined."
+   "indexFilterPreselected=""[true/false]""", "Enables preselection of different check boxes."
+   "title=""[String]""", "Enables the possibility to change the name of the button."
+   "validation=""[true|false]""", "Validation rule. ."
 
 ------------------
 CreatePackage
@@ -498,16 +499,14 @@ Opens a dialogue in which you can compile the SCCM package for packaging workflo
     sendToDP="true|false"
   />
 
-.. .. csv-table:: 
+
+.. csv-table:: 
    :header: "Attribute","Description"
    :widths: 40,60
 
-..   "restart=""[true/false]""", "Enables repetition of the proces after the package has been created (e.g. in order to recreate the package after manual deletion."
-   "site=""[Packaging site Name]""", "String to pass to the SQL scripts executed on runtime of the mass import."
-   "indexFilter=""[true|false]""", "If set to false, the button will be invisible when executed once."
-   "indexFilterPreselected=""[true/false]""", "Title of the button"
-   "title=""[String]""", "String to pass to the SQL scripts executed on runtime of the mass import."
-   "validation=""[true|false]""", "If set to false, the button will be invisible when executed once."
+   "restart=""[true/false]""", "Enables repetition of the proces after the package has been created (e.g. in order to recreate the package after manual deletion)."
+   "site=""[Packaging site Name]""", "Defines on which packaging site the operation is to be carried out. If this attribute is not set, a parameter type ""Packetierungssite" has to contain the information needed."
+   "sendToDP=""[true|false]""", "Enables transmission to Distribution Points (""DP"")."
 
 ------------------
 CreateCollection
