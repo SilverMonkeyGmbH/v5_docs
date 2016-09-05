@@ -82,6 +82,33 @@ Example: View Add Remove Programs
    "Class", "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall"
    "Query", "DisplayName, DisplayVersion, Publisher, InstallDate"
 
+**WMI query command**
+Executes a specific WMI method for every returned object.
+
+Example: Stop Windows services with specific name 
+
+.. csv-table::
+   :header: "Setting","Value"
+   :widths: 40,60
+
+   "Type", "WMI Query command"
+   "Namespace", "root\cimv2"
+   "Query", "select * from Win32_Service where Name='W3SVC'"
+   "Command", "StopService"
+
+**WMI Class command**
+Executes a WMI class method.
+
+Example: Trigger SCCM HW Inventory on client 
+
+.. csv-table::
+   :header: "Setting","Value"
+   :widths: 40,60
+
+   "Type", "WMI Class command"
+   "Class", "SMS_Client"
+   "Command", "TriggerSchedule~{00000000-0000-0000-0000-000000000001}"   
+
 **ClickOnce**
 Executes local executables such as MSTSC for extended functionality regarding client systems.
 
