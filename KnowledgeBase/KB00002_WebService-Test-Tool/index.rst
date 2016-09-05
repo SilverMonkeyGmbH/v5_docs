@@ -33,7 +33,7 @@ The start.cmd file is meant to be an example of how to start the web service tes
 
 An example for the command line could be: 
 
-  .. code-block:: console
+.. code-block:: console
     
     WebServiceTestCmdLine.exe /XMLFilePath:"C:\temp\sample.xml" /WebServiceURL:"http://webserver/sim/servicelogin/service.aspx" /Var1:"01"
 
