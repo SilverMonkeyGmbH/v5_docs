@@ -351,10 +351,10 @@ However, you can use in the script impersonation for using specific accounts.
   :linenos:
 
    <execute   
-      title="[My CMD Script]" 
-      command="[C:\windows\system32\cmd.exe]"
-      arguments="[/C \\networkpath\share\scripts\myscript.cmd {ID}]"
-      wait="[false]" 
+      title="My CMD Script" 
+      command="C:\windows\system32\cmd.exe"
+      arguments="/C \\networkpath\share\scripts\myscript.cmd {ID}"
+      wait="false" 
    />
 
 
@@ -364,14 +364,14 @@ However, you can use in the script impersonation for using specific accounts.
   :linenos:
 
    <execute   
-      title="[My PS1 Script]" 
-      command="[C:\Windows\system32\WindowsPowerShell\v1.0\powershell.exe]"
-      arguments="[C:\SilverMonkey\Scripts\MyFirstscript.ps1 -PackagingJobId {ID} -OtherParam &quot;{Var1}&quot;]"
-      wait="[false]" 
+      title="My PS1 Script" 
+      command="C:\Windows\system32\WindowsPowerShell\v1.0\powershell.exe"
+      arguments="C:\SilverMonkey\Scripts\MyFirstscript.ps1 -PackagingJobId {ID} -OtherParam &quot;{Var1}&quot;"
+      wait="false" 
    />
 
 
-.. note:: Using quations within XML attributes: &quot;{Var1}&quot; 
+.. note:: Using quations within XML attributes: &quot;{Var1}&quot; (HTML notation)
 
 
 .. _CMDB-actions-CMDB2SCCM:
@@ -386,10 +386,10 @@ ExecutePS
   :linenos:
 
    <executePSs   
-      title="[My PS1 Script]" 
-      command="[C:\Windows\system32\WindowsPowerShell\v1.0\powershell.exe]"
-      arguments="[C:\SilverMonkey\Scripts\MyFirstscript.ps1 -PackagingJobId {ID} -OtherParam &quot;{Var1}&quot;]"
-      wait="[false]" 
+      title="My PS1 Script" 
+      command="C:\Windows\system32\WindowsPowerShell\v1.0\powershell.exe"
+      arguments="C:\SilverMonkey\Scripts\MyFirstscript.ps1 -PackagingJobId {ID} -OtherParam &quot;{Var1}&quot;"
+      wait="false" 
    />
 
 
@@ -414,13 +414,13 @@ This action button was orignally used for mass import of systems. By defining th
 - See :ref:`tut-massImport` for tutorial.
 - See :ref:`CMDB-SCCM-transfer` for more information.
 
-.. code-block:: xml 
+.. .. code-block:: xml 
   :linenos:
 
-   <CMDB2SCCM   
-      title="[Title of the button]" 
-      param="[String]"
-      restart="[true|false]"
+.. <CMDB2SCCM   
+      title="Title of button" 
+      param="String"
+      restart="true"
    />
 
 **Available attributes**
@@ -441,9 +441,9 @@ This action button was orignally used for mass import of systems. By defining th
   :linenos:
 
   <CMDB2SCCM   
-    title="[Transfer Computer to SCCM]" 
-    param="[SingleTransfer]"
-    restart="[true]"
+    title="Transfer Computer to SCCM" 
+    param="SingleTransfer"
+    restart="true"
   />
 
 
@@ -460,25 +460,27 @@ Opens a dialogue in which new directory structures can be set for the packaging 
   <view>
   <controls>
   <copyFiles
-    restart="[true|false]"
-    site="[Packaging site name]" 
-    indexFilter="[1]"
-    indexFilterPreselected="[1]"
-    title=“[Title]“
-    Validation=“[*]“
+    restart="true"
+    site="Packaging site name" 
+    indexFilter="true"
+    indexFilterPreselected="false"
+    title=“Title“
+    Validation=“*“
   />
 
 
-.. .. csv-table:: 
+.. csv-table:: 
    :header: "Attribute","Description"
    :widths: 40,60
 
+.. BITTE HIER NOCH DIE DEFINITION DER VALIDATION RULE NACHTRAGEN!!  
+
 ..   "restart=""[true/false]""", "Enables repetition of the proces after the package has been created (e.g. in order to recreate the package after manual deletion."
-   "site=""[Packaging site Name]""", "String to pass to the SQL scripts executed on runtime of the mass import."
-   "indexFilter=""[true|false]""", "If set to false, the button will be invisible when executed once."
-   "indexFilterPreselected=""[true/false]""", "Title of the button"
-   "title=""[String]""", "String to pass to the SQL scripts executed on runtime of the mass import."
-   "validation=""[true|false]""", "If set to false, the button will be invisible when executed once."
+   "site=""[Packaging site Name]""", "Defines on which packaging site the operation is to be carried out. If this attribute is not set, a parameter type ""Packetierungssite" has to contain the information needed."
+   "indexFilter=""[true|false]""", "Enables the imposal of a copying restriction if multiple processes are defined."
+   "indexFilterPreselected=""[true/false]""", "Enables preselection of different check boxes."
+   "title=""[String]""", "Enables the possibility to change the name of the button."
+   "validation=""[true|false]""", "Validation rule. ."
 
 ------------------
 CreatePackage
