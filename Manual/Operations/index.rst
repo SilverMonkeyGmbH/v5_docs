@@ -115,6 +115,7 @@ Executes a WMI class method.
    :widths: 40,60
 
    "Type", "WMI Class command"
+   "Namespace", "root\ccm"
    "Class", "SMS_Client"
    "Command", "TriggerSchedule~{00000000-0000-0000-0000-000000000001}"   
 
