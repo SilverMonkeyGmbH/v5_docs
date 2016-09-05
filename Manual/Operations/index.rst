@@ -94,10 +94,10 @@ Example: Start MSTSC with parameter
    "Type", "ClickOnce"
    "Query", "../Tools/ClickOnce/SIM_Ops_Clickonce.application?{ComputerName}"
 
-``SIM_Ops_Clickonce.application`` is delivered through latest version. You can change behaviour (executable, parameters) in config file ``Tools\ClickOnce\Application Files\SIM_Ops_Clickonce_1_0_0_0\SIM_Ops_Clickonce.exe.config.deploy``
+``SIM_Ops_Clickonce.application`` is delivered through latest version. You can change behaviour (executable, parameters) in config file "Tools\ClickOnce\Application Files\SIM_Ops_Clickonce_1_0_0_0\SIM_Ops_Clickonce.exe.config.deploy"
 
 .. tip:: If ``ClickOnce`` is missing from configuration please open Configuration.xml file and change all lines from
-  ``query_wmi,WMI query;query_files,Filesystem;query_registry,Registry query;cmd_query_wmi,WMI query command;cmd_class_wmi,WMI class command;wol,WakeOnLAN`` to
-  ``query_wmi,WMI query;query_files,Filesystem;query_registry,Registry query;cmd_query_wmi,WMI query command;cmd_class_wmi,WMI class command;wol,WakeOnLAN;clickonce,ClickOnce``
+  "query_wmi,WMI query;query_files,Filesystem;query_registry,Registry query;cmd_query_wmi,WMI query command;cmd_class_wmi,WMI class command;wol,WakeOnLAN" to
+  "query_wmi,WMI query;query_files,Filesystem;query_registry,Registry query;cmd_query_wmi,WMI query command;cmd_class_wmi,WMI class command;wol,WakeOnLAN;clickonce,ClickOnce"`
   
    
