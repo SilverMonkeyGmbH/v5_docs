@@ -338,10 +338,10 @@ However, you can use in the script impersonation for using specific accounts.
   :linenos:
 
    <execute   
-      title="[My CMD Script]" 
-      command="[C:\windows\system32\cmd.exe]"
-      arguments="[/C C:\SilverMonkey\Scripts\MyFirstscript.cmd {ID}]"
-      wait="[false]" 
+      title="My CMD Script" 
+      command="C:\windows\system32\cmd.exe"
+      arguments="/C C:\SilverMonkey\Scripts\MyFirstscript.cmd {ID}"
+      wait="false" 
    />
 
 .. note:: You can also execute scripts from a network path. Make sure that the IIS Application Pool is configured to use a specific service account (Default is LOCALSYSTEM).
