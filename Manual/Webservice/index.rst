@@ -64,6 +64,14 @@ Add the following XML tag to ``//sites/site``:
 Creating a deployment of a SCCM package by IDs
 
  .. code-block:: xml
+  :emphasize-lines: 1,2,6
   :linenos:
+
+  <AlternateCreatePopup><![CDATA[javascript: sW('v_84_','../Support/TypeView.aspx?PopUp=true&TypeViewId=84',650,500,true);]]></AlternateCreatePopup>
+
+
+ .. code-block:: xml
+  :linenos:
+  :emphasize-lines: 1,2,6
 
   <AlternateCreatePopup><![CDATA[javascript: sW('v_84_','../Support/TypeView.aspx?PopUp=true&TypeViewId=84',650,500,true);]]></AlternateCreatePopup>
