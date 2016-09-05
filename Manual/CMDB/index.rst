@@ -499,16 +499,13 @@ Opens a dialogue in which you can compile the SCCM package for packaging workflo
     sendToDP="true|false"
   />
 
-.. .. csv-table:: 
+  .. csv-table:: 
    :header: "Attribute","Description"
    :widths: 40,60
 
-..   "restart=""[true/false]""", "Enables repetition of the proces after the package has been created (e.g. in order to recreate the package after manual deletion."
-   "site=""[Packaging site Name]""", "String to pass to the SQL scripts executed on runtime of the mass import."
-   "indexFilter=""[true|false]""", "If set to false, the button will be invisible when executed once."
-   "indexFilterPreselected=""[true/false]""", "Title of the button"
-   "title=""[String]""", "String to pass to the SQL scripts executed on runtime of the mass import."
-   "validation=""[true|false]""", "If set to false, the button will be invisible when executed once."
+   "restart=""[true/false]""", "Enables repetition of the proces after the package has been created (e.g. in order to recreate the package after manual deletion)."
+   "site=""[Packaging site Name]""", "Defines on which packaging site the operation is to be carried out. If this attribute is not set, a parameter type ""Packetierungssite" has to contain the information needed."
+   "sendToDP=""[true|false]""", "Enables transmission to Distribution Points (""DP"")."
 
 ------------------
 CreateCollection
