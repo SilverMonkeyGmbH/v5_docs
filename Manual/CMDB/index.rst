@@ -29,9 +29,9 @@ Every form element has to be definded in
 
 
 
-.. note:: In the following sections, expressions in square brackets are placeholders.
-          Please be sure to remove the brackets and replace the placeholder with the specific text you need to use
-          (e.g. if you want to display a widget 300 pixels wide, change *width="[250]"* to *width="300"*).
+.. note:: In the following sections, you will finde code-blocks filled with example code. Expressions in square brackets in the tables below are placeholders.
+          Please be sure to replace the example code with specific expressions for your case if you want to copy and use xml statements from this page.
+          (e.g. if you want to display a widget 300 pixels wide, change *width="250"* to *width="300"*).
 
 ------------------
 Headline
@@ -45,7 +45,7 @@ Enter the following code to display a headline:
     <views>
     <view>
     <controls>
-    <headline text="[Text]" />
+    <headline text="Example Headline" />
 
 
   .. figure:: _static/Headline.PNG
@@ -64,7 +64,7 @@ Define a section as follows:
     <views>
     <view>
     <controls>
-    <section text="[Text]" />
+    <section text="Example Section" />
 
 
   .. figure:: _static/Example_Section.PNG
@@ -83,7 +83,7 @@ Define a paragraph as follows:
     <views>
     <view>
     <controls>
-    <paragraph text="[Text]" />
+    <paragraph text="Example Text. This is a Paragraph." />
 
 
   .. figure:: _static/Paragraph.PNG
@@ -105,14 +105,14 @@ You can add an attribute this way:
     <view>
     <controls>
     <attribute 
-        field="[attribute name]"
-        validation="[*]"
-        readonly="[true|false]"
-        width="[250]"
-        height="[0]"
-        setDefaultOnLoad="[rule]"
-        forceDefault="[true|false]"
-        Comment="[comment]"
+        field="attribute name"
+        validation="*"
+        readonly="false"
+        width="250"
+        height="50"
+        setDefaultOnLoad="Name1"
+        forceDefault="false"
+        Comment="This is a comment."
     />
 
 
@@ -122,7 +122,7 @@ You can add an attribute this way:
 
 .. csv-table:: 
    :header: "Property","Description"
-   :widths: 40,60
+   :widths: 40,58
 
    "field=""[attribute name]""", "The name of the attribute according to the object definition. Optional fields can also be used. The should have a constant name."
    "validation=""[*]""", "Set up a validation rule (e.g. ""*"" is used to ask for obligatory input). Example:
@@ -132,12 +132,12 @@ You can add an attribute this way:
         validation=""*""
         validation=""required: true, regexp: /^[A-Za-z\d]+$/i""
         validation=""required: true, regexp: /^[A-Za-z\d]{2,20}$/i"""
-    "readonly=""[true|false]""", "Distinguish between writing view and reading view. Type in ""true"" or ""false""."
+    "readonly=""[true|false]""", "Distinguish between reading mode  Type in ""true"" or ""false""."
     "width=""[width in px]""", "Width of the widget given in pixels."
     "height=""[height in px]""", "Height of the widget given in pixels."
     "setDefaultOnLoad=""[true|false]""", "Define the default value for an empty attribute while loading."
     "forceDefault=""[true|false]""", "Forced implementation of the default values."
-    "Comment=""[comment]""", "Add a comment to the attribute. It will be displayed when the curser is moved to the ""*"" at the end of the attribute."
+    "Comment=""[Example Comment]""", "Add a comment to the attribute. It will be displayed when the curser is moved to the ""*"" at the end of the attribute."
 
 
 ------------------
@@ -159,7 +159,7 @@ You can add comments to an object in the xml file that will not be displayed whe
 Connections
 ------------------
 Connections are connections to objects. It is possible to set up new connections or new objects.
-Add connections using the following xml statement
+Add connections using the following xml statement:
 
     .. code-block:: xml 
       :linenos:
@@ -168,14 +168,14 @@ Add connections using the following xml statement
       <view>
       <controls>
       <connections
-        width="[385]"
-        height="[200]"
-        id="[connection1]"
-        title="[connection2]"
-        filter="[Software]"
-        link="[true|false]"
-        create="[view1; view2]"
-        readOnly="[true|false]"
+        width="385"
+        height="200"
+        id="connection1"
+        title="ConnectionServer"
+        filter="Software"
+        link="true"
+        create="view1; view2"
+        readOnly="true"
       />
 
 
@@ -193,14 +193,14 @@ Add connections using the following xml statement
    "title=""[string]""", "Individual title for the connection list."
    "filter=""[type]""", "Restrict the connection list to one single object type."
    "link=""[true|false]""", "Enable opening referenced objects."
-   "create=""[string]""", "List of object views which is supposed to be displayed when new objects are set up and assigned."
+   "create=""[viewX]""", "List of object views which is supposed to be displayed when new objects are set up and assigned."
    "readOnly=""[true|false]""", "Prevents setting up new connecitons if set to ""true""."
 
 
 ------------------
 Link
 ------------------
-Include an HTML-link by using the following xml statement
+Include an HTML-link by using the following xml statement:
 
     .. code-block:: xml
       :linenos:
@@ -209,18 +209,18 @@ Include an HTML-link by using the following xml statement
       <view>
       <controls>
       <link
-        url="[reference]"
-        label="[text]"
-        icon="[name]"
+        url="http:://www.examplewebsite.com"
+        label="Label1"
+        icon="Name"
       />
 
 .. csv-table:: 
    :header: "Property","Description"
    :widths: 40,60
 
-   "url", "Link or reference."
-   "label", "Title of the reference (usually, the title should automatically be located)."
-   "icon", "Name of the icon."
+   "url=""[reference]""", "Link or reference."
+   "label=""[string]""", "Title of the reference (usually, the title should automatically be located)."
+   "icon=""[string]""", "Name of the icon."
   
 ------------------
 List
@@ -230,9 +230,9 @@ Display entrys of another class (e.g. table).
     .. code-block:: xml
       :linenos:
 
-      <list id="Ressourcen"
+      <list id="Resources1"
         width="1200"
-        title="Ressourcen"
+        title="Resources"
         fields="Ressourcenart,110~Name,200~Prio,100~Kontakt,100~Rolle,100~Stdsatzallin,75~StdsatzAllEx,85~RKPauschale,85~LinkToProfile,200"
         count="SELECT count([RessourceId])
         FROM RessourceInRequest"
@@ -588,6 +588,28 @@ Shows the possibility to enter a comment. All comments will be historicized.
 ------------------
 Save
 ------------------
+In order to display a save-button, enter the following xml code:
+
+.. code-block:: xml
+  :linenos:
+
+  <views>
+  <view>
+  <controls>
+  <save
+    delete="true|false"
+  />
+
+.. .. csv-table:: 
+   :header: "Attribute","Description"
+   :widths: 40,60
+
+..   "restart=""[true/false]""", "Enables repetition of the proces after the package has been created (e.g. in order to recreate the package after manual deletion."
+   "site=""[Packaging site Name]""", "String to pass to the SQL scripts executed on runtime of the mass import."
+   "indexFilter=""[true|false]""", "If set to false, the button will be invisible when executed once."
+   "indexFilterPreselected=""[true/false]""", "Title of the button"
+   "title=""[String]""", "String to pass to the SQL scripts executed on runtime of the mass import."
+   "validation=""[true|false]""", "If set to false, the button will be invisible when executed once."
 
 ------------------
 SendMail
