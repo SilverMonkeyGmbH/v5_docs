@@ -13,7 +13,9 @@ There is a command line tool which enables administrators to perform an easy tes
 
 Downloading Web Service Test Tool
 ++++++++++++++++++++++++++++++++++++
-Please click `here <http://www.silvermonkey.net/DL/WebServiceTestCmdLine.zip>`_ to start the download.
+
+- `Command line test-tool <http://www.silvermonkey.net/DL/WebServiceTestCmdLine.zip>`_ download.
+- `GUI test-tool <http://www.silvermonkey.net/DL/SIM_v5_WebServiceTest_GUI_1.0.zip>`_ download.
 
 
 Extracting Content
