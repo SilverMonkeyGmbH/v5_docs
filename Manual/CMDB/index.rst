@@ -381,6 +381,19 @@ However, you can use in the script impersonation for using specific accounts.
 ExecutePS
 ------------------
 
+2. Executing a powershell PS1 script
+
+.. code-block:: xml 
+  :linenos:
+
+   <executePS   
+      title="[My PS1 Script]" 
+      command="[C:\Windows\system32\WindowsPowerShell\v1.0\powershell.exe]"
+      arguments="[C:\SilverMonkey\Scripts\MyFirstscript.ps1 -PackagingJobId {ID} -OtherParam &quot;{Var1}&quot;]"
+      wait="[false]" 
+   />
+
+
 ------------------
 CMDB2SCCM
 ------------------
