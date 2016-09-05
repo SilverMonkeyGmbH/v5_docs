@@ -499,7 +499,8 @@ Opens a dialogue in which you can compile the SCCM package for packaging workflo
     sendToDP="true|false"
   />
 
-  .. csv-table:: 
+
+.. csv-table:: 
    :header: "Attribute","Description"
    :widths: 40,60
 
