@@ -23,7 +23,9 @@ Every form element has to be definded in
  .. code-block:: xml
   :linenos:
 
-  <views><view><controls>
+  <views>
+  <view>
+  <controls>
 
 
 
@@ -54,7 +56,7 @@ Enter the following code to display a headline:
 Section
 ------------------
 
-Define a section as follows
+Define a section as follows:
 
   .. code-block:: xml
     :linenos:
@@ -73,7 +75,7 @@ Define a section as follows
 Paragraph
 ------------------
 
-Define a paragraph as follows
+Define a paragraph as follows:
 
   .. code-block:: xml
     :linenos:
@@ -92,9 +94,9 @@ Define a paragraph as follows
 Attribute
 ------------------
 
-For full reference see :ref:`CMDB-Attributes`:
+For full reference see :ref:`CMDB-Attributes`.
 
-You can add an attribute this way
+You can add an attribute this way:
 
   .. code-block:: xml
     :linenos:
@@ -116,7 +118,7 @@ You can add an attribute this way
 
   .. figure:: _static/Attribute.PNG
        
-        This is how an attribute is displayed in the CMBD form.
+        This is how attributes are displayed in the CMBD form.
 
 .. csv-table:: 
    :header: "Property","Description"
