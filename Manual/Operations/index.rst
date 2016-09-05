@@ -55,10 +55,13 @@ Client commands are visible through the properties dialog in OPS module.
 
 There are different types of client commands
 
-**WMI query**
+---------------------------
+WMI query
+---------------------------
+
 Executes WQL select on target machine and displays output on website.
 
-Example: View the services the client incl. status 
+**Example:** View the services the client incl. status 
 
 .. csv-table::
    :header: "Setting","Value"
@@ -68,10 +71,12 @@ Example: View the services the client incl. status
    "Namespace", "root\cimv2"
    "Query", "SELECT DisplayName, Description, StartMode, StartName, State FROM Win32_Service"
 
-**Registry query**
+---------------------------
+Registry query
+---------------------------
 Reads from target machine registry and displays output on website.
 
-Example: View Add Remove Programs 
+**Example:** View Add Remove Programs 
 
 .. csv-table::
    :header: "Setting","Value"
@@ -82,10 +87,12 @@ Example: View Add Remove Programs
    "Class", "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall"
    "Query", "DisplayName, DisplayVersion, Publisher, InstallDate"
 
-**WMI query command**
+---------------------------
+WMI query command
+---------------------------
 Executes a specific WMI method for every returned object.
 
-Example: Stop Windows services with specific name 
+**Example:** Stop Windows services with specific name 
 
 .. csv-table::
    :header: "Setting","Value"
@@ -96,10 +103,12 @@ Example: Stop Windows services with specific name
    "Query", "select * from Win32_Service where Name='W3SVC'"
    "Command", "StopService"
 
-**WMI Class command**
+---------------------------
+WMI Class command
+---------------------------
 Executes a WMI class method.
 
-Example: Trigger SCCM HW Inventory on client 
+**Example:**  Trigger SCCM HW Inventory on client 
 
 .. csv-table::
    :header: "Setting","Value"
@@ -109,10 +118,12 @@ Example: Trigger SCCM HW Inventory on client
    "Class", "SMS_Client"
    "Command", "TriggerSchedule~{00000000-0000-0000-0000-000000000001}"   
 
-**ClickOnce**
+---------------------------
+ClickOnce
+---------------------------
 Executes local executables such as MSTSC for extended functionality regarding client systems.
 
-Example: Start MSTSC with parameter
+**Example:** Start MSTSC with parameter
 
 .. csv-table::
    :header: "Setting","Value"
