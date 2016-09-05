@@ -20,6 +20,7 @@ Using the Web Service several Microsoft ConfigMgr processes can be automated. Th
 - Executing scripts on the webserver
 
 To go to the processes a HTTP POST calls to the address of the service. On this call is a stream with an XML structure sent the a set of commands contains. These commands are processed by the service to expand the results and sent back to the caller. The success status includes the added node "result" in the attribute "error".
+
 When generating the XML command structure is in upper / lower case to respect (for example, when you enter the site code, etc.). The sequence example shows an XML structure with three separate commands. All calls must be made through an account that has the appropriate permissions. When you call to create new computer the specified variables are added to the list of standard variables from the configuration.
 
 .. tip:: Go to :doc:`/KnowledgeBase/KB00002_WebService-Test-Tool/index` to get help connecting to the web service. 
@@ -84,6 +85,7 @@ The web service executes each ``cmd`` element and adds a ``result`` node to it.
   </cmds>
 
 .. _websrv-deployment:
+
 ===============
 deployment
 ===============
@@ -169,6 +171,7 @@ refreshClient
 ===============
 
 .. _websrv-assignment:
+
 ===============
 assignment
 ===============
