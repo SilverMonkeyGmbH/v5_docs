@@ -16,9 +16,9 @@ Hidden settings are configurable features that are not available through the sta
 These settings have to be set within the ``Configuration.xml`` by a text editor.
 
 
-===============
+==============================
 Alternate New Computer Popup
-===============
+==============================
 
 You can change the behaviour of the new computer "plus" button.
 Add the following XML tag to ``//sites/site``:
