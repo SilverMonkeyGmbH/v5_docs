@@ -481,6 +481,16 @@ Opens a dialogue in which you can compile the SCCM package for packaging workflo
     sendToDP="true|false"
   />
 
+.. .. csv-table:: 
+   :header: "Attribute","Description"
+   :widths: 40,60
+
+..   "restart=""[true/false]""", "Enables repetition of the proces after the package has been created (e.g. in order to recreate the package after manual deletion."
+   "site=""[Packaging site Name]""", "String to pass to the SQL scripts executed on runtime of the mass import."
+   "indexFilter=""[true|false]""", "If set to false, the button will be invisible when executed once."
+   "indexFilterPreselected=""[true/false]""", "Title of the button"
+   "title=""[String]""", "String to pass to the SQL scripts executed on runtime of the mass import."
+   "validation=""[true|false]""", "If set to false, the button will be invisible when executed once."
 
 ------------------
 CreateCollection
@@ -503,6 +513,16 @@ Opens a dialogue in which you can create a new collection for the packaging work
     query="Regelabfrage"
   />
 
+.. .. csv-table:: 
+   :header: "Attribute","Description"
+   :widths: 40,60
+
+..   "restart=""[true/false]""", "Enables repetition of the proces after the package has been created (e.g. in order to recreate the package after manual deletion."
+   "site=""[Packaging site Name]""", "String to pass to the SQL scripts executed on runtime of the mass import."
+   "indexFilter=""[true|false]""", "If set to false, the button will be invisible when executed once."
+   "indexFilterPreselected=""[true/false]""", "Title of the button"
+   "title=""[String]""", "String to pass to the SQL scripts executed on runtime of the mass import."
+   "validation=""[true|false]""", "If set to false, the button will be invisible when executed once."
 
 ------------------
 CreateApplication
@@ -523,6 +543,16 @@ Opens a dialogue in which you can set up the SCCM Application for the packaging 
     configuration="Name"
   />
 
+.. .. csv-table:: 
+   :header: "Attribute","Description"
+   :widths: 40,60
+
+..   "restart=""[true/false]""", "Enables repetition of the proces after the package has been created (e.g. in order to recreate the package after manual deletion."
+   "site=""[Packaging site Name]""", "String to pass to the SQL scripts executed on runtime of the mass import."
+   "indexFilter=""[true|false]""", "If set to false, the button will be invisible when executed once."
+   "indexFilterPreselected=""[true/false]""", "Title of the button"
+   "title=""[String]""", "String to pass to the SQL scripts executed on runtime of the mass import."
+   "validation=""[true|false]""", "If set to false, the button will be invisible when executed once."
 
 ------------------
 Comment
@@ -562,8 +592,16 @@ Use the following xml statements in order to show a function to send preformatte
     mailGroup="Name"
   />
 
+.. .. csv-table:: 
+   :header: "Attribute","Description"
+   :widths: 40,60
 
-
+..   "restart=""[true/false]""", "Enables repetition of the proces after the package has been created (e.g. in order to recreate the package after manual deletion."
+   "site=""[Packaging site Name]""", "String to pass to the SQL scripts executed on runtime of the mass import."
+   "indexFilter=""[true|false]""", "If set to false, the button will be invisible when executed once."
+   "indexFilterPreselected=""[true/false]""", "Title of the button"
+   "title=""[String]""", "String to pass to the SQL scripts executed on runtime of the mass import."
+   "validation=""[true|false]""", "If set to false, the button will be invisible when executed once."
 
 ------------------
 ImportXML
@@ -579,9 +617,36 @@ ImportXML
     titleRestart="Ressource"
   />
 
+.. .. csv-table:: 
+   :header: "Attribute","Description"
+   :widths: 40,60
+
+..   "restart=""[true/false]""", "Enables repetition of the proces after the package has been created (e.g. in order to recreate the package after manual deletion."
+   "site=""[Packaging site Name]""", "String to pass to the SQL scripts executed on runtime of the mass import."
+   "indexFilter=""[true|false]""", "If set to false, the button will be invisible when executed once."
+   "indexFilterPreselected=""[true/false]""", "Title of the button"
+   "title=""[String]""", "String to pass to the SQL scripts executed on runtime of the mass import."
+   "validation=""[true|false]""", "If set to false, the button will be invisible when executed once."
+
 ----------------------
 CreateActiveDirectory
 ----------------------
+Creates an active directory object. The active directory will be authenticated with the Windows login data for your *treon* database.
+This is the case, even if database authentication is set to "SQL". 
+
+.. note:: You will have to outcode special characters when declaring the parentLDAP. I.e. a backslash will have to be put in front of commas, backslashes, the rhombus sign, 
+          the plus sign, angle brackets, semicolons, quotation marks and the equal sign.
+
+.. .. csv-table:: 
+   :header: "Attribute","Description"
+   :widths: 40,60
+
+..   "restart=""[true/false]""", "Enables repetition of the proces after the package has been created (e.g. in order to recreate the package after manual deletion."
+   "site=""[Packaging site Name]""", "String to pass to the SQL scripts executed on runtime of the mass import."
+   "indexFilter=""[true|false]""", "If set to false, the button will be invisible when executed once."
+   "indexFilterPreselected=""[true/false]""", "Title of the button"
+   "title=""[String]""", "String to pass to the SQL scripts executed on runtime of the mass import."
+   "validation=""[true|false]""", "If set to false, the button will be invisible when executed once."
 
 
 ************************************************************************************
