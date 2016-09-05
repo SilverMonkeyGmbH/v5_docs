@@ -60,7 +60,7 @@ Executes WQL select on target machine and displays output on website.
 
 Example: View the services the client incl. status 
 
-.. csv-table:: 
+.. csv-table::
    :header: "Setting","Value"
    :widths: 40,60
 
@@ -73,7 +73,7 @@ Reads from target machine registry and displays output on website.
 
 Example: View Add Remove Programs 
 
-.. csv-table:: 
+.. csv-table::
    :header: "Setting","Value"
    :widths: 40,60
 
@@ -82,12 +82,12 @@ Example: View Add Remove Programs
    "Class", "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall"
    "Query", "DisplayName, DisplayVersion, Publisher, InstallDate"
 
- **ClickOne**
+ **ClickOnce**
  Executes local executables such as MSTSC for extended functionality regarding client systems.
 
  Example: Start MSTSC with parameter
 
- .. csv-table:: 
+.. csv-table::
    :header: "Setting","Value"
    :widths: 40,60
 
