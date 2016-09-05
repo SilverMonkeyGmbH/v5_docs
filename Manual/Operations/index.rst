@@ -68,7 +68,7 @@ Executes WQL select on target machine and displays output on website.
    :widths: 40,60
 
    "Type", "WMI query"
-   "Namespace", "root\cimv2"
+   "Namespace", "root\\cimv2"
    "Query", "SELECT DisplayName, Description, StartMode, StartName, State FROM Win32_Service"
 
 ---------------------------
@@ -84,7 +84,7 @@ Reads from target machine registry and displays output on website.
 
    "Type", "Registry query"
    "Namespace", "HKEY_LOCAL_MACHINE"
-   "Class", "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall"
+   "Class", "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall"
    "Query", "DisplayName, DisplayVersion, Publisher, InstallDate"
 
 ---------------------------
@@ -99,7 +99,7 @@ Executes a specific WMI method for every returned object.
    :widths: 40,60
 
    "Type", "WMI Query command"
-   "Namespace", "root\cimv2"
+   "Namespace", "root\\cimv2"
    "Query", "select * from Win32_Service where Name='W3SVC'"
    "Command", "StopService"
 
@@ -115,7 +115,7 @@ Executes a WMI class method.
    :widths: 40,60
 
    "Type", "WMI Class command"
-   "Namespace", "root\ccm"
+   "Namespace", "root\\ccm"
    "Class", "SMS_Client"
    "Command", "TriggerSchedule~{00000000-0000-0000-0000-000000000001}"   
 
