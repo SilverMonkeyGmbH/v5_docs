@@ -220,7 +220,63 @@ Include an HTML-link by using the following xml statement
    "label", "Title of the reference (usually, the title should automatically be located)."
    "icon", "Name of the icon."
   
+------------------
+List
+------------------
+Display entrys of another class (e.g. table). 
 
+    .. code-block:: xml
+      :linenos:
+
+      <list id="Ressourcen"
+        width="1200"
+        title="Ressourcen"
+        fields="Ressourcenart,110~Name,200~Prio,100~Kontakt,100~Rolle,100~Stdsatzallin,75~StdsatzAllEx,85~RKPauschale,85~LinkToProfile,200"
+        count="SELECT count([RessourceId])
+        FROM RessourceInRequest"
+        data="
+               WITH myBase AS (
+               SELECT [RessourceId] ,
+                  [RessourceType] ,
+                  [Name] ,
+                  [Prio] ,
+                  [Contact] ,
+                  [Role] ,
+                  [Stdsatzallin] ,
+                  [StdsatzAllEx] ,
+                  [RKPauschale] ,
+                  [LinkToProfile] ,
+                  [ParentId] ,
+               ROW_NUMBER() OVER (
+               ORDER BY {order1}) AS POS
+             FROM RessourceInRequest
+             WHERE ParentId = {id}
+
+
+      )
+
+      SELECT RessourceId, RessourceType, Name, Prio, Contact, Role, Stdsatzallin, StdsatzAllEx, RKPauschale, LinkToProfile
+      FROM myBase
+      WHERE POS BETWEEN {start} AND {end}
+      ORDER BY {order2} DESC
+
+      "
+        order1="RessourceType~Name~Prio~Contact~Role~Stdsatzallin~StdsatzAllEx~RKPauschale~LinkToProfile"
+        order2="RessourceType~Name~Prio~Contact~Role~Stdsatzallin~StdsatzAllEx~RKPauschale~LinkToProfile"
+        view="Ressourcen Details (2. Schritt)"
+        cmd="javascript: try {window.parent.gridTable.clearSelection();} catch (e){} try {window.opener.gridTable.clearSelection();} catch (e){} document.location.href='TypeView.aspx?PopUp=true&amp;TypeViewId={view}&amp;Id='+id" />
+
+
+.. csv-table:: 
+   :header: "Property","Description"
+   :widths: 40,60
+
+
+   "url", "Link or reference."
+   "label", "Title of the reference (usually, the title should automatically be located)."
+   "icon", "Name of the icon."
+
+   
 **Examples:**
 
 ===============
