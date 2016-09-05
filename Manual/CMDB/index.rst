@@ -545,6 +545,25 @@ Save
 ------------------
 SendMail
 ------------------
+Use the following xml statements in order to show a function to send preformatted Emails.
+
+.. code-block:: xml
+  :linenos:
+  
+  <views>
+  <view>
+  <controls>
+  <sendMail
+    title="Text"
+    from="Adresse"
+    to="Adresse"
+    subject="Text"
+    body="Text"
+    mailGroup="Name"
+  />
+
+
+
 
 ------------------
 ImportXML
