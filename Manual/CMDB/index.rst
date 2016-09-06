@@ -380,14 +380,15 @@ However, you can use in the script impersonation for using specific accounts.
 ExecutePS
 ------------------
 
+.. warning:: This function is deprecated because it only give support until powershell 2.0 and doas not support cmdlets
 
 .. code-block:: xml 
   :linenos:
 
    <executePS   
       title="My PS1 Script" 
-      command="C:\Windows\system32\WindowsPowerShell\v1.0\powershell.exe"
-      arguments="C:\SilverMonkey\Scripts\MyFirstscript.ps1 -PackagingJobId {ID} -OtherParam &quot;{Var1}&quot;"
+      command="C:\SilverMonkey\Scripts\MyFirstscript.ps1"
+      arguments="[-PackagingJobId {ID} -OtherParam &quot;{Var1}&quot;]"
       wait="false" 
    />
 
