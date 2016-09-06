@@ -16,6 +16,7 @@ Hidden settings are configurable features that are not available through the sta
 
 These settings have to be set within the ``Configuration.xml`` by a text editor.
 
+.. tip:: Within the hidden settings section XPATH notation is used to give information about the correct location of the setting. If you need help with XPATH go to http://www.w3schools.com/xsl/xpath_syntax.asp
 
 ==============================
 Alternate New Computer Popup
@@ -37,6 +38,18 @@ You have created a special CMDB class for computer import with the form ID ``84`
  :linenos:
 
   <AlternateCreatePopup><![CDATA[javascript: sW('v_84_','../Support/TypeView.aspx?PopUp=true&TypeViewId=84',650,500,true);]]></AlternateCreatePopup>
+
+==============================
+Debug Mode
+==============================
+
+By setting debugmode to true a verbose log is created in app_data directory with more internal process information.
+Add the following XML tag to ``//system``
+
+.. code-block:: xml
+ :linenos:
+
+  <debugLogging>true</debugLogging>
 
 
 ************************************************************************************
