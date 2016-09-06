@@ -380,7 +380,7 @@ However, you can use in the script impersonation for using specific accounts.
 ExecutePS
 ------------------
 
-.. warning:: This function is deprecated because it only give support until powershell 2.0 and doas not support cmdlets
+.. warning:: This function is deprecated because it only gives support until powershell 2.0 and does not support cmdlets
 
 .. code-block:: xml 
   :linenos:
@@ -392,6 +392,8 @@ ExecutePS
       wait="false" 
    />
 
+.. note::  Return gibt aus PowerShell Script einen Wert zurück in das Formular. (Im Bsp. wird der Wert der PSVarialbe $ComputerSID in ‘‘ in das Feld ComputerSID der aktuellen Klasse geschrieben)
+``return "ComputerSID = “+"'"+$ComputerSID+"'"``
 
 ------------------
 CMDB2SCCM
