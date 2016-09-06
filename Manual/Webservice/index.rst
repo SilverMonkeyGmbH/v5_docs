@@ -134,7 +134,7 @@ Go to :ref:`websrv-assignment` for deploying a ConfigMgr **application**.
 2. Creating a deployment of a SCCM package by names
 
 .. code-block:: xml
- :emphasize-lines: 4,5,8-9
+ :emphasize-lines: 4,6,8-9
  :linenos:
 
   <?xml version="1.0" encoding="utf-8"?>
