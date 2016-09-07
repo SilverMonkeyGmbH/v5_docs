@@ -415,8 +415,8 @@ The underlying code can be used in two methods:
 
 .. note:: This action button was orignally used for mass import of systems. By defining the CMDB mass import configuration to accept single systems by parameter also single systems can be imported.
 
-- See :ref:`tut-massImport` for tutorial.
-- See :ref:`_CMDB-SCCM-transfer` for more information.
+- See :ref:`tut-massImport`_ for tutorial.
+- See :ref:`CMDB-SCCM-transfer`_ for more information.
 
 .. .. code-block:: xml 
   :linenos:
@@ -955,4 +955,4 @@ Exchange the following XML with the corresponding elements in your configuration
 Multiple computer transfer example
 ======================================
 
-Content will be published later.
+Content will be published soon.
