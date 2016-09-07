@@ -473,7 +473,7 @@ Opens a dialogue in which new directory structures can be set for the packaging 
   />
 
 
-.. csv-table:: 
+.. .. csv-table:: 
    :header: "Attribute","Description"
    :widths: 40,60
 
@@ -491,7 +491,7 @@ CreatePackage
 ------------------
 Opens a dialogue in which you can compile the SCCM package for the packaging workflow. 
 
-.. code-block:: xml
+  .. code-block:: xml
   :linenos:
 
   <views>
@@ -517,23 +517,24 @@ CreateCollection
 ------------------
 Opens a dialogue to create a new collection for the packaging workflow.
 
-.. code-block:: xml
-  :linenos:
+  .. code-block:: xml
+    :linenos:
 
-  <views>
-  <view>
-  <controls>
-  <createCollection
-    title="Ressource"
-    folder="OrderId"
-    parentCollection="CollectionId"
-    name="Namensregel"
-    collectionType="Typ"
-    limitToCollectionId="CollectionId"
-    query="Regelabfrage"
-  />
+    <views>
+    <view>
+    <controls>
+    <createCollection
+      title="Ressource"
+      folder="OrderId"
+      parentCollection="CollectionId"
+      name="Namensregel"
+      collectionType="Typ"
+      limitToCollectionId="CollectionId"
+      query="Regelabfrage"
+    />
 
- .. csv-table:: 
+
+.. csv-table:: 
    :header: "Attribute","Description"
    :widths: 40,60
 
@@ -550,7 +551,7 @@ CreateApplication
 ------------------
 Opens a dialogue in which you can set up the SCCM Application for the packaging workflow.
 
-.. code-block:: xml 
+  .. code-block:: xml 
   :linenos:
 
   <views>
@@ -563,6 +564,7 @@ Opens a dialogue in which you can set up the SCCM Application for the packaging 
     site="Packaging site name"
     configuration="Name"
   />
+
 
  .. csv-table:: 
    :header: "Attribute","Description"
