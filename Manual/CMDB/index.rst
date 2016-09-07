@@ -371,7 +371,7 @@ However, you can use in the script impersonation for using specific accounts.
    />
 
 
-.. note:: Using quations within XML attributes: &quot;{Var1}&quot; (HTML notation)
+.. note:: Using quations within XML attributes: *&quot;{Var1}&quot;* (HTML notation).
 
 
 .. _CMDB-actions-CMDB2SCCM:
@@ -380,7 +380,7 @@ However, you can use in the script impersonation for using specific accounts.
 ExecutePS
 ------------------
 
-.. warning:: This function is deprecated because it only gives support until powershell 2.0 and does not support cmdlets
+.. warning:: This function is deprecated because it only supports powershell up to version 2.0 and does not support cmdlets.
 
 .. code-block:: xml 
   :linenos:
@@ -392,29 +392,31 @@ ExecutePS
       wait="false" 
    />
 
-.. note::  Return gibt aus PowerShell Script einen Wert zurück in das Formular. (Im Bsp. wird der Wert der PSVarialbe $ComputerSID in ‘‘ in das Feld ComputerSID der aktuellen Klasse geschrieben)
-``return "ComputerSID = “+"'"+$ComputerSID+"'"``
+.. note::  The "return" command gives back a value from the PowerShell script to the form. In the example, the value "PSVarialbe $ComputerSID" is given back to the field "ComputerSID" in the current class.
+          ``return "ComputerSID = “+"'"+$ComputerSID+"'"``
+
+.. Text aus der Notiz auf Deutsch: Return gibt aus PowerShell Script einen Wert zurück in das Formular. (Im Bsp. wird der Wert der PSVarialbe $ComputerSID in ‘‘ in das Feld ComputerSID der aktuellen Klasse geschrieben)
+return "ComputerSID = “+"'"+$ComputerSID+"'" 
 
 ------------------
 CMDB2SCCM
 ------------------
 
-Creates or edits in Microsoft ConfigMgr one or more computer objects and performs additional actions regarding this systems:
+Creates or edits one or more computer objects in Microsoft ConfigMgr and performs additional actions regarding the systems:
 
-  - Add variables
-  - Creates direct memberships for ConfigMgr Collections
+  - Adding variables
+  - Creating direct memberships for ConfigMgr Collections
 
 
-.. note:: 
 The underlying code can be used in two methods:
 
  a) Via mass import button in lists
  b) Via action button in forms
 
-This action button was orignally used for mass import of systems. By defining the CMDB mass import configuration to accept single systems by parameter also single systems can be imported.
+.. note:: This action button was orignally used for mass import of systems. By defining the CMDB mass import configuration to accept single systems by parameter also single systems can be imported.
 
 - See :ref:`tut-massImport` for tutorial.
-- See :ref:`CMDB-SCCM-transfer` for more information.
+- See :ref:`_CMDB-SCCM-transfer` for more information.
 
 .. .. code-block:: xml 
   :linenos:
@@ -425,7 +427,7 @@ This action button was orignally used for mass import of systems. By defining th
       restart="true"
    />
 
-**Available attributes**
+**Available Attributes**
 
 .. csv-table:: 
    :header: "Attribute","Description"
@@ -435,7 +437,7 @@ This action button was orignally used for mass import of systems. By defining th
    "param=""[String]""", "String to pass to the SQL scripts executed on runtime of the mass import."
    "restart=""[true|false]""", "If set to false, the button will be invisible when executed once."
 
-**Examples:**
+**Example:**
 
 1. Executing a batch file
 
@@ -487,7 +489,7 @@ Opens a dialogue in which new directory structures can be set for the packaging 
 ------------------
 CreatePackage
 ------------------
-Opens a dialogue in which you can compile the SCCM package for packaging workflow. 
+Opens a dialogue in which you can compile the SCCM package for the packaging workflow. 
 
 .. code-block:: xml
   :linenos:
@@ -945,7 +947,7 @@ Exchange the following XML with the corresponding elements in your configuration
     :emphasize-lines: 1
 
 
-.. warning:: After import make sure you have "Site" and "Configuration" configured correctly in Settings->CMDB
+.. warning:: After import, make sure you have "Site" and "Configuration" configured correctly in Settings -> CMDB.
 
 
 .. _CMDB-Multiple-computer-transfer:
@@ -953,4 +955,4 @@ Exchange the following XML with the corresponding elements in your configuration
 Multiple computer transfer example
 ======================================
 
-Content will be handed in later.
+Content will be published later.
