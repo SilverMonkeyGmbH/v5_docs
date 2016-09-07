@@ -415,8 +415,8 @@ The underlying code can be used in two methods:
 
 .. note:: This action button was orignally used for mass import of systems. By defining the CMDB mass import configuration to accept single systems by parameter also single systems can be imported.
 
-- See :ref:`tut-massImport`_ for tutorial.
-- See :ref:`CMDB-SCCM-transfer`_ for more information.
+- See :ref:`tut-massImport` for tutorial.
+- See CMDB-SCCM-transfer_ for more information.
 
 .. .. code-block:: xml 
   :linenos:
