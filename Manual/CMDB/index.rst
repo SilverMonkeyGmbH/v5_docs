@@ -515,7 +515,7 @@ Opens a dialogue in which you can compile the SCCM package for the packaging wor
 ------------------
 CreateCollection
 ------------------
-Opens a dialogue in which you can create a new collection for the packaging workflow.
+Opens a dialogue to create a new collection for the packaging workflow.
 
 .. code-block:: xml
   :linenos:
@@ -533,16 +533,17 @@ Opens a dialogue in which you can create a new collection for the packaging work
     query="Regelabfrage"
   />
 
-.. .. csv-table:: 
+ .. csv-table:: 
    :header: "Attribute","Description"
    :widths: 40,60
 
-..   "restart=""[true/false]""", "Enables repetition of the proces after the package has been created (e.g. in order to recreate the package after manual deletion."
-   "site=""[Packaging site Name]""", "String to pass to the SQL scripts executed on runtime of the mass import."
-   "indexFilter=""[true|false]""", "If set to false, the button will be invisible when executed once."
-   "indexFilterPreselected=""[true/false]""", "Title of the button"
-   "title=""[String]""", "String to pass to the SQL scripts executed on runtime of the mass import."
-   "validation=""[true|false]""", "If set to false, the button will be invisible when executed once."
+   "title=""[string]""", "Text of the header of the function."
+   "folder=""[string / integer]""", "Optional declaration of hte folder in which the collection is supposed to be compiled (from SCCM 2012). Note the ID of the folder - its name will not be deleted. A whole folder tree can optionally be set here. In this case, enter the ID of the folder an all folder names that should be set and connect them with a tilde. Example: 16777222~{Manufacturer}~{Product}~Install "
+   "parentCollection=""[string / interger]""", "Optionally declare the collection in which the new collection is supposed to be saved (SCCM 2007)."
+   "name=""[string]""", "Set a naming convention or the new collection."
+   "collectionType=""[integer]""", "Collection-type key (1: user, 2: computer)."
+   "limitToCollectionId=""[string]""", "Limited collection for SCCM 2012."
+   "query=""[string]""", "Query for dynamic collections."
 
 ------------------
 CreateApplication
@@ -557,23 +558,22 @@ Opens a dialogue in which you can set up the SCCM Application for the packaging 
   <controls>
   <createApplication
     restart="true|false"
-    title="Ressource"
-    titleRestart="Ressource"
+    title="Resource"
+    titleRestart="Resource"
     site="Packaging site name"
     configuration="Name"
   />
 
-.. .. csv-table:: 
+ .. csv-table:: 
    :header: "Attribute","Description"
    :widths: 40,60
 
-..   "restart=""[true/false]""", "Enables repetition of the proces after the package has been created (e.g. in order to recreate the package after manual deletion."
-   "site=""[Packaging site Name]""", "String to pass to the SQL scripts executed on runtime of the mass import."
-   "indexFilter=""[true|false]""", "If set to false, the button will be invisible when executed once."
-   "indexFilterPreselected=""[true/false]""", "Title of the button"
-   "title=""[String]""", "String to pass to the SQL scripts executed on runtime of the mass import."
-   "validation=""[true|false]""", "If set to false, the button will be invisible when executed once."
-
+   "restart=""[true|false]""", "Enables repetition of the proces after the package has been created (e.g. in order to recreate the package after manual deletion."
+   "title=""[string]""", "Name of the resource of the action button for initial creation of the application. (The corresponding text resource has to be defined in *Ressources.xml'."
+   "titleRestart=""[string]""", "Name of the resource of the action button for recreation of the application."
+   "site=""[string]""", "Defines the packaging site where the operation has to be carried out. If this attribute is not set, the packaging job has to contain a parameter type ""packaging site"" in order to recieve the needed information."
+   "configuration=""[string]""", "Name of the configuration for the application from the site settings."
+   
 ------------------
 Comment
 ------------------
