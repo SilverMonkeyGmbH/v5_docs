@@ -603,16 +603,11 @@ In order to display a save-button, enter the following xml code:
     delete="true|false"
   />
 
-.. .. csv-table:: 
+.. csv-table:: 
    :header: "Attribute","Description"
    :widths: 40,60
 
-..   "restart=""[true/false]""", "Enables repetition of the proces after the package has been created (e.g. in order to recreate the package after manual deletion."
-   "site=""[Packaging site Name]""", "String to pass to the SQL scripts executed on runtime of the mass import."
-   "indexFilter=""[true|false]""", "If set to false, the button will be invisible when executed once."
-   "indexFilterPreselected=""[true/false]""", "Title of the button"
-   "title=""[String]""", "String to pass to the SQL scripts executed on runtime of the mass import."
-   "validation=""[true|false]""", "If set to false, the button will be invisible when executed once."
+   "delete=""[true|false]""", "Add a delete-button."
 
 ------------------
 SendMail
@@ -626,24 +621,25 @@ Use the following xml statements in order to show a function to send preformatte
   <view>
   <controls>
   <sendMail
-    title="Text"
-    from="Adresse"
-    to="Adresse"
+    title="Welcome to SIM"
+    from="support@silvermonkey.net"
+    to="exampleclient@example.com"
     subject="Text"
-    body="Text"
-    mailGroup="Name"
+    body="Lorem ipsum dolor."
+    mailGroup="AllClients"
   />
 
-.. .. csv-table:: 
+
+.. csv-table:: 
    :header: "Attribute","Description"
    :widths: 40,60
 
-..   "restart=""[true/false]""", "Enables repetition of the proces after the package has been created (e.g. in order to recreate the package after manual deletion."
-   "site=""[Packaging site Name]""", "String to pass to the SQL scripts executed on runtime of the mass import."
-   "indexFilter=""[true|false]""", "If set to false, the button will be invisible when executed once."
-   "indexFilterPreselected=""[true/false]""", "Title of the button"
-   "title=""[String]""", "String to pass to the SQL scripts executed on runtime of the mass import."
-   "validation=""[true|false]""", "If set to false, the button will be invisible when executed once."
+   "title=""[string]""", "Optionally declare a title to the button."
+   "from=""[mail address]""", "Sender's mail address."
+   "to=""[mail address]""", "Recipient's mail address(es)."
+   "subject=""[string]""", "Subject of the email."
+   "body=""[string]""", "Body of the email."
+   "mailGroup=""[string]""", "Instead of adding the attributes ""to"", ""subject"" and ""body"" you can refer to a predefined group. This simplifies simultaneously sending multiple mails by following rules."
 
 ------------------
 ImportXML
