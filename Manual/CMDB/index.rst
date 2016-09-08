@@ -554,18 +554,18 @@ CreateApplication
 Opens a dialogue in which you can set up the SCCM Application for the packaging workflow.
 
   .. code-block:: xml 
-  :linenos:
+    :linenos:
 
-  <views>
-  <view>
-  <controls>
-  <createApplication
-    restart="true|false"
-    title="Resource"
-    titleRestart="Resource"
-    site="Packaging site name"
-    configuration="Name"
-  />
+    <views>
+    <view>
+    <controls>
+    <createApplication
+      restart="true|false"
+      title="Resource"
+      titleRestart="Resource"
+      site="Packaging site name"
+      configuration="Name"
+    />
 
 
  .. csv-table:: 
@@ -655,20 +655,17 @@ ImportXML
   <view>
   <controls>
   <importXML
-    title="Ressource"
-    titleRestart="Ressource"
+    title="Resource"
+    titleRestart="Resource"
   />
 
 .. .. csv-table:: 
    :header: "Attribute","Description"
    :widths: 40,60
 
-..   "restart=""[true/false]""", "Enables repetition of the proces after the package has been created (e.g. in order to recreate the package after manual deletion."
-   "site=""[Packaging site Name]""", "String to pass to the SQL scripts executed on runtime of the mass import."
-   "indexFilter=""[true|false]""", "If set to false, the button will be invisible when executed once."
-   "indexFilterPreselected=""[true/false]""", "Title of the button"
-   "title=""[String]""", "String to pass to the SQL scripts executed on runtime of the mass import."
-   "validation=""[true|false]""", "If set to false, the button will be invisible when executed once."
+..   "title=""[string]""", "Enables repetition of the proces after the package has been created (e.g. in order to recreate the package after manual deletion."
+   "titleRestart=""[string]""", "String to pass to the SQL scripts executed on runtime of the mass import."
+   
 
 ----------------------
 CreateActiveDirectory
