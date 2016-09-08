@@ -202,10 +202,10 @@ Add connections using the following xml statement:
 
 
 .. VORERST GESTRICHEN WEGEN OBSOLETHEIT.
-------------------
- .. Link
-------------------
-Include an HTML-link by using the following xml statement:
+.. ------------------
+.. Link
+.. ------------------
+.. Include an HTML-link by using the following xml statement:
 
 ..   .. code-block:: xml
       :linenos:
@@ -281,8 +281,6 @@ Display entrys of another class (e.g. table).
    "label", "Title of the reference (usually, the title should automatically be located)."
    "icon", "Name of the icon."
 
-   
-**Examples:**
 
 ===============
 Action Buttons
