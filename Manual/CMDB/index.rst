@@ -499,12 +499,12 @@ Opens a dialogue in which you can compile the SCCM package for the packaging wor
     />
 
 
- .. csv-table:: 
+ .. csv-table::
     :header: "Attribute","Description"
     :widths: 40,60
 
     "restart=""[true/false]""", "Enables repetition of the proces after the package has been created (e.g. in order to recreate the package after manual deletion)."
-    "site=""[Packaging site Name]""", "Defines on which packaging site the operation is to be carried out. If this attribute is not set, a parameter type ""Packetierungssite" has to contain the information needed."
+    "site=""[Packaging site Name]""", "Defines on which packaging site the operation is to be carried out. If this attribute is not set, a parameter type ""Packetierungssite"" has to contain the information needed."
     "sendToDP=""[true|false]""", "Enables transmission to Distribution Points (""DP"")."
 
 
@@ -605,6 +605,7 @@ In order to display a save-button, enter the following xml code:
 .. csv-table:: 
    :header: "Attribute","Description"
    :widths: 40,60
+   :align: center
 
    "delete=""[true|false]""", "Add a delete-button."
 
@@ -654,12 +655,13 @@ ImportXML
     titleRestart="Resource"
   />
 
-.. .. csv-table:: 
+ 
+ .. csv-table:: 
    :header: "Attribute","Description"
    :widths: 40,60
 
-..   "title=""[string]""", "Enables repetition of the proces after the package has been created (e.g. in order to recreate the package after manual deletion."
-   "titleRestart=""[string]""", "String to pass to the SQL scripts executed on runtime of the mass import."
+   "title=""[string]""", "Resource name of the action button."
+   "titleRestart=""[string]""", "Resource name of the action button. This one is used when the application is recreated (only when restart=""true""). The corresponding text resource has to be defined in Ressources.xml."
    
 
 ----------------------
@@ -668,19 +670,32 @@ CreateActiveDirectory
 Creates an active directory object. The active directory will be authenticated with the Windows login data for your *treon* database.
 This is the case, even if database authentication is set to "SQL". 
 
-.. note:: You will have to outcode special characters when declaring the parentLDAP. I.e. a backslash will have to be put in front of commas, backslashes, the rhombus sign, 
+.. code-block:: xml
+    :linenos:
+
+    <views>
+    <view>
+    <controls>
+    <createActiveDirectory
+      title="Ressource"
+      parentLDAP="Ldap Pfad"
+      class="SchemaClassName"
+      name="Namensregel"
+      attribute="value"
+    />
+
+.. note:: You will have to outcode special characters when declaring the parentLDAP. This means a backslash will have to be put in front of commas, backslashes, the rhombus sign, 
           the plus sign, angle brackets, semicolons, quotation marks and the equal sign.
 
-.. .. csv-table:: 
+.. csv-table:: 
    :header: "Attribute","Description"
    :widths: 40,60
 
-..   "restart=""[true/false]""", "Enables repetition of the proces after the package has been created (e.g. in order to recreate the package after manual deletion."
-   "site=""[Packaging site Name]""", "String to pass to the SQL scripts executed on runtime of the mass import."
-   "indexFilter=""[true|false]""", "If set to false, the button will be invisible when executed once."
-   "indexFilterPreselected=""[true/false]""", "Title of the button"
-   "title=""[String]""", "String to pass to the SQL scripts executed on runtime of the mass import."
-   "validation=""[true|false]""", "If set to false, the button will be invisible when executed once."
+   "title=""[string]""", "Title of the funcion's head."
+   "parentLDAP=""[LDAP path]""", "LDAP path of the container in which the object is supposed to be created."
+   "class=""[string]""", "Schema class of the object that is created."
+   "name=""[string]""", "Rule for the creation of displayed names for the new object."
+   "attribute=""[value]""", "All further attributes are interpreted as object attributes and connected to the first object."
 
 
 ************************************************************************************
