@@ -196,16 +196,16 @@ Add connections using the following xml statement:
    "create=""[viewX]""", "List of object views which is supposed to be displayed when new objects are set up and assigned."
    "readOnly=""[true|false]""", "Prevents setting up new connecitons if set to ""true""."
 
-
+.. VORERST GESTRICHEN WEGEN OBSOLETHEIT.
 ------------------
-Link
+ Link
 ------------------
 Include an HTML-link by using the following xml statement:
 
-    .. code-block:: xml
+..   .. code-block:: xml
       :linenos:
 
-      <views>
+..      <views>
       <view>
       <controls>
       <link
@@ -214,11 +214,10 @@ Include an HTML-link by using the following xml statement:
         icon="Name"
       />
 
-.. csv-table:: 
+.. .. csv-table:: 
    :header: "Property","Description"
    :widths: 40,60
-
-   "url=""[reference]""", "Link or reference."
+  "url=""[reference]""", "Link or reference."
    "label=""[string]""", "Title of the reference (usually, the title should automatically be located)."
    "icon=""[string]""", "Name of the icon."
   
@@ -374,7 +373,7 @@ However, you can use in the script impersonation for using specific accounts.
 .. note:: Using quations within XML attributes: *&quot;{Var1}&quot;* (HTML notation).
 
 
-.. _CMDB-actions-CMDB2SCCM:
+`CMDB-actions-CMDB2SCCM`_
 
 ------------------
 ExecutePS
@@ -468,8 +467,8 @@ Opens a dialogue in which new directory structures can be set for the packaging 
     site="Packaging site name" 
     indexFilter="true"
     indexFilterPreselected="false"
-    title=“Title“
-    Validation=“*“
+    title="Title"
+    Validation="*"
   />
 
 
@@ -484,7 +483,7 @@ Opens a dialogue in which new directory structures can be set for the packaging 
    "indexFilter=""[true|false]""", "Enables the imposal of a copying restriction if multiple processes are defined."
    "indexFilterPreselected=""[true/false]""", "Enables preselection of different check boxes."
    "title=""[String]""", "Enables the possibility to change the name of the button."
-   "validation=""[true|false]""", "Validation rule. ."
+   "validation=""[*]""", "Validation rule. If the validation rule is activated, you have to execute this CopyFiles-Operation in order to proceed to the next workflow step."
 
 ------------------
 CreatePackage
