@@ -394,8 +394,6 @@ ExecutePS
 .. note::  The "return" command gives back a value from the PowerShell script to the form. In the example, the value "PSVarialbe $ComputerSID" is given back to the field "ComputerSID" in the current class.
           ``return "ComputerSID = “+"'"+$ComputerSID+"'"``
 
-.. Text aus der Notiz auf Deutsch: Return gibt aus PowerShell Script einen Wert zurück in das Formular. (Im Bsp. wird der Wert der PSVarialbe $ComputerSID in ‘‘ in das Feld ComputerSID der aktuellen Klasse geschrieben)
-return "ComputerSID = “+"'"+$ComputerSID+"'" 
 
 ------------------
 CMDB2SCCM
@@ -415,7 +413,7 @@ The underlying code can be used in two methods:
 .. note:: This action button was orignally used for mass import of systems. By defining the CMDB mass import configuration to accept single systems by parameter also single systems can be imported.
 
 - See :ref:`tut-massImport` for tutorial.
-- See :ref:`CMDB-SCCM-transfer` for more information.
+- See `CMDB-SCCM-transfer`_ for more information.
 
 .. .. code-block:: xml 
   :linenos:
