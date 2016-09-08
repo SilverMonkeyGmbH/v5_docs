@@ -1,7 +1,8 @@
 Manual for module "CMDB"
 =============================================================
 
-.. warning:: This article is under construction! Please DO NOT use any of the instructions below, yet! You may cause damage to your system. This article will be finished soon.
+.. warning:: This article is under construction! Please DO NOT use any of the instructions below, yet!
+             You may cause damage to your system. This article will be finished soon.
 
 .. contents:: *In this article:*
   :local:
@@ -31,7 +32,7 @@ Every form element has to be definded in
 
 .. note:: In the following sections, you will finde code-blocks filled with example code. Expressions in square brackets in the tables below are placeholders.
           Please be sure to replace the example code with specific expressions for your case if you want to copy and use xml statements from this page.
-          (e.g. if you want to display a widget 300 pixels wide, change *width="250"* to *width="300"*).
+          (e.g. if you want to display a widget 300 pixels wide, change *width="250"* to *width="300" **or** replace *width="[width in px]"* with *width="300"* ).
 
 ------------------
 Headline
@@ -45,7 +46,7 @@ Enter the following code to display a headline:
     <views>
     <view>
     <controls>
-    <headline text="Example Headline" />
+    <headline text="ExampleClass" />
 
 
   .. figure:: _static/Headline.PNG
@@ -64,7 +65,7 @@ Define a section as follows:
     <views>
     <view>
     <controls>
-    <section text="Example Section" />
+    <section text="ExampleSection" />
 
 
   .. figure:: _static/Example_Section.PNG
@@ -83,7 +84,7 @@ Define a paragraph as follows:
     <views>
     <view>
     <controls>
-    <paragraph text="Example Text. This is a Paragraph." />
+    <paragraph text="This example paragraph has been created in order to test funtionality." />
 
 
   .. figure:: _static/Paragraph.PNG
@@ -94,7 +95,8 @@ Define a paragraph as follows:
 Attribute
 ------------------
 
-For full reference see :ref:`CMDB-Attributes`.
+.. note:: In order to use attributes as form elements, they will have to be created first. 
+          For full reference see :ref:`CMDB-Attributes`.
 
 You can add an attribute this way:
 
@@ -124,7 +126,7 @@ You can add an attribute this way:
    :header: "Property","Description"
    :widths: 40,58
 
-   "field=""[attribute name]""", "The name of the attribute according to the object definition. Optional fields can also be used. The should have a constant name."
+   "field=""[string]""", "The name of the attribute according to the object definition. Optional fields can also be used. They should have a constant name."
    "validation=""[*]""", "Set up a validation rule (e.g. ""*"" is used to ask for obligatory input). Example:
       
       .. code-block:: console
@@ -132,12 +134,12 @@ You can add an attribute this way:
         validation=""*""
         validation=""required: true, regexp: /^[A-Za-z\d]+$/i""
         validation=""required: true, regexp: /^[A-Za-z\d]{2,20}$/i"""
-    "readonly=""[true|false]""", "Distinguish between reading mode  Type in ""true"" or ""false""."
+    "readonly=""[true|false]""", "Distinguishes between reading mode and writing mode. Type in ""true"" for reading mode or ""false"" if you want to enable the user to enter text."
     "width=""[width in px]""", "Width of the widget given in pixels."
     "height=""[height in px]""", "Height of the widget given in pixels."
-    "setDefaultOnLoad=""[true|false]""", "Define the default value for an empty attribute while loading."
-    "forceDefault=""[true|false]""", "Forced implementation of the default values."
-    "Comment=""[Example Comment]""", "Add a comment to the attribute. It will be displayed when the curser is moved to the ""*"" at the end of the attribute."
+    "setDefaultOnLoad=""[true|false]""", "Defines the default value for an empty attribute that is set when the form is loading."
+    "forceDefault=""[true|false]""", "Forces implementation of the default values."
+    "Comment=""[strings]""", "Add a comment to the attribute. It will be displayed when the curser is moved to the ""*"" at the end of the attribute."
 
 
 ------------------
@@ -152,13 +154,13 @@ You can add comments to an object in the xml file that will not be displayed whe
       <views>
       <view>
       <controls>
-      <comment text="[Example Text]" />
+      <comment text="[Example Comment.]" />
 
 
 ------------------
 Connections
 ------------------
-Connections are connections to objects. It is possible to set up new connections or new objects.
+These are connections to objects. It is possible to set up new connections or new objects.
 Add connections using the following xml statement:
 
     .. code-block:: xml 
@@ -179,9 +181,6 @@ Add connections using the following xml statement:
       />
 
 
-  .. figure:: _static/Connection.PNG
-    
-      This is how a connection is displayed in the CMBD form.
 
 .. csv-table:: 
    :header: "Property","Description"
@@ -196,6 +195,10 @@ Add connections using the following xml statement:
    "create=""[viewX]""", "List of object views which is supposed to be displayed when new objects are set up and assigned."
    "readOnly=""[true|false]""", "Prevents setting up new connecitons if set to ""true""."
 
+  .. figure:: _static/Connection.PNG
+    
+      This is how a connection is displayed in the CMBD form.
+      
 .. VORERST GESTRICHEN WEGEN OBSOLETHEIT.
 ------------------
  Link
