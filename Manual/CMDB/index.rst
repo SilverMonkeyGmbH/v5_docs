@@ -584,7 +584,7 @@ Shows the possibility to enter a comment. All comments will be historicized.
   <views>
   <view>
   <controls>
-  <comment [strings] />
+  <comment="This is a comment and will be historicized." />
 
 
 ------------------
@@ -677,10 +677,10 @@ This is the case, even if database authentication is set to "SQL".
     <view>
     <controls>
     <createActiveDirectory
-      title="Ressource"
-      parentLDAP="Ldap Pfad"
+      title="Active D"
+      parentLDAP="Ldap path"
       class="SchemaClassName"
-      name="Namensregel"
+      name="naming convention"
       attribute="value"
     />
 
@@ -691,10 +691,10 @@ This is the case, even if database authentication is set to "SQL".
    :header: "Attribute","Description"
    :widths: 40,60
 
-   "title=""[string]""", "Title of the funcion's head."
+   "title=""[string]""", "Title of the action button."
    "parentLDAP=""[LDAP path]""", "LDAP path of the container in which the object is supposed to be created."
    "class=""[string]""", "Schema class of the object that is created."
-   "name=""[string]""", "Rule for the creation of displayed names for the new object."
+   "name=""[string]""", "Naming convention for the new object."
    "attribute=""[value]""", "All further attributes are interpreted as object attributes and connected to the first object."
 
 
