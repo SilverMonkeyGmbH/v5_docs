@@ -492,16 +492,16 @@ CreatePackage
 Opens a dialogue in which you can compile the SCCM package for the packaging workflow. 
 
   .. code-block:: xml
-  :linenos:
+    :linenos:
 
-  <views>
-  <view>
-  <controls>
-  <createPackage
-    restart="true|false"
-    site="Packaging site name"
-    sendToDP="true|false"
-  />
+    <views>
+    <view>
+    <controls>
+    <createPackage
+      restart="true|false"
+      site="Packaging site name"
+      sendToDP="true|false"
+    />
 
 
 .. csv-table:: 
