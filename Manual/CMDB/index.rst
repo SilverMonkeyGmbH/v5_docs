@@ -183,25 +183,27 @@ Add connections using the following xml statement:
 
 
 .. csv-table:: 
-   :header: "Property","Description"
-   :widths: 40,60
+    :header: "Property","Description"
+    :widths: 40,60
 
-   "width=""[width in px]""", "Width of the depiciton given in pixels."
-   "height=""[height in px]""", "Height of the depiction given in pixels."
-   "id=""[string/integer]""", "Unique label if multiple connection lists are displayed."
-   "title=""[string]""", "Individual title for the connection list."
-   "filter=""[type]""", "Restrict the connection list to one single object type."
-   "link=""[true|false]""", "Enable opening referenced objects."
-   "create=""[viewX]""", "List of object views which is supposed to be displayed when new objects are set up and assigned."
-   "readOnly=""[true|false]""", "Prevents setting up new connecitons if set to ""true""."
+    "width=""[width in px]""", "Width of the depiciton given in pixels."
+    "height=""[height in px]""", "Height of the depiction given in pixels."
+    "id=""[string/integer]""", "Unique label if multiple connection lists are displayed."
+    "title=""[string]""", "Individual title for the connection list."
+    "filter=""[type]""", "Restrict the connection list to one single object type."
+    "link=""[true|false]""", "Enable opening referenced objects."
+    "create=""[viewX]""", "List of object views which is supposed to be displayed when new objects are set up and assigned."
+    "readOnly=""[true|false]""", "Prevents setting up new connecitons if set to ""true""."
 
-  .. figure:: _static/Connection.PNG
+
+.. figure:: _static/Connection.PNG
     
-      This is how a connection is displayed in the CMBD form.
-      
+           This is how a connection is displayed in the CMBD form.
+
+
 .. VORERST GESTRICHEN WEGEN OBSOLETHEIT.
 ------------------
- Link
+ .. Link
 ------------------
 Include an HTML-link by using the following xml statement:
 
