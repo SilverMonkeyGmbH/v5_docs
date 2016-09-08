@@ -454,29 +454,27 @@ CopyFiles
 Opens a dialogue in which new directory structures can be set for the packaging workflow. 
 (Copy is carried out in context of the background SCCM account.)
 
-.. code-block:: xml
-  :linenos:
+  .. code-block:: xml
+    :linenos:
 
-  <views>
-  <view>
-  <controls>
-  <copyFiles
-    restart="true"
-    site="Packaging site name" 
-    indexFilter="true"
-    indexFilterPreselected="false"
-    title="Title"
-    Validation="*"
-  />
+    <views>
+    <view>
+    <controls>
+    <copyFiles
+      restart="true"
+      site="Packaging site name" 
+      indexFilter="true"
+      indexFilterPreselected="false"
+      title="Title"
+      Validation="*"
+    />
 
 
-.. .. csv-table:: 
+.. csv-table:: 
    :header: "Attribute","Description"
    :widths: 40,60
 
-.. BITTE HIER NOCH DIE DEFINITION DER VALIDATION RULE NACHTRAGEN!!  
-
-..   "restart=""[true/false]""", "Enables repetition of the proces after the package has been created (e.g. in order to recreate the package after manual deletion."
+   "restart=""[true/false]""", "Enables repetition of the proces after the package has been created (e.g. in order to recreate the package after manual deletion."
    "site=""[Packaging site Name]""", "Defines on which packaging site the operation is to be carried out. If this attribute is not set, a parameter type ""Packetierungssite" has to contain the information needed."
    "indexFilter=""[true|false]""", "Enables the imposal of a copying restriction if multiple processes are defined."
    "indexFilterPreselected=""[true/false]""", "Enables preselection of different check boxes."
@@ -502,12 +500,12 @@ Opens a dialogue in which you can compile the SCCM package for the packaging wor
 
 
  .. csv-table:: 
-   :header: "Attribute","Description"
-   :widths: 40,60
+    :header: "Attribute","Description"
+    :widths: 40,60
 
-   "restart=""[true/false]""", "Enables repetition of the proces after the package has been created (e.g. in order to recreate the package after manual deletion)."
-   "site=""[Packaging site Name]""", "Defines on which packaging site the operation is to be carried out. If this attribute is not set, a parameter type ""Packetierungssite" has to contain the information needed."
-   "sendToDP=""[true|false]""", "Enables transmission to Distribution Points (""DP"")."
+    "restart=""[true/false]""", "Enables repetition of the proces after the package has been created (e.g. in order to recreate the package after manual deletion)."
+    "site=""[Packaging site Name]""", "Defines on which packaging site the operation is to be carried out. If this attribute is not set, a parameter type ""Packetierungssite" has to contain the information needed."
+    "sendToDP=""[true|false]""", "Enables transmission to Distribution Points (""DP"")."
 
 
 
