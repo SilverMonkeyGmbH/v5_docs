@@ -504,13 +504,15 @@ Opens a dialogue in which you can compile the SCCM package for the packaging wor
     />
 
 
-.. csv-table:: 
+ .. csv-table:: 
    :header: "Attribute","Description"
    :widths: 40,60
 
    "restart=""[true/false]""", "Enables repetition of the proces after the package has been created (e.g. in order to recreate the package after manual deletion)."
    "site=""[Packaging site Name]""", "Defines on which packaging site the operation is to be carried out. If this attribute is not set, a parameter type ""Packetierungssite" has to contain the information needed."
    "sendToDP=""[true|false]""", "Enables transmission to Distribution Points (""DP"")."
+
+
 
 ------------------
 CreateCollection
