@@ -15,7 +15,7 @@ The Packaging Module is used to map and standartize the organisational packaging
 
 .. csv-table:: 
    :header: "Property","Description"
-   :widths: 40,58
+   :widths: 40,58 
 
    "Table name", "The name of the packaging table"
    "Name rule", "Define how packages will be displayed in connection views from other classes"
