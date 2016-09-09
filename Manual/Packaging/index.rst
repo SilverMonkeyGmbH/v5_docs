@@ -19,7 +19,10 @@ The Packaging Module is used to map and standartize the organisational packaging
 
    "Name - de", "German display name of the packaging site"
    "Name - en", "English display name of the packaging site"
-   "Site", "Choose a preconfigured site as packaging site here. See the reference below to learn how to configure sites."
+   "Site", "Choose a preconfigured site as packaging site here. See the reference below to learn how to configure sites in general."
+   "Package Folder", "Depricated!(Feature for SCCM Packages)"
+   "Package Name rule", "Depricated!(Feature for SCCM Packages)"
+   "Analyse file ext.", "Define what kind of files should be parsed when copy jobs are executed. All files that are copied and that have a type that is defined here will be parsed, meaning when there are Attributenames in curly braces ("{AttributeName}") they will be replaced with the attribut value in the form context. (Possible values:".docx",".xlsx" usw.) "
 
 ****************************************************************
 Sites
