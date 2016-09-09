@@ -39,15 +39,32 @@ Sites
    "Site", "Choose a preconfigured site as packaging site here. See the reference below to learn how to configure sites in general."
    "Package Folder", "Depricated!(Feature for SCCM Packages)"
    "Package Name rule", "Depricated!(Feature for SCCM Packages)"
-   "Analyse file ext.", "Define what kind of files should be parsed when copy jobs are executed. All files that are copied and that have a type that is defined here will be parsed, meaning when there are Attributenames in curly braces ({AttributeName}) they will be replaced with the attribut value in the form context. (Possible values:"".docx"","".xlsx"" usw.)"
+   "Analyse file ext.", "Define what kind of files should be parsed when copy jobs are executed. All files that are copied and that have a type that is defined here will be parsed, meaning when there are Attributenames in curly braces ({AttributeName}) they will be replaced with the attribut value in the form context. (Possible values: ""docx; vbs; txt; xml"")"
 
 ================================================================
 Copy jobs
 ================================================================
 
+Various file copying operations can be defined for the packaging process. Create the filestructure for the packaging process with this operation. Execute single or multiple copy jobs from the forms.  
+
+  .. figure:: _static/CopyJobs.png
+
+  .. csv-table:: 
+   :header: "Property","Description"
+   :widths: 40,58
+
+   "Name - de", "German display name of the copy job"
+   "Name - en", "English display name of the copy job"
+   "Source", "Source path for the copy job"
+   "Destination", "Destination path for the copy job"
+
+See the general Site Configuration for the definition of the files that will be parsed while executing copy jobs.
+
 ================================================================
 Package parameters
 ================================================================
+
+Depricated!(Feature for SCCM Packages)
 
 ****************************************************************
 Programms
