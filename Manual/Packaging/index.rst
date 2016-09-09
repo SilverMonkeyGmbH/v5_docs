@@ -11,6 +11,23 @@ Manual for module "Packaging"
 
 The Packaging Module is used to map and standartize the organisational packaging process. In addition to that you can use operations to simplify Configuration Manager Tasks, like creating Packages or Applications. The Packaging Module is based on the functions of the CMDB Module: Attributes, Views and operations are configured like in the CMDB Module. The Settings for the automatic creation of packages in sccm and the creation of folder structures for the packaging process are described in the sections sites, programms and operating system groups.
 
+  .. figure:: _static/PackagingConfiguration.png
+
+.. csv-table:: 
+   :header: "Property","Description"
+   :widths: 40,58
+
+   "Table name", "The name of the packaging table"
+   "Name rule", "Define how packages will be displayed in connection views from other classes"
+   "Automation", "Define triggers that will execute SQL Stored Procedures on specific events"
+   "Workflow", "Define the preconfigured workflow for the packaging process"
+   "Key field", "Define the identifier for the packaging table"
+   "Link view", "Define the view that will be displayed when you open a entry of the packaging table from another class form"
+
+****************************************************************
+Sites
+****************************************************************
+
   .. figure:: _static/SiteConfiguration.png
 
 .. csv-table:: 
@@ -23,10 +40,6 @@ The Packaging Module is used to map and standartize the organisational packaging
    "Package Folder", "Depricated!(Feature for SCCM Packages)"
    "Package Name rule", "Depricated!(Feature for SCCM Packages)"
    "Analyse file ext.", "Define what kind of files should be parsed when copy jobs are executed. All files that are copied and that have a type that is defined here will be parsed, meaning when there are Attributenames in curly braces ({AttributeName}) they will be replaced with the attribut value in the form context. (Possible values:"".docx"","".xlsx"" usw.)"
-
-****************************************************************
-Sites
-****************************************************************
 
 ================================================================
 Copy jobs
