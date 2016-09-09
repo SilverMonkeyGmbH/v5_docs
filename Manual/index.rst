@@ -11,3 +11,4 @@ Contents:
    Operations/index
    Webservice/index
    Packaging/index
+   General Configuration/index
