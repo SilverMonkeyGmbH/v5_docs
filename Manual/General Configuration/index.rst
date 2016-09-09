@@ -12,6 +12,32 @@ General Configuration
 ****************************************************************
 Roles
 ****************************************************************
+Create roles to limit then permissions of defined users. You can either define a group as default group (every user gets this role), or define a specific link to an Active Directory group. You can set persmissions to limit the users access on functions, reports, lists 
+or Modules.
+
+Click the "+ New Role"-Button to create a new role: 
+
+  .. figure:: _static/Roles.png
+
+
+.. csv-table:: 
+   :header: "Property","Description"
+   :widths: 40,58
+
+   "Name, "The general name of the role"
+   "Description", "The role description"
+   "AD Group", "Here you can define an LDAP Path to an AD Group. All Users of the AD Group will get the configured role."
+   "E-Mail", "Depricated!"
+   "Default Group", "If you choose this option every user will get this role."
+   "Show functions", "Enables the user to see the functions tab in the main menue."
+   "Show Shop", "Enables the role to see the software shop"
+   "Show CMDB", "Enables the role to see the CMDB module"
+   "Show packaging", "Enables the role to see the packaging tab"
+   "Show reports", "Enables the role to see the reports module"
+   "Show management", "Enables the role to see the management module"
+   "Edit settings", "Enables the role to edit the settings of the SIM instance. Only an option for administrators."
+   "Shop Administrator", "Enables the role to edit requests in the software shop "
+   "Proces admin", "Enables the role to use the set status function"
 
 
 
