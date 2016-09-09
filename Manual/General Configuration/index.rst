@@ -24,10 +24,10 @@ Click the "+ New Role"-Button to create a new role:
    :header: "Property","Description"
    :widths: 40,58
 
-   "Name, "The general name of the role"
+   "Name", "The general name of the role"
    "Description", "The role description"
    "AD Group", "Here you can define an LDAP Path to an AD Group. All Users of the AD Group will get the configured role."
-   "E-Mail", "Depricated!"
+   "E-Mail", "Depricated"
    "Default Group", "If you choose this option every user will get this role."
    "Show functions", "Enables the user to see the functions tab in the main menue."
    "Show Shop", "Enables the role to see the software shop"
