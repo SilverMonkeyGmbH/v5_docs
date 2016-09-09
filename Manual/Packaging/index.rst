@@ -42,7 +42,7 @@ Sites
    "Analyse file ext.", "Define what kind of files should be parsed when copy jobs are executed. All files that are copied and that have a type that is defined here will be parsed, meaning when there are Attributenames in curly braces ({AttributeName}) they will be replaced with the attribut value in the form context. (Possible values: ""docx; vbs; txt; xml"")"
 
 
-:ref:`General-Configuration-Sites` 
+See :ref:`General-Configuration-Sites` to learn how to configure sites. 
 
 ================================================================
 Copy jobs
