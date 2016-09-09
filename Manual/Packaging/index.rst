@@ -41,6 +41,9 @@ Sites
    "Package Name rule", "Depricated!(Feature for SCCM Packages)"
    "Analyse file ext.", "Define what kind of files should be parsed when copy jobs are executed. All files that are copied and that have a type that is defined here will be parsed, meaning when there are Attributenames in curly braces ({AttributeName}) they will be replaced with the attribut value in the form context. (Possible values: ""docx; vbs; txt; xml"")"
 
+
+   :ref:`General Configuration-Sites` 
+
 ================================================================
 Copy jobs
 ================================================================
@@ -60,6 +63,8 @@ Various file copying operations can be defined for the packaging process. Create
 
 See the general Site Configuration for the definition of the files that will be parsed while executing copy jobs.
 
+ .. note:: The copy jobs will be executed in the context of the deposited sccm account. 
+
 ================================================================
 Package parameters
 ================================================================
@@ -70,14 +75,26 @@ Depricated!(Feature for SCCM Packages)
 Programms
 ****************************************************************
 
+Depricated!(Feature for SCCM Packages)
+
 ****************************************************************
 Operating System groups
 ****************************************************************
+
+Depricated!(Feature for SCCM Packages)
 
 ****************************************************************
 Attributes
 ****************************************************************
 
+Create attributes for the packaging workflow here. 
+
+You can see informations about attributes here :ref:`CMDB-Attributes` 
+
 ****************************************************************
 Views
 ****************************************************************
+
+Create lists and forms for the packaging workflow here. 
+
+For further information :ref:`CMDB-Form Views` 
