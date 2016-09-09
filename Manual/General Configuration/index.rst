@@ -49,7 +49,7 @@ Sites
 
 Create a new site via the "+ New site"-Button to connect the Packaging Module to your SCCM Site/SCCM DB:
 
-  .. figure:: _static/SiteConfiguration.png
+  .. figure:: _static/GeneralSiteConfiguration.png
 
 ================================================================
 Common settings
@@ -94,12 +94,12 @@ Function settings
    :header: "Property","Description"
    :widths: 40,58
 
-   "Package displayname", ""
-   "Package filter", "Name of the sccm sql database."
-   "Computer filter", "Name of the sccm sql database."
-   "User filter", "Name of the sccm sql database."
-   "Application filter", "Name of the sccm sql database."
-   "Comp.software.query", "Name of the sccm sql database."
+   "Package displayname", "Defines how sim displays the package displayname in an sql syntax. (e.g. Manufacturer+''+Name+''+Version+''+Language)"
+   "Package filter", "Defindes an SQL based fitler for the displaying of the packages in the Operations Module"
+   "Computer filter", "Defindes an SQL based fitler for the displaying of the computers in the Operations Module"
+   "User filter", "Defindes an SQL based fitler for the displaying of the users in the Operations Module"
+   "Application filter", "Defindes an SQL based fitler for the displaying of the applications in the Operations Module"
+   "Comp.software.query", "SQl Query that is used to detemine the software that is installed on a computer."
    "Comp.app.query", "Name of the sccm sql database."
    "Coll. group tag", "Name of the sccm sql database."
    "Depl. role tag", "Name of the sccm sql database."
