@@ -9,7 +9,8 @@ General Configuration
   :depth: 3
 
 
-.. _General Configuration-Sites:
+.. _General-Configuration-Sites:
+
 ****************************************************************
 Sites
 ****************************************************************
