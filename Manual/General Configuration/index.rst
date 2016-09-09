@@ -63,19 +63,56 @@ Common settings
    "Name - en", "English display name of the site"
    "Description - de", "German site description"
    "Description - en", "English site description"
-   "Site code", "The site code of your sccm server"
-   "SCCM Server", ""
-   "Domain", ""
-   "Domain account", ""
-   "Domain password", ""
-   "Impersonation", ""
+   "Site code", "The site code of your sccm Site. (The site code has to be unique to one site)"
+   "SCCM Server", "Hostname of the sccm Server."
+   "Domain", "Domain of the sccm service account"
+   "Domain account", "Name of the sccm service account, this account is used for all functions. ( specify without domain) To see which permissions this accounts need please see the reference at the end of this subsection."
+   "Domain password", "Password of the sccm service account"
+   "Impersonation", "You have to choose this option if the installation is directly on the sccm server."
+
+
 ================================================================
 Database settings
 ================================================================
 
+.. csv-table:: 
+   :header: "Property","Description"
+   :widths: 40,58
+
+   "Database server", "Specify the sccm sql database server. (IP adress or FQDN)"
+   "Database name", "Name of the sccm sql database."
+   "Authentication", "Choose the type of database authetication: SQL or Windows authentication. If you choose Windows authentication the Domain account that you specified in the Common settings will be used."
+   "SQl user", "Name of the sccm sql db service account (If you chose the SQL authentication)"
+   "Name - en", "Password of the sccm sql db service account (If you chose the SQL authentication)"
+
+
 ================================================================
 Function settings
 ================================================================
+
+.. csv-table:: 
+   :header: "Property","Description"
+   :widths: 40,58
+
+   "Package displayname", ""
+   "Package filter", "Name of the sccm sql database."
+   "Computer filter", "Name of the sccm sql database."
+   "User filter", "Name of the sccm sql database."
+   "Application filter", "Name of the sccm sql database."
+   "Comp.software.query", "Name of the sccm sql database."
+   "Comp.app.query", "Name of the sccm sql database."
+   "Coll. group tag", "Name of the sccm sql database."
+   "Depl. role tag", "Name of the sccm sql database."
+   "Package archive tag", "Name of the sccm sql database."
+   "Default program", "Name of the sccm sql database."
+   "Pkg.var. name", "Name of the sccm sql database."
+   "Pkg.var. value", "Name of the sccm sql database."
+   "Pkg.var. locale", "Name of the sccm sql database."
+   "App.var. name", "Name of the sccm sql database."
+   "App.var. value", "Name of the sccm sql database."
+   "App.var locale", "Name of the sccm sql database."
+   "No OS check on deployments", "Name of the sccm sql database."
+   "Software from variables in prozesses", "Name of the sccm sql database."
 
 ================================================================
 Computer software deployment
