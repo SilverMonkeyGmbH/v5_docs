@@ -19,7 +19,7 @@ The Packaging Module is used to map and standartize the organisational packaging
 
    "Name - de", "German display name of the packaging site"
    "Name - en", "English display name of the packaging site"
-   "Site", "Choose a preconfigured site here. To see how to configure a site :ref:`tut-massImport`
+   "Site", "Choose a preconfigured site as packaging site here. See the reference below to learn how to configure sites."
 
 ****************************************************************
 Sites
