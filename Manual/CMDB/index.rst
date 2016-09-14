@@ -8,6 +8,7 @@ Manual for module "CMDB"
   :local:
   :depth: 3
 
+.. _CMDB-Form Views:
 
 ************************************************************************************
 Form Views
@@ -709,6 +710,8 @@ This is the case, even if database authentication is set to "SQL".
    "name=""[string]""", "Naming convention for the new object."
    "attribute=""[value]""", "All further attributes are interpreted as object attributes and connected to the first object."
 
+
+.. _CMDB-LIst Views:
 
 ************************************************************************************
 List Views

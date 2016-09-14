@@ -10,3 +10,5 @@ Contents:
    CMDB/Tutorials
    Operations/index
    Webservice/index
+   Packaging/index
+   General Configuration/index
