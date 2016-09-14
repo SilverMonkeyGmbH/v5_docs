@@ -61,10 +61,11 @@ Configure the list as shown:
 
 
 .. note:: 
- - The setting ``detailView="Computers Details"`` says that there is a form view with the name "Computers Details" expected
+ - The setting ``detailView="Computers Details"`` will expect a form view with the name "Computers Details"
  - The setting ``cmdb2sccm="true"`` displays a transfer button in the list context menu 
  
  .. image:: _static/Tutorial_FirstCMDBClass_8_preview.png  
+
  - For full reference see :ref:`CMDB-Lists-View`
 
 .. literalinclude:: _static/ViewExample2.xml
