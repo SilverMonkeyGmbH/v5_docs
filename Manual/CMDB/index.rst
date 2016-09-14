@@ -369,7 +369,7 @@ However, you can use in the script impersonation for using specific accounts.
 .. tip:: Using quations within XML attributes: *&quot;{Var1}&quot;* (HTML notation).
 
 
-`CMDB-actions-CMDB2SCCM`_
+.. _`CMDB-actions-CMDB2SCCM`:
 
 ------------------
 ExecutePS

@@ -61,12 +61,12 @@ Configure the list as shown:
 
 
 .. note:: 
- - The setting ``detailView="Computers Details"`` will expect a form view with the name "Computers Details"
- - The setting ``cmdb2sccm="true"`` displays a transfer button in the list context menu 
- 
- .. image:: _static/Tutorial_FirstCMDBClass_8_preview.png  
-
- - For full reference see :ref:`CMDB-Lists-View`
+ |- The setting ``detailView="Computers Details"`` will expect a form view with the name "Computers Details"
+ |- The setting ``cmdb2sccm="true"`` displays a transfer button in the list context menu 
+ |
+ |.. image:: _static/Tutorial_FirstCMDBClass_8_preview.png  
+ |
+ |- For full reference see :ref:`CMDB-Lists-View`
 
 .. literalinclude:: _static/ViewExample2.xml
     :language: xml
@@ -75,11 +75,11 @@ Configure the list as shown:
 
 8. Create a form view
 
-Create a new form view like the following (you have to stick to the configured name from the list view ``detailView="Computers Details"``):
+Create a new form view as shown below (you have to stick to the configured name from the list view ``detailView="Computers Details"``):
 
 .. image:: _static/Tutorial_FirstCMDBClass_9.png
 
-A set a attributes and form elements are suggested automatically. You can delete the ``<connections link="true" />`` line as no connections are configured in this example.
+A set of attributes and form elements are automatically suggested. You can delete the ``<connections link="true" />`` line as no connections are configured in this example.
 
 .. image:: _static/Tutorial_FirstCMDBClass_10.png
 
@@ -99,7 +99,7 @@ You can add more attributes to the class and use those attributes in lists and f
 .. _tut-massImport:
 
 ************************************************************************************
-Setting up mass import for ConfigMgr
+Setting up Mass Import for ConfigMgr
 ************************************************************************************
 
 For full reference see :ref:`CMDB-actions-CMDB2SCCM`.
