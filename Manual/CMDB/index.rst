@@ -1,8 +1,8 @@
 Manual for module "CMDB"
 =============================================================
 
-.. warning:: This article is under construction! Please DO NOT use any of the instructions below, yet!
-             You may cause damage to your system. This article will be finished soon.
+.. warning:: This article is under construction! Please DO NOT refer to any of the instructions below, yet!
+             You may cause damage to your system! This article will be finished soon.
 
 .. contents:: *In this article:*
   :local:
@@ -20,15 +20,7 @@ Form Elements
 
 Form elements are displayed in detail forms. 
 
-Every form element has to be definded in 
-
- .. code-block:: xml
-  :linenos:
-
-  <views>
-  <view>
-  <controls>
-
+Every form element has to be definded in the XML block ``<views><view><controls>``.
 
 
 .. note:: In the following sections, you will finde code-blocks filled with example code. Expressions in square brackets in the tables below are placeholders.
@@ -147,7 +139,7 @@ You can add an attribute this way:
 Comment
 ------------------
 
-You can add comments to an object in the xml file that will not be displayed when the file is executed.
+You can add comments to an object in the XML file that will not be displayed when it is executed.
 
     .. code-block:: xml
       :linenos:
@@ -187,14 +179,14 @@ Add connections using the following xml statement:
     :header: "Property","Description"
     :widths: 40,60
 
-    "width=""[width in px]""", "Width of the depiciton given in pixels."
-    "height=""[height in px]""", "Height of the depiction given in pixels."
+    "width=""[width in px]""", "Displayed width in pixels."
+    "height=""[height in px]""", "Displayed height in pixels."
     "id=""[string/integer]""", "Unique label if multiple connection lists are displayed."
     "title=""[string]""", "Individual title for the connection list."
-    "filter=""[type]""", "Restrict the connection list to one single object type."
-    "link=""[true|false]""", "Enable opening referenced objects."
-    "create=""[viewX]""", "List of object views which is supposed to be displayed when new objects are set up and assigned."
-    "readOnly=""[true|false]""", "Prevents setting up new connecitons if set to ""true""."
+    "filter=""[type]""", "Restricts the connection list to one single object type."
+    "link=""[true|false]""", "Enables opening referenced objects."
+    "create=""[viewX]""", "List of object views which is supposed to be displayed when new objects are being set up and assigned."
+    "readOnly=""[true|false]""", "Prevents user from setting up new connecitons if set to ""true""."
 
 
 .. figure:: _static/Connection.PNG
@@ -287,7 +279,7 @@ Display entrys of another class (e.g. table).
 Action Buttons
 ===============
 
-Action buttons are buttons in detail forms. When a user has write rights for the specific step he / she can click on that button. Action buttons are on the right side of every detail form as the following figure shows: 
+Action buttons are buttons in detail forms. When a user has writing permission for the specific step he / she can click on that button. Action buttons are displayed on the right side of every detail form as the following image shows: 
 
   .. image:: _static/ActionButtonsOverview.png
 
@@ -326,12 +318,12 @@ However, you can use in the script impersonation for using specific accounts.
    :widths: 40,60
 
    "title=""[Resource]""", "Title of the button"
-   "command=""[PathToExe]""", "Full path to the executable. Environment variables are not supported."
+   "command=""[PathToExe]""", "Full path to the executable file. Environment variables are not supported."
    "arguments=""[{Var1} {Var2} {Var3}]""", "Arguments passed to the executed process."
    "exit_nn=""[Resource]""", "After execution the exit code will be passed to the website. If a corresponding exit_nn parameter is set, a pop up is displayed to the user."
    "wait=""[true|false]""", "If set to true, the website waits for the execution to end."
 
-.. warning:: If "wait" is set to "true" be aware that the internet browser and the IIS session itself both have an IDLE timeout. Use wait=""true""only if the script is executed within seconds.  
+.. warning:: If "wait" is set to "true" be aware that the internet browser and the IIS session itself both have an IDLE timeout. Only use wait="true" if the script is executed within seconds.  
 
 **Examples:**
 
@@ -347,7 +339,7 @@ However, you can use in the script impersonation for using specific accounts.
       wait="false" 
    />
 
-.. note:: You can also execute scripts from a network path. Make sure that the IIS Application Pool is configured to use a specific service account (Default is LOCALSYSTEM).
+.. note:: You can also execute scripts from a network path. Make sure that the IIS Application Pool is configured to use a specific service account (default is LOCALSYSTEM).
 
 
 .. code-block:: xml 
@@ -374,10 +366,10 @@ However, you can use in the script impersonation for using specific accounts.
    />
 
 
-.. note:: Using quations within XML attributes: *&quot;{Var1}&quot;* (HTML notation).
+.. tip:: Using quations within XML attributes: *&quot;{Var1}&quot;* (HTML notation).
 
 
-`CMDB-actions-CMDB2SCCM`_
+.. `CMDB-actions-CMDB2SCCM`_
 
 ------------------
 ExecutePS
@@ -404,7 +396,7 @@ ExecutePS
 
    "title=""[string]""", "Text in the head of the function."
    "command=""[command line]""", "Command line (solved against the corresponding data record."
-   arguments=""[string]""", "Arguments to call the command (solved against the corresponding data record). If arguments are supposed to be given to the PS script, put a hyphen before the value that you want to forward."
+   arguments=""[string]""", "Arguments that call the command (solved against the corresponding data record). If arguments are supposed to be given to the PS script, put a hyphen before the value that you want to forward."
    "wait=""[true|false]""", "Waits for the execution to stop (in case of synchronous execution). Only if this value is set to ""true"" the system can send a report to the user."
 
 
@@ -423,19 +415,20 @@ The underlying code can be used in two methods:
  a) Via mass import button in lists
  b) Via action button in forms
 
-.. note:: This action button was orignally used for mass import of systems. By defining the CMDB mass import configuration to accept single systems by parameter also single systems can be imported.
+.. note:: This action button was orignally used to fully import systems (mass import). By defining the CMDB mass import configuration to accept single systems by parameter also single systems can be imported.
 
 - See :ref:`tut-massImport` for tutorial.
 - See CMDB-SCCM-transfer_. for more information.
 
-.. .. code-block:: xml 
+.. code-block:: xml 
   :linenos:
 
-.. <CMDB2SCCM   
+  <CMDB2SCCM   
       title="Title of button" 
       param="String"
       restart="true"
    />
+
 
 **Available Attributes**
 
@@ -443,13 +436,13 @@ The underlying code can be used in two methods:
    :header: "Attribute","Description"
    :widths: 40,60
 
-   "title=""[Resource]""", "Title of the button"
-   "param=""[String]""", "String to pass to the SQL scripts executed on runtime of the mass import."
+   "title=""[resource]""", "Title of the button"
+   "param=""[string]""", "String to pass to the SQL scripts executed on runtime of the mass import."
    "restart=""[true|false]""", "If set to false, the button will be invisible when executed once."
 
 **Example:**
 
-1. Executing a batch file
++ Executing a batch file
 
 .. code-block:: xml 
   :linenos:
@@ -488,7 +481,7 @@ Opens a dialogue in which new directory structures can be set for the packaging 
    :widths: 40,60
 
    "restart=""[true/false]""", "Enables repetition of the proces after the package has been created (e.g. in order to recreate the package after manual deletion."
-   "site=""[Packaging site Name]""", "Defines on which packaging site the operation is to be carried out. If this attribute is not set, a parameter type ""Packetierungssite" has to contain the information needed."
+   "site=""[Packaging site Name]""", "Defines on which packaging site the operation will be carried out. If this attribute is not set, a parameter type ""Packetierungssite" has to contain the information needed."
    "indexFilter=""[true|false]""", "Enables the imposal of a copying restriction if multiple processes are defined."
    "indexFilterPreselected=""[true/false]""", "Enables preselection of different check boxes."
    "title=""[String]""", "Enables the possibility to change the name of the button."
@@ -581,7 +574,7 @@ Opens a dialogue in which you can set up the SCCM Application for the packaging 
    :widths: 40,60
 
    "restart=""[true|false]""", "Enables repetition of the proces after the package has been created (e.g. in order to recreate the package after manual deletion."
-   "title=""[string]""", "Name of the resource of the action button for initial creation of the application. (The corresponding text resource has to be defined in *Ressources.xml'."
+   "title=""[string]""", "Name of the resource of the action button for initial creation of the application. (The corresponding text resource has to be defined in *Ressources.xml*.)"
    "titleRestart=""[string]""", "Name of the resource of the action button for recreation of the application."
    "site=""[string]""", "Defines the packaging site where the operation has to be carried out. If this attribute is not set, the packaging job has to contain a parameter type ""packaging site"" in order to recieve the needed information."
    "configuration=""[string]""", "Name of the configuration for the application from the site settings."
@@ -597,13 +590,13 @@ Shows the possibility to enter a comment. All comments will be historicized.
   <views>
   <view>
   <controls>
-  <comment="This is a comment and will be historicized." />
+  <comment="This comment and will be historicized." />
 
 
 ------------------
 Save
 ------------------
-In order to display a save-button, enter the following xml code:
+In order to display a save-button, enter the following XML code:
 
 .. code-block:: xml
   :linenos:
@@ -625,7 +618,7 @@ In order to display a save-button, enter the following xml code:
 ------------------
 SendMail
 ------------------
-Use the following xml statements in order to show a function to send preformatted Emails.
+Use the following XML statements in order to show a function to send preformatted Emails.
 
 .. code-block:: xml
   :linenos:
@@ -652,11 +645,12 @@ Use the following xml statements in order to show a function to send preformatte
    "to=""[mail address]""", "Recipient's mail address(es)."
    "subject=""[string]""", "Subject of the email."
    "body=""[string]""", "Body of the email."
-   "mailGroup=""[string]""", "Instead of adding the attributes ""to"", ""subject"" and ""body"" you can refer to a predefined group. This simplifies simultaneously sending multiple mails by following rules."
+   "mailGroup=""[string]""", "Instead of adding the attributes ""to"", ""subject"" and ""body"" you can refer to a predefined group. This simplifies simultaneously sending multiple mails."
 
 ------------------
 ImportXML
 ------------------
+
 .. code-block:: xml
   :linenos:
 
@@ -674,7 +668,7 @@ ImportXML
    :widths: 40,60
 
    "title=""[string]""", "Resource name of the action button."
-   "titleRestart=""[string]""", "Resource name of the action button. This one is used when the application is recreated (only when restart=""true""). The corresponding text resource has to be defined in Ressources.xml."
+   "titleRestart=""[string]""", "Resource name of the action button which has to be used when the application is recreated (only when restart=""true""). The corresponding text resource has to be defined in Ressources.xml."
    
 
 ----------------------
