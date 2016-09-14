@@ -368,9 +368,6 @@ However, you can use in the script impersonation for using specific accounts.
 
 .. tip:: Using quations within XML attributes: *&quot;{Var1}&quot;* (HTML notation).
 
-
-.. _`CMDB-actions-CMDB2SCCM`:
-
 ------------------
 ExecutePS
 ------------------
@@ -396,9 +393,10 @@ ExecutePS
 
    "title=""[string]""", "Text in the head of the function."
    "command=""[command line]""", "Command line (solved against the corresponding data record."
-   arguments=""[string]""", "Arguments that call the command (solved against the corresponding data record). If arguments are supposed to be given to the PS script, put a hyphen before the value that you want to forward."
+   "arguments=""[string]""", "Arguments that call the command (solved against the corresponding data record). If arguments are supposed to be given to the PS script, put a hyphen before the value that you want to forward."
    "wait=""[true|false]""", "Waits for the execution to stop (in case of synchronous execution). Only if this value is set to ""true"" the system can send a report to the user."
 
+.. _`CMDB-actions-CMDB2SCCM`:
 
 ------------------
 CMDB2SCCM
