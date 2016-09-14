@@ -150,7 +150,9 @@ Executes local executables such as MSTSC for extended functionality regarding cl
 .. tip:: If ``ClickOnce`` is missing in your configuration please open the Configuration.xml file and change all lines from
   
   + "query_wmi,WMI query;query_files,Filesystem;query_registry,Registry query;cmd_query_wmi,WMI query command;cmd_class_wmi,WMI class command;wol,WakeOnLAN" 
+  
   to
+  
   + "query_wmi,WMI query;query_files,Filesystem;query_registry,Registry query;cmd_query_wmi,WMI query command;cmd_class_wmi,WMI class command;wol,WakeOnLAN;clickonce,ClickOnce"`
   
    

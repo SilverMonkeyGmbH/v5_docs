@@ -1,37 +1,38 @@
 Manual for module "Webservice"
 =============================================================
 
+.. warning:: This article is under construction! Please DO NOT use any of the instructions below, yet! You may cause damage to your system. This article will be finished soon.
+
 .. contents:: *In this article:*
   :local:
   :depth: 3
 
 
-.. warning:: This article is under construction! Please DO NOT use any of the instructions below, yet! You may cause damage to your system. This article will be finished soon.
+Several Microsoft ConfigMgr processes can be automated using the Web Service. This service provides the following functions that can be initiated by a corresponding Web Service call by any system:
 
-Using the Web Service several Microsoft ConfigMgr processes can be automated. This service provides the following functions that can be initiated by a corresponding Web service call by any system:
-
-- Creating new computer
-- Delete computers
-- Software distribution
-- exchange of computers
-- recreation computers
-- creating software packages
-- creating file structures
+- Creating a new computer
+- Deleting computers
+- Distributing Software
+- Exchanging computers
+- Recreating computers
+- Creating software packages
+- Creating file structures
 - Executing scripts on the webserver
 
-To go to the processes a HTTP POST calls to the address of the service. On this call is a stream with an XML structure sent the a set of commands contains. These commands are processed by the service to expand the results and sent back to the caller. The success status includes the added node "result" in the attribute "error".
+To go to the processes a HTTP POST calls the address of the service. This call is basically a stream with an XML structure that contains a set of commands. These commands are processed by the service, expanded by their results and sent back to the caller. The success status includes a new node called "result" added to the attribute "error".
 
-When generating the XML command structure is in upper / lower case to respect (for example, when you enter the site code, etc.). The sequence example shows an XML structure with three separate commands. All calls must be made through an account that has the appropriate permissions. When you call to create new computer the specified variables are added to the list of standard variables from the configuration.
+Please observe upper and lower case when you are generating the XML command structure (for example, when you enter the site code, etc.). The following example shows an XML structure with three separate commands. All calls must be made using an account that has the appropriate permissions. When the  call for createation of a new computer is committed, the specified variables are added to the list of standard variables from the configuration.
 
 .. tip:: Go to :doc:`/KnowledgeBase/KB00002_WebService-Test-Tool/index` to get help connecting to the web service. 
 
 ************************************************************************************
 Authentication
 ************************************************************************************
-Depending on the setting of the IIS application there are two possible authentication methods
+Depending on the setting of the IIS application there are two possible authentication methods:
 
-a) Windows Authentication (recommended)
-b) Authentication via XML input (supplied credentials will be used for impersonation)
+1. Windows Authentication (recommended)
+
+2. Authentication via XML input (supplied credentials will be used for impersonation)
 
 .. code-block:: xml
  :emphasize-lines: 3-7
@@ -53,7 +54,7 @@ b) Authentication via XML input (supplied credentials will be used for impersona
 Available commands
 ************************************************************************************
 
-All commands have to be send to the webservice enclosed by the following XML block:
+All commands sent to the webservice have to be enclosed by the following XML block:
 
 .. code-block:: xml
  :emphasize-lines: 1,2,6
@@ -87,11 +88,11 @@ The web service executes each ``cmd`` element and adds a ``result`` node to it.
 .. _websrv-deployment:
 
 ===============
-deployment
+Deployment
 ===============
 
 Creating a deployment for a ConfigMgr **package**. 
-Go to :ref:`websrv-assignment` for deploying a ConfigMgr **application**. 
+Go to :ref:`websrv-assignment` in order to get help deploying a ConfigMgr **application**. 
 
 .. code-block:: xml
  :linenos:
@@ -109,7 +110,7 @@ Go to :ref:`websrv-assignment` for deploying a ConfigMgr **application**.
 
   </cmd> 
 
-.. note:: Depeding on the settings of ``Settings->Sites->[SITE]->Computer software deplyoment`` corresponding collections and deployments will be created in ConfigMgr. The same settings are used by the Operations module.
+.. note:: Depeding on the settings of ``Settings->Sites->[SITE]->Computer software deplyoment``, corresponding collections and deployments will be created in ConfigMgr. The same settings are used by the Operations module.
 
 **Examples**
 
