@@ -397,6 +397,15 @@ ExecutePS
 .. note::  The "return" command gives back a value from the PowerShell script to the form. In the example, the value "PSVarialbe $ComputerSID" is given back to the field "ComputerSID" in the current class.
           ``return "ComputerSID = “+"'"+$ComputerSID+"'"``
 
+.. csv-table:: 
+   :header: "Attribute","Description"
+   :widths: 40,60
+
+   "title=""[string]""", "Text in the head of the function."
+   "command=""[command line]""", "Command line (solved against the corresponding data record."
+   arguments=""[string]""", "Arguments to call the command (solved against the corresponding data record). If arguments are supposed to be given to the PS script, put a hyphen before the value that you want to forward."
+   "wait=""[true|false]""", "Waits for the execution to stop (in case of synchronous execution). Only if this value is set to ""true"" the system can send a report to the user."
+
 
 ------------------
 CMDB2SCCM
