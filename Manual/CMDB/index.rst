@@ -675,7 +675,7 @@ ImportXML
 CreateActiveDirectory
 ----------------------
 Creates an active directory object. The active directory will be authenticated with the Windows login data for your *treon* database.
-This is the case, even if database authentication is set to "SQL". 
+This is also the case if database authentication is set to "SQL". 
 
 .. code-block:: xml
     :linenos:
@@ -721,11 +721,11 @@ Properties
    :header: "Property","Description"
    :widths: 40,80
 
-   "Design", "Choose between List and Formular initially"
-   "Name - de / Name - en", "The Displayname of the list"
-   "Sort order", "Choose where in the Drop Down the choosen list is displayed"
-   "Roles", "Choose wich roles can see the list"
-   "Definition", "The Definition of the list"
+   "Design", "Choose initially between list and form."
+   "Name - de / Name - en", "The displayed name of the list"
+   "Sort order", "Choose where to display the chosen list in the dropdown menu."
+   "Roles", "Choose wich roles can see the list."
+   "Definition", "The definition of the list."
 
 
 Example List:
@@ -771,27 +771,27 @@ Example List:
    :widths: 40,80
 
    "splitterWidth", "Width of the splitter shown in list form. (in pixels)"
-   "detailView- de / Name - en", "Specifying the form name that is to be used for the detailed representation of a list form."
-   "newLink", "Construction of new objects in a list. The “Detailed view“ is used as detail form"
+   "detailView- de / Name - en", "Specifies the form name that is to be used for the detailed representation of a list form."
+   "newLink", "Construction of new objects in a list. The “detailed view“ is used as detail form."
    "viewPane", "If this value is set to “false“, the selection is displayed as a drop-down list."
-   "refresh", "Display update function in list view"
-   "excelExport", "Display excel export function in list view"
-   "importExport", "Display import/export function in list view"
-   "popUp", "By specifying a popup window size in the format “width, height“, a list view opens choosen entries in a new window e.g .: “800,600“"
+   "refresh", "Displays the update function in the list view."
+   "excelExport", "Displays the excel export function in the list view."
+   "importExport", "Displays the import/export function in the list view."
+   "popUp", "By specifying a pop-up window size in the format “width, height“ (in px), a list view opens choosen entries in a new window e.g .: “800,600“"
 
 
 ======================================
    <columns> Definition
 ======================================
 
-Columns represent Attributes and are used to display their values in a list. You can see the syntax in the code-block at the start of this section.
+Columns represent Attributes and are used to display their values in a list. You can see the syntax in the following code-block.
 
 .. csv-table::
    :header: "Column Options","Description"
    :widths: 40,80
 
-   "Column field", "The fieldname of the attribute to be displayed "
-   "width", "the width of the column "
+   "Column field", "The fieldname of the attribute to be displayed."
+   "width", "Width of the column in px."
 
 ======================================
    <data> Definition
@@ -810,7 +810,7 @@ The highlighted part in the following code block causes the website to display j
       (IssueEditor like '%John Doe%' OR Requestor like '%John Doe%' OR qualityinspector like '%John Doe%')
    </condition>
 
-The next highlighted part in the code block defines that the list search associated with that list, will search in the attributes IssueID or Title.
+The next highlighted part in the code block defines that the list search associated with that list will search in the attributes IssueID or Title.
 
  .. code-block:: xml 
    :emphasize-lines: 2
@@ -830,29 +830,29 @@ You can define very specific filters and conditions with TSQL in lists.
 Attributes
 ************************************************************************************
 
-**Different types of attributes**
+**Different Types of Attributes**
 
-You can create different types of attributes to customize the formular to your needs. These attributes have different settings and functions, these are described in the two tables below.
+You can create different types of attributes to customize the form to your needs. These attributes have different settings and functions which are described in the two tables below.
 
 .. csv-table::
    :header: "Attribute Type","Description", "Additional Options"
    :widths: 40,40,40
 
 
-   "String", "Field that holds a text", "Default Value, Input mask"
-   "Date", "Field that holds a date", "Default Value, Number Format"
-   "Integer", "Field that holds an integer", "Default Value, Number Format"
-   "Big integer", "Field that holds a big integer", "Default Value, Number Format"
-   "Float", "Field that holds a float", "Default Value, Number Format"
+   "String", "Field that holds a text.", "Default Value, Input mask"
+   "Date", "Field that holds a date.", "Default Value, Number Format"
+   "Integer", "Field that holds an integer.", "Default Value, Number Format"
+   "Big integer", "Field that holds a big integer.", "Default Value, Number Format"
+   "Float", "Field that holds a float.", "Default Value, Number Format"
    "Multilanguage Text", "-- Deprecated -- ", "-- Deprecated -- "
-   "Checkbox", "Field that displays a checkbox, can have the Status 'checked' or 'unchecked'", "Default value, Input mask"
-   "Data list", "Field that holds a fixed list of entrys that can be defined in the GUI, the entrys are seperated with a semicolon ('firstentry;secondentry')", "Items, Default Value, Fill stage"
+   "Checkbox", "Field that displays a checkbox, can have the Status 'checked' or 'unchecked'.", "Default value, Input mask"
+   "Data list", "Field that holds a fixed list of entrys that can be defined in the GUI, the entrys are seperated with a semicolon ('firstentry;secondentry').", "Items, Default Value, Fill stage"
    "Config. list", "-- Deprecated --", "-- Deprecated --"
    "SQL list", "-- Deprecated --", "-- Deprecated --"
-   "File", "Can contain files that are stored in the SQL Database", "Default value, Input mask"
-   "Object reference", "Field that references to another table and displays the defined entrys", "Object reference, Filter, Default value"
-   "Active Directory User", "Field that holds Users out of the Active Directory Cashe (the cashe is located in the SIM DB)", "LDAP path, Default value"
-   "Active Directory Group", "Field that holds Groups out of the Active Directory Cashe (the cashe is located in the SIM DB)", "LDAP path, Default"
+   "File", "Contains files that are stored in the SQL Database.", "Default value, Input mask"
+   "Object reference", "Field that references to another table and displays the entrys defined in it.", "Object reference, Filter, Default value"
+   "Active Directory User", "Field that prevents users from being registered in the Active Directory Cache (the cashe is located in the SIM DB).", "LDAP path, Default value"
+   "Active Directory Group", "Field that prevents groups from being registered in the Active Directory Cashe (the cashe is located in the SIM DB).", "LDAP path, Default"
    "Packaging package name", "-- Deprecated --", "-- Deprecated --"
    "Packaging operation system", "-- Deprecated --", "-- Deprecated --"
    "Packaging site", "-- Deprecated --", "-- Deprecated --"
@@ -863,21 +863,21 @@ You can create different types of attributes to customize the formular to your n
    :header: "Function","Description"
    :widths: 40,80
 
-   "Name - de / Name - en", "The Displayname of the attribute"
-   "Field name", "This is the actual column name in the SIM SQL DB"
+   "Name - de / Name - en", "The Displayname of the attribute."
+   "Field name", "This is the actual column name in the SIM SQL DB."
    "Database Type", "Describes the attributes type."
-   "LDAP path", "LADP path for the AD Users/Groups"
+   "LDAP path", "LADP path for the AD Users/Groups."
    "Auto Postback", "-- Feature not used --"
-   "Suggestion", "Autocomplete. If suggestions are enabled, earlier entered will be suggested"
+   "Suggestion", "Autocomplete. If suggestions are enabled, recent entrys will be suggested."
    "Default value","Defines a default value that will be set automatically."
    "Logical Key", "-- Feature not used --"
-   "Input mask","Specifies the required format of the entry. Example: **-**-**-**-**-** (for MAC-Adresses) '*' is a placeholder. A valid entry would be 11-11-11-11-11-11."
-   "Number format", "Defines the required format of every entry. Example: „#,##0.0“ „dd.MM.yyyy“"
-   "Items", "Items of a Datalist seperated by semicolon. Example: Yes;No;(choose)"
+   "Input mask","Specifies the required format of the entry. Example: \*\*-\*\*-\*\*-\*\*-\*\*-\*\* (for MAC-Adresses) '*' is a placeholder. A valid entry would be 11-11-11-11-11-11."
+   "Number format", "Defines the required format of every entry. Example: „#,##0.0“ „DD.MM.YYYY“"
+   "Items", "Items of a data list seperated by semicolons. Example: Yes;No;(choose)"
    "Fill stage", "-- Feature not used --"
-   "Object reference", "Used for Object reference Attributes, choose the table you want to reference"
-   "Filter", "Used for Object reference Attributes, filter the entrys in the table you are referencing"
-   "LDAP path", "LADP path for the AD Users/Groups"
+   "Object reference", "Used for Object reference attributes. Choose the table you want to refer to."
+   "Filter", "Used for object reference attributes. Filter the entrys in the table you are referring to."
+   "LDAP path", "LADP path for the AD Users/Groups."
 
 
 .. _CMDB-SCCM-transfer:
@@ -886,34 +886,34 @@ You can create different types of attributes to customize the formular to your n
 SCCM Transfer
 ************************************************************************************
 
-The SCCM transfer module is basically a collection of SQL queries which are executed and delivered to SCCM. This way customers can fully change the behaviour to their needs.
-In general there are two different modes the SCCM transfer can be configured:
+The SCCM transfer module is basically a collection of SQL queries which are executed and delivered to SCCM. This way, customers can fully change the behaviour to their needs.
+In general SCCM transfer can be configured in two different modes:
 
 a) Single computer transfer (used by form action button)
 b) Multiple computer transfer (used by list action button)
 
-The configuration for SCCM Transfer is in "Settings->CMDB".
+You will find the configuration for SCCM trensfer in "Settings->CMDB".
 
 .. csv-table:: 
    :header: "Function","Description"
    :widths: 40,80
 
-   "Description (de/en)", "Info text displayed in the popup"
-   "List query", "Query which builds up the dropdown list in the popup."
+   "Description (de/en)", "Info text displayed in the pop-up."
+   "List query", "Query which builds up the dropdown list in the pop-up."
    "Computer query", "Selects mandatory data for computer import. 
    It is important to stick to the correct order of the selected attributes:
 
     1. = Unique ID of computer element in SIM database
     2. = Target computer name
     3. = MAC Address
-    4. = SMBIOS GUID (if available the computer will be created with SMBIOSGUID rather that MAC Address
+    4. = SMBIOS GUID (if available the computer will be created with SMBIOSGUID rather that MAC Address)
 
    Available variables:
 
     - ""{0}"" = Selected (computer) item database IDs in the popup.
     - ""{roles}"" = Roles the user is currently in.
-    - ""{user}"" = Username of the currently logged on user (DOMAIN\Username)
-    - ""{id}"" = Id of the CMDB item. Note: Only available when opened via action button.
+    - ""{user}"" = Username of the user currently logged in (DOMAIN\Username).
+    - ""{id}"" = ID of the CMDB item. **Note**: Only available when opened via action button.
     - ""{param}"" = Additional parameters defined in the view. Note: Only available when opened via action button.
 
    "
@@ -926,13 +926,13 @@ The configuration for SCCM Transfer is in "Settings->CMDB".
 
    Available variables:
 
-    - ""{0}"" = SIM DB ID of the transfered computer object.
+    - ""{0}"" = SIM DB ID of the transferred computer object.
     - ""{param}"" = Parameter string given by the corresponding action button parameter.
 
    Special variable prefixes:
 
-    - ""ConfigMgrColl"" = If variable has that prefix, a direct membership will be created for the collection **name**
-    - ""ConfigMgrPrimaryUser"" = If variable has that prefix, a primary user relationship will be created (``DOMAIN\Username`` notation)
+    - ""ConfigMgrColl"" = If the variable has this prefix, a direct membership will be created for the collection **name**.
+    - ""ConfigMgrPrimaryUser"" = If the variable has this prefix, a primary user relationship will be created (``DOMAIN\Username`` notation).
    
    "
    "Software query", "Variable SCCM **package** list created at runtime and added as variables to the computer object."
@@ -945,7 +945,7 @@ The configuration for SCCM Transfer is in "Settings->CMDB".
 
    "
    "Site", "Target SCCM site object (Settings->Sites)."
-   "Configuration", "Computer configuration (variables, collections) which is used as basis for creating computer object."
+   "Configuration", "Computer configuration (variables, collections) which is the base for the creation of a new computer object."
 
 
   
@@ -954,7 +954,7 @@ The configuration for SCCM Transfer is in "Settings->CMDB".
 
 .. _CMDB-Single-computer-transfer:
 ======================================
-Single computer transfer example
+Single Computer Transfer Example
 ======================================
 
 Exchange the following XML with the corresponding elements in your configuration.xml:
