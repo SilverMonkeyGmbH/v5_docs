@@ -9,7 +9,7 @@ Manual for module "Packaging"
   :depth: 3
 
 
-The Packaging Module is used to map and standartize the organisational packaging process. In addition to that you can use operations to simplify Configuration Manager Tasks, like creating Packages or Applications. The Packaging Module is based on the functions of the CMDB Module: Attributes, Views and operations are configured like in the CMDB Module. The Settings for the automatic creation of packages in sccm and the creation of folder structures for the packaging process are described in the sections sites, programms and operating system groups.
+The Packaging Module is used to map and standardize the organisational packaging process. In addition, it is possible to use operations to simplify Configuration Manager Tasks like creating Packages or Applications. The Packaging Module is based on the functions of the CMDB Module: Attributes, Views and operations are configured just as in the CMDB Module. The settings for the automatic creation of packages in SCCM (System Center Configuration Manager) and the creation of folder structures for the packaging process are described in the sections :ref:`sites`, :ref:`programmes` and :ref:`operating-system-groups`.
 
   .. figure:: _static/PackagingConfiguration.png
 
@@ -24,6 +24,7 @@ The Packaging Module is used to map and standartize the organisational packaging
    "Key field", "Define the identifier for the packaging table"
    "Link view", "Define the view that will be displayed when you open a entry of the packaging table from another class form"
 
+.. _sites:
 ****************************************************************
 Sites
 ****************************************************************
@@ -71,12 +72,15 @@ Package parameters
 
 Depricated!(Feature for SCCM Packages)
 
+.. _programmes:
+
 ****************************************************************
-Programms
+Programmes
 ****************************************************************
 
 Depricated!(Feature for SCCM Packages)
 
+.. _operating-system-groups:
 ****************************************************************
 Operating System groups
 ****************************************************************
