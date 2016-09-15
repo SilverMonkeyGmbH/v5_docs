@@ -17,14 +17,15 @@ The Packaging Module is used to map and standardize the organisational packaging
    :header: "Property","Description"
    :widths: 40,58 
 
-   "Table name", "The name of the packaging table"
-   "Name rule", "Define how packages will be displayed in connection views from other classes"
-   "Automation", "Define triggers that will execute SQL Stored Procedures on specific events"
-   "Workflow", "Define the preconfigured workflow for the packaging process"
-   "Key field", "Define the identifier for the packaging table"
-   "Link view", "Define the view that will be displayed when you open a entry of the packaging table from another class form"
+   "Table name", "The name of the packaging table."
+   "Name rule", "Defines how packages will be displayed in connection views from other classes."
+   "Automation", "Defines triggers that will execute SQL Stored Procedures on specific events."
+   "Workflow", "Defines the preconfigured workflow for the packaging process."
+   "Key field", "Defines the identifier for the packaging table."
+   "Link view", "Defines the view that will be displayed when you open an entry of the packaging table from another class form."
 
 .. _sites:
+
 ****************************************************************
 Sites
 ****************************************************************
@@ -46,7 +47,7 @@ Sites
 See :ref:`General-Configuration-Sites` to learn how to configure sites. 
 
 ================================================================
-Copy jobs
+Copy Jobs
 ================================================================
 
 Various file copying operations can be defined for the packaging process. Create the filestructure for the packaging process with this operation. Execute single or multiple copy jobs from the forms.  
@@ -67,7 +68,7 @@ See the general Site Configuration for the definition of the files that will be 
  .. note:: The copy jobs will be executed in the context of the deposited sccm account. 
 
 ================================================================
-Package parameters
+Packaging Parameters
 ================================================================
 
 Depricated!(Feature for SCCM Packages)
@@ -81,8 +82,9 @@ Programmes
 Depricated!(Feature for SCCM Packages)
 
 .. _operating-system-groups:
+
 ****************************************************************
-Operating System groups
+Operating System Groups
 ****************************************************************
 
 Depricated!(Feature for SCCM Packages)
