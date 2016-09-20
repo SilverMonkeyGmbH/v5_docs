@@ -244,6 +244,7 @@ Email-Group
 Email
 ================================================================
 
+
   .. figure:: _static/Email_general.png
 
 
@@ -278,7 +279,7 @@ Recipient
 Define the recipient of the email, you can specify a concrete adresse such as "support@silvermonkey.net", or use diffrent placeholders:
 
 .. csv-table:: 
-   :header: "Operator","Description"
+   :header: "Property","Description"
    :widths: 40,57
 
    "{TicketResponsible}", "Takes the value of the specified attribute in the workflow context."
@@ -334,6 +335,42 @@ Example:
 ****************************************************************
 Workflows
 ****************************************************************
+
+Configure workflows for the CMDB and the packaging process.
+
+
+.. csv-table:: 
+   :header: "Property","Description"
+   :widths: 40,57
+
+   "Name - de", "German name of the workflow"
+   "Name - en", "English name of the workflow"
+
+
+
+================================================================
+Status
+================================================================
+
+.. note:: Change the position of a status with the green arrows in the status definition. 
+
+
+.. csv-table:: 
+   :header: "Property","Description"
+   :widths: 40,57
+
+   "Name - de", "German name of the Status"
+   "Name - en", "English name of the Status"
+   "Token", "Define the roles that have the permission to edit Forms in this Status. You can define multiple roles seperated via a semicolon."
+   "Plausibility", "Define a condition that decides wheather or not the buttons to proceed to this status will be displayed. See the Condition Section in the previous chapter for more details."
+   "Only visible when status is active", "Enable this option to hide the status in the form until the form has reached this status. (Usefull for rejected status)"
+
+------------------
+Follower
+------------------
+
+
+
 
 ****************************************************************
 Interfaces
