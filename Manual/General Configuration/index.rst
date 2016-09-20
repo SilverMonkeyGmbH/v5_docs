@@ -118,6 +118,27 @@ Function settings
 Computer software deployment
 ================================================================
 
+.. csv-table:: 
+   :header: "Property","Description"
+   :widths: 40,58
+
+   "Parent folder", "Folder that acts as container for all dynamically generated Distribution-Collections (sccm 2012 only) for computers"
+   "Limited Collection", "Collection that acts as container for all dynamically generated Distribution-Collections (sccm 2012 only) for computers"
+   "Coll.name rule", "Naming rule for the creation of new dynamically generated Advertisements  for computers. You can use the follwing fields as Placeholders : ""{PackageName}"", ""{ProgramName}"",""{AdvertisementType}"",""{OfferType }"" and also all Fields of the ""SMSPackage""-Table in the SCCM Database. Example: ""CMP PackageName ProgramName AdvertisementType OfferType"" "
+   "Advert.name rule", "Specify an optional folder for the creation of dynamically generated advertisements  for computers."
+
+================================================================
+User software deployment
+================================================================
+
+.. csv-table:: 
+   :header: "Property","Description"
+   :widths: 40,58
+
+   "Parent folder", "Folder that acts as container for all dynamically generated Distribution-Collections (sccm 2012 only) for users"
+   "Limited Collection", "Collection that acts as container for all dynamically generated Distribution-Collections (sccm 2012 only)  for users"
+   "Coll.name rule", "Naming rule for the creation of new dynamically generated Advertisements  for users. You can use the follwing fields as Placeholders : ""{PackageName}"", ""{ProgramName}"",""{AdvertisementType}"",""{OfferType }"" and also all Fields of the ""SMSPackage""-Table in the SCCM Database. Example: ""CMP PackageName ProgramName AdvertisementType OfferType"" "
+   "Advert.name rule", "Specify an optional folder for the creation of dynamically generated advertisements  for users."
 
 
 ****************************************************************
