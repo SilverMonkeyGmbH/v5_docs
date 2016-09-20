@@ -133,7 +133,7 @@ User software deployment
 
 .. csv-table:: 
    :header: "Property","Description"
-   :widths: 40,58
+   :widths: 40,57
 
    "Parent folder", "Folder that acts as container for all dynamically generated Distribution-Collections (sccm 2012 only) for users"
    "Limited Collection", "Collection that acts as container for all dynamically generated Distribution-Collections (sccm 2012 only)  for users"
