@@ -222,11 +222,69 @@ To set a portal right, click the "+ portal right"-Button and choose the desired 
 Reports
 ****************************************************************
 
-
-
 ****************************************************************
 E-Mails
 ****************************************************************
+
+Configure mails for workflows or forms here.
+
+
+================================================================
+Email-Group
+================================================================
+
+.. csv-table:: 
+   :header: "Property","Description"
+   :widths: 40,57
+
+   "Name - de", "German name for the email-group"
+   "Name - en", "English name for the email-group"
+
+================================================================
+Email
+================================================================
+
+
+------------------
+Condition
+------------------
+
+Define a condition that decides wheather or not the email should be sent. If you leave this empty the email will always be sent. Concatenate rules by using ""AND"". The following Operators are avalible in the condition field:
+
+.. csv-table:: 
+   :header: "Operator","Description"
+   :widths: 40,57
+
+   "=", "equals"
+   "<", "less than"
+   ">", "more than"
+   "!", "doesnt equal"
+
+Furthermore you can use palceholders that reference Attributes of the associated Workflow:
+
+Example: 
+
+  .. code-block:: xml
+    :linenos:
+
+    {Manufacturer}=Adobe AND {Product}!Reader
+
+In this case the email will be sent if: The Workflow parameter ""Manufacturer"" is filled with the value ""Adobe"" and the parameter ""Product"" does not equal ""Reader"".
+
+
+------------------
+Recipient
+------------------
+
+------------------
+Subject
+------------------
+
+------------------
+Message
+------------------
+
+
 
 ****************************************************************
 Workflows
