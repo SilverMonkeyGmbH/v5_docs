@@ -369,7 +369,20 @@ Status
 Follower
 ------------------
 
+.. csv-table:: 
+   :header: "Property","Description"
+   :widths: 40,57
 
+   "Follower", "Choose another workflow status as follower."
+   "Function text - de", "German Label Text of the button to change the status to the one specified in the follower field. If you enter nothing the label of the targetet workflow status will be displayed."
+   "Function text - en", "English Label Text of the button to change the status to the one specified in the follower field. If you enter nothing the label of the targetet workflow status will be displayed."
+   "Message - de", "Define the german text of the message box that will be displayed when the status is changed to the follower."
+   "Message - en", "Define the english text of the message box that will be displayed when the status is changed to the follower."
+   "E-mail group", "Choose an email group that will be triggerd when the status is changed to the follower. This has the advantage that conditions from the email group are enabled (See the previos chapter for details regarding emails)."
+   "E-Mail recipient", "Manually choose an email recipient. (See the previos chapter for details). "
+   "E-Mail subject", "Manually choose an email subject. (See the previos chapter for details). "
+   "E-Mail message", "Manually choose an email message. (See the previos chapter for details). "
+   "Reject", "Choosing this option changes the appearance of the follower-button and creates a popup that will appear when the button is clicked."
 
 
 ****************************************************************
