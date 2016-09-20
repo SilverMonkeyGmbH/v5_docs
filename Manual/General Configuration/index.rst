@@ -244,6 +244,8 @@ Email-Group
 Email
 ================================================================
 
+  .. figure:: _static/Email_general.png
+
 
 ------------------
 Condition
