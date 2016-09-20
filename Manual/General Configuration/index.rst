@@ -249,7 +249,7 @@ Email
 Condition
 ------------------
 
-Define a condition that decides wheather or not the email should be sent. If you leave this empty the email will always be sent. Concatenate rules by using ""AND"". The following Operators are avalible in the condition field:
+Define a condition that decides wheather or not the email should be sent. If you leave this empty the email will always be sent. Concatenate rules by using "AND". The following Operators are avalible in the condition field:
 
 .. csv-table:: 
    :header: "Operator","Description"
@@ -260,21 +260,36 @@ Define a condition that decides wheather or not the email should be sent. If you
    ">", "more than"
    "!", "doesnt equal"
 
-Furthermore you can use palceholders that reference Attributes of the associated Workflow:
-
-Example: 
+Furthermore you can use palceholders that reference Attributes of the associated Workflow as seen in the following Example: 
 
   .. code-block:: xml
     :linenos:
 
     {Manufacturer}=Adobe AND {Product}!Reader
 
-In this case the email will be sent if: The Workflow parameter ""Manufacturer"" is filled with the value ""Adobe"" and the parameter ""Product"" does not equal ""Reader"".
-
+In this case the email will be sent if: The Workflow parameter "Manufacturer" is filled with the value "Adobe" and the parameter "Product" does not equal "Reader".
 
 ------------------
 Recipient
 ------------------
+
+Define the recipient of the email, you can specify a concrete adresse such as "support@silvermonkey.net", or use diffrent placeholders:
+
+.. csv-table:: 
+   :header: "Operator","Description"
+   :widths: 40,57
+
+   "{TicketResponsible}", "Takes the value of the specified attribute in the workflow context."
+   "{$MAIL>IssueEditor}", "Takes the email adress of the specified Active Directory field in the workflow context."
+   "{@OBJ.PartnerResponsiblePerson.Email}", "Takes an entry out of another table/class that is connected to the main class and Workflow context. Syntax: {@OBJ.Table.Column} "
+
+Example:
+
+  .. code-block:: xml
+    :linenos:
+
+    {@OBJ.PartnerResponsiblePerson.Email}
+
 
 ------------------
 Subject
