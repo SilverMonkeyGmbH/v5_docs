@@ -290,15 +290,43 @@ Example:
 
     {@OBJ.PartnerResponsiblePerson.Email}
 
+Seperate multiple recipients via semicolon.
 
 ------------------
 Subject
 ------------------
 
+The subject of the email. You can use the same placeholders as in the recipient.
+
+Example: 
+
+  .. code-block:: xml
+    :linenos:
+
+    Your request was canceled {RequestManufacturerName}_{RequestProductName}_{RequestProductVersion}_{@OBJ.PackageLanguage.CodeISO6391}_{Architecture}_{@OBJ.PackageType.Character}{PackageID}
+
 ------------------
 Message
 ------------------
 
+The message of the email. You can use the same placeholders as in the recipient.
+
+Example: 
+
+  .. code-block:: xml
+    :linenos:
+
+    <font face="Arial" size="2">
+    The software package: {RequestManufacturerName}_{RequestProductName}_{RequestProductVersion}_{@OBJ.PackageLanguage.CodeISO6391}_{Architecture}_{@OBJ.PackageType.Character}{PackageID} was canceled.
+    <br>
+    <br> 
+    <br>Rejection Reason: {Rejectionreason}
+    <br>
+    <br> If you are missing any information please look up the history of the request or get in 
+    <br> contact with the Software Change Manager.
+    <br>
+    <br> For more details about the package see packaging factory:  click <a href="{@OBJ.PackagingClient.TreonURL}/Support/TypeView.aspx?PopUp=true&TypeViewId=46&Id={Id}">this link</a>
+    </font>
 
 
 ****************************************************************
