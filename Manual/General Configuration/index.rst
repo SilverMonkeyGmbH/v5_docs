@@ -145,7 +145,75 @@ User software deployment
 Portals
 ****************************************************************
 
+Portals are used to define start- or overviewpages. A portal can have multiple columns with multiple widgets. Every portal can be restricted to a role. You can use different widgets here: SQL Querys, Links and Reports.
 
+
+================================================================
+Column
+================================================================
+
+.. csv-table:: 
+   :header: "Property","Description","Example"
+   :widths: 25,57,15
+
+   "Border top", "Property that describes the vertical top-margin of the column", "25"
+   "Border right", "Property that describes the horizontal right-margin of the column", "25"
+   "Border bottom", "Property that describes the vertical bottom-margin of the column", "25"
+   "Border left", "Property that describes the horizontal left-margin of the column", "25"
+
+
+.. note:: Dont let your widget xml-definition start with a blank space! This is a common error - the widget will not function properly. 
+          
+
+------------------
+SQL Query
+------------------
+
+  .. code-block:: xml
+    :linenos:
+
+    <sqlQuery
+      database=""
+      query="SELECT TOP 10 SysDisplayName, Name, Id AS _Id  
+      FROM Computer"
+      link="Support/TypeView.aspx?TypeView=Computer               
+      Details&Id={_Id}"
+      size="400;250"
+      refresh="true"
+     />
+
+------------------
+Links
+------------------
+
+  .. code-block:: xml
+    :linenos:
+
+   <links>
+    <link de="Google de" en="Google en" url="http://www.google.de" />
+    <link de="Google de" en="Google en" url="http://www.google.de" />
+   </links>
+
+------------------
+localreport
+------------------
+
+
+  .. code-block:: xml
+    :linenos:
+
+    <localReport    
+    id=""
+    name="Issues" 
+    />
+
+
+
+
+
+================================================================
+Portal rights 
+================================================================
 
 ****************************************************************
 Reports
