@@ -163,7 +163,10 @@ Column
 
 
 .. note:: Dont let your widget xml-definition start with a blank space! This is a common error - the widget will not function properly. 
-          
+
+================================================================    
+Widgets
+================================================================
 
 ------------------
 SQL Query
@@ -189,10 +192,10 @@ Links
   .. code-block:: xml
     :linenos:
 
-   <links>
-    <link de="Google de" en="Google en" url="http://www.google.de" />
-    <link de="Google de" en="Google en" url="http://www.google.de" />
-   </links>
+    <links>
+     <link de="Google de" en="Google en" url="http://www.google.de" />
+     <link de="Google de" en="Google en" url="http://www.google.de" />
+    </links>
 
 ------------------
 localreport
