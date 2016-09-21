@@ -230,44 +230,38 @@ Example:
  .. code-block:: xml
   :linenos:
 
-        <list id="Resources1"
-          width="1200"
-          title="Resources"
-          fields="Ressourcenart,110~Name,200~Prio,100~Kontakt,100~Rolle,100~Stdsatzallin,75~StdsatzAllEx,85~RKPauschale,85~LinkToProfile,200"
-          count="SELECT count([RessourceId])
-          FROM RessourceInRequest"
-          data="
-        <list id="Computer"
-          width="1200"
-          title="Computer Titel"
-          fields="Name,200~MACAdress,100~Language,898"
-          count="SELECT count([id])
-          FROM Computers"
-          data="
-                 WITH myBase AS (
-                 SELECT [Id] ,
-                    [Name] ,
-                    [MACAddress] ,
-                    [Language] ,
-                 ROW_NUMBER() OVER (
-                 ORDER BY {order1}) AS POS
-               FROM Computers
+   <list 
+   id="Resources1"
+   width="1200"
+   title="Computer Titel"
+   fields="Name,200~MACAdress,100~Language,898"
+   count="SELECT count([id])
+   FROM Computers"
+   data="
+   WITH myBase AS (
+   SELECT [Id] ,
+   [Name] ,
+   [MACAddress] ,
+   [Language] ,
+   ROW_NUMBER() OVER (
+   ORDER BY {order1}) AS POS
+   FROM Computers
             
 
 
-        )
+   )
 
-        SELECT Id, Name, MACAddress, Language
-        FROM myBase
-        WHERE POS BETWEEN {start} AND {end}
-        ORDER BY {order2} DESC
-
-        "
-        order1="Name~MACAddress~Language"
-        order2="Name~MACAddress~Language"
-        view="Computers Details" 
-        cmd="javascript: try {window.parent.gridTable.clearSelection();} catch (e){} try {window.opener.gridTable.clearSelection();} catch (e){} document.location.href='TypeView.aspx?PopUp=true&amp;TypeViewId={view}&amp;Id='+id"
-         />
+   SELECT Id, Name, MACAddress, Language
+   FROM myBase
+   WHERE POS BETWEEN {start} AND {end}
+   ORDER BY {order2} DESC
+   
+   "
+   order1="Name~MACAddress~Language"
+   order2="Name~MACAddress~Language"
+   view="Computers Details" 
+   cmd="javascript: try {window.parent.gridTable.clearSelection();} catch (e){} try {window.opener.gridTable.clearSelection();} catch (e){} document.location.href='TypeView.aspx?PopUp=true&amp;TypeViewId={view}&amp;Id='+id"
+   />
 
 
 
