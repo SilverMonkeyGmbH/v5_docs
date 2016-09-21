@@ -387,3 +387,36 @@ The interfaces provide a simple and efficient way to fill or to equalize the SIM
 
 
 The interfaces is accessed via the CMDB function menu or called directly via the page "Support / ExecuteInterface.aspx. A specified interface can be started right away, with the URL parameter" Interface ". Several interfaces can be successively launched by lining up several interface names seperated with semicolons. This process is suitable to be called in a Windows scheduled task.
+
+
+****************************************************************
+Using placeholders
+****************************************************************
+
+Placerholders are used to reference attributes in the life time execution of events (Sending emails, displaying formulars, querying databases etc.) There are several szenarios where placeholders are usefull in xml definitions. You can use them in the email definitions, form and list definitions and functions that use SLQ querys.
+
+
+There are three main types of references:
+
+
+.. csv-table:: 
+   :header: "Reference Type","Description", "Example"
+   :widths: 40,40,17
+
+   "{[AttributeName]}", "References an Attribute in the current execution context.","{Name}"
+   "{$[ADParameter]>[AttributeName]}", "Takes the desired part of the Active Directory Attribute that is referenced. You can use the follwing AD Parameters: [$MAIL] gives the email, [$NAME] gives the displayname,[$USERNAME] gives the username, [$ESCAPEDUSERNAME] gives the Domain + Username .","{$MAIL>Packageresponsible} "
+   "{@OBJ.[Table].[AttributeName]}", "Takes an entry out of another table/class that is connected to the main class in the execution context. Syntax: {@OBJ.Table.Column} ","{@OBJ.DERDONGER.ICHRAISEIHN}"
+
+
+
+****************************************************************
+Form Definition
+****************************************************************
+
+****************************************************************
+List Definition
+****************************************************************
+
+****************************************************************
+Attributes
+****************************************************************

@@ -1,4 +1,4 @@
-Manual for module Portals
+Manual for module "Portals"
 =============================================================
 
 .. contents:: *In this article:*
