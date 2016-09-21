@@ -86,7 +86,8 @@ Choose the tab "IP Adresses" and change the 'TCP Port'-entry to 1433:
 
 Afterwards, navigate to the SQL Server Services and restart the 'SQL Server ([Database Name]):
 
-  .. image:: _static/SQLServerInstallation_09.png
+  .. figure:: _static/SQLServerInstallation_09.png
+     :align: center
 
 
 SIM SQL DB Service Account
@@ -110,7 +111,8 @@ This configuration will be customized later based on the customer requirements.
 .. tip::
      Make sure that the role “Everyone” has the permission to “Modify, Read& execute, List folder contents, Read, Write” to the App_Data folder (as seen below)
 
-  .. image:: _static/SQL_server_Security_App_Data.png
+  .. figure:: _static/SQL_server_Security_App_Data.png
+     :align: center
 
 Database
 ---------------------------- 
@@ -130,13 +132,15 @@ Navigate to the advanced settings of the created application pool (Figure 3) and
 
   .. image:: _static/IIS_Configuration2.png
 
-  .. image:: _static/IIS_Configuration3.png
+  .. figure:: _static/IIS_Configuration3.png
+     :align: center
 
 Next, choose the ‘Add Application’ option in the right-click dialogue of the Default Web Site, choose the name of the application, the application pool that has just been created and the website folder that you copied in the C:\inetpub\\wwwroot… directory. 
 
   .. image:: _static/IIS_Configuration4.png
 
-  .. image:: _static/IIS_Configuration5.png
+  .. figure:: _static/IIS_Configuration5.png
+     :align: center
 
   After this navigate to the ‘Authentication’ settings of the new application. Set the authentication as seen below:
 
@@ -158,11 +162,13 @@ Set up data base connection
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Silver Monkey Administrator rights are required to set or update the SQL Server Connection via the user interface. If the "Settings"-Tab is visible, you got the required rights:
 
-  .. image:: _static/Activation_Key_Screenshot1.png
+  .. figure:: _static/Activation_Key_Screenshot1.png
+     :align: center
 
 Fill in the fields in the Database Settings: 
 
-  .. image:: _static/SQLServerConnection_01.png
+  .. figure:: _static/SQLServerConnection_01.png
+     :align: center
 
 Click the 'Save'-button, click the 'Check database (save before)'-button.
 
@@ -172,11 +178,13 @@ Set up ConfigMgr connection
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Silver Monkey Administrator rights are required to set or update the Configuration Manager Connection. If the "Settings"-Tab is visible, you got the required rights:
 
-  .. image:: _static/Activation_Key_Screenshot1.png
+  .. figure:: _static/Activation_Key_Screenshot1.png
+     :align: center
 
 Expand the 'Sites' entry on the left side and choose 'New site':
 
-  .. image:: _static/Set_ConfigMgr_Connection_Screenshot01.png
+  .. figure:: _static/Set_ConfigMgr_Connection_Screenshot01.png
+     :align: center
 
 Fill in the red-lined fields as seen below.
 
