@@ -222,7 +222,9 @@ Add connections using the following xml statement:
 ------------------
 List
 ------------------
-Display entrys of another class (e.g. table). 
+Display entrys of another class (e.g. table). It is possible to use placeholders for attributes in this statement.
+
+Example:
 
     .. code-block:: xml
       :linenos:
@@ -234,45 +236,55 @@ Display entrys of another class (e.g. table).
         count="SELECT count([RessourceId])
         FROM RessourceInRequest"
         data="
+      <list id="Computer"
+        width="1200"
+        title="Computer Titel"
+        fields="Name,200~MACAdress,100~Language,898"
+        count="SELECT count([id])
+        FROM Computers"
+        data="
                WITH myBase AS (
-               SELECT [RessourceId] ,
-                  [RessourceType] ,
+               SELECT [Id] ,
                   [Name] ,
-                  [Prio] ,
-                  [Contact] ,
-                  [Role] ,
-                  [Stdsatzallin] ,
-                  [StdsatzAllEx] ,
-                  [RKPauschale] ,
-                  [LinkToProfile] ,
-                  [ParentId] ,
+                  [MACAddress] ,
+                  [Language] ,
                ROW_NUMBER() OVER (
                ORDER BY {order1}) AS POS
-             FROM RessourceInRequest
-             WHERE ParentId = {id}
+             FROM Computers
+            
 
 
       )
 
-      SELECT RessourceId, RessourceType, Name, Prio, Contact, Role, Stdsatzallin, StdsatzAllEx, RKPauschale, LinkToProfile
+      SELECT Id, Name, MACAddress, Language
       FROM myBase
       WHERE POS BETWEEN {start} AND {end}
       ORDER BY {order2} DESC
 
       "
-        order1="RessourceType~Name~Prio~Contact~Role~Stdsatzallin~StdsatzAllEx~RKPauschale~LinkToProfile"
-        order2="RessourceType~Name~Prio~Contact~Role~Stdsatzallin~StdsatzAllEx~RKPauschale~LinkToProfile"
-        view="Ressourcen Details (2. Schritt)"
+        order1="Name~MACAddress~Language"
+        order2="Name~MACAddress~Language"
+        view="Computers Details" 
         cmd="javascript: try {window.parent.gridTable.clearSelection();} catch (e){} try {window.opener.gridTable.clearSelection();} catch (e){} document.location.href='TypeView.aspx?PopUp=true&amp;TypeViewId={view}&amp;Id='+id" />
 
 
-.. .. csv-table:: 
+ .. csv-table:: 
    :header: "Property","Description"
    :widths: 40,60
 
-..  "url", "Link or reference."
-   "label", "Title of the reference (usually, the title should automatically be located)."
-   "icon", "Name of the icon."
+   "id=”[string/integer]”", "Unique label if multiple lists are used in a single formular definition."
+   "width=”[width in px]”", "Overall width of the list in pixels."
+   "title=""[string]""", "Individual title for the list."
+   "fields=""[SQLColumn~ColumnWidth,SQLColumn2~ColumnWidth2...]", "Used to determine the width of the columns in the list."
+   "count=""[SQLStatementwithCountresult]""", "Used to display the number of entrys in the list."
+   "data=""[SQLStatement]""", "The actual query that gets the data for the list."
+   "order1=""[SQLColumn~SQLColumn2...]""", "Used to determine the order in wich the sql result will be displayed."
+   "order2=""[SQLColumn2~SQLColumn...]""", "Alternative to order 1 that is also use to to determine the order in wich the sql result will be displayed."
+   "view=""[ViewOfthereferencedClass]""", "Enables the option to open entrys of other classes via click on the list element. This defines the View that is used to display the data."
+   "cmd=""javascript: try {window.parent.gridTable.clearSelection();} catch (e){} try {window.opener.gridTable.clearSelection();} catch (e){} document.location.href='TypeView.aspx?PopUp=true&amp;TypeViewId={view}&amp;Id='+id""", "Used for the opening of other classes."
+
+
+
 
 
 ===============
