@@ -227,7 +227,7 @@ Display entrys of another class (e.g. table). It is possible to use placeholders
 Example:
 
 
-    .. code-block:: xml
+    .. code-block:: 
       :linenos:
 
         <list id="Resources1"
