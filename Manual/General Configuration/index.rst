@@ -234,12 +234,12 @@ Site custom reports can be stored within this configuration area. The reports ha
    "Connection", "Database Connection String (if you want query a different database that the SIM Database or rather no linkserver to the specific database has been created within the SIM database server", "25"
    "Dataset 1 .. n", "SQL query for all datasets within the report", "SELECT Table.Column,Table.Column2 FROM Table"
    "Show toolbar", "Report definition file", "0/1"
-   "Show toolbar navigation", "Report definition file", "0/1"
-   "Show toolbar zoom", "Report definition file", "0/1"
-   "Show toolbar search", "Report definition file", "0/1"
-   "Show toolbar export", "Report definition file", "0/1"
-   "Show toolbar refresh", "Report definition file", "0/1"
-   "Show toolbar print", "Report definition file", "0/1"
+   "Show toolbar navigation", "Check to generally display the toolbar within the report", "0/1"
+   "Show toolbar zoom", "Check to show toolbar zoom", "0/1"
+   "Show toolbar search", "Check to show toolbar search", "0/1"
+   "Show toolbar export", "Check to show toolbar export", "0/1"
+   "Show toolbar refresh", "Check to show toolbar refresh", "0/1"
+   "Show toolbar print", "Check to show toolbar print", "0/1"
 
 
 
