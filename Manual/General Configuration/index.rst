@@ -410,4 +410,82 @@ Follower
 Interfaces
 ****************************************************************
 
-Define automatic interfaces for CMDB imports.
+The interfaces provide a simple and efficient way to fill or to equalize the SIM  database with data from SCCM or other databases. This is best done through the SQL Merge command. Unless the databases are not on the same Microsoft SQL Server, the source server has to be made familiar to the SIM database server via a linkserver:
+
+
+  .. figure:: _static/linkserver1.png
+
+  
+  .. figure:: _static/linkserver2.png
+
+  Example of the adjustment of computer objects from SCCM into SIM database. New computers are automatically created, existing ones are updated and obsolete ones are deleted in SIM:
+
+    .. code-block:: sql
+    :linenos:
+
+    MERGE treonV5.dbo.Computer AS t
+    USING (
+          SELECT ResourceID, Name0
+          FROM   [SCCM_Servername].SMS_P01.dbo.v_R_System
+          WHERE  ISNULL(Obsolete0,0) = 0
+    ) AS s
+    ON s.ResourceId = t.ItemKey
+
+    WHEN MATCHED THEN
+          UPDATE SET t.ItemKey = s.ResourceId,
+                     t.Name = s.Name0,
+                     t.SysDisplayName = s.Name0
+
+    WHEN NOT MATCHED THEN
+          INSERT ( ItemKey,
+                   Name,
+                   SysDisplayName )
+          VALUES ( s.ResourceId,
+                   s.Name0,
+                   s.Name0 )
+
+    WHEN NOT MATCHED BY SOURCE THEN
+            DELETE;
+
+
+  Example of the adjustment of software objects from SCCM into SIM database. New packages are automatically created, existing ones are updated and obsolete ones are deleted in SIM:
+
+
+    .. code-block:: sql
+    :linenos:
+
+    MERGE treonV5.dbo.Software AS t
+    USING (
+          SELECT PkgId, Name, Version, Language, Manufacturer
+          FROM   [SCCM_Servername].SMS_P01.dbo.SMSPackages
+          WHERE  PackageType=0
+    ) AS s
+    ON s.PkgId = t.PkgId COLLATE Latin1_General_CI_AS
+
+    WHEN MATCHED THEN
+          UPDATE SET t.Manufacturer = s.Manufacturer,
+                     t.Product = s.Name,
+                     t.Version = s.Version,
+                     t.Language = s.Language,
+                     t.PkgId = s.PkgId,
+                     t.SysDisplayName = s.Manufacturer + ' ' + s.Name + ' ' + s.Version
+
+    WHEN NOT MATCHED THEN
+          INSERT ( Manufacturer,
+                   Product,
+                   Version,
+                   Language,
+                   PkgId,
+                   SysDisplayName )
+          VALUES ( s.Manufacturer,
+                   s.Name,
+                   s.Version,
+                   s.Language,
+                   s.PkgId,
+                   s.Manufacturer + ' ' + s.Name + ' ' + s.Version )
+
+    WHEN NOT MATCHED BY SOURCE THEN
+            DELETE;
+
+
+The interfaces is accessed via the CMDB function menu or called directly via the page "Support / ExecuteInterface.aspx. A specified interface can be started right away, with the URL parameter" Interface ". Several interfaces can be successively launched by lining up several interface names seperated with semicolons. This process is suitable to be called in a Windows scheduled task.
