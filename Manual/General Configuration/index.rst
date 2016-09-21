@@ -12,8 +12,8 @@ General Configuration
 ****************************************************************
 Roles
 ****************************************************************
-Create roles to limit then permissions of defined users. You can either define a group as default group (every user gets this role), or define a specific link to an Active Directory group. You can set persmissions to limit the users access on functions, reports, lists 
-or Modules.
+Create roles to limit the permissions of predefined users. You can either define a group as default group (every user gets this role), or define a specific link to an Active Directory group. You can set permissions to limit the users access on functions, reports, lists 
+or modules.
 
 Click the "+ New Role"-Button to create a new role: 
 
@@ -24,20 +24,20 @@ Click the "+ New Role"-Button to create a new role:
    :header: "Property","Description"
    :widths: 40,58
 
-   "Name", "The general name of the role"
-   "Description", "The role description"
+   "Name", "The general name of the role."
+   "Description", "The role description."
    "AD Group", "Here you can define an LDAP Path to an AD Group. All Users of the AD Group will get the configured role."
-   "E-Mail", "Depricated"
+   "E-Mail", "Depricated."
    "Default Group", "If you choose this option every user will get this role."
    "Show functions", "Enables the user to see the functions tab in the main menue."
-   "Show Shop", "Enables the role to see the software shop"
-   "Show CMDB", "Enables the role to see the CMDB module"
-   "Show packaging", "Enables the role to see the packaging tab"
-   "Show reports", "Enables the role to see the reports module"
-   "Show management", "Enables the role to see the management module"
+   "Show Shop", "Enables the role to see the software shop."
+   "Show CMDB", "Enables the role to see the CMDB module."
+   "Show packaging", "Enables the role to see the packaging tab."
+   "Show reports", "Enables the role to see the reports module."
+   "Show management", "Enables the role to see the management module."
    "Edit settings", "Enables the role to edit the settings of the SIM instance. Only an option for administrators."
-   "Shop Administrator", "Enables the role to edit requests in the software shop "
-   "Proces admin", "Enables the role to use the set status function"
+   "Shop Administrator", "Enables the role to edit requests in the software shop. "
+   "Proces admin", "Enables the role to use the set status function."
 
 
 
@@ -47,28 +47,28 @@ Click the "+ New Role"-Button to create a new role:
 Sites
 ****************************************************************
 
-Create a new site via the "+ New site"-Button to connect the Packaging Module to your SCCM Site/SCCM DB:
+Create a new site via the "+ New site"-Button to connect the Packaging Module to your SCCM Site/SCCM database:
 
   .. figure:: _static/GeneralSiteConfiguration.png
 
 ================================================================
-Common settings
+Common Settings
 ================================================================
 
 .. csv-table:: 
    :header: "Property","Description"
    :widths: 40,58
 
-   "Name - de", "German display name of the site"
-   "Name - en", "English display name of the site"
-   "Description - de", "German site description"
-   "Description - en", "English site description"
-   "Site code", "The site code of your sccm Site. (The site code has to be unique to one site)"
-   "SCCM Server", "Hostname of the sccm Server."
-   "Domain", "Domain of the sccm service account"
-   "Domain account", "Name of the sccm service account, this account is used for all functions. ( specify without domain) To see which permissions this accounts need please see the reference at the end of this subsection."
-   "Domain password", "Password of the sccm service account"
-   "Impersonation", "You have to choose this option if the installation is directly on the sccm server."
+   "Name - de", "Displayed German name of the site."
+   "Name - en", "Displayed English name of the site."
+   "Description - de", "German site description."
+   "Description - en", "English site description."
+   "Site code", "The site code of your SCCM Site. (The site code has to be unique to one site)."
+   "SCCM Server", "Hostname of the SCCM Server."
+   "Domain", "Domain of the SCCM service account."
+   "Domain account", "Name of the sccm service account. This account is used for all functions. (specify without domain) To see which permissions this accounts needs please see the reference at the end of this subsection."
+   "Domain password", "Password of the SCCM service account."
+   "Impersonation", "You have to choose this option if the installation is directly on the SCCM server."
 
 
 ================================================================
@@ -79,26 +79,26 @@ Database settings
    :header: "Property","Description"
    :widths: 40,58
 
-   "Database server", "Specify the sccm sql database server. (IP adress or FQDN)"
-   "Database name", "Name of the sccm sql database."
-   "Authentication", "Choose the type of database authetication: SQL or Windows authentication. If you choose Windows authentication the Domain account that you specified in the Common settings will be used."
-   "SQl user", "Name of the sccm sql db service account (If you chose the SQL authentication)"
-   "Name - en", "Password of the sccm sql db service account (If you chose the SQL authentication)"
+   "Database server", "Specify the SCCM SQL database server. (IP adress or FQDN)"
+   "Database name", "Name of the SCCM SQL database."
+   "Authentication", "Choose the type of database authetication: SQL or Windows authentication. If you choose Windows authentication the domain account specified in the common settings will be used."
+   "SQl user", "Name of the SCCM SQL database service account (if you chose SQL authentication)."
+   "Name - en", "Password of the SCCM SQL database service account (if you chose SQL authentication)."
 
 
 ================================================================
-Function settings
+Function Settings
 ================================================================
 
 .. csv-table:: 
    :header: "Property","Description"
    :widths: 40,58
 
-   "Package displayname", "Defines how sim displays the package displayname in an sql syntax. (e.g. Manufacturer+''+Name+''+Version+''+Language)"
-   "Package filter", "Defindes an SQL based fitler for the displaying of the packages in the Operations Module"
-   "Computer filter", "Defindes an SQL based fitler for the displaying of the computers in the Operations Module"
-   "User filter", "Defindes an SQL based fitler for the displaying of the users in the Operations Module"
-   "Application filter", "Defindes an SQL based fitler for the displaying of the applications in the Operations Module"
+   "Package displayname", "Defines how SIM displays the package displayname in an SQL syntax. (e.g. Manufacturer+''+Name+''+Version+''+Language)"
+   "Package filter", "Defines an SQL based fitler for the displaying of the packages in the Operations Module."
+   "Computer filter", "Defines an SQL based fitler for the displaying of the computers in the Operations Module."
+   "User filter", "Defindes an SQL based fitler for the displaying of the users in the Operations Module."
+   "Application filter", "Defines an SQL based filter for the displaying of the applications in the Operations Module."
    "Comp.software.query", "SQl Query that is used to detemine the software that is installed on a computer."
    "Comp.app.query", "SQl Query that is used to detemine the applications that are installed on a computer."
    "Coll. group tag", "Documentation pending!"
@@ -115,37 +115,37 @@ Function settings
    "Software from variables in prozesses", "Documentation pending!"
 
 ================================================================
-Computer software deployment
+Computer Software Deployment
 ================================================================
 
 .. csv-table:: 
    :header: "Property","Description"
    :widths: 40,58
 
-   "Parent folder", "Folder that acts as container for all dynamically generated Distribution-Collections (sccm 2012 only) for computers"
-   "Limited Collection", "Collection that acts as container for all dynamically generated Distribution-Collections (sccm 2012 only) for computers"
-   "Coll.name rule", "Naming rule for the creation of new dynamically generated Advertisements  for computers. You can use the follwing fields as Placeholders : ""{PackageName}"", ""{ProgramName}"",""{AdvertisementType}"",""{OfferType }"" and also all Fields of the ""SMSPackage""-Table in the SCCM   Database. Example: ""CMP PackageName ProgramName AdvertisementType OfferType"""
-   "Advert.name rule", "Specify an optional folder for the creation of dynamically generated advertisements  for computers."
+   "Parent folder", "Folder that acts as a container for all dynamically generated Distribution-Collections (SCCM 2012 only) for computers."
+   "Limited Collection", "Collection that acts as a container for all dynamically generated Distribution-Collections (SCCM 2012 only) for computers."
+   "Coll.name rule", "Naming rule for the creation of new dynamically generated advertisements for computers. You can use the follwing fields as Placeholders : ""{PackageName}"", ""{ProgramName}"",""{AdvertisementType}"",""{OfferType }"" and also all fields of the ""SMSPackage""-table in the SCCM   database. Example: ""CMP PackageName ProgramName AdvertisementType OfferType"""
+   "Advert.name rule", "Specify an optional folder for the creation of dynamically generated advertisements for computers."
 
 ================================================================
-User software deployment
+User Software Deployment
 ================================================================
 
 .. csv-table:: 
    :header: "Property","Description"
    :widths: 40,57
 
-   "Parent folder", "Folder that acts as container for all dynamically generated Distribution-Collections (sccm 2012 only) for users"
-   "Limited Collection", "Collection that acts as container for all dynamically generated Distribution-Collections (sccm 2012 only)  for users"
-   "Coll.name rule", "Naming rule for the creation of new dynamically generated Advertisements  for users. You can use the follwing fields as Placeholders : ""{PackageName}"", ""{ProgramName}"",""{AdvertisementType}"",""{OfferType }"" and also all Fields of the ""SMSPackage""-Table in the SCCM Database. Example: ""CMP PackageName ProgramName AdvertisementType OfferType"""
-   "Advert.name rule", "Specify an optional folder for the creation of dynamically generated advertisements  for users."
+   "Parent folder", "Folder that acts as a container for all dynamically generated Distribution-Collections (SCCM 2012 only) for users.
+   "Limited Collection", "Collection that acts as a container for all dynamically generated Distribution-Collections (SCCM 2012 only) for users."
+   "Coll.name rule", "Naming rule for the creation of new dynamically generated advertisements for users. You can use the follwing fields as Placeholders : ""{PackageName}"", ""{ProgramName}"",""{AdvertisementType}"",""{OfferType }"" and also all fields of the ""SMSPackage""-table in the SCCM database. Example: ""CMP PackageName ProgramName AdvertisementType OfferType"""
+   "Advert.name rule", "Specify an optional folder for the creation of dynamically generated advertisements for users."
 
 
 ****************************************************************
 Portals
 ****************************************************************
 
-Portals are used to define start- or overviewpages. A portal can have multiple columns with multiple widgets. Every portal can be restricted to a role. You can use different widgets here: SQL Querys, Links and Reports.
+Portals are used to define start or overview pages. A portal can have multiple columns with multiple widgets. Every portal can be restricted to a role. You can use different widgets here: SQL Querys, Links and Reports.
 
 
 ================================================================
@@ -156,17 +156,17 @@ Column
    :header: "Property","Description","Example"
    :widths: 25,57,15
 
-   "Border top", "Property that describes the vertical top-margin of the column", "25"
-   "Border right", "Property that describes the horizontal right-margin of the column", "25"
-   "Border bottom", "Property that describes the vertical bottom-margin of the column", "25"
-   "Border left", "Property that describes the horizontal left-margin of the column", "25"
+   "Border top", "Property that defines the vertical top-margin of the column.", "25"
+   "Border right", "Property that defines the horizontal right-margin of the column.", "25"
+   "Border bottom", "Property that defines the vertical bottom-margin of the column.", "25"
+   "Border left", "Property that defines the horizontal left-margin of the column.", "25"
 
 
-.. note:: Dont let your widget xml-definition start with a blank space! This is a common error - the widget will not function properly. 
+.. note:: Do not let your widget XML-definition start with a blank space! This is a common error - the widget will not function properly. 
 
-================================================================    
+==============================================================   
 Widgets
-================================================================
+==============================================================
 
 ------------------
 SQL Query
@@ -212,10 +212,10 @@ localreport
 
 
 ================================================================
-Portal rights 
+Portal Rights 
 ================================================================
 
-To set a portal right, click the "+ portal right"-Button and choose the desired role, finally click save.  
+To set a portal right, click the "+ portal right"-button and choose the desired role, finally click save.  
 
 
 ****************************************************************
@@ -252,7 +252,7 @@ Email
 Condition
 ------------------
 
-Define a condition that decides wheather or not the email should be sent. If you leave this empty the email will always be sent. Concatenate rules by using "AND". The following Operators are avalible in the condition field:
+Define a condition that decides wheather or not the email should be sent. If you leave this empty the email will always be sent. Concatenate rules by using "AND". The following operators are avalible in the condition field:
 
 .. csv-table:: 
    :header: "Operator","Description"
@@ -263,7 +263,7 @@ Define a condition that decides wheather or not the email should be sent. If you
    ">", "more than"
    "!", "doesnt equal"
 
-Furthermore you can use palceholders that reference Attributes of the associated Workflow as seen in the following Example: 
+Furthermore, you can use palceholders that reference attributes of the associated Workflow as seen in the following example: 
 
   .. code-block:: xml
     :linenos:
@@ -276,7 +276,7 @@ In this case the email will be sent if: The Workflow parameter "Manufacturer" is
 Recipient
 ------------------
 
-Define the recipient of the email, you can specify a concrete adresse such as "support@silvermonkey.net", or use diffrent placeholders:
+Defines the recipient of the email. You can specify a concrete adresse such as "support@silvermonkey.net" or use diffrent placeholders:
 
 .. csv-table:: 
    :header: "Property","Description"
@@ -293,13 +293,13 @@ Example:
 
     {@OBJ.PartnerResponsiblePerson.Email}
 
-Seperate multiple recipients via semicolon.
+Seperate multiple recipients with a semicolon.
 
 ------------------
 Subject
 ------------------
 
-The subject of the email. You can use the same placeholders as in the recipient.
+The subject in the email. You can use the same placeholders as you do in the recipient.
 
 Example: 
 
@@ -312,7 +312,7 @@ Example:
 Message
 ------------------
 
-The message of the email. You can use the same placeholders as in the recipient.
+The message of the email. You can use the same placeholders as you do in the recipient.
 
 Example: 
 
@@ -343,8 +343,8 @@ Configure workflows for the CMDB and the packaging process.
    :header: "Property","Description"
    :widths: 40,57
 
-   "Name - de", "German name of the workflow"
-   "Name - en", "English name of the workflow"
+   "Name - de", "German name of the workflow."
+   "Name - en", "English name of the workflow."
 
 
 
@@ -359,9 +359,9 @@ Status
    :header: "Property","Description"
    :widths: 40,57
 
-   "Name - de", "German name of the Status"
-   "Name - en", "English name of the Status"
-   "Token", "Define the roles that have the permission to edit Forms in this Status. You can define multiple roles seperated via a semicolon."
+   "Name - de", "German name of the Status."
+   "Name - en", "English name of the Status."
+   "Token", "Define the roles that have the permission to edit Forms in this Status. You can define multiple roles seperated with a semicolon."
    "Plausibility", "Define a condition that decides wheather or not the buttons to proceed to this status will be displayed. See the Condition Section in the previous chapter for more details."
    "Only visible when status is active", "Enable this option to hide the status in the form until the form has reached this status. (Usefull for rejected status)"
 
@@ -374,7 +374,7 @@ Follower
    :widths: 40,57
 
    "Follower", "Choose another workflow status as follower."
-   "Function text - de", "German Label Text of the button to change the status to the one specified in the follower field. If you enter nothing the label of the targetet workflow status will be displayed."
+   "Function text - de", "German label text of the button to change the status to the one specified in the follower field. If you enter nothing the label of the targetet workflow status will be displayed."
    "Function text - en", "English Label Text of the button to change the status to the one specified in the follower field. If you enter nothing the label of the targetet workflow status will be displayed."
    "Message - de", "Define the german text of the message box that will be displayed when the status is changed to the follower."
    "Message - en", "Define the english text of the message box that will be displayed when the status is changed to the follower."
@@ -389,4 +389,4 @@ Follower
 Interfaces
 ****************************************************************
 
-Define automatic interface for CMDB imports.
+Define automatic interfaces for CMDB imports.
