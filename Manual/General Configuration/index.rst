@@ -420,7 +420,7 @@ The interfaces provide a simple and efficient way to fill or to equalize the SIM
 
   Example of the adjustment of computer objects from SCCM into SIM database. New computers are automatically created, existing ones are updated and obsolete ones are deleted in SIM:
 
-  .. code-block:: xml
+  .. code-block:: sql
     :linenos:
 
     MERGE treonV5.dbo.Computer AS t
@@ -451,7 +451,7 @@ The interfaces provide a simple and efficient way to fill or to equalize the SIM
   Example of the adjustment of software objects from SCCM into SIM database. New packages are automatically created, existing ones are updated and obsolete ones are deleted in SIM:
 
 
-  .. code-block:: xml
+  .. code-block:: sql
     :linenos:
 
     MERGE treonV5.dbo.Software AS t
