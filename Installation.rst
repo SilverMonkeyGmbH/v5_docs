@@ -82,7 +82,8 @@ Right-click the TCP/IP line and choose 'Properties':
 
 Choose the tab "IP Adresses" and change the 'TCP Port'-entry to 1433:
 
-  .. image:: _static/SQLServerInstallation_08.png
+  .. figure:: _static/SQLServerInstallation_08.png
+     :align: center
 
 Afterwards, navigate to the SQL Server Services and restart the 'SQL Server ([Database Name]):
 
