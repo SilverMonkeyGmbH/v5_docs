@@ -405,7 +405,7 @@ There are three main types of references:
 
    "{[AttributeName]}", "References an Attribute in the current execution context.","{Name}"
    "{$[ADParameter]>[AttributeName]}", "Takes the desired part of the Active Directory Attribute that is referenced. You can use the follwing AD Parameters: [$MAIL] gives the email, [$NAME] gives the displayname,[$USERNAME] gives the username, [$ESCAPEDUSERNAME] gives the Domain + Username .","{$MAIL>Packageresponsible} "
-   "{@OBJ.[Table].[AttributeName]}", "Takes an entry out of another table/class that is connected to the main class in the execution context. Syntax: {@OBJ.Table.Column} ","{@OBJ.DERDONGER.ICHRAISEIHN}"
+   "{@OBJ.[Table].[AttributeName]}", "Takes an entry out of another table/class that is connected to the main class in the execution context. Syntax: {@OBJ.Table.Column} ","{@OBJ.Issue.TicketResponsible}"
 
 
 
