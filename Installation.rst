@@ -19,7 +19,7 @@ In order to build reports on the website and to export lists in Microsoft Excel 
 
   - Which needs SQLSysClrTypes
 
-You can download these libraries zipped `here <http://www.silvermonkey.net/DL/Microsoft_ReportViewers.zip>`_.
+Clicking `here <http://www.silvermonkey.net/DL/Microsoft_ReportViewers.zip>`_ will start the free download of these libraries.
 
 
 IIS Features
@@ -34,15 +34,15 @@ See :download:`Download Script </_static/Install.cmd>`.
 
 Microsoft SQL Server
 ----------------------------
-For information about supported SQL Server versions see :doc:`/SupportedConf`
+For information about supported SQL Server versions see :doc:`/SupportedConf`.
 
-The installation of the SQL Server will be described in the following steps.
+The installation of the SQL Server will be described in the following section.
 
 
 Installation Setup
 ^^^^^^^^^^^^^^^^^^^^
 Start the SQL Server installation setup.
-Choose the "New SQL Server stand-alone installation..."-Option in the follwing Window:
+Choose the option "New SQL Server stand-alone installation..." in the follwing Window:
 
   .. image:: _static/SQLServerInstallation_00.png
 
@@ -85,7 +85,7 @@ Choose the tab "IP Adresses" and change the 'TCP Port'-entry to 1433:
   .. figure:: _static/SQLServerInstallation_08.png
      :align: center
 
-Afterwards, navigate to the SQL Server Services and restart the 'SQL Server ([Database Name]):
+Afterwards, navigate to the SQL Server Services and restart the 'SQL Server ([Database Name])':
 
   .. figure:: _static/SQLServerInstallation_09.png
      :align: center
@@ -94,7 +94,7 @@ Afterwards, navigate to the SQL Server Services and restart the 'SQL Server ([Da
 SIM SQL DB Service Account
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Visit: :doc:`/KnowledgeBase/KB00020_SIM-SQL_DB-Rights/index` to see how to create the Silver Monkey service account necessary for the DB connection. 
+Visit :doc:`/KnowledgeBase/KB00020_SIM-SQL_DB-Rights/index` to see how to create the Silver Monkey service account necessary for the DB connection. 
 
 You finished the basic SQL Server installation for Silver Monkey.
 
@@ -159,7 +159,7 @@ Licence
 Your Licence is part of the license certificate. Your can find an Information on this topic here:
 :doc:`/KnowledgeBase/KB00012_Activate-and-Update-License-Key/index`
 
-Set up data base connection
+Setting up Database Connection
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Silver Monkey Administrator rights are required to set or update the SQL Server Connection via the user interface. If the "Settings"-Tab is visible, you got the required rights:
 
@@ -175,7 +175,7 @@ Click the 'Save'-button, click the 'Check database (save before)'-button.
 
 The following Pop-Up shows the test result. If the test was not successfull, please check if the specified account has the correct user rights.
 
-Set up ConfigMgr connection
+Setting up ConfigMgr Connection
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Silver Monkey Administrator rights are required to set or update the Configuration Manager Connection. If the "Settings"-Tab is visible, you got the required rights:
 

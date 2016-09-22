@@ -19,9 +19,9 @@ Server Database (SQL)
 
 Server Hardware Requirements (IIS+SQL)
 --------------------------------------------------------
-The system requirements for processors, RAM and hard disk space depend on the size of the correspondig ConfigMgr environment and the number of users working at the same time. Anyway, there is always the option to easily move the application to a more powerful machine or to distribute it across several servers with load balancing.
+The system requirements for processors, RAM and hard disk space on the server depend on the size of the correspondig ConfigMgr environment and the number of users working at the same time. Anyway, there is always the option to easily move the application to a more powerful machine or to distribute it across several servers with load balancing.
 
-In addition to the requirements of the operating system, the following conditions arise:
+System Requirements
 ----------------------------------------------------------------------------------------------------------------
 - CPU	1GHz
 - RAM	2GB
@@ -36,9 +36,9 @@ SIM v5 Engine supports multiple domain configurations. Please see figure below f
 
   .. image:: _static/SIM_Network_Diagram_v1.0.png
 
-Workplace Systems
+Workplace Applications
 ----------------------------
--	Microsoft Internet Explorer 8 or higher
--	Mozilla FireFox 5 or higher (Windows SSO is not supported by browser)
+-	Microsoft Internet Explorer 8 or later
+-	Mozilla FireFox 5 or later (Windows SSO is not supported by browser)
 -	Google Chrome
 

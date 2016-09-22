@@ -1,4 +1,4 @@
-KB00007 - Creating IIS Website for Silver Monkey
+KB00007 - Creating an IIS Website for Silver Monkey
 =================================================
 
 .. contents:: *In this article:*

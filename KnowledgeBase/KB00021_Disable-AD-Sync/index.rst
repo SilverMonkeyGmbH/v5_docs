@@ -1,4 +1,4 @@
-KB00021 - Disable AD Sync
+KB00021 - Disabling AD Sync
 =========================================
 
 To disable AD Sync (which is performed every 12 hours by the first website visitor) simply follow the steps below.

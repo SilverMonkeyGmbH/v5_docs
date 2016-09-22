@@ -1,4 +1,4 @@
-KB00001 - Backup Silver Monkey Database
+KB00001 - Silver Monkey Database Backup
 =========================================
 
 Please follow the instructions below to create a backup of the Silver Monkey database.
