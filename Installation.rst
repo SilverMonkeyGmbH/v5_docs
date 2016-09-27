@@ -19,7 +19,7 @@ In order to build reports on the website and to export lists in Microsoft Excel 
 
   - Which needs SQLSysClrTypes
 
-Clicking `here <http://www.silvermonkey.net/DL/Microsoft_ReportViewers.zip>`_ will start the free download of these libraries.
+:download:`Download library <http://www.silvermonkey.net/DL/Microsoft_ReportViewers.zip>`_ .
 
 
 IIS Features
@@ -192,7 +192,7 @@ Fill in the red-lined fields as seen below.
   .. image:: _static/Set_ConfigMgr_Connection_Screenshot02.png
 
 
-Visit: :doc:`/KnowledgeBase/KB00016_Configuration-Manager-Rights/index` to see which rights are required for the SCCM Service account and the SCCM SQL Service account.
+Visit: :doc:`/KnowledgeBase/KB00017_Configuration-Manager-Rights/index` to see which rights are required for the SCCM Service account and the SCCM SQL Service account.
 
 Click the 'Create'-button.
 
