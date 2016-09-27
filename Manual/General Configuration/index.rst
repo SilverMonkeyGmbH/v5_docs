@@ -94,7 +94,7 @@ Function Settings
    :header: "Property","Description"
    :widths: 40,58
 
-   "Package displayname", "Defines how SIM displays the package displayname in an SQL syntax. (e.g. Manufacturer+''+Name+''+Version+''+Language)"
+   "Package displayname", "Defines how SIM displays the package displayname in an SQL syntax. (e.g. Manufacturer+''+Name+''+Version+''+Language)."
    "Package filter", "Defines an SQL based fitler for the displaying of the packages in the Operations Module."
    "Computer filter", "Defines an SQL based fitler for the displaying of the computers in the Operations Module."
    "User filter", "Defindes an SQL based fitler for the displaying of the users in the Operations Module."
@@ -135,7 +135,7 @@ User Software Deployment
    :header: "Property","Description"
    :widths: 40,57
 
-   "Parent folder", "Folder that acts as a container for all dynamically generated Distribution-Collections (SCCM 2012 only) for users.
+   "Parent folder", "Folder that acts as a container for all dynamically generated Distribution-Collections (SCCM 2012 only) for users."
    "Limited Collection", "Collection that acts as a container for all dynamically generated Distribution-Collections (SCCM 2012 only) for users."
    "Coll.name rule", "Naming rule for the creation of new dynamically generated advertisements for users. You can use the follwing fields as Placeholders : ""{PackageName}"", ""{ProgramName}"",""{AdvertisementType}"",""{OfferType }"" and also all fields of the ""SMSPackage""-table in the SCCM database. Example: ""CMP PackageName ProgramName AdvertisementType OfferType"""
    "Advert.name rule", "Specify an optional folder for the creation of dynamically generated advertisements for users."
@@ -171,7 +171,7 @@ Email
 Condition
 ------------------
 
-Define a condition that decides wheather or not the email should be sent. If you leave this empty the email will always be sent. Concatenate rules by using "AND". The following operators are avalible in the condition field:
+Define a condition that decides wheather the email should be sent or not. If this is left empty, the email will always be sent. Concatenate rules by using "AND". The following operators are avalible in the condition field:
 
 .. csv-table:: 
    :header: "Operator","Description"
@@ -182,20 +182,20 @@ Define a condition that decides wheather or not the email should be sent. If you
    ">", "more than"
    "!", "doesnt equal"
 
-Furthermore, you can use palceholders that reference attributes of the associated Workflow as seen in the following example: 
+Furthermore, you can use palceholders that reference to attributes of the associated workflow as seen in the following example: 
 
   .. code-block:: xml
     :linenos:
 
     {Manufacturer}=Adobe AND {Product}!Reader
 
-In this case the email will be sent if: The Workflow parameter "Manufacturer" is filled with the value "Adobe" and the parameter "Product" does not equal "Reader".
+In this case, the email will be sent if the Workflow parameter "Manufacturer" is filled with the value "Adobe" and the parameter "Product" does not equal "Reader".
 
 ------------------
 Recipient
 ------------------
 
-Defines the recipient of the email. You can specify a concrete adresse such as "support@silvermonkey.net" or use diffrent placeholders:
+Defines the recipient of the email. You can specify a concrete adresse such as "support@silvermonkey.net" or use different placeholders:
 
 .. csv-table:: 
    :header: "Property","Description"
@@ -225,7 +225,7 @@ Example:
   .. code-block:: xml
     :linenos:
 
-    Your request was canceled {RequestManufacturerName}_{RequestProductName}_{RequestProductVersion}_{@OBJ.PackageLanguage.CodeISO6391}_{Architecture}_{@OBJ.PackageType.Character}{PackageID}
+    Your request was cancelled {RequestManufacturerName}_{RequestProductName}_{RequestProductVersion}_{@OBJ.PackageLanguage.CodeISO6391}_{Architecture}_{@OBJ.PackageType.Character}{PackageID}
 
 ------------------
 Message
@@ -308,7 +308,7 @@ Follower
 Interfaces
 ****************************************************************
 
-The interfaces provide a simple and efficient way to fill or to equalize the SIM  database with data from SCCM or other databases. This is best done through the SQL Merge command. Unless the databases are not on the same Microsoft SQL Server, the source server has to be made familiar to the SIM database server via a linkserver:
+The interfaces provide a simple and efficient way to fill or to equalize the SIM  database with data from SCCM or other databases. This is done best by using the SQL Merge command. Unless the databases are not on the same Microsoft SQL Server, the source server has to be made familiar to the SIM database server via a linkserver:
 
 
   .. figure:: _static/linkserver1.png
@@ -386,14 +386,14 @@ The interfaces provide a simple and efficient way to fill or to equalize the SIM
             DELETE;
 
 
-The interfaces is accessed via the CMDB function menu or called directly via the page "Support / ExecuteInterface.aspx. A specified interface can be started right away, with the URL parameter" Interface ". Several interfaces can be successively launched by lining up several interface names seperated with semicolons. This process is suitable to be called in a Windows scheduled task.
+The interfaces are accessed via the CMDB function menu or called directly via the page "Support / ExecuteInterface.aspx". A specified interface can be started right away, with the URL parameter "Interface". Several interfaces can be successively launched by lining up several interface names seperated with semicolons. This process is suitable to be called in a Windows scheduled task.
 
 
 ****************************************************************
-Using placeholders
+Using Placeholders
 ****************************************************************
 
-Placerholders are used to reference attributes in the life time execution of events (Sending emails, displaying formulars, querying databases etc.) There are several szenarios where placeholders are usefull in xml definitions. You can use them in the email definitions, form and list definitions and functions that use SLQ querys.
+Placerholders are used to reference attributes in the life time execution of events (Sending emails, displaying formulars, querying databases etc.) Placeholders in XML definitions are useful in several scenarios. You can use them in the email definitions, form and list definitions and functions that use SLQ queries.
 
 
 There are three main types of references:

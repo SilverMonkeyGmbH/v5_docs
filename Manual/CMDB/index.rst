@@ -1,4 +1,4 @@
-Manual for module "CMDB"
+Manual for Module "CMDB"
 =============================================================
 
 .. warning:: This article is under construction! Please DO NOT refer to any of the instructions below, yet!
@@ -97,7 +97,7 @@ Exchange the following XML with the corresponding elements in your configuration
 
 .. _CMDB-Multiple-computer-transfer:
 ======================================
-Multiple computer transfer example
+Multiple Computer Transfer Example
 ======================================
 
 Content will be published soon.

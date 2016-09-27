@@ -1,4 +1,4 @@
-Tutorials for module "CMDB"
+Tutorials for Module "CMDB"
 =============================================================
 
 .. contents:: *In this article:*
@@ -17,7 +17,7 @@ For full reference see :ref:`CMDB-actions-CMDB2SCCM`.
 .. note:: You have to be able to "Edit Settings".
 
 1. Go to the tab "Settings"
-2. Navigate to CMDB and click on the plus button at the buttom
+2. Navigate to CMDB and click on the plus button at the bottom
 
 .. image:: _static/Tutorial_FirstCMDBClass_1.png 
 
@@ -25,7 +25,7 @@ For full reference see :ref:`CMDB-actions-CMDB2SCCM`.
 
 .. image:: _static/Tutorial_FirstCMDBClass_2.png 
 
-4. Create first attributes and name them "Name" and "MACAddress":
+4. Create your first attributes and name them "Name" and "MACAddress":
 
 .. image:: _static/Tutorial_FirstCMDBClass_3.png 
 
@@ -61,12 +61,12 @@ Configure the list as shown:
 
 
 .. note:: 
- |- The setting ``detailView="Computers Details"`` will expect a form view with the name "Computers Details"
- |- The setting ``cmdb2sccm="true"`` displays a transfer button in the list context menu 
- |
- |.. image:: _static/Tutorial_FirstCMDBClass_8_preview.png  
- |
- |- For full reference see :ref:`CMDB-Lists-View`
+  - The setting ``detailView="Computers Details"`` will expect a form view with the name "Computers Details"
+  - The setting ``cmdb2sccm="true"`` displays a transfer button in the list context menu 
+ 
+  .. image:: _static/Tutorial_FirstCMDBClass_8_preview.png  
+ 
+  - For full reference see :ref:`CMDB-Lists-View`
 
 .. literalinclude:: _static/ViewExample2.xml
     :language: xml

@@ -1,4 +1,4 @@
-KB00004 - SIM Database Restore
+KB00004 - Restoring SIM Database
 =========================================
 
 .. contents:: *In this article:*

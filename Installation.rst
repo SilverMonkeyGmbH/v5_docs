@@ -19,7 +19,7 @@ In order to build reports on the website and to export lists in Microsoft Excel 
 
   - Which needs SQLSysClrTypes
 
-:download:`Download library </_static/Microsoft_ReportViewers.zip>` .
+:download:`Download library </_static/Microsoft_ReportViewers.zip>`.
 
 
 IIS Features
@@ -103,9 +103,9 @@ Website Files
 ----------------------------
 Copy the basic configuration of the website to the specified path on the web application server:
 
-*C:\inetpub\wwwroot\[HERE]*
+``*C:\inetpub\wwwroot\[HERE]*``
 Example:
-*C:\inetpub\wwwroot\SIM_R001*
+``*C:\inetpub\wwwroot\SIM_R001*``
 
 This configuration will be customized later based on the customer requirements.
 
@@ -119,7 +119,7 @@ Database
 ---------------------------- 
 Install the Silver Monkey Database Backup. The Backup is part of the installation Package.
 
-See: :doc:`/KnowledgeBase/KB00004_SIM-DB-Restore/index` for more Information.
+See: :doc:`/KnowledgeBase/KB00004_Restoring-SIM-Database/index` for more Information.
 
 IIS Configuration
 ---------------------------- 
@@ -151,13 +151,14 @@ For some features, it is necessary that a second AppPool is created using these 
 
   .. image:: _static/IIS_Configuration7.png
 
+----------------------------
 Basic Configuration
----------------------------- 
+----------------------------
 
 Licence
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Your Licence is part of the license certificate. Your can find an Information on this topic here:
-:doc:`/KnowledgeBase/KB00012_Activate-and-Update-License-Key/index`
+:doc:`/KnowledgeBase/KB00013_Activating-and-Updating-License-Key/index`
 
 Setting up Database Connection
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
