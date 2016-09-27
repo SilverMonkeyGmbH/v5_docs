@@ -19,7 +19,7 @@ In order to build reports on the website and to export lists in Microsoft Excel 
 
   - Which needs SQLSysClrTypes
 
-:download:`Download library <http://www.silvermonkey.net/DL/Microsoft_ReportViewers.zip>` .
+:download:`Download library </_static/Microsoft_ReportViewers.zip>` .
 
 
 IIS Features
