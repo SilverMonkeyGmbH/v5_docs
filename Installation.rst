@@ -19,7 +19,7 @@ In order to build reports on the website and to export lists in Microsoft Excel 
 
   - Which needs SQLSysClrTypes
 
-:download:`Download library <http://www.silvermonkey.net/DL/Microsoft_ReportViewers.zip>`_ .
+:download:`Download library <http://www.silvermonkey.net/DL/Microsoft_ReportViewers.zip>` .
 
 
 IIS Features
@@ -96,7 +96,7 @@ SIM SQL DB Service Account
 
 Visit :doc:`/KnowledgeBase/KB00020_SIM-SQL_DB-Rights/index` to see how to create the Silver Monkey service account necessary for the DB connection. 
 
-You finished the basic SQL Server installation for Silver Monkey.
+You have finished the basic SQL Server installation for Silver Monkey.
 
 
 Website Files
