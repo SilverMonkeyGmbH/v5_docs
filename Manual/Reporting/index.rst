@@ -1,4 +1,4 @@
-Manual for module "Reporting"
+Manual for Module "Reporting"
 =============================================================
 
 .. contents:: *In this article:*
@@ -9,7 +9,7 @@ Manual for module "Reporting"
 .. warning:: This article is under construction! Please DO NOT use any of the instructions below, yet! You may cause damage to your system. This article will be finished soon.
 
 
-Site custom reports can be stored within this configuration area. The reports have to be submitted in the form of RDL or RDLC files (The format of Microsoft Reporting Services).  Reports can be generated most easily with the Microsoft Business Intelligence Development Studio. After uploading a report definition file, the data sources in the report are analyzed and displayed. When you create a report you have to assign report authorization groups, which may open this report. You can define custom folder structures to structorize multiple reports.
+Site custom reports can be stored within this configuration area. The reports have to be submitted in the form of RDL or RDLC files (format of Microsoft Reporting Services).  Reports can be generated most easily with the Microsoft Business Intelligence Development Studio. After uploading a report definition file, the data sources in the report are analyzed and displayed. When you create a report you have to assign report authorization groups, which may open this report. You can define custom folder structures to structorize multiple reports.
 
 .. csv-table:: 
    :header: "Property","Description","Example"

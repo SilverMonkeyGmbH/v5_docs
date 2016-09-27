@@ -15,7 +15,7 @@ You will find the Web.Config file in
 
     C:\inetpub\wwwroot\[TreonWesite].
 
-Please open the file in a Text Editor and search for the section "<appSettings>".
+Please open the file in a text editor and search for the section "<appSettings>".
 
 .. image:: _static/image001.png
 

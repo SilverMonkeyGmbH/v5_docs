@@ -39,7 +39,7 @@ Fill in the fields displayed. The field named "Alias" should be filled with "Tre
 
 .. note:: Please choose the application pool named *"Treon"* or *"SIM"* if it exists.
 
-In the next step, please authentificate the application by activating its authentification for Windows.
+In the next step, please authenticate the application by activating its authentication for Windows.
 
   .. image:: _static/image009.png
   .. image:: _static/image011.png
@@ -51,7 +51,7 @@ Writing permission can be set under
 
   .. code-block:: console
 
-    C:\inetpub\wwwroot\treonR0001\App_Data.
+    C:\inetpub\wwwroot\treonR0001\App_Data
 
   .. image:: _static/image013.png
     :align: center

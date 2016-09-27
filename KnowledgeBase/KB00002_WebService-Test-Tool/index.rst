@@ -29,7 +29,7 @@ The sample XML file will create a simple computer with one variable:
 .. literalinclude:: _static/sample.xml
 
 
-Editing start.cmd file 
+Editing start.cmd File 
 ++++++++++++++++++++++++++++++++++++
 The start.cmd file is meant to be an example of how to start the web service test tool.
 

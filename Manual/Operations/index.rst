@@ -1,4 +1,4 @@
-Manual for module "Operations"
+Manual for Module "Operations"
 =============================================================
 
 .. contents:: *In this article:*
@@ -14,7 +14,7 @@ Hidden Settings
 ************************************************************************************
 Hidden settings are configurable features that are not available through the standard configuration UI. 
 
-These settings have to be set within the ``Configuration.xml`` by a text editor.
+These settings have to be set within the ``Configuration.xml`` in a text editor.
 
 .. tip:: Within the hidden settings section XPATH notation is used to give information about the correct location of the setting. Please visit `this website <http://www.w3schools.com/xsl/xpath_syntax.asp>`_ in order to get more information on XPATH notation.
 
@@ -22,7 +22,7 @@ These settings have to be set within the ``Configuration.xml`` by a text editor.
 Alternative New Computer Popup
 ==============================
 
-In order to change the behaviour of the new computer "plus" button
+In order to change the behaviour of the new computer, hit the "plus" button and
 add the following XML tag to ``//sites/site``:
 
 .. code-block:: xml
@@ -60,7 +60,7 @@ Settings
 Client Commands
 ==============================
 
-Client commands are visible through the properties dialogue in the SIM OPS module.
+Client commands are visible in the properties dialogue in the SIM OPS module.
 There are different types of client commands.
 
 .. image:: _static/ComputerActions_001.png

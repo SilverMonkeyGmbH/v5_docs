@@ -1,4 +1,4 @@
-Manual for module "Webservice"
+Manual for Module "Webservice"
 =============================================================
 
 .. warning:: This article is under construction! Please DO NOT use any of the instructions below, yet! You may cause damage to your system. This article will be finished soon.
@@ -51,7 +51,7 @@ Depending on the setting of the IIS application there are two possible authentic
   </cmds>
 
 ************************************************************************************
-Available commands
+Available Commands
 ************************************************************************************
 
 All commands sent to the webservice have to be enclosed by the following XML block:

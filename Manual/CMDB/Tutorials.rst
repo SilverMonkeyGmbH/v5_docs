@@ -112,13 +112,13 @@ You have to get the following information to built up an import for SCCM:
 - Needed computer variable names and accepted values
 - Knowledge of the SIM database schema
 
-1. Follow the :ref:`tut-firstCMDBclass` -manual
-2. Follow the :ref:`CMDB-SCCM-transfer` -manual
+1. Follow the manuall " :ref:`tut-firstCMDBclass` "
+2. Follow the " :ref:`CMDB-SCCM-transfer` "
 3. Create a dummy computer and click on "Transfer computer to SCCM"
 
 .. image:: _static/Tutorial_MassImport_01.png
 
-4. Select first "Rollout unit" (usually, rollout units only make sense when importing multiple computers; the example below is simplyfied) and click on execute
+4. First, select "Rollout unit" (usually, rollout units only make sense when importing multiple computers; the example below is simplyfied) and click on execute
 
 .. image:: _static/Tutorial_MassImport_02.png
 

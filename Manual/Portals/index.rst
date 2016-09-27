@@ -1,16 +1,13 @@
-Manual for module "Portals"
+Manual for Module "Portals"
 =============================================================
+
+.. warning:: This article is under construction! Please DO NOT use any of the instructions below, yet! You may cause damage to your system. This article will be finished soon.
 
 .. contents:: *In this article:*
   :local:
   :depth: 3
 
-
-.. warning:: This article is under construction! Please DO NOT use any of the instructions below, yet! You may cause damage to your system. This article will be finished soon.
-
-
-
-  Portals are used to define start or overview pages. A portal can have multiple columns with multiple widgets. Every portal can be restricted to a role. You can use different widgets here: SQL Querys, Links and Reports.
+Portals are used to define start or overview pages. A portal can have multiple columns with multiple widgets. Every portal can be restricted to a role. You can use different widgets here: SQL Querys, Links and Reports.
 
 
 ================================================================

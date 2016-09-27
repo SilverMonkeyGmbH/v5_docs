@@ -1,4 +1,4 @@
-Manual for module "Packaging"
+Manual for Module "Packaging"
 =============================================================
 
 .. warning:: This article is under construction! Please DO NOT use any of the instructions below, yet!
@@ -99,7 +99,7 @@ Attributes
 
 Create attributes for the packaging workflow here. 
 
-You can see informations about attributes unter :ref:`CMDB-Attributes`.
+You can see informations about attributes under :ref:`CMDB-Attributes`.
 
 ****************************************************************
 Views

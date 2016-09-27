@@ -5,7 +5,7 @@ KB00020 - SIM SQL Database Rights
 Creating the SIM Service Account
 +++++++++++++++++++++++++++++++++++++++++++
 
-Open SQL Management Studio and connect to your Silver Monkey SQL DB Server. 
+Open SQL Management Studio and connect to your Silver Monkey SQL DB server. 
 Expand 'Security' and right click 'Login' to create a new login.   
 
     .. image:: _static/image001.png
