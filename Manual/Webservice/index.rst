@@ -225,7 +225,7 @@ exchangeClient
 refreshClient
 ===============
 
-.. _websrv-assignment:
+.. .. _websrv-assignment:
 
 .. code-block::
   :linenos:
@@ -265,7 +265,7 @@ Go to :ref:`websrv-deployment` for deploying a ConfigMgr **package**.
    <applicationID>ApplikationsID</ applicationID>
    <type>Installation|Deinstallation</type>
    <offerTypeId>0=Required|2=Available</offerTypeId>  
-</cmd> 
+  </cmd> 
 
 ==============================
 createFileStructure
