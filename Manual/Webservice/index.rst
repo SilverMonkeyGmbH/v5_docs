@@ -155,23 +155,99 @@ Go to :ref:`websrv-assignment` in order to get help deploying a ConfigMgr **appl
 deleteClient
 ===============
 
+.. code-block:: xml
+  :linenos:
+
+  <cmd name="deleteClient" siteCode="000">
+    <resourceID>Resourcen ID des Computers (alternativ)</resourceID>
+    <name>Name des Computers (alternativ)</name>
+  </cmd>
+
 ===============
 createClient
 ===============
+
+.. code-block:: xml
+  :linenos:
+
+  <cmd name="createClient" siteCode="000">
+    <name>Computername</name>
+    <mac>MAC Adresse</mac>
+    <configuration>Standard</configuration>
+    <overwrite>true</overwrite>
+    <variable>
+      <name>Variablenname</name>
+      <locale>Locale</locale>
+      <value>Variablenwert</value>
+   </variable>
+  </cmd>
 
 ===============
 executeScript
 ===============
 
+.. code-block:: xml
+  :linenos:
+
+  <cmd name="executeScript" siteCode="000">
+   <executable>Computername</executable>
+   <parameters>MAC Adresse</parameters>
+  </cmd>
+
 ===============
 exchangeClient
 ===============
+
+.. code-block:: xml
+  :linenos:
+
+  <cmd name="exchangeClient" siteCode="000">
+    <sourceComputerName>Name des alten Computers</sourceComputerName>
+    <targetComputerName>Name des neuen Computers (alternativ Name oder MAC)</targetComputerName>
+    <targetComputerMAC>MAC Adresse des neuen Computers (alternative Name oder MAC)</targetComputerMAC>
+    <configuration>Name der Konfiguration des neuen Computers</configuration>
+    <packages>
+        <packageId>PaketId des ersten Paketes</packageId>
+        <packageId>PaketId des zweiten Paketes</packageId>
+    </packages>
+    <applications>
+        <application>Name der Applikation</application>
+        <application>Name der Applikation</application>
+    </applications >
+   <variable>
+      <name>Variablenname</name>
+      <locale>Locale</locale>
+      <value>Variablenwert</value>
+   </variable>
+  </cmd>
 
 ===============
 refreshClient
 ===============
 
 .. _websrv-assignment:
+
+.. code-block::
+  :linenos:
+
+  <cmd name="refreshClient" siteCode="000">
+    <computerName>Computername</computerName>
+    <configuration>Name der Konfiguration des neuen Computers</configuration>
+    <packages>
+        <packageId>PaketId des ersten Paketes</packageId>
+        <packageId>PaketId des zweiten Paketes</packageId>
+    </packages>
+    <applications>
+        <application>Name der Applikation</application>
+        <application>Name der Applikation</application>
+    </applications >
+   <variable>
+      <name>Variablenname</name>
+      <locale>Locale</locale>
+      <value>Variablenwert</value>
+   </variable>
+  </cmd>
+
 
 ===============
 assignment
@@ -180,18 +256,66 @@ assignment
 Creating a deployment for a ConfigMgr **application**. 
 Go to :ref:`websrv-deployment` for deploying a ConfigMgr **package**. 
 
+.. code-block:: xml 
+  :linenos:
+
+  <cmd name="assignment" siteCode="000">
+   <computerName>Name des Computers (alternativ)</computerName>
+   <resourceID>Resourcen ID des Computers (alternativ)</applicationID >
+   <applicationID>ApplikationsID</ applicationID>
+   <type>Installation|Deinstallation</type>
+   <offerTypeId>0=Required|2=Available</offerTypeId>  
+</cmd> 
+
 ==============================
 createFileStructure
 ==============================
+
+.. code-block:: xml
+  :linenos:
+
+  <cmd name="createFileStructure">
+   <packagingParamName1>Wert 1</packagingParamName1>
+   <packagingParamName2>Wert 2</packagingParamName2>
+   <packagingParamName3>Wert 3</packagingParamName3>
+   ...
+  </cmd> 
 
 ===============
 createPackage
 ===============
 
+.. code-block:: xml
+  :linenos:
+
+  <cmd name=" createPackage">
+   <packagingParamName1>Wert 1</packagingParamName1>
+   <packagingParamName2>Wert 2</packagingParamName2>
+   <packagingParamName3>Wert 3</packagingParamName3>
+   ...
+  </cmd>
+
 ==============================
 createApplication
 ==============================
 
+.. code-block:: xml
+  :linenos:
+
+  <cmd name="createApplication" siteCode="000" template="default" >
+    <variable name="Name">Wert</variable>
+  </cmd>
+
 ==============================
 createCollection
 ==============================
+
+.. code-block:: xml
+  :linenos:
+
+  <cmd name="createCollection" siteCode="000"
+   name="Neu 2"
+   collectionType="1=user|2=device"
+   limitToCollectionId="SMS00001"
+   query="" />
+  </cmd>
