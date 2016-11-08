@@ -61,8 +61,16 @@ Add the following XML tag to ``//system``
 
 
 ==============================
-Debug Mode
-==============================  
+Custom Queries
+==============================
+
+Custom queries allows to use alternate queries to built up left and right side of the Operations main window.
+
+Add the following XML nodes to ``//sites/site``:
+
+.. literalinclude:: _static/CustomQueries.xml
+    :language: xml
+    :linenos:
 
 
 ************************************************************************************
