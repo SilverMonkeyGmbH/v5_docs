@@ -1,4 +1,4 @@
-Supported configurations
+Supported Configurations
 =============================
 
 Supported Microsoft SQL Server Versions
@@ -32,7 +32,7 @@ Supported Microsoft Windows Server Versions
 Supported .Net Framework Versions
 ---------------------------------------
 
-- Hence the code was written in .Net 2.0 only this version is supported
+- Hence the code was written in .Net 2.0 only this version is supported.
 
 
 Supported Microsoft ConfigMgr Versions

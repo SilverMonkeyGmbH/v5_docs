@@ -1,4 +1,4 @@
-KB00021 - Disable AD Sync
+KB00021 - Disabling AD Sync
 =========================================
 
 To disable AD Sync (which is performed every 12 hours by the first website visitor) simply follow the steps below.
@@ -10,8 +10,8 @@ Further information on how to find the Configuration.xml file, read the correspo
 ( :doc:`../KB00014_Finding-Log-Files-and-Configuration-XML/index` )
 
 
-2. Changing date to future date
-+++++++++++++++++++++++++++++++
+2. Changing Date to Future Date
++++++++++++++++++++++++++++++++++
 
   .. literalinclude:: _static/configuration.xml
     :language: xml

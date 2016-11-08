@@ -1,4 +1,4 @@
-KB00004 - SIM Database Restore
+KB00004 - Restoring SIM Database
 =========================================
 
 .. contents:: *In this article:*
@@ -7,7 +7,7 @@ KB00004 - SIM Database Restore
 
 -------
 
-Creating a new Database
+Creating a New Database
 ++++++++++++++++++++++++
 Connect to your SQL Server via SQL Management Studio and create a new Database:
 

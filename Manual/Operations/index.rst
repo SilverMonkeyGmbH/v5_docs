@@ -1,4 +1,4 @@
-Manual for module "Operations"
+Manual for Module "Operations"
 =============================================================
 
 .. contents:: *In this article:*
@@ -10,20 +10,20 @@ Manual for module "Operations"
 
 
 ************************************************************************************
-Hidden settings
+Hidden Settings
 ************************************************************************************
 Hidden settings are configurable features that are not available through the standard configuration UI. 
 
-These settings have to be set within the ``Configuration.xml`` by a text editor.
+These settings have to be set within the ``Configuration.xml`` in a text editor.
 
-.. tip:: Within the hidden settings section XPATH notation is used to give information about the correct location of the setting. If you need help with XPATH go to http://www.w3schools.com/xsl/xpath_syntax.asp
+.. tip:: Within the hidden settings section XPATH notation is used to give information about the correct location of the setting. Please visit `this website <http://www.w3schools.com/xsl/xpath_syntax.asp>`_ in order to get more information on XPATH notation.
 
 ==============================
-Alternate New Computer Popup
+Alternative New Computer Popup
 ==============================
 
-You can change the behaviour of the new computer "plus" button.
-Add the following XML tag to ``//sites/site``:
+In order to change the behaviour of the new computer, hit the "plus" button and
+add the following XML tag to ``//sites/site``:
 
 .. code-block:: xml
  :linenos:
@@ -70,24 +70,23 @@ Settings
 ************************************************************************************
 
 ==============================
-Client commands
+Client Commands
 ==============================
 
-Client commands are visible through the properties dialog in OPS module.
+Client commands are visible in the properties dialogue in the SIM OPS module.
+There are different types of client commands.
 
 .. image:: _static/ComputerActions_001.png
 
 .. image:: _static/ComputerActions_002.png
 
-There are different types of client commands
-
 ---------------------------
-WMI query
+WMI Query
 ---------------------------
 
-Executes WQL select on target machine and displays output on website.
+Executes SQL select on the target machine and displays the output on the website.
 
-**Example:** View the services the client incl. status 
+**Example:** View the services of the client including his / her status. 
 
 .. csv-table::
    :header: "Setting","Value"
@@ -98,9 +97,9 @@ Executes WQL select on target machine and displays output on website.
    "Query", "SELECT DisplayName, Description, StartMode, StartName, State FROM Win32_Service"
 
 ---------------------------
-Registry query
+Registry Query
 ---------------------------
-Reads from target machine registry and displays output on website.
+Reads from target machine registry and displays the output on the website.
 
 **Example:** View Add Remove Programs 
 
@@ -114,11 +113,11 @@ Reads from target machine registry and displays output on website.
    "Query", "DisplayName, DisplayVersion, Publisher, InstallDate"
 
 ---------------------------
-WMI query command
+WMI Query Command
 ---------------------------
 Executes a specific WMI method for every returned object.
 
-**Example:** Stop Windows services with specific name 
+**Example:** Stop Windows Services with Specific Name 
 
 .. csv-table::
    :header: "Setting","Value"
@@ -130,7 +129,7 @@ Executes a specific WMI method for every returned object.
    "Command", "StopService"
 
 ---------------------------
-WMI Class command
+WMI Class Command
 ---------------------------
 Executes a WMI class method.
 
@@ -150,7 +149,7 @@ ClickOnce
 ---------------------------
 Executes local executables such as MSTSC for extended functionality regarding client systems.
 
-**Example:** Start MSTSC with parameter
+**Example:** Start MSTSC with a Parameter
 
 .. csv-table::
    :header: "Setting","Value"
@@ -159,10 +158,14 @@ Executes local executables such as MSTSC for extended functionality regarding cl
    "Type", "ClickOnce"
    "Query", "../Tools/ClickOnce/SIM_Ops_Clickonce.application?{ComputerName}"
 
-``SIM_Ops_Clickonce.application`` is delivered through latest version. You can change behaviour (executable, parameters) in config file "Tools\ClickOnce\Application Files\SIM_Ops_Clickonce_1_0_0_0\SIM_Ops_Clickonce.exe.config.deploy"
+``SIM_Ops_Clickonce.application`` is only delivered with the latest version. You can change its behaviour (executable, parameters) in the config file under "Tools\ClickOnce\Application Files\SIM_Ops_Clickonce_1_0_0_0\SIM_Ops_Clickonce.exe.config.deploy".
 
-.. tip:: If ``ClickOnce`` is missing from configuration please open Configuration.xml file and change all lines from
-  "query_wmi,WMI query;query_files,Filesystem;query_registry,Registry query;cmd_query_wmi,WMI query command;cmd_class_wmi,WMI class command;wol,WakeOnLAN" to
-  "query_wmi,WMI query;query_files,Filesystem;query_registry,Registry query;cmd_query_wmi,WMI query command;cmd_class_wmi,WMI class command;wol,WakeOnLAN;clickonce,ClickOnce"`
+.. tip:: If ``ClickOnce`` is missing in your configuration please open the Configuration.xml file and change all lines from
+  
+  + "query_wmi,WMI query;query_files,Filesystem;query_registry,Registry query;cmd_query_wmi,WMI query command;cmd_class_wmi,WMI class command;wol,WakeOnLAN" 
+  
+  to
+  
+  + "query_wmi,WMI query;query_files,Filesystem;query_registry,Registry query;cmd_query_wmi,WMI query command;cmd_class_wmi,WMI class command;wol,WakeOnLAN;clickonce,ClickOnce"`
   
    

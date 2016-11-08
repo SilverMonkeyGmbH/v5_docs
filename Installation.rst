@@ -19,7 +19,7 @@ In order to build reports on the website and to export lists in Microsoft Excel 
 
   - Which needs SQLSysClrTypes
 
-You can download these libraries zipped `here <http://www.silvermonkey.net/DL/Microsoft_ReportViewers.zip>`_.
+:download:`Download library </_static/Microsoft_ReportViewers.zip>`.
 
 
 IIS Features
@@ -34,15 +34,15 @@ See :download:`Download Script </_static/Install.cmd>`.
 
 Microsoft SQL Server
 ----------------------------
-For information about supported SQL Server versions see :doc:`/SupportedConf`
+For information about supported SQL Server versions see :doc:`/SupportedConf`.
 
-The installation of the SQL Server will be described in the following steps.
+The installation of the SQL Server will be described in the following section.
 
 
 Installation Setup
 ^^^^^^^^^^^^^^^^^^^^
 Start the SQL Server installation setup.
-Choose the "New SQL Server stand-alone installation..."-Option in the follwing Window:
+Choose the option "New SQL Server stand-alone installation..." in the follwing Window:
 
   .. image:: _static/SQLServerInstallation_00.png
 
@@ -82,41 +82,44 @@ Right-click the TCP/IP line and choose 'Properties':
 
 Choose the tab "IP Adresses" and change the 'TCP Port'-entry to 1433:
 
-  .. image:: _static/SQLServerInstallation_08.png
+  .. figure:: _static/SQLServerInstallation_08.png
+     :align: center
 
-Afterwards, navigate to the SQL Server Services and restart the 'SQL Server ([Database Name]):
+Afterwards, navigate to the SQL Server Services and restart the 'SQL Server ([Database Name])':
 
-  .. image:: _static/SQLServerInstallation_09.png
+  .. figure:: _static/SQLServerInstallation_09.png
+     :align: center
 
 
 SIM SQL DB Service Account
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Visit: :doc:`/KnowledgeBase/KB00020_SIM-SQL_DB-Rights/index` to see how to create the Silver Monkey service account necessary for the DB connection. 
+Visit :doc:`/KnowledgeBase/KB00020_SIM-SQL_DB-Rights/index` to see how to create the Silver Monkey service account necessary for the DB connection. 
 
-You finished the basic SQL Server installation for Silver Monkey.
+You have finished the basic SQL Server installation for Silver Monkey.
 
 
 Website Files
 ----------------------------
 Copy the basic configuration of the website to the specified path on the web application server:
 
-*C:\inetpub\wwwroot\[HERE]*
+``*C:\inetpub\wwwroot\[HERE]*``
 Example:
-*C:\inetpub\wwwroot\SIM_R001*
+``*C:\inetpub\wwwroot\SIM_R001*``
 
 This configuration will be customized later based on the customer requirements.
 
 .. tip::
      Make sure that the role “Everyone” has the permission to “Modify, Read& execute, List folder contents, Read, Write” to the App_Data folder (as seen below)
 
-  .. image:: _static/SQL_server_Security_App_Data.png
+  .. figure:: _static/SQL_server_Security_App_Data.png
+     :align: center
 
 Database
 ---------------------------- 
 Install the Silver Monkey Database Backup. The Backup is part of the installation Package.
 
-See: :doc:`/KnowledgeBase/KB00004_SIM-DB-Restore/index` for more Information.
+See: :doc:`/KnowledgeBase/KB00004_Restoring-SIM-Database/index` for more Information.
 
 IIS Configuration
 ---------------------------- 
@@ -130,13 +133,15 @@ Navigate to the advanced settings of the created application pool (Figure 3) and
 
   .. image:: _static/IIS_Configuration2.png
 
-  .. image:: _static/IIS_Configuration3.png
+  .. figure:: _static/IIS_Configuration3.png
+     :align: center
 
 Next, choose the ‘Add Application’ option in the right-click dialogue of the Default Web Site, choose the name of the application, the application pool that has just been created and the website folder that you copied in the C:\inetpub\\wwwroot… directory. 
 
   .. image:: _static/IIS_Configuration4.png
 
-  .. image:: _static/IIS_Configuration5.png
+  .. figure:: _static/IIS_Configuration5.png
+     :align: center
 
   After this navigate to the ‘Authentication’ settings of the new application. Set the authentication as seen below:
 
@@ -146,44 +151,49 @@ For some features, it is necessary that a second AppPool is created using these 
 
   .. image:: _static/IIS_Configuration7.png
 
+----------------------------
 Basic Configuration
----------------------------- 
+----------------------------
 
 Licence
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Your Licence is part of the license certificate. Your can find an Information on this topic here:
-:doc:`/KnowledgeBase/KB00012_Activate-and-Update-License-Key/index`
+:doc:`/KnowledgeBase/KB00013_Activating-and-Updating-License-Key/index`
 
-Set up data base connection
+Setting up Database Connection
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Silver Monkey Administrator rights are required to set or update the SQL Server Connection via the user interface. If the "Settings"-Tab is visible, you got the required rights:
 
-  .. image:: _static/Activation_Key_Screenshot1.png
+  .. figure:: _static/Activation_Key_Screenshot1.png
+     :align: center
 
 Fill in the fields in the Database Settings: 
 
-  .. image:: _static/SQLServerConnection_01.png
+  .. figure:: _static/SQLServerConnection_01.png
+     :align: center
 
 Click the 'Save'-button, click the 'Check database (save before)'-button.
 
 The following Pop-Up shows the test result. If the test was not successfull, please check if the specified account has the correct user rights.
 
-Set up ConfigMgr connection
+Setting up ConfigMgr Connection
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Silver Monkey Administrator rights are required to set or update the Configuration Manager Connection. If the "Settings"-Tab is visible, you got the required rights:
 
-  .. image:: _static/Activation_Key_Screenshot1.png
+  .. figure:: _static/Activation_Key_Screenshot1.png
+     :align: center
 
 Expand the 'Sites' entry on the left side and choose 'New site':
 
-  .. image:: _static/Set_ConfigMgr_Connection_Screenshot01.png
+  .. figure:: _static/Set_ConfigMgr_Connection_Screenshot01.png
+     :align: center
 
 Fill in the red-lined fields as seen below.
 
   .. image:: _static/Set_ConfigMgr_Connection_Screenshot02.png
 
 
-Visit: :doc:`/KnowledgeBase/KB00016_Configuration-Manager-Rights/index` to see which rights are required for the SCCM Service account and the SCCM SQL Service account.
+Visit: :doc:`/KnowledgeBase/KB00017_Configuration-Manager-Rights/index` to see which rights are required for the SCCM Service account and the SCCM SQL Service account.
 
 Click the 'Create'-button.
 

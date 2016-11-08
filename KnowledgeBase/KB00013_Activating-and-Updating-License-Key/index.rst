@@ -14,7 +14,7 @@ Activating or Updating the Activation Key via the User Interface
     .. image:: _static/Activation_Key_Screenshot1.png
                 :align: center
 
-In the settings, fill in the field named 'Activation code' with the license key that is part of the License Certificate.
+In the settings, fill in the field named 'Activation code' with the license key that is part of the license certificate.
 
    .. image:: _static/Activation_Key_Screenshot2.png
 

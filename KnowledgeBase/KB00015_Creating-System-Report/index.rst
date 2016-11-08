@@ -1,4 +1,4 @@
-KB00015 - Creating System Report
+KB00015 - Creating a System Report
 =============================================================
 
 .. contents:: *In this article:*
