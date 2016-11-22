@@ -39,6 +39,14 @@ You have created a special CMDB class for computer import with the form ID ``84`
 
   <AlternateCreatePopup><![CDATA[javascript: sW('v_84_','../Support/TypeView.aspx?PopUp=true&TypeViewId=84',650,500,true);]]></AlternateCreatePopup>
 
+
+.. code-block:: xml
+ :linenos:
+
+  <AlternateCreatePopup><![CDATA[javascript: sW('v_84_','../Support/TypeView.aspx?PopUp=true&TypeViewId=84&Id=NewEntry',650,500,true);]]></AlternateCreatePopup>  
+
+Use ``&Id=NewEntry`` to create a new entry on the fly. This allows you to directly show actions buttons and saves one click.
+
 ==============================
 Debug Mode
 ==============================
@@ -50,6 +58,19 @@ Add the following XML tag to ``//system``
  :linenos:
 
   <debugLogging>true</debugLogging>
+
+
+==============================
+Custom Queries
+==============================
+
+Custom queries allows to use alternate queries to built up left and right side of the Operations main window.
+
+Add the following XML nodes to ``//sites/site``:
+
+.. literalinclude:: _static/CustomQueries.xml
+    :language: xml
+    :linenos:
 
 
 ************************************************************************************

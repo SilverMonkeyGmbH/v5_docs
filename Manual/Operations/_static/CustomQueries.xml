@@ -1,0 +1,80 @@
+<CustomQueryComputers>
+        <CustomQuery filterId="DefaultComputerQuery" filterLabel="All Computers" filterRole="PackWF Admin" UseSIMDB="false"><![CDATA[
+          SELECT  resourceid                                         AS Id, '',
+          name0                                              AS
+          Computer
+          ,
+          user_domain0 + '\' + user_name0
+          AS Username,
+          obsolete0                                          AS
+          Obsolete
+          ,
+          active0
+          AS Active,
+          (SELECT Count(RelationshipResourceID)
+          
+          
+          
+          FROM   v_UserMachineRelation
+          WHERE  machineresourceid = v_r_system.resourceid) AS
+          UserDevice
+          ,overall_count = COUNT(*) OVER()
+          FROM   v_r_system
+          
+          where v_r_system.name0 like '%{search}%'
+           
+          
+        order by {orderby}
+        
+         OFFSET {start} ROWS FETCH NEXT 50 ROWS ONLY
+        ]]></CustomQuery>
+        <CustomQuery filterId="DefaultUserQuery" filterLabel="All Users" filterRole=""><![CDATA[
+         SELECT  top 100 resourceid                                         AS Id, '',
+          name0                                              AS
+          Computer
+          ,
+          user_domain0 + '\' + user_name0
+          AS Username,
+          obsolete0                                          AS
+          Obsolete
+          ,
+          active0
+          AS Active,
+          (SELECT Count(RelationshipResourceID)
+          
+          
+          
+          FROM   v_UserMachineRelation
+          WHERE  machineresourceid = v_r_system.resourceid) AS
+          UserDevice
+          FROM   v_r_system
+          
+          where v_r_system.name0 like '%{search}%'
+          
+        order by {orderby}
+        ]]></CustomQuery>
+      </CustomQueryComputers>
+      <CustomQuerySoftware>
+        <CustomQuery filterId="DefaultAppQuery" filterLabel="All Applications" filterRole=""><![CDATA[
+          select id, '', name, [Description] from (
+SELECT '$'+CAST(CI_ConfigurationItems.CI_ID as varchar) as id, DisplayName as name, 
+
+
+ltrim(SDMPackageDigest.value('declare namespace pd="http://schemas.microsoft.com/SystemCenterConfigurationManager/2009/AppMgmtDigest"; (/pd:AppMgmtDigest/pd:Application/pd:Description)[1]', 'varchar(max)')) AS [Description]
+
+
+
+FROM CI_ConfigurationItems INNER JOIN CI_LocalizedProperties ON CI_ConfigurationItems.CI_ID = CI_LocalizedProperties.CI_ID 
+
+
+WHERE CI_ConfigurationItems.CIType_ID = 10 AND CI_ConfigurationItems.IsHidden = 0 AND CI_ConfigurationItems.IsEnabled = 1 AND CI_ConfigurationItems.IsExpired = 0 AND CI_ConfigurationItems.IsLatest = 1 
+
+)
+as t
+
+where t.name like '%{search}%' or [Description] like '%{search}%'
+          
+        order by {orderby}
+
+        ]]></CustomQuery>
+      </CustomQuerySoftware>
