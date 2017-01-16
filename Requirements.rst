@@ -24,7 +24,7 @@ The system requirements for processors, RAM and hard disk space on the server de
 System Requirements
 ----------------------------------------------------------------------------------------------------------------
 - CPU	1GHz
-- RAM	2GB
+- RAM	2GB (If there is a SQL Server running on the Webapplication Server 4GB RAM are required)
 - Database size	500MB
 - Website/Application files	50MB
 
