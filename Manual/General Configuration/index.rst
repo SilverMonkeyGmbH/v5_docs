@@ -410,7 +410,7 @@ There are three main types of references:
    "{[AttributeName]}", "References an Attribute in the current execution context.","{Name}"
    "{$[ADParameter]>[AttributeName]}", "Takes the desired part of the Active Directory Attribute that is referenced. You can use the follwing AD Parameters: [$MAIL] gives the email, [$NAME] gives the displayname,[$USERNAME] gives the username, [$ESCAPEDUSERNAME] gives the Domain + Username .","{$MAIL>Packageresponsible} "
    "{@OBJ.[Table].[AttributeName]}", "Takes an entry out of another table/class that is connected to the main class in the execution context. Syntax: {@OBJ.Table.Column} ","{@OBJ.Issue.TicketResponsible}"
-
+   "{CURRENTUSER}", "Shows the currently logged-on user.","{CURRENTUSER}"
 
 .. _CMDB-Form Views:
 
@@ -525,20 +525,21 @@ You can add an attribute this way:
    :widths: 40,58
 
    "field=""[string]""", "The name of the attribute according to the object definition. Optional fields can also be used. They should have a constant name."
-   "validation=""[*]""", "Set up a validation rule (e.g. ""*"" is used to ask for obligatory input). Example:
+   "validation=""*""", "Set up a validation rule (e.g. ""*"" is used to ask for obligatory input). Example:
       
       .. code-block:: console
         
         validation=""*""
         validation=""required: true, regexp: /^[A-Za-z\d]+$/i""
-        validation=""required: true, regexp: /^[A-Za-z\d]{2,20}$/i"""
+        validation=""required: true, regexp: /^[A-Za-z\d]{2,20}$/i""
+        
+    Also available for Action buttons. The following resource keys (resource.xml) for Warning Messages Customization are given: uncompleted[Action Button] (i.e. uncompletedCopyFiles, uncompletedCMDB2SCCM, uncompletedExecute, uncompletedCreateActiveDirectory and so on)."
     "readonly=""[true|false]""", "Distinguishes between reading mode and writing mode. Type in ""true"" for reading mode or ""false"" if you want to enable the user to enter text."
     "width=""[width in px]""", "Width of the widget given in pixels."
     "height=""[height in px]""", "Height of the widget given in pixels."
     "setDefaultOnLoad=""[true|false]""", "Defines the default value for an empty attribute that is set when the form is loading."
     "forceDefault=""[true|false]""", "Forces implementation of the default values."
     "Comment=""[strings]""", "Add a comment to the attribute. It will be displayed when the curser is moved to the ""*"" at the end of the attribute."
-
 
 ------------------
 Comment
@@ -592,7 +593,6 @@ Add connections using the following xml statement:
     "link=""[true|false]""", "Enables opening referenced objects."
     "create=""[viewX]""", "List of object views which is supposed to be displayed when new objects are being set up and assigned."
     "readOnly=""[true|false]""", "Prevents user from setting up new connecitons if set to ""true""."
-
 
 .. figure:: _static/Connection.PNG
     
@@ -688,7 +688,6 @@ Example:
 
 
 
-
 ===============
 Action Buttons
 ===============
@@ -736,6 +735,7 @@ However, you can use in the script impersonation for using specific accounts.
    "arguments=""[{Var1} {Var2} {Var3}]""", "Arguments passed to the executed process."
    "exit_nn=""[Resource]""", "After execution the exit code will be passed to the website. If a corresponding exit_nn parameter is set, a pop up is displayed to the user."
    "wait=""[true|false]""", "If set to true, the website waits for the execution to end."
+   "validation=""*""", "Validation rule. If the validation rule is activated, you have to execute this Operation in order to proceed to the next workflow step."
 
 .. warning:: If "wait" is set to "true" be aware that the internet browser and the IIS session itself both have an IDLE timeout. Only use wait="true" if the script is executed within seconds.  
 
@@ -809,6 +809,7 @@ ExecutePS
    "command=""[command line]""", "Command line (solved against the corresponding data record."
    "arguments=""[string]""", "Arguments that call the command (solved against the corresponding data record). If arguments are supposed to be given to the PS script, put a hyphen before the value that you want to forward."
    "wait=""[true|false]""", "Waits for the execution to stop (in case of synchronous execution). Only if this value is set to ""true"" the system can send a report to the user."
+   "validation=""*""", "Validation rule. If the validation rule is activated, you have to execute this Operation in order to proceed to the next workflow step."
 
 .. _`CMDB-actions-CMDB2SCCM`:
 
@@ -851,6 +852,7 @@ The underlying code can be used in two methods:
    "title=""[resource]""", "Title of the button"
    "param=""[string]""", "String to pass to the SQL scripts executed on runtime of the mass import."
    "restart=""[true|false]""", "If set to false, the button will be invisible when executed once."
+   "validation=""*""", "Validation rule. If the validation rule is activated, you have to execute this Operation in order to proceed to the next workflow step."
 
 **Example:**
 
@@ -884,7 +886,7 @@ Opens a dialogue in which new directory structures can be set for the packaging 
       indexFilter="true"
       indexFilterPreselected="false"
       title="Title"
-      Validation="*"
+      validation="*"
     />
 
 
@@ -897,7 +899,7 @@ Opens a dialogue in which new directory structures can be set for the packaging 
    "indexFilter=""[true|false]""", "Enables the imposal of a copying restriction if multiple processes are defined."
    "indexFilterPreselected=""[true/false]""", "Enables preselection of different check boxes."
    "title=""[String]""", "Enables the possibility to change the name of the button."
-   "validation=""[*]""", "Validation rule. If the validation rule is activated, you have to execute this CopyFiles-Operation in order to proceed to the next workflow step."
+   "validation=""*""", "Validation rule. If the validation rule is activated, you have to execute this Operation in order to proceed to the next workflow step."
 
 ------------------
 CreatePackage
@@ -924,7 +926,7 @@ Opens a dialogue in which you can compile the SCCM package for the packaging wor
     "restart=""[true/false]""", "Enables repetition of the proces after the package has been created (e.g. in order to recreate the package after manual deletion)."
     "site=""[Packaging site Name]""", "Defines on which packaging site the operation is to be carried out. If this attribute is not set, a parameter type ""Packetierungssite"" has to contain the information needed."
     "sendToDP=""[true|false]""", "Enables transmission to Distribution Points (""DP"")."
-
+    "validation=""*""", "Validation rule. If the validation rule is activated, you have to execute this Operation in order to proceed to the next workflow step."
 
 
 ------------------
@@ -960,6 +962,7 @@ Opens a dialogue to create a new collection for the packaging workflow.
    "collectionType=""[integer]""", "Collection-type key (1: user, 2: computer)."
    "limitToCollectionId=""[string]""", "Limited collection for SCCM 2012."
    "query=""[string]""", "Query for dynamic collections."
+   "validation=""*""", "Validation rule. If the validation rule is activated, you have to execute this Operation in order to proceed to the next workflow step."
 
 ------------------
 CreateApplication
@@ -990,7 +993,8 @@ Opens a dialogue in which you can set up the SCCM Application for the packaging 
    "titleRestart=""[string]""", "Name of the resource of the action button for recreation of the application."
    "site=""[string]""", "Defines the packaging site where the operation has to be carried out. If this attribute is not set, the packaging job has to contain a parameter type ""packaging site"" in order to recieve the needed information."
    "configuration=""[string]""", "Name of the configuration for the application from the site settings."
-   
+   "validation=""*""", "Validation rule. If the validation rule is activated, you have to execute this Operation in order to proceed to the next workflow step."
+
 ------------------
 Comment
 ------------------
@@ -1026,6 +1030,7 @@ In order to display a save-button, enter the following XML code:
    :align: center
 
    "delete=""[true|false]""", "Add a delete-button."
+   "validation=""*""", "Validation rule. If the validation rule is activated, you have to execute this Operation in order to proceed to the next workflow step."
 
 ------------------
 SendMail
@@ -1058,6 +1063,7 @@ Use the following XML statements in order to show a function to send preformatte
    "subject=""[string]""", "Subject of the email."
    "body=""[string]""", "Body of the email."
    "mailGroup=""[string]""", "Instead of adding the attributes ""to"", ""subject"" and ""body"" you can refer to a predefined group. This simplifies simultaneously sending multiple mails."
+   "validation=""*""", "Validation rule. If the validation rule is activated, you have to execute this Operation in order to proceed to the next workflow step."
 
 ------------------
 ImportXML
@@ -1081,7 +1087,7 @@ ImportXML
 
    "title=""[string]""", "Resource name of the action button."
    "titleRestart=""[string]""", "Resource name of the action button which has to be used when the application is recreated (only when restart=""true""). The corresponding text resource has to be defined in Ressources.xml."
-   
+   "validation=""*""", "Validation rule. If the validation rule is activated, you have to execute this Operation in order to proceed to the next workflow step."
 
 ----------------------
 CreateActiveDirectory
@@ -1115,7 +1121,7 @@ This is also the case if database authentication is set to "SQL".
    "class=""[string]""", "Schema class of the object that is created."
    "name=""[string]""", "Naming convention for the new object."
    "attribute=""[value]""", "All further attributes are interpreted as object attributes and connected to the first object."
-
+   "validation=""*""", "Validation rule. If the validation rule is activated, you have to execute this Operation in order to proceed to the next workflow step."
 
 
 .. _CMDB-LIst Views:
@@ -1139,7 +1145,6 @@ Properties
    "Sort order", "Choose where to display the chosen list in the dropdown menu."
    "Roles", "Choose wich roles can see the list."
    "Definition", "The definition of the list."
-
 
 Example List:
 
@@ -1191,7 +1196,6 @@ Example List:
    "excelExport", "Displays the excel export function in the list view."
    "importExport", "Displays the import/export function in the list view."
    "popUp", "By specifying a pop-up window size in the format “width, height“ (in px), a list view opens choosen entries in a new window e.g .: “800,600“"
-
 
 ======================================
    <columns> Definition
@@ -1291,4 +1295,3 @@ You can create different types of attributes to customize the form to your needs
    "Object reference", "Used for Object reference attributes. Choose the table you want to refer to."
    "Filter", "Used for object reference attributes. Filter the entrys in the table you are referring to."
    "LDAP path", "LADP path for the AD Users/Groups."
-
