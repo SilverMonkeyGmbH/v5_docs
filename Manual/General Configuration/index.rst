@@ -180,7 +180,11 @@ Define a condition that decides wheather the email should be sent or not. If thi
    "=", "equals"
    "<", "less than"
    ">", "more than"
-   "!", "doesnt equal"
+   "!", "does not equal"
+   "{roles} # Software Change Manager ", """roles"" contains the inserted Software Change Manager (case sensitive)"
+   "{roles} ^ Treon User", """roles"" does NOT contain the inserted Treon User (case sensitive)"
+
+.. Note:: The last two operators are role filters and will ONLY be working on {roles}!
 
 Furthermore, you can use palceholders that reference to attributes of the associated workflow as seen in the following example: 
 

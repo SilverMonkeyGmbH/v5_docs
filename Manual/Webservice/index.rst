@@ -215,6 +215,7 @@ exchangeClient
         <application>Name der Applikation</application>
     </applications >
    <variable>
+   
       <name>Variablenname</name>
       <locale>Locale</locale>
       <value>Variablenwert</value>
