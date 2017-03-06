@@ -271,7 +271,6 @@ Configure workflows for the CMDB and the packaging process.
 
 
 
-
 ================================================================
 Status
 ================================================================
@@ -282,7 +281,7 @@ Status
 .. csv-table:: 
    :header: "Property","Description"
    :widths: 40,57
-
+   
    "Name - de", "German name of the Status."
    "Name - en", "English name of the Status."
    "Token", "Define the roles that have the permission to edit Forms in this Status. You can define multiple roles seperated with a semicolon."
