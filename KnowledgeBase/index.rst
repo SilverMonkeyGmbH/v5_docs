@@ -28,3 +28,4 @@ Contents:
    KB00020_SIM-SQL_DB-Rights/index
    KB00021_Disable-AD-Sync/index
    KB00022_Known-Issues/index
+   KB00023_CopyFiles_Fix_Documentparsing/index
