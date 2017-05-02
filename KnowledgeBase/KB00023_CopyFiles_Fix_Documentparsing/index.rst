@@ -11,10 +11,8 @@ Solve this problem by following the instructions below:
 
 .. image:: _static/image002.png
 
-
-
 .. image:: _static/image003.png
 
 .. image:: _static/image004.png
 
-.. image:: _static/image005.png
+
