@@ -779,7 +779,8 @@ However, you can use in the script impersonation for using specific accounts.
       wait="false" 
    />
 
-**Checklist: My execute istn running my Power Shell script.**
+
+**Checklist: My execute is not running my Power Shell script.**
 
 #. Did you set the executionpolicy on the system that is running the PS Script? (32/64 bit? use "get-executionpolicy -list" to display the present configuration)
 #. Is the Identity that is defined in the IIS AppPool able to execute the specified script? (Check in the Identity property of the AppPool of your app)
