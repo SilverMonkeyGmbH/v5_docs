@@ -29,3 +29,4 @@ Contents:
    KB00021_Disable-AD-Sync/index
    KB00022_Known-Issues/index
    KB00023_CopyFiles_Fix_Documentparsing/index
+   KB00024_Create_Serverlink_withAlias_withCreds/index
