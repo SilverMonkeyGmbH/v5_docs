@@ -6,7 +6,7 @@ Use this sample SQL script to create an SQL serverlink to the wanted server. You
 
 
 .. literalinclude:: _static/Create_SQLServerlink_withAlias_withSpecificUser.sql
-  :language: tsql
+  :language: t-sql
 
 
 
