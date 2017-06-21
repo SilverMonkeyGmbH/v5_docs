@@ -50,4 +50,4 @@ Type in your IP/user/password in the script below.
 
 Expected return value (the domain name has to be desplayed):
    
-  .. image:: _static/image005.png
+.. image:: _static/image005.png
