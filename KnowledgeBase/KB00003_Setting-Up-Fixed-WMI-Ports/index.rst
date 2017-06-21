@@ -48,6 +48,6 @@ Type in your IP/user/password in the script below.
 
 .. note:: Due to eventually blocked Kerberos ports, some DNS names might not work. In this case, please use the IP adress of the target system only.
 
-Expected return value (the domain name has to be desplayed):
+Expected return value (the site display name has to be displayed):
    
 .. image:: _static/image005.png
