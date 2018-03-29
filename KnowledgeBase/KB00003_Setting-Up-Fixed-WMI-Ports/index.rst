@@ -43,7 +43,7 @@ Test Script
 ++++++++++++++++++++++++++++++++++++++
 Type in your IP/user/password in the script below.
 
-:download:`Download test script <_static/WMIRemoteTest.vbs>`
+:download:`Download test script <_static/WMIRemoteTest.vbs.txt>`
 
 
 .. note:: Due to eventually blocked Kerberos ports, some DNS names might not work. In this case, please use the IP adress of the target system only.
