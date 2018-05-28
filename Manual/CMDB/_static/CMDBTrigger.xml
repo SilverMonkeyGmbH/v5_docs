@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<trigger>
+   <afterUpdate field="" value="" 
+      command=" exec sp_MyStoredProcedure @Id='{Id}' " 
+   />
+   <afterUpdate field="" value="" 
+      title="createTicketAuto" 
+      script="C:\Windows\system32\WindowsPowerShell\v1.0\powershell.exe" 
+      arguments="C:\SilverMonkey\v5\Scripts\MyTriggerScript.ps1 -Id {Id}" 
+      condition="{SysStatus} = A0.1 - Request" 
+      restart="false" 
+      back="true" 
+   />
+</trigger>
