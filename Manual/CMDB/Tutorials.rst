@@ -25,6 +25,11 @@ For full reference see :ref:`CMDB-actions-CMDB2SCCM`.
 
 .. image:: _static/Tutorial_FirstCMDBClass_2.png 
 
+3.1. Field ``Automation`` is used for automatic triggering of MSSQL Scripts (e.g. Stored Procedures) or external processes (e.g Powershell Scripts). See example:
+
+.. literalinclude:: _static/CMDBTrigger.xml
+    :language: xml
+
 4. Create your first attributes and name them "Name" and "MACAddress":
 
 .. image:: _static/Tutorial_FirstCMDBClass_3.png 
