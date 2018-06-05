@@ -721,7 +721,9 @@ However, you can use in the script impersonation for using specific accounts.
       arguments="{Var1} {Var2} {Var3}"
       exit_1="Execution was sucessfully processed."
       exit_2="Error while execution. See log for details."
+      exit_dynamic="true"
       wait="true" 
+      validation="*"
    />
 
 **Available attributes**
@@ -778,6 +780,21 @@ However, you can use in the script impersonation for using specific accounts.
       arguments="C:\SilverMonkey\Scripts\MyFirstscript.ps1 -PackagingJobId {ID} -OtherParam &quot;{Var1}&quot;"
       wait="false" 
    />
+   
+   
+3. Executing a powershell PS1 script with dynamic output
+
+.. code-block:: xml 
+  :linenos:
+
+   <execute   
+      title="My PS1 Script" 
+      command="C:\Windows\system32\WindowsPowerShell\v1.0\powershell.exe"
+      arguments="{APPPATH}\Tools\TestScript.ps1 -PackagingJobId {ID} -OtherParam &quot;{Var1}&quot;"
+      wait="true" 
+      exit_dynamic="true"
+      
+   />
 
 
 **Checklist: My execute is not running my Power Shell script.**
@@ -787,6 +804,7 @@ However, you can use in the script impersonation for using specific accounts.
 #. Is the needed Power Shell version availible on your AppServer? ( Run $PSVersionTable.PsVersion in PoweShell and check)
 #. Did you get the PS Script from the online share? Check if the script and its dependency's are 'unblocked'.(They will get a flag when they are downloaded that prevents them from beeing executed)
 #. Double Check your XML in the form xml 
+#. Try to use dynamic output (See above example 3.) to get error output displayed in frontend
 
 .. tip:: Using quations within XML attributes: *&quot;{Var1}&quot;* (HTML notation).
 
