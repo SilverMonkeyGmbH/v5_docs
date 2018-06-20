@@ -796,6 +796,8 @@ However, you can use in the script impersonation for using specific accounts.
       
    />
 
+.. figure:: _static/DynamicOutput.png
+
 
 **Checklist: My execute is not running my Power Shell script.**
 
