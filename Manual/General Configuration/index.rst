@@ -422,7 +422,7 @@ Within every CMDB Class (including "Packaging") the automation attribute can be 
 1. Executing an MSSQL Query in context of the SilverMonkey Database (default)
 2. Executing an external process (like powershell) to run custom scripts
 
-.. code-block:: xml
+  .. code-block:: xml
     :linenos:
     
   <trigger>
