@@ -422,26 +422,9 @@ Within every CMDB Class (including "Packaging") the automation attribute can be 
 1. Executing an MSSQL Query in context of the SilverMonkey Database (default)
 2. Executing an external process (like powershell) to run custom scripts
 
-  .. code-block:: xml
-    :linenos:
-    
-  <trigger>
-    
-    <!-- Executing MSSQL Query -->
-    <afterUpdate field="" value="" 
-      command=" exec sp_MyMSSQLStoredProcedure @Id='{Id}' " 
-    />
 
-    <!-- Executing external Script -->
-    <afterUpdate field="" value="" title="executeMyScript"
-      script="C:\Windows\system32\WindowsPowerShell\v1.0\powershell.exe"
-      arguments="C:\SilverMonkey\v5\Tools\MyScript.ps1 -ID {Id}" 
-      condition="{SysStatus} = A1 - Request" 
-      restart="false" 
-      back="true" 
-    />
-
-  </trigger>
+.. literalinclude:: _static/CMDBClassAutomation.xml
+  :language: xml
 
 The corresponding setting can be found here:
 
