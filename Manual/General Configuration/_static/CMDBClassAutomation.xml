@@ -1,0 +1,15 @@
+<trigger>
+
+	<afterUpdate field="" value="" 
+		command=" exec sp_MyMSSQLStoredProcedure @Id='{Id}' " 
+	/>
+
+	<afterUpdate field="" value="" title="executeMyScript"
+		script="C:\Windows\system32\WindowsPowerShell\v1.0\powershell.exe"
+		arguments="C:\SilverMonkey\v5\Tools\MyScript.ps1 -ID {Id}" 
+		condition="{SysStatus} = A1 - Request" 
+		restart="false" 
+		back="true" 
+	/>
+
+</trigger>
