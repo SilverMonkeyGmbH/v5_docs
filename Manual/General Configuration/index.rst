@@ -412,6 +412,42 @@ There are three main types of references:
    "{@OBJ.[Table].[AttributeName]}", "Takes an entry out of another table/class that is connected to the main class in the execution context. Syntax: {@OBJ.Table.Column} ","{@OBJ.Issue.TicketResponsible}"
    "{CURRENTUSER}", "Shows the currently logged-on user.","{CURRENTUSER}"
 
+
+****************************************************************
+CMDB Class automation
+****************************************************************
+
+Within every CMDB Class (including "Packaging") the automation attribute can be used to define two different types of automatic script triggering:
+
+1. Executing an MSSQL Query in context of the SilverMonkey Database (default)
+2. Executing an external process (like powershell) to run custom scripts
+
+.. code-block:: xml
+    :linenos:
+    
+  <trigger>
+    
+    <!-- Executing MSSQL Query -->
+    <afterUpdate field="" value="" 
+      command=" exec sp_MyMSSQLStoredProcedure @Id='{Id}' " 
+    />
+
+    <!-- Executing external Script -->
+    <afterUpdate field="" value="" title="executeMyScript"
+      script="C:\Windows\system32\WindowsPowerShell\v1.0\powershell.exe"
+      arguments="C:\SilverMonkey\v5\Tools\MyScript.ps1 -ID {Id}" 
+      condition="{SysStatus} = A1 - Request" 
+      restart="false" 
+      back="true" 
+    />
+
+  </trigger>
+
+The corresponding setting can be found here:
+
+.. figure:: _static/CMDBClassAutomation.png
+
+
 .. _CMDB-Form Views:
 
 ****************************************************************
