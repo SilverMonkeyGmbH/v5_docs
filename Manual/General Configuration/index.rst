@@ -596,6 +596,7 @@ Add connections using the following xml statement:
         link="true"
         create="view1; view2"
         readOnly="true"
+        required="true/false"
       />
 
 
