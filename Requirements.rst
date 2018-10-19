@@ -3,18 +3,16 @@ Requirements
 
 Server Application (IIS)
 ----------------------------
--	Microsoft Windows Server 2008 R2 or higher
+-	Microsoft Windows Server 2012 R2 or higher
 -	Internet Information Server
 -	Microsoft .NET Framework 3.5
 -	Microsoft Report Viewer 2012 (free download from Microsoft)
 
 Server Database (SQL)
 ----------------------------
--	Microsoft SQL Server 2008 R2 or higher 
+-	Microsoft SQL Server 2014 or higher 
 -	Or Microsoft SQL Server Express with Advanced Services
 
-  -	2008 R2: http://www.microsoft.com/en-us/download/details.aspx?id=25174
-  -	2012: http://www.microsoft.com/en-us/download/details.aspx?id=29062 (ENU\x86\SQLEXPRADV_x86_ENU.exe)
   -	2014: https://www.microsoft.com/en-US/download/details.aspx?id=42299  
 
 Server Hardware Requirements (IIS+SQL)
@@ -23,12 +21,12 @@ The system requirements for processors, RAM and hard disk space on the server de
 
 System Requirements
 ----------------------------------------------------------------------------------------------------------------
-- CPU	1GHz
-- RAM	2GB (If there is a SQL Server running on the Webapplication Server 4GB RAM are required)
-- Database size	500MB
-- Website/Application files	50MB
+- 2 CPU	1GHz
+- RAM	8GB (If there is a SQL Server running on the Webapplication Server 4GB RAM are required)
+- Database size	1000MB
+- Website/Application files	500MB
 
-(Valid for up to 10,000 systems and 20 concurrent users on the Web Application)
+(Valid for up to 15,000 systems and 20 concurrent users on the Web Application)
 
 Network Configuration
 ----------------------------
